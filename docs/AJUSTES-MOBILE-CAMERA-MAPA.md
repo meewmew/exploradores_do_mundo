@@ -50,6 +50,10 @@ Removidas a borda externa do viewport e a moldura/sombra do painel. O fundo do S
 
 Conferido no Chrome em 390 × 844 e 1280 × 900: mesma cor calculada da página e dos fundos do mapa, bordas de 0 px, sem overflow horizontal, zoom/restauração e foco por teclado funcionando, sem erros de execução registrados. Capturas e medições locais em `.cache/map-review/`. Após a alteração, `npm.cmd run typecheck`, `npm.cmd test` (51/51 em 16 arquivos) e `npm.cmd run build` passaram. O relato de funcionamento em celular é o teste informado antes deste ajuste visual; a conferência desta alteração foi feita no navegador.
 
+Correção de cor em 05/11/2026: a confirmação visual do responsável pediu o azul mais escuro da imagem original, `#a8deef`. O token `--canvas` passa a usar esse azul, igual ao `--water`; página, mapa e faixas laterais conservam continuidade, sem borda externa. A alteração anterior havia usado `#e6f6fc`, claro demais para o pedido.
+
+O primeiro deploy no novo endereço concluiu no workflow `41983031844`, commit `c64766b`. `node scripts/check-published.mjs` passou após corrigir a localização do hash na checagem: o build coloca a configuração PBKDF2 no chunk principal compartilhado, não necessariamente no chunk do Organizador. A comparação com a variável do repositório confirmou o mesmo valor sem expô-lo; nenhuma senha ou configuração de acesso foi alterada.
+
 ## Testado no celular e funcionou
 
 Publicação concluída: commit `c33fa00`, workflow `workflow antigo #41956899341 (link histórico removido a pedido)` com `success`. `node scripts/check-published.mjs` e `node artifacts/mobile-camera/check-published.mjs` passaram. Pop-up e zoom do mapa públicos conferidos a 390 × 700 em `endereço da publicação anterior removido a pedido`; capturas `artifacts/mobile-camera/instrucoes-publicadas-390.jpg` e `mapa-publicado-390.jpg`. Câmera ampliada revisada localmente sem reconhecimento, com captura `camera-ampliada-local.jpg` na mesma pasta. O build publicado não contém a página de QA usada para texto a 200%.

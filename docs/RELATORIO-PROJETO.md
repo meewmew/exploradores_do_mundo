@@ -37,7 +37,7 @@ As funções centrais, os seis continentes, os materiais impressos, os modelos c
 1. **Teste no celular concluído:** testado e funcionou, conforme confirmação recebida em 05/11/2026. Câmera, QR impresso e reconhecimento/alinhamento da RA confirmados. O roteiro de `docs/TESTE-NO-CELULAR.md` fica disponível para repetição; aparelho, navegador, cinco ciclos e resultados individuais dos demais casos não foram informados.
 2. **Conferir acessibilidade e uso real:** testar leitor de tela, áudio, teclado virtual, áreas seguras da tela e compreensão das instruções com crianças. Esses itens não devem ser considerados validados apenas por testes automatizados ou pela revisão em navegador.
 3. **Finalizar a conferência dos dados:** área e população dos continentes ainda estão marcadas para verificação. Algumas informações de países, como áreas e populações, têm limitações de fonte e ano de referência; consultar `docs/DADOS-EM-VERIFICACAO.md` e `PENDENCIAS.md` antes de completar ou apresentar esses campos como confirmados.
-4. **Concluir a publicação no novo repositório:** o projeto foi preparado para `https://meewmew.github.io/exploradores_do_mundo/`, mas a conta conectada tem apenas permissão de leitura no repositório `meewmew/exploradores_do_mundo`. É necessário liberar escrita para essa conta ou usar uma conta autorizada, enviar o projeto e conferir a publicação pelo GitHub Pages.
+4. **Publicação concluída:** projeto disponível em [Exploradores do Mundo](https://meewmew.github.io/exploradores_do_mundo/). A conta conectada já possui acesso de administração; envio e deploy do commit `c64766b` concluídos no workflow `41983031844`. Recursos dos seis continentes, configuração do Organizador e mapa em 390/1280 px conferidos no endereço público. Alterações posteriores são registradas em `docs/AJUSTES-MOBILE-CAMERA-MAPA.md`.
 5. **Fechar a conferência do projeto:** manter `PROGRESSO.md` e `PENDENCIAS.md` atualizados com os resultados dos testes físicos, dados confirmados e situação final da publicação.
 
 ## Comandos principais
@@ -53,4 +53,4 @@ As funções centrais, os seis continentes, os materiais impressos, os modelos c
 
 ## Conclusão
 
-O projeto está implementado em suas funções principais e já possui registro de publicação e conferências técnicas no navegador. O teste no celular foi realizado e funcionou. Permanecem as verificações específicas de acessibilidade e de dados e a permissão de escrita para publicar no novo endereço.
+O projeto está implementado em suas funções principais, publicado no novo endereço e conferido no navegador. O teste no celular foi realizado e funcionou. Permanecem as verificações específicas de acessibilidade e de dados.

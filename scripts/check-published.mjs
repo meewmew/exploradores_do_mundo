@@ -11,7 +11,7 @@ const entry=html.match(/src="([^"]+\/assets\/[^\"]+\.js)"/)?.[1];if(!entry)throw
 const organizerChunk=entrySource.match(/assets\/Organizer-[A-Za-z0-9_-]+\.js/)?.[0];
 if(!organizerChunk)throw Error('Chunk do Organizador ausente.');
 const organizerSource=(await get(organizerChunk)).toString('utf8');
-if(!organizerSource.includes('pbkdf2:sha256:210000:'))throw Error('Hash do Organizador ainda não chegou ao deploy.');
+if(![entrySource,organizerSource].some(source=>source.includes('pbkdf2:sha256:210000:')))throw Error('Hash do Organizador ainda não chegou ao deploy.');
 console.log('Organizador publicado com hash PBKDF2 configurado (sem senha em texto).');
 const sha=buffer=>createHash('sha256').update(buffer).digest('hex');
 for(const id of KNOWN_CONTINENTS){

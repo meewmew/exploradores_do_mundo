@@ -63,7 +63,7 @@ Testado no celular e funcionou, conforme confirmação recebida em 05/11/2026. C
 
 ## Pendente
 
-1. Publicação anterior concluída. O novo destino está preparado, mas o envio depende de permissão de escrita, conforme `../PENDENCIAS.md`.
+1. Publicação no novo destino concluída em 05/11/2026: [Exploradores do Mundo](https://meewmew.github.io/exploradores_do_mundo/). Envio e deploy do commit `c64766b` aprovados no workflow `41983031844`; recursos e mapa públicos conferidos.
 2. Para testar por IP/túnel local, configurar `VITE_PUBLIC_URL` e regenerar as folhas. As folhas públicas já estão corretas para o site publicado.
 3. Teste no celular concluído e funcionando, conforme confirmação recebida em 05/11/2026. Roteiro de repetição e limites em `TESTE-NO-CELULAR.md`; sem declaração de cobertura dos dois sistemas.
 4. Confirmar áreas/populações continentais e áreas nacionais conforme DADOS-EM-VERIFICACAO.md; campos permanecem honestamente em verificação.
