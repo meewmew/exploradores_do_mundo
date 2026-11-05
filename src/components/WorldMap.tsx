@@ -18,7 +18,7 @@ export function WorldMap({ onSelect, selected, activity = false, decorative = fa
   const done = activityContinents(completed), gridId = useId();
   const map = <svg viewBox="0 0 1000 510" className="world-map" role={decorative ? undefined : 'group'} aria-label={decorative ? undefined : 'Mapa dos seis continentes'}>
         <defs><pattern id={gridId} width="125" height="127.5" patternUnits="userSpaceOnUse"><path d="M125 0H0V127.5" fill="none" stroke="var(--map-grid)" strokeOpacity=".06" /></pattern></defs>
-        <rect width="1000" height="510" fill={interactive ? 'var(--canvas)' : 'var(--water)'} /><rect width="1000" height="510" fill={`url(#${gridId})`} />
+        <rect width="1000" height="510" fill="var(--water)" /><rect width="1000" height="510" fill={`url(#${gridId})`} />
         {data.map(c => {
           const id = c.id as ContinentId, open = unlocked.includes(id), available = continents.some(c => c.id === id);
           const state = open ? `descoberto${done.includes(id) ? ', atividade concluída' : ''}` : 'bloqueado';

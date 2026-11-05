@@ -54,6 +54,8 @@ Correção de cor em 05/11/2026: a confirmação visual do responsável pediu o 
 
 Pedido posterior em 05/11/2026: restaurada a borda original do viewport do mapa, com `2px solid var(--border-control)` e cantos de `1rem`. Mantido o azul mais escuro já aprovado. O painel externo permanece integrado à página; esta correção recupera a linha azul escura ao redor do mapa mostrada na captura inicial.
 
+Referência final recebida em 05/11/2026: o conjunto solicitado inclui também a moldura branca arredondada do painel inteiro. Restaurados o painel azul `--water`, sua borda branca de 3 px, raio de 1,75 rem e sombra original, além do fundo externo claro `--canvas: #e6f6fc`. Mantidas a borda interna azul e as faixas claras do SVG, como na captura. Esta referência substitui os ajustes anteriores de integração do painel à página.
+
 O primeiro deploy no novo endereço concluiu no workflow `41983031844`, commit `c64766b`. `node scripts/check-published.mjs` passou após corrigir a localização do hash na checagem: o build coloca a configuração PBKDF2 no chunk principal compartilhado, não necessariamente no chunk do Organizador. A comparação com a variável do repositório confirmou o mesmo valor sem expô-lo; nenhuma senha ou configuração de acesso foi alterada.
 
 ## Testado no celular e funcionou
