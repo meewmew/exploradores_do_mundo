@@ -1,5 +1,7 @@
 # Correções e otimização — 2026-11-03
 
+**Teste no celular — atualização de 05/11/2026:** testado no celular e funcionou. Esta confirmação atualiza as pendências de funcionamento no aparelho registradas nas etapas anteriores. Avaliação com crianças, leitor de tela, medições de desempenho e casos específicos sem resultado individual informado continuam separados do teste geral. Registro em [TESTE-NO-CELULAR.md](TESTE-NO-CELULAR.md).
+
 Correções locais de funcionamento, preservando o atlas mobile, os fluxos da SPEC §14 e as regras de reconhecimento. Nenhuma publicação foi feita nesta tarefa.
 
 ## Falhas corrigidas
@@ -40,4 +42,4 @@ O build normal substituiu os builds descartáveis. Confirmados: ausência de `te
 
 ## Limites e próximo passo
 
-Câmera, QR impresso, estabilidade/pose AR, perda/retorno do marcador, cinco ciclos de teardown, áudio, gestos reais e desempenho em telefone continuam NÃO VALIDADOS fisicamente. Executar os novos casos em `TESTE-NO-CELULAR.md` antes de aceitar esses percursos. Revisão com crianças e leitor de tela também não foi realizada. Backlog de relevo/pontos turísticos e dados ainda em verificação continua em `PENDENCIAS.md`.
+Testado no celular e funcionou, conforme confirmação recebida em 05/11/2026. Câmera, QR impresso e reconhecimento/alinhamento confirmados. Casos específicos, cinco ciclos, áudio e desempenho sem resultado individual informado; roteiro mantido para repetição. Revisão com crianças e leitor de tela também não foi realizada. Backlog de relevo/pontos turísticos e dados ainda em verificação continua em `PENDENCIAS.md`.

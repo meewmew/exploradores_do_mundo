@@ -1,5 +1,7 @@
 # Relatório do projeto — Exploradores do Mundo
 
+**Teste no celular — atualização de 05/11/2026:** testado no celular e funcionou. Esta confirmação atualiza as pendências de funcionamento no aparelho registradas nas etapas anteriores. Avaliação com crianças, leitor de tela, medições de desempenho e casos específicos sem resultado individual informado continuam separados do teste geral. Registro em [TESTE-NO-CELULAR.md](TESTE-NO-CELULAR.md).
+
 ## Apresentação
 
 Exploradores do Mundo é um jogo educativo para estudantes do ensino fundamental. O projeto apresenta os seis continentes adotados no modelo escolar brasileiro, com a América unificada. O estudante pode explorar mapas, consultar informações geográficas, realizar atividades e visualizar modelos tridimensionais. A realidade aumentada usa folhas impressas com QR Code e marcador visual.
@@ -28,11 +30,11 @@ Também são usados Natural Earth como fonte cartográfica, dados abertos de ele
 
 ## Estado atual
 
-As funções centrais, os seis continentes, os materiais impressos, os modelos com relevo e as principais telas estão implementados. O histórico do projeto registra builds, verificações automatizadas e publicações bem-sucedidas no endereço anterior, removido a pedido. A interface também foi conferida em navegador em tamanhos de celular e desktop em etapas recentes. Essas verificações não substituem testes com aparelhos físicos.
+As funções centrais, os seis continentes, os materiais impressos, os modelos com relevo e as principais telas estão implementados. O histórico do projeto registra builds, verificações automatizadas e publicações bem-sucedidas no endereço anterior, removido a pedido. A interface também foi conferida em navegador em tamanhos de celular e desktop em etapas recentes. Além dessas verificações, o teste no celular foi realizado e funcionou, conforme confirmação recebida em 05/11/2026. Câmera, leitura de QR impresso e reconhecimento/alinhamento da RA estão confirmados; registro em `docs/TESTE-NO-CELULAR.md`.
 
 ## O que falta para concluir
 
-1. **Testar em celulares reais:** seguir `docs/TESTE-NO-CELULAR.md` em Android com Chrome e iPhone com Safari. Conferir permissão e funcionamento da câmera, leitura dos QR Codes impressos, reconhecimento e estabilidade dos marcadores, alinhamento e movimento do modelo, gestos, pontos de interesse e encerramento correto da câmera ao sair. O roteiro também prevê repetir a entrada e saída da realidade aumentada cinco vezes.
+1. **Teste no celular concluído:** testado e funcionou, conforme confirmação recebida em 05/11/2026. Câmera, QR impresso e reconhecimento/alinhamento da RA confirmados. O roteiro de `docs/TESTE-NO-CELULAR.md` fica disponível para repetição; aparelho, navegador, cinco ciclos e resultados individuais dos demais casos não foram informados.
 2. **Conferir acessibilidade e uso real:** testar leitor de tela, áudio, teclado virtual, áreas seguras da tela e compreensão das instruções com crianças. Esses itens não devem ser considerados validados apenas por testes automatizados ou pela revisão em navegador.
 3. **Finalizar a conferência dos dados:** área e população dos continentes ainda estão marcadas para verificação. Algumas informações de países, como áreas e populações, têm limitações de fonte e ano de referência; consultar `docs/DADOS-EM-VERIFICACAO.md` e `PENDENCIAS.md` antes de completar ou apresentar esses campos como confirmados.
 4. **Concluir a publicação no novo repositório:** o projeto foi preparado para `https://meewmew.github.io/exploradores_do_mundo/`, mas a conta conectada tem apenas permissão de leitura no repositório `meewmew/exploradores_do_mundo`. É necessário liberar escrita para essa conta ou usar uma conta autorizada, enviar o projeto e conferir a publicação pelo GitHub Pages.
@@ -51,4 +53,4 @@ As funções centrais, os seis continentes, os materiais impressos, os modelos c
 
 ## Conclusão
 
-O projeto está implementado em suas funções principais e já possui registro de publicação e conferências técnicas no navegador. Para considerá-lo concluído, ainda é necessário executar os testes em aparelhos reais, fechar as verificações de acessibilidade e de dados e resolver a permissão de escrita para publicar no novo endereço.
+O projeto está implementado em suas funções principais e já possui registro de publicação e conferências técnicas no navegador. O teste no celular foi realizado e funcionou. Permanecem as verificações específicas de acessibilidade e de dados e a permissão de escrita para publicar no novo endereço.

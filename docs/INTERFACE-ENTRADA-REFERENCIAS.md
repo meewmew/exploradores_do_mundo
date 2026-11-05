@@ -1,5 +1,7 @@
 # Entrada conforme as referências — 2026-11-04
 
+**Teste no celular — atualização de 05/11/2026:** testado no celular e funcionou. Esta confirmação atualiza as pendências de funcionamento no aparelho registradas nas etapas anteriores. Avaliação com crianças, leitor de tela, medições de desempenho e casos específicos sem resultado individual informado continuam separados do teste geral. Registro em [TESTE-NO-CELULAR.md](TESTE-NO-CELULAR.md).
+
 Implementado `PROMPT-INTERFACE-AVENTURA.md` no app. Consultados AGENTS, SPEC, PROGRESSO, PENDENCIAS, as oito páginas do Plano de Projeto 1.3 e as referências locais. A página 3 do Plano também foi renderizada e inspecionada. As imagens de referência permanecem fora do produto; reutilizadas somente as ilustrações autorais e as fontes locais existentes.
 
 ## Decisões e implementação
@@ -52,6 +54,6 @@ Refinamento publicado em `ca21d48`, workflow `41953187470` com `success`. Ambos 
 
 Publicação posterior autorizada e concluída: commit `d7de3a6`, workflow `41950913497` com `success`, em `endereço da publicação anterior removido a pedido`. Os dois verificadores de publicação passaram; escolha, instruções e acesso ao mapa públicos conferidos no navegador. Captura em `artifacts/interface-entrada/publicado.jpg`. O registro anterior de prévia local descreve a etapa de implementação, antes do pedido de envio.
 
-## Ainda não validado
+## Testado no celular e verificações específicas
 
-Câmera e QR em papel, rastreamento/pose/teardown AR, gestos e teclado virtual em aparelho real, áudio ouvido, leitor de tela e compreensão com crianças. Executar a seção de entrada atualizada de `docs/TESTE-NO-CELULAR.md` e o roteiro físico já existente. Os testes de domínio, o navegador desktop e a emulação de largura não substituem essa etapa.
+Testado no celular e funcionou, conforme confirmação recebida em 05/11/2026. Câmera, QR em papel e reconhecimento/alinhamento confirmados. Leitor de tela, áudio, avaliação com crianças, medições de desempenho e casos específicos do roteiro sem resultado individual informado permanecem em verificação. Roteiro para repetição em `docs/TESTE-NO-CELULAR.md`.

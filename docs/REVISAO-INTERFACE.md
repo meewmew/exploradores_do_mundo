@@ -1,5 +1,7 @@
 # Revisão da interface — 2026-10-29
 
+**Teste no celular — atualização de 05/11/2026:** testado no celular e funcionou. Esta confirmação atualiza as pendências de funcionamento no aparelho registradas nas etapas anteriores. Avaliação com crianças, leitor de tela, medições de desempenho e casos específicos sem resultado individual informado continuam separados do teste geral. Registro em [TESTE-NO-CELULAR.md](TESTE-NO-CELULAR.md).
+
 ## Direção e escopo
 
 AGENTS.md, SPEC.md, PROGRESSO.md e PENDENCIAS.md lidos integralmente antes da edição. Referência visual inspecionada apenas no disco. Skills frontend-design, emil-design-eng e apple-design lidas e aplicadas. As skills de Three.js não se aplicam: não há alteração de modelos, dados espaciais, renderização ou orçamento 3D.
@@ -42,7 +44,7 @@ Implementação local concluída. `npm.cmd run typecheck`, `npm.cmd test` (11/11
 
 `node scripts/check-ui-contrast.mjs`: 29/29 pares principais aprovados. Textos: mínimo 4,67:1; foco avaliado: mínimo 5,46:1; bordas de controle: mínimo 3,26:1. Cálculo pela luminância relativa sRGB e razão `(LmaisClara + 0,05) / (LmaisEscura + 0,05)`. Isso verifica os pares do sistema de cores, não certifica toda a experiência WCAG. Texto de apoio e controles a partir de 1rem; botões/links de ação com mínimo de 44 px (principais com 52 px). Rótulos do mapa mantêm pelo menos 16,8 px e 47 px de altura na escala mínima de 840 px; há lista alternativa.
 
-Revisão visual no navegador NÃO EXECUTADA: o host de automação de navegador estava indisponível; a alternativa nativa de Computer Use recusou Edge e Chrome por falta de autorização. Não foram feitas novas tentativas por outro mecanismo. O servidor de inspeção local foi encerrado. Câmera/QR/RA, WebGL, áudio, leitura de tela, toque, zoom e layout em aparelhos físicos continuam NÃO VALIDADOS. Roteiro acrescentado em docs/TESTE-NO-CELULAR.md.
+Revisão visual no navegador NÃO EXECUTADA: o host de automação de navegador estava indisponível; a alternativa nativa de Computer Use recusou Edge e Chrome por falta de autorização. Não foram feitas novas tentativas por outro mecanismo. O servidor de inspeção local foi encerrado. Testado no celular e funcionou, conforme confirmação recebida em 05/11/2026. Leitor de tela, áudio, avaliação com crianças, medições de desempenho e casos específicos do roteiro sem resultado individual informado permanecem em verificação. Roteiro acrescentado em docs/TESTE-NO-CELULAR.md.
 
 Nenhum serviço de domínio, regra de reconhecimento/desbloqueio, repositório de persistência, hash/sessão ADM, dados, modelos, URL de rota ou dependência foi alterado. A cena AR continua independente, com a mesma ponte postMessage e teardown. O plano B continua acessível pela ajuda da câmera. Nenhum recurso visual novo nem material externo foi adicionado; a referência local não entrou no build.
 

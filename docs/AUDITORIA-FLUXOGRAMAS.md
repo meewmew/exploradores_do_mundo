@@ -1,5 +1,7 @@
 # Auditoria dos fluxogramas — Exploradores do Mundo
 
+**Teste no celular — atualização de 05/11/2026:** testado no celular e funcionou. Esta confirmação atualiza as pendências de funcionamento no aparelho registradas nas etapas anteriores. Avaliação com crianças, leitor de tela, medições de desempenho e casos específicos sem resultado individual informado continuam separados do teste geral. Registro em [TESTE-NO-CELULAR.md](TESTE-NO-CELULAR.md).
+
 Data: 2026-10-29. Referência normativa: SPEC §14, inclusive quando detalha ou reconcilia o PDF.
 
 ## Arquivos locais e método
@@ -7,7 +9,7 @@ Data: 2026-10-29. Referência normativa: SPEC §14, inclusive quando detalha ou 
 - Fluxograma: `docs/Fluxogramas_Exploradores_do_Mundo.pdf`, cinco páginas renderizadas e inspecionadas visualmente. A extração textual contém apenas os títulos: os passos foram lidos nas imagens das páginas.
 - Também existe `Fluxogramas_Exploradores_do_Mundo.pdf` na raiz. As cópias têm SHA-256 idêntico: `6872CC3E8B737ECE03FE5B5F683674D076777ECECA7AAE1D71D28DDC2BE0CCBD`. Os seis PDFs em `public/print/` são folhas A4, não fluxogramas.
 - Referência estética: `referencia-visual.png`, imagem local com três telas de aprendizado, lavanda/pêssego, cartões e ilustrações. Usada somente como inspiração; marca, textos e desenhos não são incorporados ao app. SVGs de continentes e QR não são referências concorrentes.
-- Evidência de código não equivale a execução no celular. Câmera, leitura de papel, WebGL móvel, voz e rastreamento físico continuam NÃO VALIDADOS.
+- Evidência de código não equivale a execução no celular. Testado no celular e funcionou, conforme confirmação recebida em 05/11/2026. Câmera, leitura de papel e rastreamento confirmados; voz sem resultado específico informado.
 
 ## Reconciliação PDF × SPEC
 
@@ -27,7 +29,7 @@ Os cinco percursos principais correspondem às §§14.1–14.5. O PDF não detal
 - **C**: conforme por inspeção do código; interação ainda não executada em navegador.
 - **T**: comportamento de domínio ou HTML coberto por teste executado. Não implica teste dos eventos de câmera, toque, voz ou WebGL.
 - **R**: divergência corrigida; a evidência indica se há também teste automatizado.
-- **F**: requer execução no celular físico, NÃO VALIDADO. Pode coexistir com C/T/R.
+- **F**: verificação em aparelho físico; funcionamento geral testado e confirmado em 05/11/2026, com resultados individuais limitados ao registro em `TESTE-NO-CELULAR.md`. Pode coexistir com C/T/R.
 
 E1 = `tests/essential.test.ts` (10 testes de domínio/dados/artefatos). E2 = `tests/navigation.test.ts` (1 teste de HTML estático das decisões de tela; sem efeitos do navegador). Ambos passaram por `npm.cmd test`. Caminhos de código abaixo são relativos à raiz. A renderização do PDF não foi usada como comprovação de funcionamento do app.
 
@@ -167,7 +169,7 @@ A senha é curta e só oferece barreira de conveniência, pois o site executa no
 | Cálculo local de contraste | Pares acima atingiram seus mínimos; script e resultado intermediários em `artifacts/auditoria/` |
 | `git diff --check` | Sem erros de whitespace |
 | Computer Use — inventário de apps/navegadores | Indisponível: “The browser access host is unavailable” e “Computer Use native pipe is unavailable” |
-| Câmera, QR impresso, pose/gestos/teardown no celular | NÃO EXECUTADOS, NÃO VALIDADOS; seguir `docs/TESTE-NO-CELULAR.md` |
+| Câmera, QR impresso, pose/gestos/teardown no celular | Testado no celular e funcionou; câmera/QR/pose confirmados em 05/11/2026. Gestos e cinco ciclos sem resultado individual informado; roteiro em `docs/TESTE-NO-CELULAR.md` |
 | Publicação desta revisão | Concluída posteriormente em 2026-10-29: `git push origin main`; código `7a5b95a`; workflow antigo #40814989509 (link histórico removido a pedido) com build/deploy `success` |
 | Verificação pública após deploy | `node scripts/check-published.mjs`, exit 0: página/JS, hash do Organizador, bibliotecas locais e seis conjuntos HTTP 200; GLBs iguais aos locais |
 | Publicação da configuração ADM | Hash atualizado pela GitHub API, HTTP 204; o novo deploy consome a variável configurada |

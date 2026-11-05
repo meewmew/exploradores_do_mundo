@@ -1,5 +1,7 @@
 # Direção Apple com sálvia — 2026-10-29
 
+**Teste no celular — atualização de 05/11/2026:** testado no celular e funcionou. Esta confirmação atualiza as pendências de funcionamento no aparelho registradas nas etapas anteriores. Avaliação com crianças, leitor de tela, medições de desempenho e casos específicos sem resultado individual informado continuam separados do teste geral. Registro em [TESTE-NO-CELULAR.md](TESTE-NO-CELULAR.md).
+
 Pedido: aplicar `apple-design` como direção principal, usar a paleta da imagem enviada e publicar no GitHub. A nova referência de cor tem prioridade sobre a paleta anterior da SPEC §7; os fluxos da §14 e as regras de descoberta permanecem.
 
 ## Plano antes da implementação
@@ -33,7 +35,7 @@ Apple: material translúcido apenas na navegação; superfícies de leitura sól
 
 ## Limite de revisão visual observado antes das edições
 
-`cua.getState()` retornou `The browser access host is unavailable`. A seleção do Chrome nativo foi interrompida porque a ferramenta não conseguiu identificar a URL atual com segurança. Nenhuma automação alternativa será usada para contornar esse bloqueio. A comparação das telas renderizadas, 320/360/390 px, desktop, 200%, teclado e gesto real continua pendente. Leitura de CSS, cálculos de contraste e testes de domínio não equivalem à revisão visual. Câmera/AR física e avaliação com crianças continuam NÃO VALIDADAS.
+`cua.getState()` retornou `The browser access host is unavailable`. A seleção do Chrome nativo foi interrompida porque a ferramenta não conseguiu identificar a URL atual com segurança. Nenhuma automação alternativa será usada para contornar esse bloqueio. A comparação das telas renderizadas, 320/360/390 px, desktop, 200%, teclado e gesto real continua pendente. Leitura de CSS, cálculos de contraste e testes de domínio não equivalem à revisão visual. Testado no celular e funcionou, conforme confirmação recebida em 05/11/2026. Avaliação com crianças permanece pendente.
 
 ## Implementação e verificações locais
 

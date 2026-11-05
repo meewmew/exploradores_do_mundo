@@ -1,6 +1,8 @@
 # Exploradores do Mundo
 
-Jogo educativo para conhecer os seis continentes por mapas, fichas, atividades e modelos 3D. A realidade aumentada usa QR Codes e marcadores impressos. O progresso fica salvo no navegador; não há cadastro ou GPS.\n\n**Acesse:** [Exploradores do Mundo](https://meewmew.github.io/exploradores_do_mundo/)
+Jogo educativo para conhecer os seis continentes por mapas, fichas, atividades e modelos 3D. A realidade aumentada usa QR Codes e marcadores impressos. O progresso fica salvo no navegador; não há cadastro ou GPS.
+
+**Endereço configurado para publicação:** [Exploradores do Mundo](https://meewmew.github.io/exploradores_do_mundo/). A publicação no novo repositório ainda depende de permissão de escrita, conforme o [relatório do projeto](docs/RELATORIO-PROJETO.md).
 
 ## Executar
 
@@ -22,6 +24,8 @@ npm run build
 **Validações automatizadas:** typecheck, testes do Vitest, build e verificações de contraste e orçamento dos modelos foram executados em etapas recentes do projeto.
 
 **Teste físico validado:** câmera, leitura de QR impresso e reconhecimento/alinhamento da realidade aumentada foram testados em celulares pelo grupo.
+
+Funcionamento no celular confirmado pelo responsável em 05/11/2026. Registro e roteiro para repetir os testes em [Teste no celular](docs/TESTE-NO-CELULAR.md).
 
 ```bash
 npm run typecheck

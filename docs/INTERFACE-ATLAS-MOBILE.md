@@ -1,5 +1,7 @@
 # Atlas mobile — 2026-10-29
 
+**Teste no celular — atualização de 05/11/2026:** testado no celular e funcionou. Esta confirmação atualiza as pendências de funcionamento no aparelho registradas nas etapas anteriores. Avaliação com crianças, leitor de tela, medições de desempenho e casos específicos sem resultado individual informado continuam separados do teste geral. Registro em [TESTE-NO-CELULAR.md](TESTE-NO-CELULAR.md).
+
 Reformular toda a interface, preservando a SPEC §14. A correção posterior do responsável substitui o verde pela paleta da captura enviada. Somente as cores são referência; a imagem não entra no site.
 
 ## Plano antes de editar
@@ -32,7 +34,7 @@ Skills: emil-design-eng/mobile-native solicitadas; frontend-design/apple-design 
 
 SPEC, progresso, pendências, telas e estilos lidos. Referência local e captura nova inspecionadas. Interface anterior observada no navegador a partir do build existente. HTTPS local interrompido por certificado; revisão usa prévia HTTP de QA, sem mudar HTTPS de desenvolvimento nem aceitar avisos de certificado.
 
-Câmera/QR/AR, safe areas, teclado de celular, áudio e avaliação com crianças continuam sem validação física. Resultados finais serão registrados abaixo.
+Testado no celular e funcionou, conforme confirmação recebida em 05/11/2026. Leitor de tela, áudio, avaliação com crianças, medições de desempenho e casos específicos do roteiro sem resultado individual informado permanecem em verificação.
 
 ## Implementação e revisão executadas
 
@@ -63,7 +65,7 @@ Evidências locais ignoradas pelo Git em `artifacts/interface-atlas/`: inicio-36
 
 Conferência final adicional: paisagem a 640×360 com navegação no fluxo e sem rolagem horizontal; foco visível nos cartões da coleção; barras dos dois progressos alinhadas (mesma posição vertical medida). `node artifacts/interface-atlas/final-check.mjs` confirmou tokens idênticos nas duas cópias, seis silhuetas na paleta e ausência de página/hash de QA no build normal final.
 
-Continuam pendentes: câmera, QR/AR e rastreamento em celular; safe areas, teclado virtual, toque/hover reais; voz, leitor de tela, preferências do sistema e avaliação com crianças. Roteiro em docs/TESTE-NO-CELULAR.md. Nenhuma validação física ou com crianças foi declarada.
+Testado no celular e funcionou, conforme confirmação recebida em 05/11/2026. Leitor de tela, áudio, avaliação com crianças, medições de desempenho e casos específicos do roteiro sem resultado individual informado permanecem em verificação. Roteiro em `docs/TESTE-NO-CELULAR.md`.
 
 ## Publicação posterior solicitada — 2026-10-29
 

@@ -1,5 +1,7 @@
 # Ajustes de mapa, câmera e instruções — 2026-11-04
 
+**Teste no celular — atualização de 05/11/2026:** testado no celular e funcionou. Esta confirmação atualiza as pendências de funcionamento no aparelho registradas nas etapas anteriores. Avaliação com crianças, leitor de tela, medições de desempenho e casos específicos sem resultado individual informado continuam separados do teste geral. Registro em [TESTE-NO-CELULAR.md](TESTE-NO-CELULAR.md).
+
 Implementados os seis pedidos feitos com as capturas do celular. As capturas serviram de referência e não foram incorporadas ao produto.
 
 | Before | After | Why |
@@ -38,12 +40,18 @@ Skills já consultadas e aplicadas: frontend-design para unificar mapa/progresso
 
 Navegador integrado: 320 × 568, 390 × 700 e desktop 1280 × 900. Nos três passos a 320 × 568, o texto/controles couberam no dialog; no passo final foram medidos 305 px de conteúdo e 305 px disponíveis, com ações dentro do viewport. Conferidos Próximo/Anterior, fechamento por X/Escape, reabertura e atalho de QR para a seleção de continente. Texto a 200% em 390 px: corrigido corte do botão de fechar; ações inteiras no viewport, corpo com rolagem interna e sem overflow horizontal na página.
 
-Zoom por botões, retorno a 100%, arraste com mouse (translação de 62 px sem mudar de rota), seleção por clique real no SVG e por Enter, além da lista alternativa, conferidos. A área do mapa em 390 × 700 mediu 346 px de altura. Não foi executada pinça física.
+Zoom por botões, retorno a 100%, arraste com mouse (translação de 62 px sem mudar de rota), seleção por clique real no SVG e por Enter, além da lista alternativa, conferidos. A área do mapa em 390 × 700 mediu 346 px de altura. O funcionamento no celular foi posteriormente testado e confirmado em 05/11/2026; não foi informado resultado individual da pinça.
 
 RA: botão de expansão, guia com miniatura, saída por Escape e retorno ao mapa conferidos sem leitura de marcador nem validação da câmera. A camada ampliada mediu exatamente 390 × 700, na origem do viewport; o iframe manteve o mesmo endereço e a alternância não faz parte das dependências que recriam a cena. Não foram simulados eventos de reconhecimento ou descobertas.
 
-## Pendente de aparelho real
+## Mapa integrado à página — 05/11/2026
+
+Removidas a borda externa do viewport e a moldura/sombra do painel. O fundo do SVG, o viewport e as faixas laterais agora usam `--canvas`, a mesma cor da página. A composição fica contínua, conforme a captura e o pedido recebido. As escolhas seguem frontend-design (continuidade visual), apple-design (redução de molduras) e emil-design-eng (preservação de foco e respostas dos controles).
+
+Conferido no Chrome em 390 × 844 e 1280 × 900: mesma cor calculada da página e dos fundos do mapa, bordas de 0 px, sem overflow horizontal, zoom/restauração e foco por teclado funcionando, sem erros de execução registrados. Capturas e medições locais em `.cache/map-review/`. Após a alteração, `npm.cmd run typecheck`, `npm.cmd test` (51/51 em 16 arquivos) e `npm.cmd run build` passaram. O relato de funcionamento em celular é o teste informado antes deste ajuste visual; a conferência desta alteração foi feita no navegador.
+
+## Testado no celular e funcionou
 
 Publicação concluída: commit `c33fa00`, workflow `workflow antigo #41956899341 (link histórico removido a pedido)` com `success`. `node scripts/check-published.mjs` e `node artifacts/mobile-camera/check-published.mjs` passaram. Pop-up e zoom do mapa públicos conferidos a 390 × 700 em `endereço da publicação anterior removido a pedido`; capturas `artifacts/mobile-camera/instrucoes-publicadas-390.jpg` e `mapa-publicado-390.jpg`. Câmera ampliada revisada localmente sem reconhecimento, com captura `camera-ampliada-local.jpg` na mesma pasta. O build publicado não contém a página de QA usada para texto a 200%.
 
-Safari/Chrome com câmera autorizada, barras do navegador e safe areas reais; orientação e retorno ao tamanho normal; pose/pins após expandir; iluminação/foco/distância da folha; perda/retorno e cinco ciclos de teardown; toque/pinça reais no mapa; leitor de tela, áudio ouvido e compreensão com crianças. Executar o roteiro adicional em `docs/TESTE-NO-CELULAR.md`. A moldura não comprova melhoria de reconhecimento sem esse teste.
+Testado no celular e funcionou, conforme confirmação recebida em 05/11/2026. Câmera, QR impresso e reconhecimento/alinhamento confirmados. Resultados individuais de expansão, safe areas, pinça, pins e cinco ciclos não foram informados. Leitor de tela, áudio, avaliação com crianças, medições de desempenho e casos específicos do roteiro sem resultado individual informado permanecem em verificação. Roteiro para repetição em `docs/TESTE-NO-CELULAR.md`. A confirmação não mede melhoria na taxa de reconhecimento pela moldura.

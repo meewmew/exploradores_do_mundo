@@ -1,5 +1,7 @@
 # Piloto da África: relevo, lugares e toque
 
+**Teste no celular — atualização de 05/11/2026:** testado no celular e funcionou. Esta confirmação atualiza as pendências de funcionamento no aparelho registradas nas etapas anteriores. Avaliação com crianças, leitor de tela, medições de desempenho e casos específicos sem resultado individual informado continuam separados do teste geral. Registro em [TESTE-NO-CELULAR.md](TESTE-NO-CELULAR.md).
+
 Pedido confirmado em 2026-11-04: relevo e três lugares marcados na realidade aumentada e no visualizador sem câmera. A África foi o piloto inicial; por pedido do responsável, o mesmo sistema foi expandido aos seis continentes antes da validação em telefone. O modelo extrudado anterior permanece disponível como alternativa leve.
 
 ## Direção e decisões
@@ -24,7 +26,7 @@ O DEM e a malha de relevo são documentados em `AFRICA-DEM.md`. Alturas ampliada
 
 ## Aceitação
 
-Verificar TypeScript, testes, build e `check:budget`. Revisar visualmente a geometria, pins e controles no navegador; isso não valida câmera/RA. Em telefone, conferir marcador encontrado/perdido, pinça e arraste, três pontos alinhados, seleção por toque/lista, movimento reduzido e cinco ciclos de câmera. A expansão aos seis continentes já foi feita; a validação física de cada um continua pendente.
+Verificar TypeScript, testes, build e `check:budget`. Revisar visualmente a geometria, pins e controles no navegador; isso não valida câmera/RA. Em telefone, conferir marcador encontrado/perdido, pinça e arraste, três pontos alinhados, seleção por toque/lista, movimento reduzido e cinco ciclos de câmera. A expansão aos seis continentes já foi feita; o funcionamento no celular foi testado e confirmado em 05/11/2026; não foram informados resultados individuais por continente.
 
 ## Verificação executada
 
@@ -34,4 +36,4 @@ Revisão em navegador a 320/390 px e desktop 1280 px: renderização real do vis
 
 A revisão inicial mostrou relevo pouco legível e cores esmaecidas. A malha passou de exagero vertical80× para160×, com o fator documentado e aviso na tela; a paleta sRGB foi convertida para os valores lineares esperados por COLOR_0 do glTF. O enquadramento e o espaço do visualizador foram ajustados. São escolhas de leitura visual, sem alterar as alturas do DEM de origem.
 
-Builds descartáveis de QA foram substituídos pelo build normal. A variante com texto a200%, leitor de tela, desempenho, pinça real, perda/retorno do marcador e alinhamento dos pins em telefone permanecem não validados. O roteiro físico foi ampliado em `TESTE-NO-CELULAR.md`.
+Builds descartáveis de QA foram substituídos pelo build normal. Testado no celular e funcionou, conforme confirmação recebida em 05/11/2026. Texto a 200%, leitor de tela, medições de desempenho e resultados individuais de pinça, perda/retorno e pins não foram informados. O roteiro físico foi ampliado em `TESTE-NO-CELULAR.md`.

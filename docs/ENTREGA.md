@@ -1,8 +1,10 @@
 # Relatório de entrega — 2026-10-28
 
+**Teste no celular — atualização de 05/11/2026:** testado no celular e funcionou. Esta confirmação atualiza as pendências de funcionamento no aparelho registradas nas etapas anteriores. Avaliação com crianças, leitor de tela, medições de desempenho e casos específicos sem resultado individual informado continuam separados do teste geral. Registro em [TESTE-NO-CELULAR.md](TESTE-NO-CELULAR.md).
+
 ## Feito e verificado
 
-O projeto foi criado nesta pasta e versionado por marcos. Os seis continentes foram implementados e publicados em endereço da publicação anterior removido a pedido . Repositório: identificação do repositório anterior removida a pedido . Câmera/AR físicos e interface em navegador não são declarados validados.
+O projeto foi criado nesta pasta e versionado por marcos. Os seis continentes foram implementados e publicados em endereço da publicação anterior removido a pedido . Repositório: identificação do repositório anterior removida a pedido . Testado no celular e funcionou, conforme confirmação recebida em 05/11/2026. Conferências de navegador estão registradas nos relatórios de interface.
 
 Publicação confirmada: workflow antigo #40804625866 (link histórico removido a pedido) — build e deploy concluídos com sucesso, incluindo typecheck/testes no Linux. A checagem HTTP dos seis conjuntos passou; modelos públicos têm o mesmo SHA-256 dos locais. O Organizador recebeu hash pela variável do repositório; a senha aleatória não está no código.
 
@@ -40,27 +42,30 @@ Revisão de artefatos: seis PDFs renderizados com PyMuPDF em cache local; todos 
 |---|---|
 | 1. Seis GLBs gerados pelo pipeline, dentro do orçamento | **Concluído e verificado** por geração, parse, orçamento, normalização e SHA-256 |
 | 2. Seis arquivos de dados com fontes e verificar | **Concluído**; valores não confirmados são null/verificar:true, com relação completa em DADOS-EM-VERIFICACAO.md |
-| 3. Seis QR + seis marcadores distintos + seis folhas A4 | **Concluído e verificado como arquivo**; PNGs decodificados e PDFs finais renderizados. Leitura de papel não validada. Folhas apontam para a URL pública correta |
+| 3. Seis QR + seis marcadores distintos + seis folhas A4 | **Concluído e verificado como arquivo**; PNGs decodificados e PDFs finais renderizados. Leitura de papel testada no celular e funcionando, conforme confirmação de 05/11/2026. Folhas apontam para a URL pública correta |
 | 4. Mapa bloqueado/descoberto/selecionado, X de 6 e lista acessível | **Implementado**; progresso/lógica verificados; navegação, layout e acessibilidade manual não validados em navegador |
-| 5. QR dentro do app, só do selecionado, e desbloqueio AR | **Implementado**; validação de URL, origem, janela, continente e estabilidade coberta. Câmera/pose reais **não validadas** |
-| 6. Fichas ilustradas, Ouvir, Saiba mais, botões, países sob demanda, Antártida sem países | **Implementado**; dados/arquivos validados. Modelos nacionais: 177; microestados sem geometria útil usam símbolo. Interface/voz em aparelhos não validadas |
+| 5. QR dentro do app, só do selecionado, e desbloqueio AR | **Implementado**; validação de URL, origem, janela, continente e estabilidade coberta. Câmera/pose reais testadas no celular e funcionando, conforme confirmação de 05/11/2026 |
+| 6. Fichas ilustradas, Ouvir, Saiba mais, botões, países sob demanda, Antártida sem países | **Implementado**; dados/arquivos validados. Modelos nacionais: 177; microestados sem geometria útil usam símbolo. Interface testada no celular e funcionando; áudio sem resultado específico informado |
 | 7. Atividades padrão e por ano, dica, repetição, sem duplicação, contadores e conclusão | **Implementado**; lógica essencial de erro, resposta revelada, contagem por continente e seis descobertas testada. Duas atividades gerais e variantes para os nove anos; editor acrescenta outras |
 | 8. Organizador com hash, editor, exportar/importar e limitação documentada | **Implementado e hash configurado** na variável do repositório; PBKDF2 e rejeição de override inválido testados. Senha fornecida fora do código. Fluxo visual/importação pelo navegador não validado |
-| 9. Exploração sem câmera dos seis com países | **Implementado**; mesmos GLBs da AR e carregamento sob demanda. Parse Node verificado, interação WebGL em celular não validada |
-| 10. Typecheck, build e npm test | **Passaram**; 10 testes essenciais |
+| 9. Exploração sem câmera dos seis com países | **Implementado**; mesmos GLBs da AR e carregamento sob demanda. Parse Node verificado, interação 3D testada no celular e funcionando, conforme confirmação de 05/11/2026 |
+| 10. Typecheck, build e npm test | **Passaram na revisão de 05/11/2026**; 51 testes em 16 arquivos |
 | 11. Pages, README, SOURCES, PENDENCIAS e guias | **Concluído e publicado** no repositório anterior (identificação removida a pedido); build/deploy com success e verificação HTTP pública. Documentação e PDF dos fluxogramas incluídos |
 
-## Feito mas não verificado
+## Testado no celular
 
-- Câmera Android Chrome e iPhone Safari; rastreamento da posição e orientação do marcador; gestos; perda/retorno; permissão negada; cinco ciclos de teardown.
+Testado no celular e funcionou, conforme confirmação recebida em 05/11/2026. Câmera, QR impresso e reconhecimento/alinhamento confirmados. Sistema, navegador e resultados individuais de gestos, perda/retorno, permissão negada e cinco ciclos não foram informados.
+
+## Verificações específicas
+
 - Interface real, leitor de tela, voz pt-BR, editor e importação/exportação pela UI. Computer Use retornou host de navegador/pipe nativo indisponíveis.
 - A publicação e o carregamento por HTTP foram verificados. A execução da interface pelo navegador continua sem validação manual.
 
 ## Pendente
 
-1. Publicação resolvida: repositório informado, Pages ativado, main enviada e recursos públicos verificados. Não há bloqueio de publicação restante.
+1. Publicação anterior concluída. O novo destino está preparado, mas o envio depende de permissão de escrita, conforme `../PENDENCIAS.md`.
 2. Para testar por IP/túnel local, configurar `VITE_PUBLIC_URL` e regenerar as folhas. As folhas públicas já estão corretas para o site publicado.
-3. Executar TESTE-NO-CELULAR.md em Android e iPhone. Não remover o status de não validado sem registrar resultados.
+3. Teste no celular concluído e funcionando, conforme confirmação recebida em 05/11/2026. Roteiro de repetição e limites em `TESTE-NO-CELULAR.md`; sem declaração de cobertura dos dois sistemas.
 4. Confirmar áreas/populações continentais e áreas nacionais conforme DADOS-EM-VERIFICACAO.md; campos permanecem honestamente em verificação.
 5. Para trocar a senha aleatória ou usar localmente, gerar outro hash e configurar a variável correspondente. A barreira é local e não protege conteúdo público contra inspeção.
 

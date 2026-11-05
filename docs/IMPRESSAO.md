@@ -1,5 +1,7 @@
 # Impressão — seis folhas A4
 
+**Teste no celular — atualização de 05/11/2026:** testado no celular e funcionou. Esta confirmação atualiza as pendências de funcionamento no aparelho registradas nas etapas anteriores. Avaliação com crianças, leitor de tela, medições de desempenho e casos específicos sem resultado individual informado continuam separados do teste geral. Registro em [TESTE-NO-CELULAR.md](TESTE-NO-CELULAR.md).
+
 ## Gerar para o endereço certo
 1. Configure `VITE_PUBLIC_URL` no `.env.local` com o endereço HTTPS completo e `/` no final. O QR exige a mesma origem e caminho do app. Se for usar o IP da rede ou um túnel, gere para esse endereço, não para localhost.
 2. Execute `npm.cmd run build:markers`.
@@ -18,7 +20,7 @@
 - No app, selecione o continente da folha e use **Escanear QR code**. QR de outra folha deve ser recusado sem aumentar o contador.
 - Para RA, enquadre o marcador preto inteiro. Comece a 25–50 cm e ajuste conforme o aparelho; essa distância é orientação inicial, não medida de desempenho validada.
 - Mova e gire o papel: o modelo deve acompanhar sua posição e orientação. Ao cobrir o marcador, o modelo deve desaparecer.
-- Execute o checklist de Android/iOS antes de imprimir em quantidade. **Reconhecimento em papel ainda não validado fisicamente.**
+- Execute o checklist de Android/iOS antes de imprimir em quantidade. **Reconhecimento em papel testado no celular e funcionando**, conforme confirmação de 05/11/2026.
 
 | Continente | Barcode 3×3 | QR | PDF |
 |---|---|---|---|
