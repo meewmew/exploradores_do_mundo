@@ -21,7 +21,7 @@ npm run build
 
 **Validações automatizadas:** typecheck, testes do Vitest, build e verificações de contraste e orçamento dos modelos foram executados em etapas recentes do projeto.
 
-**Teste físico:** câmera, leitura de QR impresso e reconhecimento/alinhamento da realidade aumentada em celulares ainda não estão validados. Siga o [roteiro de teste no celular](docs/TESTE-NO-CELULAR.md) e registre aparelho, navegador e resultado.
+**Teste físico:** câmera, leitura de QR impresso e reconhecimento/alinhamento da realidade aumentada em celulares ainda não estão validados. Consulte [as instruções de impressão](docs/IMPRESSAO.md) antes da demonstração e registre aparelho, navegador e resultado físico.
 
 ```bash
 npm run typecheck
@@ -38,3 +38,4 @@ React, TypeScript e Vite; A-Frame e AR.js para realidade aumentada; jsQR para le
 - [Fontes e licenças](SOURCES.md)
 - [Especificação do projeto](SPEC.md)
 - [Relatório do projeto](docs/RELATORIO-PROJETO.md)
+
