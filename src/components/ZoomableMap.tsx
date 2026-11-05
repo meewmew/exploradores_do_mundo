@@ -4,7 +4,7 @@ import { constrainMap, moveMap, zoomMap, type MapPointer, type MapView } from '.
 export function ZoomableMap({ children }: { children: ReactNode }) {
   const viewport = useRef<HTMLDivElement>(null), pointers = useRef(new Map<number, MapPointer>());
   const pressOrigin = useRef<MapPointer | null>(null);
-  const size = useRef({ width: 0, height: 0 }), initialized = useRef(false), dragged = useRef(false);
+  const size = useRef({ width: 0, height: 0 }), dragged = useRef(false);
   const [view, setView] = useState<MapView>({ scale: 1, x: 0, y: 0 });
   const current = useRef(view);
   const update = (next: MapView) => { current.current = next; setView(next); };
@@ -14,8 +14,7 @@ export function ZoomableMap({ children }: { children: ReactNode }) {
     const fit = () => {
       size.current = { width: element.clientWidth, height: element.clientHeight };
       if (!size.current.width || !size.current.height) return;
-      const next = initialized.current ? current.current : { scale: Math.max(1, size.current.height / (size.current.width * .51)), x: 0, y: 0 };
-      initialized.current = true; update(constrainMap(next, size.current));
+      update(constrainMap(current.current, size.current));
     };
     const observer = new ResizeObserver(fit); observer.observe(element); fit();
     return () => observer.disconnect();

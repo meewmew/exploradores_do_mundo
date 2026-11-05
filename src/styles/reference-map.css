@@ -1,0 +1,39 @@
+/* A referência mostra o atlas inteiro, com navegação no alto e seis cartões. */
+body:has(.map-shell) #root { padding-bottom: env(safe-area-inset-bottom, 0px); }
+.map-shell .site-header { padding-block: calc(1.75rem + env(safe-area-inset-top, 0px)) 1.75rem; }
+.map-shell .site-header nav.icon-nav { position: static; order: 1; transform: none; display: flex; width: auto; margin-left: auto; padding: .375rem; gap: .375rem; border: 1px solid var(--border); border-radius: 1.25rem; background: var(--surface-warm); box-shadow: none; backdrop-filter: none; }
+.map-shell .site-header nav.icon-nav a { display: inline-flex; flex-direction: row; align-items: center; justify-content: center; min-width: 48px; min-height: 48px; padding: .625rem; }
+.map-shell .header-help { order: 2; margin-left: 0; }
+.map-shell .header-help span { display: inline; }
+.adventure-map-page .world-map-viewport { height: auto; min-height: 0; max-height: 34rem; aspect-ratio: 1.82; }
+.adventure-map-page .continent-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.map-shell .camera-shortcut { right: max(1.25rem, env(safe-area-inset-right, 0px), calc((100vw - 1116px) / 2)); bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px)); }
+
+@media (max-width: 899px) {
+  .map-shell .site-header { gap: .75rem; padding: calc(1rem + env(safe-area-inset-top, 0px)) 1.25rem 1rem; }
+  .map-shell .brand { margin-right: auto; }
+  .map-shell .brand-icon { width: 2.875rem; height: 2.875rem; min-width: 44px; min-height: 44px; }
+  .map-shell .site-header nav.icon-nav { margin-left: 0; }
+  .map-shell .header-help { min-height: 44px; padding: .625rem .75rem; }
+  .adventure-map-page { padding-top: .5rem; }
+}
+@media (max-width: 599px) {
+  .map-shell .site-header { gap: .5rem; }
+  .map-shell .brand { flex-basis: 100%; }
+  .map-shell .header-help { margin-left: auto; padding-inline: .5rem; font-family: var(--font-heading); font-weight: 500; }
+  .map-shell .header-help .interface-icon { width: 1.25rem; height: 1.25rem; }
+  .adventure-map-page .continent-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .adventure-map-page .map-places { grid-template-columns: repeat(auto-fit, minmax(min(100%, 6.25rem), 1fr)); }
+  .adventure-map-page .map-places button { gap: .25rem; padding-inline: .25rem; font-family: var(--font-heading); font-weight: 500; white-space: nowrap; }
+  .adventure-map-page .exploration-board > h1 { padding: 1rem 1rem .5rem; font-size: 1.5rem; }
+  .adventure-map-page .exploration-board > .adventure-progress { margin-inline: 1rem; }
+  .adventure-map-page .map-pan-hint { font-weight: 500; }
+}
+@media (max-width: 359px) {
+  .map-shell .site-header { padding-inline: 1rem; }
+  .map-shell .brand { font-size: 1rem; gap: .5rem; }
+  .map-shell .brand-sub { font-size: 1rem; }
+  .map-shell .brand-icon { width: 2.75rem; height: 2.75rem; }
+  .map-shell .site-header nav.icon-nav { gap: .125rem; padding: .25rem; }
+  .map-shell .site-header nav.icon-nav a { min-width: 44px; min-height: 44px; padding: .5rem; }
+}

@@ -23,8 +23,9 @@ function Shell(){
  const ready=app.ready&&fontsReady;
  const redirect=entryRedirect(location.pathname,journey.role,journey.instructed,app.organizerPreview);
  const entry=location.pathname==='/'||(location.pathname==='/organizador'&&!app.organizerPreview);
+ const mapScreen=location.pathname==='/mapa'||location.pathname==='/orientacao';
  useEffect(()=>{window.scrollTo(0,0);document.getElementById('content')?.focus({preventScroll:true});},[location.pathname]);
- return <div className={`app-shell${entry?' entry-shell':''}${!ready?' startup-shell':''}`}>
+ return <div className={`app-shell${entry?' entry-shell':''}${mapScreen?' map-shell':''}${!ready?' startup-shell':''}`}>
   {ready&&<><a className="skip-link" href="#content" onClick={e=>{e.preventDefault();const content=document.getElementById('content');content?.focus({preventScroll:true});content?.scrollIntoView({block:'start'});}}>Pular para o conteúdo</a>{location.pathname!=='/'&&!redirect&&<Navigation minimal={entry} publicView={location.state?.organizerPublicView===true}/>}</>}
   {app.warning&&<div className="global-warning" role="status">{app.warning}</div>}
   {app.organizerPreview&&location.state?.organizerPublicView!==true&&<div className="global-warning organizer-preview-notice" role="status">Modo ADM ativo: os seis continentes estão liberados durante esta sessão. O progresso dos alunos não foi alterado.</div>}

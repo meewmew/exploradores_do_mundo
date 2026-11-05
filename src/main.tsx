@@ -6,4 +6,5 @@ import './styles/terrain.css';
 import './styles/expedition.css';
 import './styles/entry.css';
 import './styles/mobile-exploration.css';
+import './styles/reference-map.css';
 createRoot(document.getElementById('root')!).render(<App/>);
