@@ -1,6 +1,6 @@
 # Exploradores do Mundo
 
-Jogo educativo para conhecer os seis continentes por mapas, fichas, atividades e modelos 3D. A realidade aumentada usa QR Codes e marcadores impressos. O progresso fica salvo no navegador; não há cadastro ou GPS.
+Jogo educativo para conhecer os seis continentes por mapas, fichas, atividades e modelos 3D. A realidade aumentada usa QR Codes e marcadores impressos. O progresso fica salvo no navegador; não há cadastro ou GPS.\n\n**Acesse:** [Exploradores do Mundo](https://meewmew.github.io/exploradores_do_mundo/)
 
 ## Executar
 
@@ -38,4 +38,5 @@ React, TypeScript e Vite; A-Frame e AR.js para realidade aumentada; jsQR para le
 - [Fontes e licenças](SOURCES.md)
 - [Especificação do projeto](SPEC.md)
 - [Relatório do projeto](docs/RELATORIO-PROJETO.md)
+
 
