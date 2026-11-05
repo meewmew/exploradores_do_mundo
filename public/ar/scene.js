@@ -107,7 +107,9 @@ function start(){
  // cannot appear behind the parent page's instructions and gesture layer.
  scene.setAttribute('device-orientation-permission-ui','enabled: false');
  scene.setAttribute('exploradores-points','');
- scene.setAttribute('arjs','sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3; cameraParametersUrl: ../vendor/camera_para.dat; patternRatio: 0.5; maxDetectionRate: 30;');
+ // The automatic phone profile downsamples detection to 320 x 240. Small
+ // barcodes then lose their inner cells, even when the preview looks large.
+ scene.setAttribute('arjs','sourceType: webcam; sourceWidth: 1280; sourceHeight: 960; canvasWidth: 640; canvasHeight: 480; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3; cameraParametersUrl: ../vendor/camera_para.dat; patternRatio: 0.5; maxDetectionRate: 30;');
  marker=document.createElement('a-marker');marker.setAttribute('type','barcode');marker.setAttribute('value',String(ids.indexOf(id)));marker.setAttribute('emitevents','true');marker.setAttribute('smooth','false');
  model=document.createElement('a-entity');model.setAttribute('gltf-model',`../${modelPath}`);model.setAttribute('scale','1 1 1');marker.append(model);scene.append(marker);
  const ambient=document.createElement('a-entity');ambient.setAttribute('light','type: ambient; intensity: 1');scene.append(ambient);
@@ -117,7 +119,21 @@ function start(){
  marker.addEventListener('markerLost',()=>{clearTimeout(stableTimer);foundAt=0;hidePoints();post('ar:marker-lost',{continentId:id});status.textContent='Reposicione a folha: mantenha o marcador inteiro na câmera.';});
  model.addEventListener('model-loaded',()=>{modelReady=true;post('ar:model-loaded');});
  model.addEventListener('model-error',()=>{modelReady=false;hidePoints();error('ar:model-error','load','Não foi possível carregar o modelo.');});
- scene.addEventListener('renderstart',()=>{scene.renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.5));pointsObserver=new ResizeObserver(updateProjectionBounds);pointsObserver.observe(scene.renderer.domElement);updateProjectionBounds();});
+ scene.addEventListener('renderstart',()=>{
+  scene.renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.5));pointsObserver=new ResizeObserver(updateProjectionBounds);pointsObserver.observe(scene.renderer.domElement);updateProjectionBounds();
+  // AR.js creates its session in another renderstart listener.
+  queueMicrotask(()=>{
+   if(stopped)return;
+   const context=scene.systems.arjs._arSession.arContext;
+   // The default fixed threshold (100) loses the border as exposure changes.
+   const adaptLighting=()=>{
+    if(stopped)return;
+    const controller=context.arController;
+    controller.setThresholdMode(controller.artoolkit.AR_LABELING_THRESH_MODE_AUTO_OTSU);
+   };
+   if(context.arController)adaptLighting();else context.addEventListener('initialized',adaptLighting);
+  });
+ });
  document.body.append(scene);
  window.addEventListener('resize',updateProjectionBounds);void loadPoints();
 }

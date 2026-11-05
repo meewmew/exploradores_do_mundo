@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef, useState, type ReactNode } from 'react';
 import { createPortal } from 'react-dom';
 import type { Continent } from '../types/continent';
-import { receiveARMessage, sendARMessage, type ARMessage } from '../services/arBridge';
+import { AR_SCENE_VERSION, receiveARMessage, sendARMessage, type ARMessage } from '../services/arBridge';
 import { asset } from '../services/contentRepository';
 export function ARFrame({continent,onMessage,onWindow,session=0,modelFile,children,fullscreen=false,onExitFullscreen}:{continent:Continent;onMessage:(message:ARMessage)=>void;onWindow:(target:Window|null)=>void;session?:number;modelFile?:string;children?:ReactNode;fullscreen?:boolean;onExitFullscreen?:()=>void}){
  const host=useRef<HTMLDivElement>(null),callback=useRef(onMessage),windowCallback=useRef(onWindow);callback.current=onMessage;windowCallback.current=onWindow;
@@ -32,7 +32,7 @@ export function ARFrame({continent,onMessage,onWindow,session=0,modelFile,childr
   // recriar seu documento, impedindo a confirmação de teardown.
   const layer=document.createElement('div');layer.className='ar-layer';document.body.append(layer);
   const frame=document.createElement('iframe');frame.allow='camera; fullscreen';frame.title=`Realidade aumentada de ${continent.nome}`;
-  frame.src=`${asset('ar/scene.html')}?continente=${continent.id}&model=${encodeURIComponent(modelFile??continent.modelo.arquivo)}`;
+  frame.src=`${asset('ar/scene.html')}?v=${AR_SCENE_VERSION}&continente=${continent.id}&model=${encodeURIComponent(modelFile??continent.modelo.arquivo)}`;
   let stopping=false,timer:ReturnType<typeof setTimeout>|undefined;
   frame.onload=()=>{if(stopping)sendARMessage(frame.contentWindow,'ar:stop');};
   const remove=()=>{if(timer)clearTimeout(timer);window.removeEventListener('message',listener);layer.remove();};

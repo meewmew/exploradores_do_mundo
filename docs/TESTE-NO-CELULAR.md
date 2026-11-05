@@ -203,3 +203,20 @@ Status físico: NÃO VALIDADO. Registrar aparelho/navegador, responsável e data
 | Sair da tela cheia, girar aparelho e entrar novamente | Retorna ao local correto; modelo e pins permanecem alinhados e saídas não são cobertas por recortes/barras | NÃO VALIDADO |
 | Usar moldura e miniatura do continente escolhido | Quadrado preto inteiro com margem clara; QR não é confundido com marcador; só evento real descobre | NÃO VALIDADO |
 | Perder/reencontrar marcador e sair/entrar na câmera cinco vezes | Guia reaparece na perda, rastreamento retorna e câmera é liberada ao sair | NÃO VALIDADO |
+
+
+## Correção de contraste e resolução — 2026-11-05
+
+Relato recebido: iPhone/Safari perdendo o marcador da África visível em outra tela. A captura fornecida demonstra a falha, mas não comprova a causa exclusiva.
+
+A cena agora solicita câmera 1280 × 960 (valores ideais, negociados com o aparelho), processa 640 × 480 independentemente do perfil automático e usa o limiar automático Otsu do ARToolKit. Antes, o perfil do iPhone processava 320 × 240 e o limiar era fixo em 100. Não foram alterados IDs, folhas, modelos, gesto, persistência ou a condição de 500 ms. URLs da cena/script foram versionadas para carregar a correção após atualização.
+
+Verificação executada em Edge headless com perfil de viewport/user-agent de iPhone, AR.js 3.4.7 e detector ARToolKit real. A entrada foi um MediaStream de canvas controlado para a bancada, sem emitir eventos artificiais de reconhecimento. Os arquivos de bancada permanecem locais, em tmp/.
+
+- Imagem do marcador em fundo branco, com movimento leve e tamanho variável: detector antigo e novo reconheceram em contraste normal.
+- Contraste reduzido (preto misturado ao branco com opacidade 0,45), tamanhos 60/90/160 pixels em fonte 640 × 480: a versão anterior não reconheceu; a corrigida reconheceu e confirmou a descoberta.
+- Os seis IDs, um por sessão: imagem de baixo contraste reconhecida; matriz da pose mudou acompanhando a imagem; fundo branco inicial não descobriu; remoção da imagem ocultou o modelo; nenhum erro JavaScript.
+- Marcador de outro continente não manteve o marcador da África visível.
+- Isso é uma bancada automatizada de visão, não teste físico nem garantia de estabilidade no Safari.
+
+Pendente em aparelho físico: repetir com papel fosco a 100% e com folha em outra tela, variando distância, inclinação, brilho e iluminação. Conferir continuidade por 30 segundos, perda/retorno, ausência de falsa descoberta em passagem breve e temperatura/fluidez por alguns minutos. Registrar aparelho, iOS, navegador e resultado. A estabilidade física permanece NÃO VALIDADA.

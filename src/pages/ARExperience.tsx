@@ -3,7 +3,7 @@ import { Link, Navigate, useParams } from 'react-router-dom';
 import { useApp, activeCollectionRepository } from '../hooks/useApp';
 import { ARFrame } from '../components/ARFrame';
 import { discoverFromMarker } from '../services/discovery';
-import { sendARMessage, type ARMessage } from '../services/arBridge';
+import { AR_SCENE_VERSION, sendARMessage, type ARMessage } from '../services/arBridge';
 import { asset } from '../services/contentRepository';
 import { getTerrainConfig } from '../services/terrain';
 import { TouristPoints } from '../components/TouristPoints';
@@ -65,7 +65,7 @@ export default function ARExperience() {
         {error && <button className="button secondary" onClick={() => { setFound(false); setError(false); setSession(n => n + 1); setStatus('Reiniciando a câmera…'); }}>Tentar novamente</button>}
         <Link className="button secondary" to="/mapa">Minha coleção</Link>
       </div>
-      <details><summary>Precisa de ajuda com a câmera?</summary><p>Se a câmera não abrir aqui, tente a realidade aumentada em uma página inteira.</p><a className="button secondary" href={`${asset('ar/scene.html')}?continente=${c.id}&model=${encodeURIComponent(terrain.file)}&full=1${app.organizerPreview?'&preview=1':''}`}>Abrir RA em página inteira</a></details>
+      <details><summary>Precisa de ajuda com a câmera?</summary><p>Se a câmera não abrir aqui, tente a realidade aumentada em uma página inteira.</p><a className="button secondary" href={`${asset('ar/scene.html')}?v=${AR_SCENE_VERSION}&continente=${c.id}&model=${encodeURIComponent(terrain.file)}&full=1${app.organizerPreview?'&preview=1':''}`}>Abrir RA em página inteira</a></details>
     </div>
   </main>;
 }
