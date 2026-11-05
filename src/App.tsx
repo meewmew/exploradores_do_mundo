@@ -36,7 +36,7 @@ function Shell(){
     <Route path="/paises/:id" element={<Countries/>}/><Route path="/paises/:id/:countryId" element={<Countries/>}/>
     <Route path="/atividade/:id" element={<Activity/>}/><Route path="/conclusao" element={<Completion/>}/>
     <Route path="/configuracoes" element={<Settings/>}/>
-    <Route path="/organizador" element={<Organizer/>}/>
+    <Route path="/organizador" element={<Organizer passwordHash={import.meta.env.VITE_ORGANIZER_PASSWORD_HASH}/>}/>
     <Route path="*" element={<Navigate to="/" replace/>}/>
    </Routes>):<JourneyLoading progress />}
   </Suspense></div>

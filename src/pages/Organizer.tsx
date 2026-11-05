@@ -9,9 +9,9 @@ import { validateOverrides, type ContentOverrides } from '../services/contentSch
 import { WorldMap } from '../components/WorldMap';
 import { OrganizerEditor } from '../components/OrganizerEditor';
 import { isOrganizerSession, setOrganizerSession, subscribeOrganizerSession } from '../services/organizerSession';
-export default function Organizer(){
+export default function Organizer({passwordHash}:{passwordHash:string|undefined}){
  const app=useApp(),navigate=useNavigate(),authorized=useSyncExternalStore(subscribeOrganizerSession,isOrganizerSession,()=>false),[password,setPassword]=useState(''),[busy,setBusy]=useState(false),attempts=useRef(0),[message,setMessage]=useState(''),[draft,setDraft]=useState<ContentOverrides>(()=>loadDraft(sourceIds).draft),[selected,setSelected]=useState<ContinentId|undefined>(),[year,setYear]=useState<SchoolYear>('geral');
- const configured=import.meta.env.VITE_ORGANIZER_PASSWORD_HASH as string|undefined;
+ const configured=passwordHash;
  const loginAttempt=useRef(0);
  useEffect(()=>()=>{loginAttempt.current++;},[]);
  async function login(){if(!configured||busy)return;const attempt=++loginAttempt.current;setBusy(true);const valid=await verifyOrganizerPassword(password,configured);if(attempt!==loginAttempt.current)return;setPassword('');if(valid){setOrganizerSession(true);setMessage(loadDraft(sourceIds).warning||'');attempts.current=0;setBusy(false);}else{attempts.current++;setMessage('Senha incorreta. Tente novamente após uma breve pausa.');setTimeout(()=>{if(attempt===loginAttempt.current)setBusy(false);},Math.min(8000,attempts.current*800));}}
