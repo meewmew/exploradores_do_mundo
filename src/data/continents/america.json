@@ -1,0 +1,1489 @@
+{
+  "id": "america",
+  "nome": "América",
+  "cor": "#ff97b7",
+  "descricaoCurta": "A América reúne paisagens muito diferentes, de terras geladas a florestas tropicais. O Brasil faz parte dela.",
+  "descricao": "A América reúne paisagens muito diferentes, de terras geladas a florestas tropicais. O Brasil faz parte dela.",
+  "fichaCurta": {
+    "localizacao": "Entre os oceanos Atlântico e Pacífico, estende-se do norte ao sul do planeta.",
+    "curiosidade": "Aqui, América do Norte, Central, Caribe e América do Sul formam um só continente.",
+    "ilustracao": "images/america.svg",
+    "ilustracaoAlt": "Ilustração educativa de América: Aqui, América do Norte, Central, Caribe e América do Sul formam um só continente."
+  },
+  "areaKm2": {
+    "valor": null,
+    "fonte": "natural-earth",
+    "verificar": true
+  },
+  "populacao": {
+    "valor": null,
+    "fonte": "natural-earth",
+    "verificar": true,
+    "anoReferencia": 0
+  },
+  "quantidadePaises": {
+    "valor": 35,
+    "fonte": "country-assignments",
+    "criterio": "Estados-membros da ONU e observadores; país no continente da maior parte do território, Cáucaso na Ásia."
+  },
+  "caracteristicasGeograficas": [
+    "Cordilheira dos Andes",
+    "Floresta Amazônica",
+    "Montanhas Rochosas"
+  ],
+  "climas": [
+    "Há regiões polares, temperadas, áridas e tropicais."
+  ],
+  "faunaFlora": [
+    "A Amazônia abriga uma floresta tropical de grande diversidade."
+  ],
+  "cultura": [
+    "O milho foi domesticado por povos da América."
+  ],
+  "curiosidades": [
+    "Aqui, América do Norte, Central, Caribe e América do Sul formam um só continente."
+  ],
+  "paises": [
+    {
+      "id": "ATG",
+      "nome": "Antígua e Barbuda",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Saint John's",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 97118,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Antígua e Barbuda faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "Caribe"
+    },
+    {
+      "id": "ARG",
+      "nome": "Argentina",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Buenos Aires",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 44938712,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Argentina faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "América do Sul",
+      "modelo": {
+        "arquivo": "models/countries/ARG.glb"
+      }
+    },
+    {
+      "id": "BHS",
+      "nome": "Bahamas",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Nassau",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 389482,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Bahamas faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "Caribe",
+      "modelo": {
+        "arquivo": "models/countries/BHS.glb"
+      }
+    },
+    {
+      "id": "BRB",
+      "nome": "Barbados",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Bridgetown",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 287025,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Barbados faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "Caribe"
+    },
+    {
+      "id": "BLZ",
+      "nome": "Belize",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Belmopan",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 390353,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Belize faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "América Central",
+      "modelo": {
+        "arquivo": "models/countries/BLZ.glb"
+      }
+    },
+    {
+      "id": "BOL",
+      "nome": "Bolívia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Sucre / La Paz",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 11513100,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Bolívia faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "América do Sul",
+      "modelo": {
+        "arquivo": "models/countries/BOL.glb"
+      }
+    },
+    {
+      "id": "BRA",
+      "nome": "Brasil",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Brasília",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 211049527,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Brasil faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "América do Sul",
+      "modelo": {
+        "arquivo": "models/countries/BRA.glb"
+      }
+    },
+    {
+      "id": "CAN",
+      "nome": "Canadá",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Ottawa",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 37589262,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Canadá faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "América do Norte",
+      "modelo": {
+        "arquivo": "models/countries/CAN.glb"
+      }
+    },
+    {
+      "id": "CHL",
+      "nome": "Chile",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Santiago",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 18952038,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Chile faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "América do Sul",
+      "modelo": {
+        "arquivo": "models/countries/CHL.glb"
+      }
+    },
+    {
+      "id": "COL",
+      "nome": "Colômbia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Bogota",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 50339443,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Colômbia faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "América do Sul",
+      "modelo": {
+        "arquivo": "models/countries/COL.glb"
+      }
+    },
+    {
+      "id": "CRI",
+      "nome": "Costa Rica",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "San José",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 5047561,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Costa Rica faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "América Central",
+      "modelo": {
+        "arquivo": "models/countries/CRI.glb"
+      }
+    },
+    {
+      "id": "CUB",
+      "nome": "Cuba",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Havana",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 11333483,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Cuba faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "Caribe",
+      "modelo": {
+        "arquivo": "models/countries/CUB.glb"
+      }
+    },
+    {
+      "id": "DMA",
+      "nome": "Dominica",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Roseau",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 71808,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Dominica faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "Caribe",
+      "modelo": {
+        "arquivo": "models/countries/DMA.glb"
+      }
+    },
+    {
+      "id": "SLV",
+      "nome": "El Salvador",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "San Salvador",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 6453553,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, El Salvador faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "América Central",
+      "modelo": {
+        "arquivo": "models/countries/SLV.glb"
+      }
+    },
+    {
+      "id": "ECU",
+      "nome": "Equador",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Quito",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 17373662,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Equador faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "América do Sul",
+      "modelo": {
+        "arquivo": "models/countries/ECU.glb"
+      }
+    },
+    {
+      "id": "USA",
+      "nome": "Estados Unidos",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Washington,  D.C.",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 328239523,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Estados Unidos faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "América do Norte",
+      "modelo": {
+        "arquivo": "models/countries/USA.glb"
+      }
+    },
+    {
+      "id": "GRD",
+      "nome": "Granada",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Saint George's",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 112003,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Granada faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "Caribe"
+    },
+    {
+      "id": "GTM",
+      "nome": "Guatemala",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Guatemala City",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 16604026,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Guatemala faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "América Central",
+      "modelo": {
+        "arquivo": "models/countries/GTM.glb"
+      }
+    },
+    {
+      "id": "GUY",
+      "nome": "Guiana",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Georgetown",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 782766,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Guiana faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "América do Sul",
+      "modelo": {
+        "arquivo": "models/countries/GUY.glb"
+      }
+    },
+    {
+      "id": "HTI",
+      "nome": "Haiti",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Port-au-Prince",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 11263077,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Haiti faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "Caribe",
+      "modelo": {
+        "arquivo": "models/countries/HTI.glb"
+      }
+    },
+    {
+      "id": "HND",
+      "nome": "Honduras",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Tegucigalpa",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 9746117,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Honduras faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "América Central",
+      "modelo": {
+        "arquivo": "models/countries/HND.glb"
+      }
+    },
+    {
+      "id": "JAM",
+      "nome": "Jamaica",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Kingston",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 2948279,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Jamaica faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "Caribe",
+      "modelo": {
+        "arquivo": "models/countries/JAM.glb"
+      }
+    },
+    {
+      "id": "MEX",
+      "nome": "México",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Mexico City",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 127575529,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, México faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "América Central",
+      "modelo": {
+        "arquivo": "models/countries/MEX.glb"
+      }
+    },
+    {
+      "id": "NIC",
+      "nome": "Nicarágua",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Managua",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 6545502,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Nicarágua faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "América Central",
+      "modelo": {
+        "arquivo": "models/countries/NIC.glb"
+      }
+    },
+    {
+      "id": "PAN",
+      "nome": "Panamá",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Panama City",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 4246439,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Panamá faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "América Central",
+      "modelo": {
+        "arquivo": "models/countries/PAN.glb"
+      }
+    },
+    {
+      "id": "PRY",
+      "nome": "Paraguai",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Asunción",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 7044636,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Paraguai faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "América do Sul",
+      "modelo": {
+        "arquivo": "models/countries/PRY.glb"
+      }
+    },
+    {
+      "id": "PER",
+      "nome": "Peru",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Lima",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 32510453,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Peru faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "América do Sul",
+      "modelo": {
+        "arquivo": "models/countries/PER.glb"
+      }
+    },
+    {
+      "id": "DOM",
+      "nome": "República Dominicana",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Santo Domingo",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 10738958,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, República Dominicana faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "Caribe",
+      "modelo": {
+        "arquivo": "models/countries/DOM.glb"
+      }
+    },
+    {
+      "id": "LCA",
+      "nome": "Santa Lúcia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Castries",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 182790,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Santa Lúcia faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "Caribe",
+      "modelo": {
+        "arquivo": "models/countries/LCA.glb"
+      }
+    },
+    {
+      "id": "KNA",
+      "nome": "São Cristóvão e Nevis",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Basseterre",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 52834,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, São Cristóvão e Nevis faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "Caribe"
+    },
+    {
+      "id": "VCT",
+      "nome": "São Vicente e Granadinas",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Kingstown",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 110589,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, São Vicente e Granadinas faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "Caribe"
+    },
+    {
+      "id": "SUR",
+      "nome": "Suriname",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Paramaribo",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 581363,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Suriname faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "América do Sul",
+      "modelo": {
+        "arquivo": "models/countries/SUR.glb"
+      }
+    },
+    {
+      "id": "TTO",
+      "nome": "Trinidad e Tobago",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Port-of-Spain",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 1394973,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Trinidad e Tobago faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "Caribe",
+      "modelo": {
+        "arquivo": "models/countries/TTO.glb"
+      }
+    },
+    {
+      "id": "URY",
+      "nome": "Uruguai",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Montevideo",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 3461734,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Uruguai faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "América do Sul",
+      "modelo": {
+        "arquivo": "models/countries/URY.glb"
+      }
+    },
+    {
+      "id": "VEN",
+      "nome": "Venezuela",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Caracas",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 28515829,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Venezuela faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "regiao": "América do Sul",
+      "modelo": {
+        "arquivo": "models/countries/VEN.glb"
+      }
+    }
+  ],
+  "territorios": [
+    {
+      "id": "AIA",
+      "nome": "Anguilla",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 14731,
+        "fonte": "natural-earth",
+        "anoReferencia": 2018
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Anguilla faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "regiao": "Caribe",
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "ABW",
+      "nome": "Aruba",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 106314,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Aruba faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "regiao": "Caribe",
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "BMU",
+      "nome": "Bermudas",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Hamilton",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 63918,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Bermudas faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "regiao": "América do Norte",
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "BLM",
+      "nome": "Coletividade de São Bartolomeu",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 9961,
+        "fonte": "natural-earth",
+        "anoReferencia": 2017
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Coletividade de São Bartolomeu faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "regiao": "Caribe",
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "CUW",
+      "nome": "Curaçao",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 157538,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Curaçao faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "regiao": "Caribe",
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "GRL",
+      "nome": "Groenlândia",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 56225,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Groenlândia faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "regiao": "América do Norte",
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "CYM",
+      "nome": "Ilhas Caimão",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 64948,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Ilhas Caimão faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "regiao": "Caribe",
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "FLK",
+      "nome": "Ilhas Malvinas",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 3398,
+        "fonte": "natural-earth",
+        "anoReferencia": 2016
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Ilhas Malvinas faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "regiao": "América do Sul",
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "VIR",
+      "nome": "Ilhas Virgens Americanas",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 106631,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Ilhas Virgens Americanas faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "regiao": "Caribe",
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "VGB",
+      "nome": "Ilhas Virgens Britânicas",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 30030,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Ilhas Virgens Britânicas faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "regiao": "Caribe",
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "MSR",
+      "nome": "Montserrat",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 4649,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Montserrat faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "regiao": "Caribe",
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "PRI",
+      "nome": "Porto Rico",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 3193694,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Porto Rico faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "regiao": "Caribe",
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "SPM",
+      "nome": "Saint-Pierre e Miquelon",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 5997,
+        "fonte": "natural-earth",
+        "anoReferencia": 2017
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Saint-Pierre e Miquelon faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "regiao": "América do Norte",
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "MAF",
+      "nome": "São Martinho",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 38002,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, São Martinho faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "regiao": "Caribe",
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "SXM",
+      "nome": "São Martinho",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 40733,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, São Martinho faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "regiao": "Caribe",
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "TCA",
+      "nome": "Turks e Caicos",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 38191,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Turks e Caicos faz parte de América.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "regiao": "Caribe",
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    }
+  ],
+  "fontesTexto": {
+    "descricao": [
+      "ng-continents"
+    ],
+    "caracteristicasGeograficas": [
+      "ng-continents"
+    ],
+    "climas": [
+      "ng-continents"
+    ],
+    "faunaFlora": [
+      "ng-continents"
+    ],
+    "cultura": [
+      "ng-continents"
+    ],
+    "curiosidades": [
+      "ng-continents"
+    ]
+  },
+  "marcador": {
+    "tipo": "barcode",
+    "id": 1,
+    "arquivo": "markers/america-ar.svg"
+  },
+  "modelo": {
+    "arquivo": "models/america.glb",
+    "tamanhoKb": 277.14
+  },
+  "pontosTuristicos": [
+    {
+      "id": "grand-canyon",
+      "nome": "Grand Canyon",
+      "descricaoCurta": "O rio Colorado escavou este grande cânion no Arizona ao longo de milhões de anos.",
+      "coordenadas": {
+        "lat": 36.0553056,
+        "lng": -112.122
+      },
+      "fontes": [
+        "unesco-grand-canyon",
+        "wikidata-grand-canyon"
+      ]
+    },
+    {
+      "id": "machu-picchu",
+      "nome": "Machu Picchu",
+      "descricaoCurta": "Cidade inca do século XV construída nos Andes peruanos, entre montanhas e floresta tropical.",
+      "coordenadas": {
+        "lat": -13.1633333,
+        "lng": -72.5455556
+      },
+      "fontes": [
+        "unesco-machu-picchu",
+        "wikidata-machu-picchu"
+      ]
+    },
+    {
+      "id": "cataratas-iguacu",
+      "nome": "Cataratas do Iguaçu",
+      "descricaoCurta": "O rio Iguaçu forma um grande conjunto de quedas-d’água na fronteira entre Brasil e Argentina.",
+      "coordenadas": {
+        "lat": -25.6952778,
+        "lng": -54.4366667
+      },
+      "fontes": [
+        "unesco-iguazu",
+        "wikidata-iguazu"
+      ]
+    }
+  ],
+  "dicaQr": {
+    "texto": "Procure a folha com o título “América”, preparada pelo professor. O QR fica ao lado do quadrado preto.",
+    "imagem": "images/guia-qr.svg"
+  },
+  "saibaMais": {
+    "texto": "Usamos o modelo de seis continentes, com a América unificada. Outros livros usam sete e separam América do Norte e América do Sul.",
+    "links": [
+      {
+        "titulo": "Consultar a fonte",
+        "url": "https://education.nationalgeographic.org/resource/Continent/"
+      }
+    ]
+  }
+}

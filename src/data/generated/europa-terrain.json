@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "continentId": "europa",
+  "file": "models/europa-terrain.glb",
+  "sourceIds": [
+    "noaa-etopo5",
+    "natural-earth"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -15,
+      -52
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -1220045.2088495065,
+      1717912.7983753795
+    ],
+    "radiusMeters": 7975836.558049101,
+    "horizontalScale": 1.1910976272968802e-7,
+    "elevationScale": 0.000019057562036750084,
+    "baseHeight": 0.025
+  },
+  "dem": {
+    "dataset": "NOAA ETOPO5",
+    "sourceResolutionArcMinutes": 5,
+    "sampledSpacingDegrees": 0.5,
+    "meshStepMeters": 120000,
+    "minimumSampleMeters": -1683.5008066817504,
+    "maximumSampleMeters": 2867.5027599991395,
+    "historicalDataset": true,
+    "displayNegativeElevations": "limitadas a zero para excluir batimetria costeira",
+    "sha256": "5dfe617fdab469a3ac13513a266c3fd5962c1435172f0388df1b6c4268250948"
+  },
+  "limits": {
+    "triangles": 5237,
+    "bytes": 222924,
+    "materials": 2,
+    "textures": 0
+  },
+  "topVertexCount": 1698,
+  "topTriangleCount": 1957,
+  "points": [
+    {
+      "id": "coliseu",
+      "nome": "Coliseu",
+      "descricaoCurta": "Anfiteatro romano do século I, parte da área histórica de Roma.",
+      "coordenadas": {
+        "lat": 41.8902778,
+        "lng": 12.4922222
+      },
+      "fontes": [
+        "unesco-rome",
+        "wikidata-colosseum"
+      ],
+      "posicao": [
+        0.1205026,
+        0.025,
+        -0.07130984
+      ]
+    },
+    {
+      "id": "acropole-atenas",
+      "nome": "Acrópole de Atenas",
+      "descricaoCurta": "Colina rochosa com monumentos da Grécia Antiga, como o Partenon.",
+      "coordenadas": {
+        "lat": 37.97087,
+        "lng": 23.72618
+      },
+      "fontes": [
+        "unesco-acropolis"
+      ],
+      "posicao": [
+        0.23689152,
+        0.025,
+        -0.02451739
+      ]
+    },
+    {
+      "id": "torre-eiffel",
+      "nome": "Torre Eiffel",
+      "descricaoCurta": "Torre de ferro construída em Paris no século XIX e hoje um marco da cidade.",
+      "coordenadas": {
+        "lat": 48.8582972,
+        "lng": 2.2944778
+      },
+      "fontes": [
+        "unesco-paris-seine",
+        "wikidata-eiffel"
+      ],
+      "posicao": [
+        0.03519613,
+        0.02635795,
+        -0.17257309
+      ]
+    }
+  ],
+  "pointPositions": {
+    "coliseu": [
+      0.1205026,
+      0.025,
+      -0.07130984
+    ],
+    "acropole-atenas": [
+      0.23689152,
+      0.025,
+      -0.02451739
+    ],
+    "torre-eiffel": [
+      0.03519613,
+      0.02635795,
+      -0.17257309
+    ]
+  }
+}

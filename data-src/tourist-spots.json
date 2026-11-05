@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "retrievedOn": "2026-11-04",
+  "descriptionLicense": "CC-BY-SA-3.0-IGO",
+  "descriptionLicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/igo/",
+  "coordinateSystem": "Latitude/longitude em graus decimais na Terra (WGS84); localização representativa da entidade, não limites nem acesso de visitantes.",
+  "continents": {
+    "africa": [
+      {
+        "id": "piramides-gize",
+        "nome": "Pirâmides de Gizé",
+        "descricaoCurta": "No Egito, este conjunto reúne três grandes pirâmides construídas para faraós do Egito Antigo.",
+        "coordenadas": { "lat": 29.976111, "lng": 31.132778 },
+        "fontes": ["unesco-giza", "wikidata-giza"],
+        "fontesPorCampo": {
+          "nome": ["wikidata-giza"],
+          "descricaoCurta": ["unesco-giza"],
+          "coordenadas": ["wikidata-giza"]
+        }
+      },
+      {
+        "id": "cataratas-vitoria",
+        "nome": "Cataratas Vitória",
+        "descricaoCurta": "O rio Zambeze forma estas quedas-d’água entre a Zâmbia e o Zimbábue.",
+        "coordenadas": { "lat": -17.924777777778, "lng": 25.858055555556 },
+        "fontes": ["unesco-victoria-falls", "wikidata-victoria-falls"],
+        "fontesPorCampo": {
+          "nome": ["wikidata-victoria-falls"],
+          "descricaoCurta": ["unesco-victoria-falls"],
+          "coordenadas": ["wikidata-victoria-falls"]
+        }
+      },
+      {
+        "id": "kilimanjaro",
+        "nome": "Kilimanjaro",
+        "descricaoCurta": "Na Tanzânia, esta montanha vulcânica abriga o ponto mais alto da África.",
+        "coordenadas": { "lat": -3.0666666666667, "lng": 37.359166666667 },
+        "fontes": ["unesco-kilimanjaro", "wikidata-kilimanjaro"],
+        "fontesPorCampo": {
+          "nome": ["wikidata-kilimanjaro"],
+          "descricaoCurta": ["unesco-kilimanjaro"],
+          "coordenadas": ["wikidata-kilimanjaro"]
+        }
+      }
+    ],
+    "america": [
+      { "id": "grand-canyon", "nome": "Grand Canyon", "descricaoCurta": "O rio Colorado escavou este grande cânion no Arizona ao longo de milhões de anos.", "coordenadas": { "lat": 36.0553056, "lng": -112.122 }, "fontes": ["unesco-grand-canyon", "wikidata-grand-canyon"] },
+      { "id": "machu-picchu", "nome": "Machu Picchu", "descricaoCurta": "Cidade inca do século XV construída nos Andes peruanos, entre montanhas e floresta tropical.", "coordenadas": { "lat": -13.1633333, "lng": -72.5455556 }, "fontes": ["unesco-machu-picchu", "wikidata-machu-picchu"] },
+      { "id": "cataratas-iguacu", "nome": "Cataratas do Iguaçu", "descricaoCurta": "O rio Iguaçu forma um grande conjunto de quedas-d’água na fronteira entre Brasil e Argentina.", "coordenadas": { "lat": -25.6952778, "lng": -54.4366667 }, "fontes": ["unesco-iguazu", "wikidata-iguazu"] }
+    ],
+    "asia": [
+      { "id": "grande-muralha", "nome": "Grande Muralha da China", "descricaoCurta": "Fortificações de várias épocas formam uma longa defesa histórica no norte da China.", "coordenadas": { "lat": 40.4313889, "lng": 116.5644444 }, "fontes": ["unesco-great-wall", "wikidata-great-wall"] },
+      { "id": "taj-mahal", "nome": "Taj Mahal", "descricaoCurta": "Mausoléu de mármore branco construído em Agra no século XVII por ordem do imperador Shah Jahan.", "coordenadas": { "lat": 27.17417, "lng": 78.04222 }, "fontes": ["unesco-taj-mahal"] },
+      { "id": "monte-fuji", "nome": "Monte Fuji", "descricaoCurta": "Vulcão de forma quase cônica, considerado sagrado e conhecido por inspirar artistas japoneses.", "coordenadas": { "lat": 35.3605556, "lng": 138.7275 }, "fontes": ["unesco-fujisan", "wikidata-fuji"] }
+    ],
+    "europa": [
+      { "id": "coliseu", "nome": "Coliseu", "descricaoCurta": "Anfiteatro romano do século I, parte da área histórica de Roma.", "coordenadas": { "lat": 41.8902778, "lng": 12.4922222 }, "fontes": ["unesco-rome", "wikidata-colosseum"] },
+      { "id": "acropole-atenas", "nome": "Acrópole de Atenas", "descricaoCurta": "Colina rochosa com monumentos da Grécia Antiga, como o Partenon.", "coordenadas": { "lat": 37.97087, "lng": 23.72618 }, "fontes": ["unesco-acropolis"] },
+      { "id": "torre-eiffel", "nome": "Torre Eiffel", "descricaoCurta": "Torre de ferro construída em Paris no século XIX e hoje um marco da cidade.", "coordenadas": { "lat": 48.8582972, "lng": 2.2944778 }, "fontes": ["unesco-paris-seine", "wikidata-eiffel"] }
+    ],
+    "oceania": [
+      { "id": "grande-barreira-coral", "nome": "Grande Barreira de Corais", "descricaoCurta": "Grande sistema de recifes de coral junto à costa nordeste da Austrália.", "coordenadas": { "lat": -18.2861111, "lng": 147.7 }, "fontes": ["unesco-great-barrier"] },
+      { "id": "opera-sydney", "nome": "Ópera de Sydney", "descricaoCurta": "Casa de espetáculos à beira do porto de Sydney, com arquitetura reconhecida.", "coordenadas": { "lat": -33.856667, "lng": 151.215278 }, "fontes": ["unesco-sydney-opera"] },
+      { "id": "uluru-kata-tjuta", "nome": "Parque Nacional Uluru-Kata Tjuta", "descricaoCurta": "Grande formação rochosa em uma paisagem cultural do povo Anangu.", "coordenadas": { "lat": -25.3221111, "lng": 130.9856944 }, "fontes": ["unesco-uluru", "wikidata-uluru"] }
+    ],
+    "antartida": [
+      { "id": "estacao-mcmurdo", "nome": "Estação McMurdo", "descricaoCurta": "Estação de pesquisa dos Estados Unidos na Ilha de Ross, junto ao Mar de Ross.", "coordenadas": { "lat": -77.8482089, "lng": 166.6684219 }, "fontes": ["wikidata-mcmurdo"] },
+      { "id": "estacao-amundsen-scott", "nome": "Estação Amundsen–Scott", "descricaoCurta": "Estação científica dos Estados Unidos próxima ao Polo Sul geográfico.", "coordenadas": { "lat": -89.9975, "lng": 139.2728056 }, "fontes": ["wikidata-amundsen-scott"] },
+      { "id": "estacao-vostok", "nome": "Estação Vostok", "descricaoCurta": "Estação científica russa no interior da Antártida Oriental.", "coordenadas": { "lat": -78.464167, "lng": 106.86583 }, "fontes": ["wikidata-vostok"] }
+    ]
+  },
+  "evidence": {
+    "wikidata-giza": {
+      "url": "https://www.wikidata.org/wiki/Q12508",
+      "entityDataUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q12508.json",
+      "revision": 2532273260,
+      "modified": "2026-08-17T09:58:04Z",
+      "property": "P625",
+      "statementId": "q12508$A0F7F1B9-5C03-4B3A-9B38-423BE7B6540D",
+      "latitude": 29.976111,
+      "longitude": 31.132778,
+      "precisionDegrees": 0.00001,
+      "license": "CC0-1.0"
+    },
+    "wikidata-victoria-falls": {
+      "url": "https://www.wikidata.org/wiki/Q43278",
+      "entityDataUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q43278.json",
+      "revision": 2564429950,
+      "modified": "2026-11-03T20:23:01Z",
+      "property": "P625",
+      "statementId": "Q43278$C605C2B7-D3FB-45C1-BE15-5157D78DB23B",
+      "latitude": -17.924777777778,
+      "longitude": 25.858055555556,
+      "precisionDegrees": 0.000027777777777778,
+      "license": "CC0-1.0"
+    },
+    "wikidata-kilimanjaro": {
+      "url": "https://www.wikidata.org/wiki/Q7296",
+      "entityDataUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q7296.json",
+      "revision": 2562617120,
+      "modified": "2026-10-30T16:23:03Z",
+      "property": "P625",
+      "statementId": "q7296$9EF66EAF-B4DD-449A-A5DF-165D28D6867C",
+      "latitude": -3.0666666666667,
+      "longitude": 37.359166666667,
+      "precisionDegrees": 0.00027777777777778,
+      "license": "CC0-1.0"
+    },
+    "unesco-giza": {
+      "url": "https://whc.unesco.org/en/list/86/",
+      "license": "CC-BY-SA-3.0-IGO",
+      "confirmedFacts": ["Gizé faz parte da necrópole de Mênfis no Egito.", "O sítio contém as três pirâmides de Gizé e monumentos funerários reais do Egito Antigo."]
+    },
+    "unesco-victoria-falls": {
+      "url": "https://whc.unesco.org/en/list/509/",
+      "license": "CC-BY-SA-3.0-IGO",
+      "confirmedFacts": ["As cataratas são formadas pelo rio Zambeze.", "O sítio é compartilhado pela Zâmbia e pelo Zimbábue."]
+    },
+    "unesco-kilimanjaro": {
+      "url": "https://whc.unesco.org/en/list/403/",
+      "license": "CC-BY-SA-3.0-IGO",
+      "confirmedFacts": ["O Kilimanjaro é uma montanha vulcânica na Tanzânia.", "Seu cume é o ponto mais alto da África."]
+    }
+  }
+}

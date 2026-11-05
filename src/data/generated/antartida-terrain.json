@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "continentId": "antartida",
+  "file": "models/antartida-terrain.glb",
+  "sourceIds": [
+    "noaa-etopo5",
+    "natural-earth"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      0,
+      90
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      783701.2880904616,
+      -501501.9274133495
+    ],
+    "radiusMeters": 4109406.828973928,
+    "horizontalScale": 2.3117691665422286e-7,
+    "elevationScale": 0.00003698830666467566,
+    "baseHeight": 0.025
+  },
+  "dem": {
+    "dataset": "NOAA ETOPO5",
+    "sourceResolutionArcMinutes": 5,
+    "sampledSpacingDegrees": 0.5,
+    "meshStepMeters": 180000,
+    "minimumSampleMeters": -685.7483543300192,
+    "maximumSampleMeters": 4026.4498030839623,
+    "historicalDataset": true,
+    "displayNegativeElevations": "limitadas a zero para excluir batimetria costeira",
+    "sha256": "5dfe617fdab469a3ac13513a266c3fd5962c1435172f0388df1b6c4268250948"
+  },
+  "limits": {
+    "triangles": 5062,
+    "bytes": 215496,
+    "materials": 2,
+    "textures": 0
+  },
+  "topVertexCount": 1620,
+  "topTriangleCount": 1799,
+  "points": [
+    {
+      "id": "estacao-mcmurdo",
+      "nome": "Estação McMurdo",
+      "descricaoCurta": "Estação de pesquisa dos Estados Unidos na Ilha de Ross, junto ao Mar de Ross.",
+      "coordenadas": {
+        "lat": -77.8482089,
+        "lng": 166.6684219
+      },
+      "fontes": [
+        "wikidata-mcmurdo"
+      ],
+      "posicao": [
+        -0.10928033,
+        0.025,
+        0.41931883
+      ]
+    },
+    {
+      "id": "estacao-amundsen-scott",
+      "nome": "Estação Amundsen–Scott",
+      "descricaoCurta": "Estação científica dos Estados Unidos próxima ao Polo Sul geográfico.",
+      "coordenadas": {
+        "lat": -89.9975,
+        "lng": 139.2728056
+      },
+      "fontes": [
+        "wikidata-amundsen-scott"
+      ],
+      "posicao": [
+        -0.18113172,
+        0.12894176,
+        0.11598437
+      ]
+    },
+    {
+      "id": "estacao-vostok",
+      "nome": "Estação Vostok",
+      "descricaoCurta": "Estação científica russa no interior da Antártida Oriental.",
+      "coordenadas": {
+        "lat": -78.464167,
+        "lng": 106.86583
+      },
+      "fontes": [
+        "wikidata-vostok"
+      ],
+      "posicao": [
+        0.10212895,
+        0.15345219,
+        0.20182505
+      ]
+    }
+  ],
+  "pointPositions": {
+    "estacao-mcmurdo": [
+      -0.10928033,
+      0.025,
+      0.41931883
+    ],
+    "estacao-amundsen-scott": [
+      -0.18113172,
+      0.12894176,
+      0.11598437
+    ],
+    "estacao-vostok": [
+      0.10212895,
+      0.15345219,
+      0.20182505
+    ]
+  }
+}

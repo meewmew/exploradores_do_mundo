@@ -1,0 +1,44 @@
+[
+  {
+    "id": "africa",
+    "barcode": 0,
+    "url": "https://meewmew.github.io/exploradores_do_mundo/?continente=africa",
+    "pdf": "print/africa-A4.pdf",
+    "markerMm": 90
+  },
+  {
+    "id": "america",
+    "barcode": 1,
+    "url": "https://meewmew.github.io/exploradores_do_mundo/?continente=america",
+    "pdf": "print/america-A4.pdf",
+    "markerMm": 90
+  },
+  {
+    "id": "antartida",
+    "barcode": 2,
+    "url": "https://meewmew.github.io/exploradores_do_mundo/?continente=antartida",
+    "pdf": "print/antartida-A4.pdf",
+    "markerMm": 90
+  },
+  {
+    "id": "asia",
+    "barcode": 3,
+    "url": "https://meewmew.github.io/exploradores_do_mundo/?continente=asia",
+    "pdf": "print/asia-A4.pdf",
+    "markerMm": 90
+  },
+  {
+    "id": "europa",
+    "barcode": 4,
+    "url": "https://meewmew.github.io/exploradores_do_mundo/?continente=europa",
+    "pdf": "print/europa-A4.pdf",
+    "markerMm": 90
+  },
+  {
+    "id": "oceania",
+    "barcode": 5,
+    "url": "https://meewmew.github.io/exploradores_do_mundo/?continente=oceania",
+    "pdf": "print/oceania-A4.pdf",
+    "markerMm": 90
+  }
+]

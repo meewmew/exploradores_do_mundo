@@ -1,0 +1,56 @@
+[
+  {
+    "file": "data-src/geo/ne_50m_admin_0_countries.geojson",
+    "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_50m_admin_0_countries.geojson",
+    "sha256": "3e458fc036ad0a66411f2c1e6cac49c5d7bfb81cb1123bc513b22511a2b7fdeb",
+    "bytes": 3083490
+  },
+  {
+    "file": "data-src/geo/ne_50m_populated_places_simple.geojson",
+    "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_50m_populated_places_simple.geojson",
+    "sha256": "8e70756b39fae9bcdc1e332bfc510c024c5edd3a13203ffd20092ee37b61d978",
+    "bytes": 850767
+  },
+  {
+    "file": "public/vendor/aframe-1.6.0.min.js",
+    "url": "https://raw.githubusercontent.com/aframevr/aframe/v1.6.0/dist/aframe-master.min.js",
+    "sha256": "c8bf544cf71e285e8ae91a6eeb69f4ab6c9a4a36e383e987a936a781b87f5eee",
+    "bytes": 1406646
+  },
+  {
+    "file": "public/vendor/ar-3.4.7.js",
+    "url": "https://raw.githubusercontent.com/AR-js-org/AR.js/3.4.7/aframe/build/aframe-ar.js",
+    "sha256": "2354601ca0d01f37cb390b672178ec88890faa08da661cdd8ee76e3b5a8732ed",
+    "bytes": 1679591
+  },
+  {
+    "file": "public/vendor/camera_para.dat",
+    "url": "https://raw.githubusercontent.com/AR-js-org/AR.js/3.4.7/data/data/camera_para.dat",
+    "sha256": "dc0487240de94aafab0f6106c6d9faf79b70f22de0faf3281d341e33edd777ed",
+    "bytes": 176
+  },
+  {
+    "file": "public/vendor/model-viewer-4.0.0.min.js",
+    "url": "https://unpkg.com/@google/model-viewer@4.0.0/dist/model-viewer.min.js",
+    "sha256": "774edda21e1be2a0934e460ca5943af1fe3f88da130a9f98bd6a9d611576cacf",
+    "bytes": 955556
+  },
+  {
+    "file": "public/vendor/jsQR-1.4.0.js",
+    "url": "https://unpkg.com/jsqr@1.4.0/dist/jsQR.js",
+    "sha256": "bc40c8a15196236b2314db0856f72ca0b49980cd5413b8c852a7349f5fee0859",
+    "bytes": 256885
+  },
+  {
+    "file": "data-src/un-members.html",
+    "url": "https://www.un.org/en/about-us/member-states",
+    "sha256": "90142b5343f4e0629c210bf3ed7cc06ea1167fd7462e245ee205903815b1bea2",
+    "bytes": 200748
+  },
+  {
+    "file": "data-src/un-observers.html",
+    "url": "https://www.un.org/en/about-us/non-member-states",
+    "sha256": "48e2787d80086b6144e3c828e2291d2c1df2186d49f8e927fcab82a8bde28b6f",
+    "bytes": 89093
+  }
+]

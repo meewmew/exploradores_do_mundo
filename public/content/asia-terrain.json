@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "continentId": "asia",
+  "file": "models/asia-terrain.glb",
+  "sourceIds": [
+    "noaa-etopo5",
+    "natural-earth"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -100,
+      -35
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -559841.783559083,
+      -362902.381682517
+    ],
+    "radiusMeters": 6905679.756284604,
+    "horizontalScale": 1.375679199626134e-7,
+    "elevationScale": 0.000022010867194018144,
+    "baseHeight": 0.025
+  },
+  "dem": {
+    "dataset": "NOAA ETOPO5",
+    "sourceResolutionArcMinutes": 5,
+    "sampledSpacingDegrees": 0.5,
+    "meshStepMeters": 300000,
+    "minimumSampleMeters": -3722.088859612133,
+    "maximumSampleMeters": 5925.949640592819,
+    "historicalDataset": true,
+    "displayNegativeElevations": "limitadas a zero para excluir batimetria costeira",
+    "sha256": "5dfe617fdab469a3ac13513a266c3fd5962c1435172f0388df1b6c4268250948"
+  },
+  "limits": {
+    "triangles": 8171,
+    "bytes": 353896,
+    "materials": 2,
+    "textures": 0
+  },
+  "topVertexCount": 2621,
+  "topTriangleCount": 2802,
+  "points": [
+    {
+      "id": "grande-muralha",
+      "nome": "Grande Muralha da China",
+      "descricaoCurta": "Fortificações de várias épocas formam uma longa defesa histórica no norte da China.",
+      "coordenadas": {
+        "lat": 40.4313889,
+        "lng": 116.5644444
+      },
+      "fontes": [
+        "unesco-great-wall",
+        "wikidata-great-wall"
+      ],
+      "posicao": [
+        0.26867282,
+        0.02888836,
+        -0.04967429
+      ]
+    },
+    {
+      "id": "taj-mahal",
+      "nome": "Taj Mahal",
+      "descricaoCurta": "Mausoléu de mármore branco construído em Agra no século XVII por ordem do imperador Shah Jahan.",
+      "coordenadas": {
+        "lat": 27.17417,
+        "lng": 78.04222
+      },
+      "fontes": [
+        "unesco-taj-mahal"
+      ],
+      "posicao": [
+        -0.21917401,
+        0.02900894,
+        0.13820396
+      ]
+    },
+    {
+      "id": "monte-fuji",
+      "nome": "Monte Fuji",
+      "descricaoCurta": "Vulcão de forma quase cônica, considerado sagrado e conhecido por inspirar artistas japoneses.",
+      "coordenadas": {
+        "lat": 35.3605556,
+        "lng": 138.7275
+      },
+      "fontes": [
+        "unesco-fujisan",
+        "wikidata-fuji"
+      ],
+      "posicao": [
+        0.54157138,
+        0.0428465,
+        -0.04945122
+      ]
+    }
+  ],
+  "pointPositions": {
+    "grande-muralha": [
+      0.26867282,
+      0.02888836,
+      -0.04967429
+    ],
+    "taj-mahal": [
+      -0.21917401,
+      0.02900894,
+      0.13820396
+    ],
+    "monte-fuji": [
+      0.54157138,
+      0.0428465,
+      -0.04945122
+    ]
+  }
+}

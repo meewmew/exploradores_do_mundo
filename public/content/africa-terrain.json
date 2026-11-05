@@ -1,0 +1,158 @@
+{
+  "version": 1,
+  "continentId": "africa",
+  "file": "models/africa-terrain.glb",
+  "sourceIds": [
+    "noaa-etopo5",
+    "natural-earth"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -20,
+      -2
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -391543.17909873486,
+      68036.6162988164
+    ],
+    "radiusMeters": 4989159.387652076,
+    "horizontalScale": 1.9041283835333126e-7,
+    "elevationScale": 0.000030466054136533,
+    "baseHeight": 0.025
+  },
+  "dem": {
+    "dataset": "NOAA ETOPO5",
+    "sourceResolutionArcMinutes": 5,
+    "sampledSpacingDegrees": 0.5,
+    "meshStepMeters": 100000,
+    "minimumSampleMeters": -2567.991687074753,
+    "maximumSampleMeters": 2990.292674483784,
+    "historicalDataset": true,
+    "displayNegativeElevations": "limitadas a zero para excluir batimetria costeira",
+    "sha256": "5dfe617fdab469a3ac13513a266c3fd5962c1435172f0388df1b6c4268250948"
+  },
+  "limits": {
+    "triangles": 9731,
+    "bytes": 291636,
+    "materials": 2,
+    "textures": 0
+  },
+  "topVertexCount": 4083,
+  "topTriangleCount": 7014,
+  "points": [
+    {
+      "id": "piramides-gize",
+      "nome": "Pirâmides de Gizé",
+      "descricaoCurta": "No Egito, este conjunto reúne três grandes pirâmides construídas para faraós do Egito Antigo.",
+      "coordenadas": {
+        "lat": 29.976111,
+        "lng": 31.132778
+      },
+      "fontes": [
+        "unesco-giza",
+        "wikidata-giza"
+      ],
+      "fontesPorCampo": {
+        "nome": [
+          "wikidata-giza"
+        ],
+        "descricaoCurta": [
+          "unesco-giza"
+        ],
+        "coordenadas": [
+          "wikidata-giza"
+        ]
+      },
+      "posicao": [
+        0.28456664,
+        0.03189405,
+        -0.60269248
+      ]
+    },
+    {
+      "id": "cataratas-vitoria",
+      "nome": "Cataratas Vitória",
+      "descricaoCurta": "O rio Zambeze forma estas quedas-d’água entre a Zâmbia e o Zimbábue.",
+      "coordenadas": {
+        "lat": -17.924777777778,
+        "lng": 25.858055555556
+      },
+      "fontes": [
+        "unesco-victoria-falls",
+        "wikidata-victoria-falls"
+      ],
+      "fontesPorCampo": {
+        "nome": [
+          "wikidata-victoria-falls"
+        ],
+        "descricaoCurta": [
+          "unesco-victoria-falls"
+        ],
+        "coordenadas": [
+          "wikidata-victoria-falls"
+        ]
+      },
+      "posicao": [
+        0.19431816,
+        0.05550899,
+        0.40711293
+      ]
+    },
+    {
+      "id": "kilimanjaro",
+      "nome": "Kilimanjaro",
+      "descricaoCurta": "Na Tanzânia, esta montanha vulcânica abriga o ponto mais alto da África.",
+      "coordenadas": {
+        "lat": -3.0666666666667,
+        "lng": 37.359166666667
+      },
+      "fontes": [
+        "unesco-kilimanjaro",
+        "wikidata-kilimanjaro"
+      ],
+      "fontesPorCampo": {
+        "nome": [
+          "wikidata-kilimanjaro"
+        ],
+        "descricaoCurta": [
+          "unesco-kilimanjaro"
+        ],
+        "coordenadas": [
+          "wikidata-kilimanjaro"
+        ]
+      },
+      "posicao": [
+        0.4405283,
+        0.07510886,
+        0.09357874
+      ]
+    }
+  ],
+  "pointPositions": {
+    "piramides-gize": [
+      0.28456664,
+      0.03189405,
+      -0.60269248
+    ],
+    "cataratas-vitoria": [
+      0.19431816,
+      0.05550899,
+      0.40711293
+    ],
+    "kilimanjaro": [
+      0.4405283,
+      0.07510886,
+      0.09357874
+    ]
+  }
+}

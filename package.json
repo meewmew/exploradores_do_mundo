@@ -1,0 +1,51 @@
+{
+  "name": "exploradores-do-mundo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "predev": "node scripts/prepare-ar.mjs",
+    "dev": "vite --host 0.0.0.0",
+    "build": "node scripts/build.mjs",
+    "preview": "vite preview --host 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "data:fetch": "node scripts/fetch-assets.mjs",
+    "build:data": "node scripts/build-data.mjs",
+    "build:models": "node scripts/build-models.mjs",
+    "build:markers": "node scripts/build-markers.mjs",
+    "organizer:hash": "node scripts/organizer-hash.mjs",
+    "check:budget": "node scripts/check-budget.mjs"
+  },
+  "dependencies": {
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-router-dom": "7.9.4",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@gltf-transform/core": "4.2.1",
+    "@gltf-transform/functions": "4.2.1",
+    "@types/node": "22.18.12",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "@vitejs/plugin-basic-ssl": "2.1.0",
+    "@vitejs/plugin-react": "5.0.4",
+    "d3-geo": "3.1.1",
+    "earcut": "3.0.2",
+    "esbuild": "0.25.12",
+    "pdfkit": "0.17.2",
+    "pngjs": "7.0.0",
+    "qrcode": "1.5.4",
+    "three": "0.180.0",
+    "topojson-client": "3.1.0",
+    "topojson-server": "3.0.1",
+    "topojson-simplify": "3.0.3",
+    "typescript": "5.9.3",
+    "vite": "7.1.12",
+    "vitest": "3.2.4"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "continentId": "oceania",
+  "file": "models/oceania-terrain.glb",
+  "sourceIds": [
+    "noaa-etopo5",
+    "natural-earth"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -135,
+      25
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      1239242.3027563698,
+      242572.60392291448
+    ],
+    "radiusMeters": 3659093.298275326,
+    "horizontalScale": 2.5962715967034025e-7,
+    "elevationScale": 0.00004154034554725444,
+    "baseHeight": 0.025
+  },
+  "dem": {
+    "dataset": "NOAA ETOPO5",
+    "sourceResolutionArcMinutes": 5,
+    "sampledSpacingDegrees": 0.5,
+    "meshStepMeters": 180000,
+    "minimumSampleMeters": -2076.2484550993495,
+    "maximumSampleMeters": 2509.347015500461,
+    "historicalDataset": true,
+    "displayNegativeElevations": "limitadas a zero para excluir batimetria costeira",
+    "sha256": "5dfe617fdab469a3ac13513a266c3fd5962c1435172f0388df1b6c4268250948"
+  },
+  "limits": {
+    "triangles": 2436,
+    "bytes": 101412,
+    "materials": 2,
+    "textures": 0
+  },
+  "topVertexCount": 824,
+  "topTriangleCount": 1025,
+  "points": [
+    {
+      "id": "grande-barreira-coral",
+      "nome": "Grande Barreira de Corais",
+      "descricaoCurta": "Grande sistema de recifes de coral junto à costa nordeste da Austrália.",
+      "coordenadas": {
+        "lat": -18.2861111,
+        "lng": 147.7
+      },
+      "fontes": [
+        "unesco-great-barrier"
+      ],
+      "posicao": [
+        0.02597462,
+        0.025,
+        -0.24137025
+      ]
+    },
+    {
+      "id": "opera-sydney",
+      "nome": "Ópera de Sydney",
+      "descricaoCurta": "Casa de espetáculos à beira do porto de Sydney, com arquitetura reconhecida.",
+      "coordenadas": {
+        "lat": -33.856667,
+        "lng": 151.215278
+      },
+      "fontes": [
+        "unesco-sydney-opera"
+      ],
+      "posicao": [
+        0.06591375,
+        0.025,
+        0.21773629
+      ]
+    },
+    {
+      "id": "uluru-kata-tjuta",
+      "nome": "Parque Nacional Uluru-Kata Tjuta",
+      "descricaoCurta": "Grande formação rochosa em uma paisagem cultural do povo Anangu.",
+      "coordenadas": {
+        "lat": -25.3221111,
+        "lng": 130.9856944
+      },
+      "fontes": [
+        "unesco-uluru",
+        "wikidata-uluru"
+      ],
+      "posicao": [
+        -0.42646322,
+        0.04622418,
+        -0.05212364
+      ]
+    }
+  ],
+  "pointPositions": {
+    "grande-barreira-coral": [
+      0.02597462,
+      0.025,
+      -0.24137025
+    ],
+    "opera-sydney": [
+      0.06591375,
+      0.025,
+      0.21773629
+    ],
+    "uluru-kata-tjuta": [
+      -0.42646322,
+      0.04622418,
+      -0.05212364
+    ]
+  }
+}

@@ -1,0 +1,1655 @@
+{
+  "id": "asia",
+  "nome": "Ásia",
+  "cor": "#b9b1ed",
+  "descricaoCurta": "A Ásia reúne montanhas muito altas, planícies, desertos e muitas ilhas. É o maior continente em extensão.",
+  "descricao": "A Ásia reúne montanhas muito altas, planícies, desertos e muitas ilhas. É o maior continente em extensão.",
+  "fichaCurta": {
+    "localizacao": "A leste da Europa, entre os oceanos Ártico, Índico e Pacífico.",
+    "curiosidade": "O Himalaia, onde fica o Monte Everest, está na Ásia.",
+    "ilustracao": "images/asia.svg",
+    "ilustracaoAlt": "Ilustração educativa de Ásia: O Himalaia, onde fica o Monte Everest, está na Ásia."
+  },
+  "areaKm2": {
+    "valor": null,
+    "fonte": "natural-earth",
+    "verificar": true
+  },
+  "populacao": {
+    "valor": null,
+    "fonte": "natural-earth",
+    "verificar": true,
+    "anoReferencia": 0
+  },
+  "quantidadePaises": {
+    "valor": 49,
+    "fonte": "country-assignments",
+    "criterio": "Estados-membros da ONU e observadores; país no continente da maior parte do território, Cáucaso na Ásia."
+  },
+  "caracteristicasGeograficas": [
+    "Cordilheira do Himalaia",
+    "Planaltos",
+    "Grandes rios e desertos"
+  ],
+  "climas": [
+    "Do frio do norte ao calor tropical do sul; monções levam chuva a várias regiões."
+  ],
+  "faunaFlora": [
+    "Bambus crescem em várias regiões; elefantes-asiáticos habitam partes do continente."
+  ],
+  "cultura": [
+    "O Himalaia tem importância espiritual para comunidades budistas e hindus."
+  ],
+  "curiosidades": [
+    "O Himalaia, onde fica o Monte Everest, está na Ásia."
+  ],
+  "paises": [
+    {
+      "id": "AFG",
+      "nome": "Afeganistão",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Kabul",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 38041754,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Afeganistão faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/AFG.glb"
+      }
+    },
+    {
+      "id": "SAU",
+      "nome": "Arábia Saudita",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Riyadh",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 34268528,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Arábia Saudita faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/SAU.glb"
+      }
+    },
+    {
+      "id": "ARM",
+      "nome": "Arménia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Yerevan",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 2957731,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Arménia faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "nota": "Esta coleção adota a Armênia na Ásia, conforme a região geográfica do Natural Earth.",
+      "modelo": {
+        "arquivo": "models/countries/ARM.glb"
+      }
+    },
+    {
+      "id": "AZE",
+      "nome": "Azerbaijão",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Baku",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 10023318,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Azerbaijão faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "nota": "O limite entre Europa e Ásia no Cáucaso varia por convenção; esta coleção adota o Azerbaijão na Ásia.",
+      "modelo": {
+        "arquivo": "models/countries/AZE.glb"
+      }
+    },
+    {
+      "id": "BHR",
+      "nome": "Bahrein",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Manama",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 1641172,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Bahrein faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/BHR.glb"
+      }
+    },
+    {
+      "id": "BGD",
+      "nome": "Bangladesh",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Dhaka",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 163046161,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Bangladesh faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/BGD.glb"
+      }
+    },
+    {
+      "id": "BRN",
+      "nome": "Brunei",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Bandar Seri Begawan",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 433285,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Brunei faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/BRN.glb"
+      }
+    },
+    {
+      "id": "BTN",
+      "nome": "Butão",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Thimphu",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 763092,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Butão faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/BTN.glb"
+      }
+    },
+    {
+      "id": "KHM",
+      "nome": "Camboja",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Phnom Penh",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 16486542,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Camboja faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/KHM.glb"
+      }
+    },
+    {
+      "id": "QAT",
+      "nome": "Catar",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Doha",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 2832067,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Catar faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/QAT.glb"
+      }
+    },
+    {
+      "id": "KAZ",
+      "nome": "Cazaquistão",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Nur-Sultan",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 18513930,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Cazaquistão faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "nota": "O Cazaquistão tem terras na Europa e na Ásia; a maior parte fica na Ásia.",
+      "modelo": {
+        "arquivo": "models/countries/KAZ.glb"
+      }
+    },
+    {
+      "id": "CHN",
+      "nome": "China",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Beijing",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 1397715000,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, China faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/CHN.glb"
+      }
+    },
+    {
+      "id": "CYP",
+      "nome": "Chipre",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Nicosia",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 1198575,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Chipre faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/CYP.glb"
+      }
+    },
+    {
+      "id": "PRK",
+      "nome": "Coreia do Norte",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Pyongyang",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 25666161,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Coreia do Norte faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/PRK.glb"
+      }
+    },
+    {
+      "id": "KOR",
+      "nome": "Coreia do Sul",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Seoul",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 51709098,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Coreia do Sul faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/KOR.glb"
+      }
+    },
+    {
+      "id": "ARE",
+      "nome": "Emirados Árabes Unidos",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Abu Dhabi",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 9770529,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Emirados Árabes Unidos faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/ARE.glb"
+      }
+    },
+    {
+      "id": "PHL",
+      "nome": "Filipinas",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Manila",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 108116615,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Filipinas faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/PHL.glb"
+      }
+    },
+    {
+      "id": "GEO",
+      "nome": "Geórgia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Tbilisi",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 3720382,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Geórgia faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "nota": "O limite entre Europa e Ásia no Cáucaso varia por convenção; esta coleção adota a Geórgia na Ásia.",
+      "modelo": {
+        "arquivo": "models/countries/GEO.glb"
+      }
+    },
+    {
+      "id": "YEM",
+      "nome": "Iémen",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Sanaa",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 29161922,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Iémen faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/YEM.glb"
+      }
+    },
+    {
+      "id": "IND",
+      "nome": "Índia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "New Delhi",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 1366417754,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Índia faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/IND.glb"
+      }
+    },
+    {
+      "id": "IDN",
+      "nome": "Indonésia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Jakarta",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 270625568,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Indonésia faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "nota": "A Indonésia tem ilhas dos dois lados do limite convencional Ásia/Oceania; a maior parte do território fica na Ásia.",
+      "modelo": {
+        "arquivo": "models/countries/IDN.glb"
+      }
+    },
+    {
+      "id": "IRN",
+      "nome": "Irão",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Tehran",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 82913906,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Irão faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/IRN.glb"
+      }
+    },
+    {
+      "id": "IRQ",
+      "nome": "Iraque",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Baghdad",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 39309783,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Iraque faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/IRQ.glb"
+      }
+    },
+    {
+      "id": "ISR",
+      "nome": "Israel",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Jerusalem",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 9053300,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Israel faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/ISR.glb"
+      }
+    },
+    {
+      "id": "JPN",
+      "nome": "Japão",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Tokyo",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 126264931,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Japão faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/JPN.glb"
+      }
+    },
+    {
+      "id": "JOR",
+      "nome": "Jordânia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Amman",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 10101694,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Jordânia faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/JOR.glb"
+      }
+    },
+    {
+      "id": "KWT",
+      "nome": "Kuwait",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Kuwait City",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 4207083,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Kuwait faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/KWT.glb"
+      }
+    },
+    {
+      "id": "LAO",
+      "nome": "Laos",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Vientiane",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 7169455,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Laos faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/LAO.glb"
+      }
+    },
+    {
+      "id": "LBN",
+      "nome": "Líbano",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Beirut",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 6855713,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Líbano faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/LBN.glb"
+      }
+    },
+    {
+      "id": "MYS",
+      "nome": "Malásia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Kuala Lumpur",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 31949777,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Malásia faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/MYS.glb"
+      }
+    },
+    {
+      "id": "MDV",
+      "nome": "Maldivas",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Malé",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 530953,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Maldivas faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ]
+    },
+    {
+      "id": "MNG",
+      "nome": "Mongólia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Ulaanbaatar",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 3225167,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Mongólia faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/MNG.glb"
+      }
+    },
+    {
+      "id": "MMR",
+      "nome": "Myanmar",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Naypyidaw",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 54045420,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Myanmar faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/MMR.glb"
+      }
+    },
+    {
+      "id": "NPL",
+      "nome": "Nepal",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Kathmandu",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 28608710,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Nepal faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/NPL.glb"
+      }
+    },
+    {
+      "id": "OMN",
+      "nome": "Omã",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Muscat",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 4974986,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Omã faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/OMN.glb"
+      }
+    },
+    {
+      "id": "PSX",
+      "nome": "Palestina",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 4685306,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Palestina faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-observers"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/PSX.glb"
+      }
+    },
+    {
+      "id": "PAK",
+      "nome": "Paquistão",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Islamabad",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 216565318,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Paquistão faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/PAK.glb"
+      }
+    },
+    {
+      "id": "KGZ",
+      "nome": "Quirguistão",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Bishkek",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 6456900,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Quirguistão faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/KGZ.glb"
+      }
+    },
+    {
+      "id": "RUS",
+      "nome": "Rússia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Moscow",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 144373535,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Rússia faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "nota": "A Rússia se estende pela Europa e pela Ásia; fica na Ásia nesta coleção pela maior parte do território.",
+      "modelo": {
+        "arquivo": "models/countries/RUS.glb"
+      }
+    },
+    {
+      "id": "SGP",
+      "nome": "Singapura",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Singapore",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 5703569,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Singapura faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/SGP.glb"
+      }
+    },
+    {
+      "id": "SYR",
+      "nome": "Síria",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Damascus",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 17070135,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Síria faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/SYR.glb"
+      }
+    },
+    {
+      "id": "LKA",
+      "nome": "Sri Lanka",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Colombo",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 21803000,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Sri Lanka faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/LKA.glb"
+      }
+    },
+    {
+      "id": "THA",
+      "nome": "Tailândia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Bangkok",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 69625582,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Tailândia faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/THA.glb"
+      }
+    },
+    {
+      "id": "TJK",
+      "nome": "Tajiquistão",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Dushanbe",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 9321018,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Tajiquistão faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/TJK.glb"
+      }
+    },
+    {
+      "id": "TLS",
+      "nome": "Timor-Leste",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Dili",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 1293119,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Timor-Leste faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/TLS.glb"
+      }
+    },
+    {
+      "id": "TKM",
+      "nome": "Turquemenistão",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Ashgabat",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 5942089,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Turquemenistão faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/TKM.glb"
+      }
+    },
+    {
+      "id": "TUR",
+      "nome": "Turquia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Ankara",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 83429615,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Turquia faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "nota": "A Turquia tem terras na Europa e na Ásia; a maior parte fica na Ásia.",
+      "modelo": {
+        "arquivo": "models/countries/TUR.glb"
+      }
+    },
+    {
+      "id": "UZB",
+      "nome": "Uzbequistão",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Tashkent",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 33580650,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Uzbequistão faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/UZB.glb"
+      }
+    },
+    {
+      "id": "VNM",
+      "nome": "Vietname",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Hanoi",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 96462106,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Vietname faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/VNM.glb"
+      }
+    }
+  ],
+  "territorios": [
+    {
+      "id": "KAS",
+      "nome": "Glaciar de Siachen",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 6000,
+        "fonte": "natural-earth",
+        "anoReferencia": 2013
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Glaciar de Siachen faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "HKG",
+      "nome": "Hong Kong",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 7507400,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Hong Kong faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "MAC",
+      "nome": "Macau",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 640445,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Macau faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "CYN",
+      "nome": "República Turca do Chipre do Norte",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 326000,
+        "fonte": "natural-earth",
+        "anoReferencia": 2017
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, República Turca do Chipre do Norte faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "TWN",
+      "nome": "Taiwan",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Taipei",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 23568378,
+        "fonte": "natural-earth",
+        "anoReferencia": 2020
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Taiwan faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "IOT",
+      "nome": "Território Britânico do Oceano Índico",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 3000,
+        "fonte": "natural-earth",
+        "anoReferencia": 2018
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Território Britânico do Oceano Índico faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "IOA",
+      "nome": "Territórios australianos do Oceano Índico",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 2387,
+        "fonte": "natural-earth",
+        "anoReferencia": 2016
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Territórios australianos do Oceano Índico faz parte de Ásia.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    }
+  ],
+  "fontesTexto": {
+    "descricao": [
+      "ng-asia"
+    ],
+    "caracteristicasGeograficas": [
+      "ng-asia"
+    ],
+    "climas": [
+      "ng-asia"
+    ],
+    "faunaFlora": [
+      "ng-asia"
+    ],
+    "cultura": [
+      "ng-asia"
+    ],
+    "curiosidades": [
+      "ng-asia"
+    ]
+  },
+  "marcador": {
+    "tipo": "barcode",
+    "id": 3,
+    "arquivo": "markers/asia-ar.svg"
+  },
+  "modelo": {
+    "arquivo": "models/asia.glb",
+    "tamanhoKb": 358.73
+  },
+  "pontosTuristicos": [
+    {
+      "id": "grande-muralha",
+      "nome": "Grande Muralha da China",
+      "descricaoCurta": "Fortificações de várias épocas formam uma longa defesa histórica no norte da China.",
+      "coordenadas": {
+        "lat": 40.4313889,
+        "lng": 116.5644444
+      },
+      "fontes": [
+        "unesco-great-wall",
+        "wikidata-great-wall"
+      ]
+    },
+    {
+      "id": "taj-mahal",
+      "nome": "Taj Mahal",
+      "descricaoCurta": "Mausoléu de mármore branco construído em Agra no século XVII por ordem do imperador Shah Jahan.",
+      "coordenadas": {
+        "lat": 27.17417,
+        "lng": 78.04222
+      },
+      "fontes": [
+        "unesco-taj-mahal"
+      ]
+    },
+    {
+      "id": "monte-fuji",
+      "nome": "Monte Fuji",
+      "descricaoCurta": "Vulcão de forma quase cônica, considerado sagrado e conhecido por inspirar artistas japoneses.",
+      "coordenadas": {
+        "lat": 35.3605556,
+        "lng": 138.7275
+      },
+      "fontes": [
+        "unesco-fujisan",
+        "wikidata-fuji"
+      ]
+    }
+  ],
+  "dicaQr": {
+    "texto": "Procure a folha com o título “Ásia”, preparada pelo professor. O QR fica ao lado do quadrado preto.",
+    "imagem": "images/guia-qr.svg"
+  },
+  "saibaMais": {
+    "texto": "A Ásia reúne montanhas muito altas, planícies, desertos e muitas ilhas. É o maior continente em extensão.",
+    "links": [
+      {
+        "titulo": "Consultar a fonte",
+        "url": "https://education.nationalgeographic.org/resource/asia/"
+      }
+    ]
+  }
+}

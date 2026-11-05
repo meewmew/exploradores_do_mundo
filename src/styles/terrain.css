@@ -1,0 +1,25 @@
+.terrain-panel .model-viewport { height: clamp(18rem, 85vw, 25rem); }
+.model-viewport model-viewer { touch-action: none; --min-hotspot-opacity: .3; }
+.model-gesture-hint { width: 100%; margin: 1rem 0 .5rem; text-align: left; font-weight: 600; }
+.terrain-note { width: 100%; color: var(--ink-muted); margin: .25rem 0 1rem; font-size: 1rem; line-height: 1.5; }
+.model-alternative-controls { width: 100%; margin-top: 1rem; }
+.model-alternative-controls summary { min-height: 44px; padding: .625rem 0; }
+.model-alternative-controls .model-controls { padding: .5rem 0; justify-content: flex-start; }
+.tourist-hotspot { display: grid; place-items: center; min-width: 44px; min-height: 44px; padding: 0; border: 0; background: transparent; color: var(--ink); cursor: pointer; touch-action: manipulation; }
+.tourist-hotspot > span { display: grid; place-items: center; width: 2rem; height: 2rem; background: var(--yellow); border: 2px solid var(--ink); border-radius: 50%; font-size: 1rem; font-weight: 750; box-shadow: 0 2px 5px #0003; }
+.tourist-hotspot[aria-pressed=true] > span { background: var(--ink); color: var(--surface); }
+.tourist-hotspot:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 50%; }
+.tourist-hotspot:not([data-visible]) { opacity: .3; }
+.tourist-points { width: 100%; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-control); }
+.tourist-points h2 { margin: 0 0 .5rem; font-size: 1.25rem; line-height: 1.3; }
+.tourist-points > p { margin-bottom: .75rem; }
+.tourist-point-list { display: grid; gap: .5rem; }
+.tourist-point-choice { display: flex; align-items: center; gap: .75rem; min-width: 0; min-height: 48px; padding: .625rem .75rem; background: var(--surface); color: var(--ink); border: 1px solid var(--border-control); border-radius: .875rem; text-align: left; font-size: 1rem; line-height: 1.4; }
+.tourist-point-choice > span { display: grid; place-items: center; flex: 0 0 1.75rem; height: 1.75rem; background: var(--yellow); color: var(--ink); border-radius: 50%; font-weight: 750; }
+.tourist-point-choice[aria-pressed=true] { background: var(--tint); border-color: var(--focus); box-shadow: inset 0 0 0 1px var(--focus); }
+.tourist-point-detail { margin-top: .75rem; padding: 1rem; border-radius: .875rem; background: var(--surface); border: 1px solid var(--border); }
+.tourist-point-detail h3 { margin: 0 0 .5rem; font-size: 1.125rem; }
+.tourist-point-detail p { margin: 0; }
+@media (hover: hover) and (pointer: fine) {
+  .tourist-point-choice:hover { background: var(--tint-soft); }
+}

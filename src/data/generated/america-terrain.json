@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "continentId": "america",
+  "file": "models/america-terrain.glb",
+  "sourceIds": [
+    "noaa-etopo5",
+    "natural-earth"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      96,
+      -20
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      358521.72542699333,
+      331381.9121644455
+    ],
+    "radiusMeters": 7717057.867174541,
+    "horizontalScale": 1.2310391036990176e-7,
+    "elevationScale": 0.00001969662565918428,
+    "baseHeight": 0.025
+  },
+  "dem": {
+    "dataset": "NOAA ETOPO5",
+    "sourceResolutionArcMinutes": 5,
+    "sampledSpacingDegrees": 0.5,
+    "meshStepMeters": 400000,
+    "minimumSampleMeters": -1845.8856304876917,
+    "maximumSampleMeters": 4938.352586804124,
+    "historicalDataset": true,
+    "displayNegativeElevations": "limitadas a zero para excluir batimetria costeira",
+    "sha256": "5dfe617fdab469a3ac13513a266c3fd5962c1435172f0388df1b6c4268250948"
+  },
+  "limits": {
+    "triangles": 8634,
+    "bytes": 388924,
+    "materials": 2,
+    "textures": 0
+  },
+  "topVertexCount": 2750,
+  "topTriangleCount": 2434,
+  "points": [
+    {
+      "id": "grand-canyon",
+      "nome": "Grand Canyon",
+      "descricaoCurta": "O rio Colorado escavou este grande cânion no Arizona ao longo de milhões de anos.",
+      "coordenadas": {
+        "lat": 36.0553056,
+        "lng": -112.122
+      },
+      "fontes": [
+        "unesco-grand-canyon",
+        "wikidata-grand-canyon"
+      ],
+      "posicao": [
+        -0.22331682,
+        0.06433015,
+        -0.27021703
+      ]
+    },
+    {
+      "id": "machu-picchu",
+      "nome": "Machu Picchu",
+      "descricaoCurta": "Cidade inca do século XV construída nos Andes peruanos, entre montanhas e floresta tropical.",
+      "coordenadas": {
+        "lat": -13.1633333,
+        "lng": -72.5455556
+      },
+      "fontes": [
+        "unesco-machu-picchu",
+        "wikidata-machu-picchu"
+      ],
+      "posicao": [
+        0.27975067,
+        0.1051322,
+        0.39336219
+      ]
+    },
+    {
+      "id": "cataratas-iguacu",
+      "nome": "Cataratas do Iguaçu",
+      "descricaoCurta": "O rio Iguaçu forma um grande conjunto de quedas-d’água na fronteira entre Brasil e Argentina.",
+      "coordenadas": {
+        "lat": -25.6952778,
+        "lng": -54.4366667
+      },
+      "fontes": [
+        "unesco-iguazu",
+        "wikidata-iguazu"
+      ],
+      "posicao": [
+        0.49996167,
+        0.0301056,
+        0.53988588
+      ]
+    }
+  ],
+  "pointPositions": {
+    "grand-canyon": [
+      -0.22331682,
+      0.06433015,
+      -0.27021703
+    ],
+    "machu-picchu": [
+      0.27975067,
+      0.1051322,
+      0.39336219
+    ],
+    "cataratas-iguacu": [
+      0.49996167,
+      0.0301056,
+      0.53988588
+    ]
+  }
+}

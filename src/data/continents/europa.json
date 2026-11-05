@@ -1,0 +1,1451 @@
+{
+  "id": "europa",
+  "nome": "Europa",
+  "cor": "#a8e6cf",
+  "descricaoCurta": "A Europa tem planícies, montanhas e costas recortadas. Ela compartilha uma grande massa de terra com a Ásia.",
+  "descricao": "A Europa tem planícies, montanhas e costas recortadas. Ela compartilha uma grande massa de terra com a Ásia.",
+  "fichaCurta": {
+    "localizacao": "A oeste da Ásia e ao norte do Mar Mediterrâneo.",
+    "curiosidade": "A Europa tem muitas penínsulas: terras cercadas de água por três lados.",
+    "ilustracao": "images/europa.svg",
+    "ilustracaoAlt": "Ilustração educativa de Europa: A Europa tem muitas penínsulas: terras cercadas de água por três lados."
+  },
+  "areaKm2": {
+    "valor": null,
+    "fonte": "natural-earth",
+    "verificar": true
+  },
+  "populacao": {
+    "valor": null,
+    "fonte": "natural-earth",
+    "verificar": true,
+    "anoReferencia": 0
+  },
+  "quantidadePaises": {
+    "valor": 43,
+    "fonte": "country-assignments",
+    "criterio": "Estados-membros da ONU e observadores; país no continente da maior parte do território, Cáucaso na Ásia."
+  },
+  "caracteristicasGeograficas": [
+    "Alpes",
+    "Planície Europeia",
+    "Penínsulas e fiordes"
+  ],
+  "climas": [
+    "Climas temperados em muitas regiões; o norte é mais frio."
+  ],
+  "faunaFlora": [
+    "Florestas cobrem parte dos planaltos centrais."
+  ],
+  "cultura": [
+    "Rios navegáveis ajudaram a conectar comunidades e rotas de viagem."
+  ],
+  "curiosidades": [
+    "A Europa tem muitas penínsulas: terras cercadas de água por três lados."
+  ],
+  "paises": [
+    {
+      "id": "ALB",
+      "nome": "Albânia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Tirana",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 2854191,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Albânia faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/ALB.glb"
+      }
+    },
+    {
+      "id": "DEU",
+      "nome": "Alemanha",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Berlin",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 83132799,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Alemanha faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/DEU.glb"
+      }
+    },
+    {
+      "id": "AND",
+      "nome": "Andorra",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Andorra",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 77142,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Andorra faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/AND.glb"
+      }
+    },
+    {
+      "id": "AUT",
+      "nome": "Áustria",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Vienna",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 8877067,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Áustria faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/AUT.glb"
+      }
+    },
+    {
+      "id": "BEL",
+      "nome": "Bélgica",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Brussels",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 11484055,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Bélgica faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/BEL.glb"
+      }
+    },
+    {
+      "id": "BLR",
+      "nome": "Bielorrússia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Minsk",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 9466856,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Bielorrússia faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/BLR.glb"
+      }
+    },
+    {
+      "id": "BIH",
+      "nome": "Bósnia e Herzegovina",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Sarajevo",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 3301000,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Bósnia e Herzegovina faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/BIH.glb"
+      }
+    },
+    {
+      "id": "BGR",
+      "nome": "Bulgária",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Sofia",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 6975761,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Bulgária faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/BGR.glb"
+      }
+    },
+    {
+      "id": "CZE",
+      "nome": "Chéquia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Prague",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 10669709,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Chéquia faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/CZE.glb"
+      }
+    },
+    {
+      "id": "HRV",
+      "nome": "Croácia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Zagreb",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 4067500,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Croácia faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/HRV.glb"
+      }
+    },
+    {
+      "id": "DNK",
+      "nome": "Dinamarca",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "København",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 5818553,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Dinamarca faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/DNK.glb"
+      }
+    },
+    {
+      "id": "SVK",
+      "nome": "Eslováquia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Bratislava",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 5454073,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Eslováquia faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/SVK.glb"
+      }
+    },
+    {
+      "id": "SVN",
+      "nome": "Eslovénia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Ljubljana",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 2087946,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Eslovénia faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/SVN.glb"
+      }
+    },
+    {
+      "id": "ESP",
+      "nome": "Espanha",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Madrid",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 47076781,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Espanha faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/ESP.glb"
+      }
+    },
+    {
+      "id": "EST",
+      "nome": "Estónia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Tallinn",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 1326590,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Estónia faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/EST.glb"
+      }
+    },
+    {
+      "id": "FIN",
+      "nome": "Finlândia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Helsinki",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 5520314,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Finlândia faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/FIN.glb"
+      }
+    },
+    {
+      "id": "FRA",
+      "nome": "França",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Paris",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 67059887,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, França faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/FRA.glb"
+      }
+    },
+    {
+      "id": "GRC",
+      "nome": "Grécia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Athens",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 10716322,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Grécia faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/GRC.glb"
+      }
+    },
+    {
+      "id": "HUN",
+      "nome": "Hungria",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Budapest",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 9769949,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Hungria faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/HUN.glb"
+      }
+    },
+    {
+      "id": "ISL",
+      "nome": "Islândia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Reykjavík",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 361313,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Islândia faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/ISL.glb"
+      }
+    },
+    {
+      "id": "ITA",
+      "nome": "Itália",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Rome",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 60297396,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Itália faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/ITA.glb"
+      }
+    },
+    {
+      "id": "LVA",
+      "nome": "Letónia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Riga",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 1912789,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Letónia faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/LVA.glb"
+      }
+    },
+    {
+      "id": "LIE",
+      "nome": "Liechtenstein",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Vaduz",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 38019,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Liechtenstein faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ]
+    },
+    {
+      "id": "LTU",
+      "nome": "Lituânia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Vilnius",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 2786844,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Lituânia faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/LTU.glb"
+      }
+    },
+    {
+      "id": "LUX",
+      "nome": "Luxemburgo",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Luxembourg",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 619896,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Luxemburgo faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/LUX.glb"
+      }
+    },
+    {
+      "id": "MKD",
+      "nome": "Macedónia do Norte",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Skopje",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 2083459,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Macedónia do Norte faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/MKD.glb"
+      }
+    },
+    {
+      "id": "MLT",
+      "nome": "Malta",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Valletta",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 502653,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Malta faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ]
+    },
+    {
+      "id": "MDA",
+      "nome": "Moldávia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Chișinău",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 2657637,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Moldávia faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/MDA.glb"
+      }
+    },
+    {
+      "id": "MCO",
+      "nome": "Mónaco",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Monaco",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 38964,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Mónaco faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ]
+    },
+    {
+      "id": "MNE",
+      "nome": "Montenegro",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Podgorica",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 622137,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Montenegro faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/MNE.glb"
+      }
+    },
+    {
+      "id": "NOR",
+      "nome": "Noruega",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Oslo",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 5347896,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Noruega faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/NOR.glb"
+      }
+    },
+    {
+      "id": "NLD",
+      "nome": "Países Baixos",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Amsterdam",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 17332850,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Países Baixos faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/NLD.glb"
+      }
+    },
+    {
+      "id": "POL",
+      "nome": "Polónia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Warsaw",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 37970874,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Polónia faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/POL.glb"
+      }
+    },
+    {
+      "id": "PRT",
+      "nome": "Portugal",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Lisbon",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 10269417,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Portugal faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/PRT.glb"
+      }
+    },
+    {
+      "id": "GBR",
+      "nome": "Reino Unido",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "London",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 66834405,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Reino Unido faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/GBR.glb"
+      }
+    },
+    {
+      "id": "IRL",
+      "nome": "República da Irlanda",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Dublin",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 4941444,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, República da Irlanda faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/IRL.glb"
+      }
+    },
+    {
+      "id": "ROU",
+      "nome": "Roménia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Bucharest",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 19356544,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Roménia faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/ROU.glb"
+      }
+    },
+    {
+      "id": "SMR",
+      "nome": "San Marino",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "San Marino",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 33860,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, San Marino faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ]
+    },
+    {
+      "id": "SRB",
+      "nome": "Sérvia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Belgrade",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 6944975,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Sérvia faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/SRB.glb"
+      }
+    },
+    {
+      "id": "SWE",
+      "nome": "Suécia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Stockholm",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 10285453,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Suécia faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/SWE.glb"
+      }
+    },
+    {
+      "id": "CHE",
+      "nome": "Suíça",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Bern",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 8574832,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Suíça faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/CHE.glb"
+      }
+    },
+    {
+      "id": "UKR",
+      "nome": "Ucrânia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Kyiv",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 44385155,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Ucrânia faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/UKR.glb"
+      }
+    },
+    {
+      "id": "VAT",
+      "nome": "Vaticano",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Vatican City",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 825,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Vaticano faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-observers"
+      ]
+    }
+  ],
+  "territorios": [
+    {
+      "id": "ALD",
+      "nome": "Åland",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 29884,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Åland faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "GGY",
+      "nome": "Guernsey",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 62792,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Guernsey faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "IMN",
+      "nome": "Ilha de Man",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 84584,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Ilha de Man faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "FRO",
+      "nome": "Ilhas Feroe",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 48678,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Ilhas Feroe faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "JEY",
+      "nome": "Jersey",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 107800,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Jersey faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "KOS",
+      "nome": "Kosovo",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Pristina",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 1794248,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Kosovo faz parte de Europa.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    }
+  ],
+  "fontesTexto": {
+    "descricao": [
+      "ng-europa"
+    ],
+    "caracteristicasGeograficas": [
+      "ng-europa"
+    ],
+    "climas": [
+      "ng-europa"
+    ],
+    "faunaFlora": [
+      "ng-europa"
+    ],
+    "cultura": [
+      "ng-europa"
+    ],
+    "curiosidades": [
+      "ng-europa"
+    ]
+  },
+  "marcador": {
+    "tipo": "barcode",
+    "id": 4,
+    "arquivo": "markers/europa-ar.svg"
+  },
+  "modelo": {
+    "arquivo": "models/europa.glb",
+    "tamanhoKb": 297.23
+  },
+  "pontosTuristicos": [
+    {
+      "id": "coliseu",
+      "nome": "Coliseu",
+      "descricaoCurta": "Anfiteatro romano do século I, parte da área histórica de Roma.",
+      "coordenadas": {
+        "lat": 41.8902778,
+        "lng": 12.4922222
+      },
+      "fontes": [
+        "unesco-rome",
+        "wikidata-colosseum"
+      ]
+    },
+    {
+      "id": "acropole-atenas",
+      "nome": "Acrópole de Atenas",
+      "descricaoCurta": "Colina rochosa com monumentos da Grécia Antiga, como o Partenon.",
+      "coordenadas": {
+        "lat": 37.97087,
+        "lng": 23.72618
+      },
+      "fontes": [
+        "unesco-acropolis"
+      ]
+    },
+    {
+      "id": "torre-eiffel",
+      "nome": "Torre Eiffel",
+      "descricaoCurta": "Torre de ferro construída em Paris no século XIX e hoje um marco da cidade.",
+      "coordenadas": {
+        "lat": 48.8582972,
+        "lng": 2.2944778
+      },
+      "fontes": [
+        "unesco-paris-seine",
+        "wikidata-eiffel"
+      ]
+    }
+  ],
+  "dicaQr": {
+    "texto": "Procure a folha com o título “Europa”, preparada pelo professor. O QR fica ao lado do quadrado preto.",
+    "imagem": "images/guia-qr.svg"
+  },
+  "saibaMais": {
+    "texto": "A Europa tem planícies, montanhas e costas recortadas. Ela compartilha uma grande massa de terra com a Ásia.",
+    "links": [
+      {
+        "titulo": "Consultar a fonte",
+        "url": "https://education.nationalgeographic.org/resource/europe-physical-geography/"
+      }
+    ]
+  }
+}

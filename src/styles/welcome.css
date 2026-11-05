@@ -1,0 +1,107 @@
+/* A capa de viagem apresenta os dois caminhos antes das descobertas. */
+.home.welcome-page { display: grid; grid-template-columns: minmax(0, 1fr); grid-template-areas: 'copy' 'choose' 'map' 'passport' 'help'; gap: 1.5rem; padding-top: 1.25rem; container: welcome-page / inline-size; }
+.welcome-copy { grid-area: copy; min-width: 0; align-self: center; }
+.welcome-greeting { display: inline-flex; align-items: center; gap: .5rem; font-weight: 800; color: var(--ink); }
+.welcome-greeting .interface-icon { width: 1.25rem; height: 1.25rem; }
+.welcome-copy h1 { font-family: var(--font-heading); font-size: clamp(2.5rem, 6vw, 3.75rem); line-height: 1.05; letter-spacing: -.025em; margin: .75rem 0 1rem; max-width: 11ch; font-weight: 600; }
+.welcome-copy > p { max-width: 37ch; margin-bottom: 0; font-size: 1.125rem; color: var(--ink-muted); }
+.welcome-map { grid-area: map; position: relative; min-width: 0; align-self: center; overflow: hidden; border: 3px solid var(--surface); border-radius: 1.75rem; background: #aee5f5; box-shadow: 0 7px 0 #15365b18; }
+.welcome-map-heading, .welcome-map-caption { display: flex; align-items: center; justify-content: space-between; gap: .75rem; padding: 1rem 1.25rem; font-weight: 800; }
+.welcome-map-heading { justify-content: flex-start; font-family: var(--font-body); font-size: 1rem; letter-spacing: 0; margin: 0; }
+.welcome-map-heading .interface-icon { width: 1.75rem; height: 1.75rem; }
+.welcome-map-heading > span { min-width: 0; overflow-wrap: anywhere; }
+.welcome-map .atlas-cover { padding: .5rem .25rem; }
+.welcome-map-caption { background: #ffffffa8; border-top: 2px dashed #15365b24; font-family: var(--font-heading); font-weight: 500; }
+.welcome-choose { grid-area: choose; min-width: 0; }
+.welcome-choose > h2 { font-size: 1.25rem; margin-bottom: .875rem; }
+.welcome-paths { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(21rem, 100%), 1fr)); gap: .875rem; container: welcome-paths / inline-size; }
+.welcome-path { display: flex; align-items: center; gap: 1rem; min-height: 100px; padding: 1.125rem; border-radius: 1.25rem; border: 2px solid transparent; text-decoration: none; color: #15365b; transition: transform 100ms ease-out; }
+.welcome-path-explorer { background: var(--action); border-color: var(--action-edge); box-shadow: 0 5px 0 var(--action-edge); }
+.welcome-path-organizer { background: #fff0af; border-color: #ddbf4d; box-shadow: 0 5px 0 #ddbf4d; }
+.welcome-path-icon { display: grid; place-items: center; flex: 0 0 3.25rem; width: 3.25rem; height: 3.25rem; border-radius: 50%; background: #ffffff70; }
+.welcome-path-icon .interface-icon { width: 2rem; height: 2rem; stroke-width: 1.8; }
+.welcome-path-copy { flex: 1; min-width: 0; }
+.welcome-path-copy strong, .welcome-path-copy > span { display: block; overflow-wrap: anywhere; }
+.welcome-path-copy strong { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 550; line-height: 1.2; }
+.welcome-path-copy > span { margin-top: .3rem; font-size: 1rem; line-height: 1.35; font-weight: 700; }
+.welcome-path > .interface-icon { width: 1.5rem; height: 1.5rem; }
+.welcome-path:active:not(:focus-visible) { transform: translateY(3px); }
+.welcome-passport { grid-area: passport; min-width: 0; background: var(--surface-warm); border: 2px solid #15365b1a; border-radius: 1.5rem; padding: 1.25rem; }
+.welcome-passport-heading { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 1rem; justify-content: space-between; }
+.welcome-passport-heading > div { flex: 1 1 14rem; min-width: 0; }
+.welcome-passport-heading h2 { margin-bottom: .375rem; font-size: 1.375rem; }
+.welcome-passport-heading p { margin-bottom: 0; color: var(--ink-muted); }
+.welcome-count { flex-shrink: 0; padding: .5rem .75rem; border-radius: 1rem; background: var(--yellow); font-weight: 800; line-height: 1.4; }
+.welcome-count strong { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 550; }
+.welcome-progress { display: block; width: 100%; height: .75rem; margin-block: 1.25rem; border: 0; border-radius: 1rem; overflow: hidden; background: #dce9ef; accent-color: #347b4e; }
+.welcome-progress::-webkit-progress-bar { background: #dce9ef; border-radius: 1rem; }
+.welcome-progress::-webkit-progress-value { background: #347b4e; border-radius: 1rem; }
+.welcome-progress::-moz-progress-bar { background: #347b4e; border-radius: 1rem; }
+.welcome-stamps { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(5.25rem, 100%), 1fr)); gap: 1rem .5rem; }
+.welcome-stamp { display: grid; justify-items: center; gap: .5rem; min-width: 0; font-weight: 800; font-size: 1rem; text-align: center; }
+.welcome-stamp > span:first-child { position: relative; display: grid; place-items: center; width: 3.5rem; height: 3.5rem; border: 2px dashed #7893a5; background: #f0f5f6; border-radius: 50%; }
+.welcome-stamp img { width: 75%; height: 75%; object-fit: contain; filter: grayscale(1); opacity: .55; }
+.welcome-stamp.found > span:first-child { background: #e0f1d9; border-color: #347b4e; border-style: solid; }
+.welcome-stamp.found img { opacity: 1; filter: none; }
+.welcome-stamp b { position: absolute; bottom: -.25rem; right: -.25rem; display: grid; place-items: center; width: 1.5rem; height: 1.5rem; background: #347b4e; border: 2px solid var(--surface-warm); border-radius: 50%; color: #fff; line-height: 1; }
+.welcome-passport-bottom { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem 1rem; margin-top: 1.5rem; padding-top: 1rem; border-top: 1px dashed #7893a5; }
+.welcome-passport-bottom p { color: var(--ink-muted); margin-bottom: 0; font-size: 1rem; }
+.welcome-collection-link { display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; font-weight: 800; }
+.welcome-help { grid-area: help; display: flex; align-items: center; gap: 1rem; padding: .25rem; text-decoration: none; }
+.welcome-help-icon { display: grid; place-items: center; flex: 0 0 3rem; height: 3rem; background: #fff0af; border: 2px solid #ddbf4d; border-radius: 1rem; }
+.welcome-help > span:nth-child(2) { flex: 1; min-width: 0; }
+.welcome-help strong, .welcome-help span > span { display: block; }
+.welcome-help strong { font-size: 1.125rem; }
+.welcome-help span > span { margin-top: .2rem; color: var(--ink-muted); }
+.journey-intro-heading { margin-bottom: 1.5rem; }
+.journey-intro-heading h1 { max-width: 17ch; margin-top: .75rem; }
+.journey-intro-heading > p { color: var(--ink-muted); margin-bottom: 1rem; font-size: 1.125rem; }
+.journey-intro-steps { list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; }
+.journey-intro-steps li { position: relative; display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; padding: 1.5rem 1rem 1.25rem; border: 2px solid #15365b19; background: var(--surface); border-radius: 1.25rem; }
+.journey-intro-steps li > div { flex: 1 1 10rem; min-width: 0; }
+.journey-intro-steps li:nth-child(2) { background: #fff9e4; }
+.journey-intro-steps li:nth-child(3) { background: #e9f4e4; }
+.journey-intro-number { position: absolute; top: -.625rem; left: 1rem; display: grid; place-items: center; width: 1.875rem; height: 1.875rem; background: #15365b; color: #fff; border: 2px solid #fff; border-radius: 50%; font-family: var(--font-heading); font-weight: 550; line-height: 1; }
+.journey-intro-steps .guide-scene { flex: 0 1 5rem; width: 5rem; height: 5.5rem; padding: 0; background: transparent; }
+.journey-intro-steps h2 { font-size: 1.25rem; line-height: 1.25; margin-bottom: .5rem; }
+.journey-intro-steps p { margin: 0; color: var(--ink-muted); }
+.journey-intro-note { display: flex; align-items: flex-start; gap: .75rem; margin: 1.25rem 0; padding: 1rem; background: #fff0af; border-radius: 1rem; }
+.journey-intro-note .interface-icon { margin-top: .2rem; }
+.journey-intro-note p { margin: 0; }
+.journey-intro-actions { margin-top: 1.25rem; }
+.journey-intro-actions .primary { min-height: 58px; font-size: 1.25rem; }
+@media (min-width: 640px) {
+  .welcome-passport { padding: 1.5rem; }
+  .welcome-map { transform: rotate(1deg); }
+  .welcome-copy h1 { font-size: clamp(3rem, 5.5vw, 4rem); }
+}
+@media (min-width: 900px) {
+  .home.welcome-page { grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); grid-template-areas: 'copy map' 'choose choose' 'passport passport' 'help help'; gap: 2rem; }
+}
+/* A ampliação do texto empilha os elementos antes de apertar os rótulos. */
+@container welcome-paths (max-width: 17rem) {
+  .welcome-path { flex-wrap: wrap; }
+  .welcome-path-copy { flex: 1 1 100%; }
+  .welcome-path > .interface-icon { display: none; }
+}
+@container welcome-page (max-width: 15rem) {
+  .welcome-help { flex-wrap: wrap; }
+  .welcome-help > span:nth-child(2) { flex-basis: 100%; }
+  .welcome-help > .interface-icon { display: none; }
+}
+@media (max-width: 360px) {
+  .welcome-copy h1 { font-size: 2.5rem; }
+  .welcome-path { gap: .75rem; padding: 1rem; }
+  .welcome-path-icon { width: 2.75rem; height: 2.75rem; flex-basis: 2.75rem; }
+  .welcome-path-copy strong { font-size: 1.375rem; }
+  .welcome-map-heading, .welcome-map-caption { padding: .875rem 1rem; }
+  .welcome-passport { padding: 1rem; }
+  .welcome-passport-heading { flex-wrap: wrap; }
+  .journey-intro-steps li { gap: .75rem; padding-inline: .875rem; }
+  .journey-intro-steps .guide-scene { width: 4rem; flex-basis: 4rem; }
+}
+@media (hover: hover) and (pointer: fine) {
+  .welcome-path:hover { transform: translateY(-2px); }
+  .welcome-help:hover strong, .welcome-collection-link:hover { text-decoration: underline; text-underline-offset: .2em; }
+}
+@media (prefers-reduced-motion: reduce) { .welcome-path { transition: none; } .welcome-path:hover, .welcome-path:active:not(:focus-visible) { transform: none; } }

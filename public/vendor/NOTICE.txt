@@ -1,0 +1,1 @@
+Distribuições locais sem alteração. Fontes e versões: data-src/assets-manifest.json e SOURCES.md. AR.js inclui ARToolKit LGPL-3.0: código-fonte correspondente em https://github.com/AR-js-org/AR.js/tree/3.4.7 e https://github.com/artoolkit/ARToolKit5 . Este app não impede substituir as bibliotecas locais. A-Frame e Three.js: MIT. model-viewer e jsQR: Apache-2.0.

@@ -1,0 +1,732 @@
+{
+  "id": "oceania",
+  "nome": "Oceania",
+  "cor": "#ffc7a0",
+  "descricaoCurta": "Na Oceania, o oceano conecta muitas ilhas. Há desertos na Austrália, montanhas e florestas em outras terras.",
+  "descricao": "Na Oceania, o oceano conecta muitas ilhas. Há desertos na Austrália, montanhas e florestas em outras terras.",
+  "fichaCurta": {
+    "localizacao": "Na região do Pacífico, inclui a Austrália, a Nova Zelândia e muitas ilhas.",
+    "curiosidade": "Algumas ilhas da Oceania nasceram de vulcões e outras se formaram sobre recifes.",
+    "ilustracao": "images/oceania.svg",
+    "ilustracaoAlt": "Ilustração educativa de Oceania: Algumas ilhas da Oceania nasceram de vulcões e outras se formaram sobre recifes."
+  },
+  "areaKm2": {
+    "valor": null,
+    "fonte": "natural-earth",
+    "verificar": true
+  },
+  "populacao": {
+    "valor": null,
+    "fonte": "natural-earth",
+    "verificar": true,
+    "anoReferencia": 0
+  },
+  "quantidadePaises": {
+    "valor": 14,
+    "fonte": "country-assignments",
+    "criterio": "Estados-membros da ONU e observadores; país no continente da maior parte do território, Cáucaso na Ásia."
+  },
+  "caracteristicasGeograficas": [
+    "Austrália",
+    "Ilhas continentais, vulcânicas e coralinas"
+  ],
+  "climas": [
+    "Árido no interior australiano; tropical e temperado em outras regiões."
+  ],
+  "faunaFlora": [
+    "Recifes de coral abrigam muitos animais marinhos."
+  ],
+  "cultura": [
+    "A navegação liga comunidades entre as ilhas do Pacífico."
+  ],
+  "curiosidades": [
+    "Algumas ilhas da Oceania nasceram de vulcões e outras se formaram sobre recifes."
+  ],
+  "paises": [
+    {
+      "id": "AUS",
+      "nome": "Austrália",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Canberra",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 25364307,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Austrália faz parte de Oceania.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/AUS.glb"
+      }
+    },
+    {
+      "id": "FJI",
+      "nome": "Fiji",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Suva",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 889953,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Fiji faz parte de Oceania.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/FJI.glb"
+      }
+    },
+    {
+      "id": "MHL",
+      "nome": "Ilhas Marshall",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Majuro",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 58791,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Ilhas Marshall faz parte de Oceania.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ]
+    },
+    {
+      "id": "SLB",
+      "nome": "Ilhas Salomão",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Honiara",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 669823,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Ilhas Salomão faz parte de Oceania.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/SLB.glb"
+      }
+    },
+    {
+      "id": "KIR",
+      "nome": "Kiribati",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Tarawa",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 117606,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Kiribati faz parte de Oceania.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ]
+    },
+    {
+      "id": "FSM",
+      "nome": "Micronésia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Palikir",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 113815,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Micronésia faz parte de Oceania.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ]
+    },
+    {
+      "id": "NRU",
+      "nome": "Nauru",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 12581,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Nauru faz parte de Oceania.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ]
+    },
+    {
+      "id": "NZL",
+      "nome": "Nova Zelândia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Wellington",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 4917000,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Nova Zelândia faz parte de Oceania.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/NZL.glb"
+      }
+    },
+    {
+      "id": "PLW",
+      "nome": "Palau",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Melekeok",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 18008,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Palau faz parte de Oceania.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/PLW.glb"
+      }
+    },
+    {
+      "id": "PNG",
+      "nome": "Papua-Nova Guiné",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Port Moresby",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 8776109,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Papua-Nova Guiné faz parte de Oceania.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/PNG.glb"
+      }
+    },
+    {
+      "id": "WSM",
+      "nome": "Samoa",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Apia",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 197097,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Samoa faz parte de Oceania.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/WSM.glb"
+      }
+    },
+    {
+      "id": "TON",
+      "nome": "Tonga",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Nuku'alofa",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 104494,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Tonga faz parte de Oceania.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ]
+    },
+    {
+      "id": "TUV",
+      "nome": "Tuvalu",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Funafuti",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 11646,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Tuvalu faz parte de Oceania.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ]
+    },
+    {
+      "id": "VUT",
+      "nome": "Vanuatu",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Port Vila",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 299882,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Vanuatu faz parte de Oceania.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/VUT.glb"
+      }
+    }
+  ],
+  "territorios": [
+    {
+      "id": "GUM",
+      "nome": "Guam",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 167294,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Guam faz parte de Oceania.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "NFK",
+      "nome": "Ilha Norfolk",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 2169,
+        "fonte": "natural-earth",
+        "anoReferencia": 2011
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Ilha Norfolk faz parte de Oceania.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "ATC",
+      "nome": "Ilhas Ashmore e Cartier",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true,
+        "anoReferencia": 0
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Ilhas Ashmore e Cartier faz parte de Oceania.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "COK",
+      "nome": "Ilhas Cook",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 17459,
+        "fonte": "natural-earth",
+        "anoReferencia": 2016
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Ilhas Cook faz parte de Oceania.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "MNP",
+      "nome": "Ilhas Marianas do Norte",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 57216,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Ilhas Marianas do Norte faz parte de Oceania.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "PCN",
+      "nome": "Ilhas Pitcairn",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 54,
+        "fonte": "natural-earth",
+        "anoReferencia": 2016
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Ilhas Pitcairn faz parte de Oceania.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "NIU",
+      "nome": "Niue",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 1620,
+        "fonte": "natural-earth",
+        "anoReferencia": 2018
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Niue faz parte de Oceania.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "NCL",
+      "nome": "Nova Caledónia",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 287800,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Nova Caledónia faz parte de Oceania.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "PYF",
+      "nome": "Polinésia Francesa",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 279287,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Polinésia Francesa faz parte de Oceania.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "ASM",
+      "nome": "Samoa Americana",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 55312,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Samoa Americana faz parte de Oceania.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "WLF",
+      "nome": "Wallis e Futuna",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 11558,
+        "fonte": "natural-earth",
+        "anoReferencia": 2018
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Wallis e Futuna faz parte de Oceania.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    }
+  ],
+  "fontesTexto": {
+    "descricao": [
+      "ng-oceania"
+    ],
+    "caracteristicasGeograficas": [
+      "ng-oceania"
+    ],
+    "climas": [
+      "ng-oceania"
+    ],
+    "faunaFlora": [
+      "ng-oceania"
+    ],
+    "cultura": [
+      "ng-oceania"
+    ],
+    "curiosidades": [
+      "ng-oceania"
+    ]
+  },
+  "marcador": {
+    "tipo": "barcode",
+    "id": 5,
+    "arquivo": "markers/oceania-ar.svg"
+  },
+  "modelo": {
+    "arquivo": "models/oceania.glb",
+    "tamanhoKb": 246.91
+  },
+  "pontosTuristicos": [
+    {
+      "id": "grande-barreira-coral",
+      "nome": "Grande Barreira de Corais",
+      "descricaoCurta": "Grande sistema de recifes de coral junto à costa nordeste da Austrália.",
+      "coordenadas": {
+        "lat": -18.2861111,
+        "lng": 147.7
+      },
+      "fontes": [
+        "unesco-great-barrier"
+      ]
+    },
+    {
+      "id": "opera-sydney",
+      "nome": "Ópera de Sydney",
+      "descricaoCurta": "Casa de espetáculos à beira do porto de Sydney, com arquitetura reconhecida.",
+      "coordenadas": {
+        "lat": -33.856667,
+        "lng": 151.215278
+      },
+      "fontes": [
+        "unesco-sydney-opera"
+      ]
+    },
+    {
+      "id": "uluru-kata-tjuta",
+      "nome": "Parque Nacional Uluru-Kata Tjuta",
+      "descricaoCurta": "Grande formação rochosa em uma paisagem cultural do povo Anangu.",
+      "coordenadas": {
+        "lat": -25.3221111,
+        "lng": 130.9856944
+      },
+      "fontes": [
+        "unesco-uluru",
+        "wikidata-uluru"
+      ]
+    }
+  ],
+  "dicaQr": {
+    "texto": "Procure a folha com o título “Oceania”, preparada pelo professor. O QR fica ao lado do quadrado preto.",
+    "imagem": "images/guia-qr.svg"
+  },
+  "saibaMais": {
+    "texto": "Na Oceania, o oceano conecta muitas ilhas. Há desertos na Austrália, montanhas e florestas em outras terras.",
+    "links": [
+      {
+        "titulo": "Consultar a fonte",
+        "url": "https://education.nationalgeographic.org/resource/oceania-physical-geography/"
+      }
+    ]
+  }
+}

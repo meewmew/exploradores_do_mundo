@@ -1,0 +1,10 @@
+import { readFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+import { spawnSync } from 'node:child_process';
+const reports=JSON.parse(await readFile('models-report.json','utf8'));
+const digest=async path=>createHash('sha256').update(await readFile(path)).digest('hex');
+const before=new Map(await Promise.all(reports.map(async r=>[r.arquivo,await digest(`public/${r.arquivo}`)])));
+const result=spawnSync(process.execPath,['scripts/build-models.mjs'],{stdio:'inherit'});
+if(result.status!==0)throw Error('Regeneração de modelos falhou.');
+for(const [file,sha]of before)if(await digest(`public/${file}`)!==sha)throw Error(`Modelo não determinístico: ${file}`);
+console.log(`SHA-256 idêntico nos ${before.size} GLBs após regeneração.`);

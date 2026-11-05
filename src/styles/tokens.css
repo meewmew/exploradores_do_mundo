@@ -1,0 +1,38 @@
+:root {
+  --font-body: 'Nunito', 'Segoe UI', system-ui, sans-serif;
+  --font-heading: 'Fredoka', 'Nunito', system-ui, sans-serif;
+  --canvas: #e6f6fc;
+  --surface: #ffffff;
+  --surface-warm: #fff8e9;
+  --ink: #15365b;
+  --ink-muted: #38536c;
+  --accent-ink: #174c73;
+  --focus: #15365b;
+  --tint: #c8eaf7;
+  --tint-soft: #e2f4fc;
+  --tint-strong: #c8b7ed;
+  --warm: #ffdcbb;
+  --warm-soft: #fff2e5;
+  --action: #ff922e;
+  --action-edge: #b7500d;
+  --accent: var(--tint);
+  --success-tint: #d1eccb;
+  --success-soft: #edf7e9;
+  --yellow: #ffdf72;
+  --water: #a8deef;
+  --border: #bbd5df;
+  --border-strong: #8fb8cc;
+  --border-control: #54748a;
+  --shadow: #15365b12;
+  --shadow-soft: #15365b08;
+  --shadow-deep: #15365b24;
+  --map-locked: #c3d3db;
+  --map-grid: var(--ink);
+  --camera-bg: #102940;
+  --camera-overlay: #fff8e9f5;
+  --success: #315d36;
+  --danger: #a12d32;
+  --radius-card: 1.75rem;
+  --radius-button: 1rem;
+  --ease-out: cubic-bezier(.23, 1, .32, 1);
+}

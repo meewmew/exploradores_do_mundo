@@ -1,0 +1,7 @@
+{
+  "nota": "Somente a geometria é separada; a lista de países mantém o continente da maior parte do território.",
+  "regras": [
+    { "pais": "FRA", "longitudeMenorQue": -30, "latitudeMenorQue": 20, "continente": "america", "descricao": "Guiana Francesa: parte geográfica sul-americana da França" },
+    { "pais": "USA", "longitudeMenorQue": -130, "latitudeMenorQue": 30, "continente": "oceania", "descricao": "Havaí: parte geográfica do Pacífico" }
+  ]
+}

@@ -1,0 +1,9 @@
+import { createRoot } from 'react-dom/client';
+import App from './App';
+import './styles/app.css';
+import './styles/journey.css';
+import './styles/terrain.css';
+import './styles/expedition.css';
+import './styles/entry.css';
+import './styles/mobile-exploration.css';
+createRoot(document.getElementById('root')!).render(<App/>);

@@ -1,0 +1,132 @@
+{
+  "id": "antartida",
+  "nome": "Antártida",
+  "cor": "#b9e2f5",
+  "descricaoCurta": "Gelo, frio e ciência fazem parte da Antártida. Pesquisadores trabalham em estações para conhecer esse ambiente.",
+  "descricao": "Gelo, frio e ciência fazem parte da Antártida. Pesquisadores trabalham em estações para conhecer esse ambiente.",
+  "fichaCurta": {
+    "localizacao": "Ao redor do Polo Sul, cercada pelo Oceano Austral.",
+    "curiosidade": "O Tratado Antártico reserva o continente para fins pacíficos e pesquisa científica.",
+    "ilustracao": "images/antartida.svg",
+    "ilustracaoAlt": "Ilustração educativa de Antártida: O Tratado Antártico reserva o continente para fins pacíficos e pesquisa científica."
+  },
+  "areaKm2": {
+    "valor": null,
+    "fonte": "natural-earth",
+    "verificar": true
+  },
+  "populacao": {
+    "valor": null,
+    "fonte": "natural-earth",
+    "verificar": true,
+    "anoReferencia": 0
+  },
+  "quantidadePaises": {
+    "valor": 0,
+    "fonte": "country-assignments",
+    "criterio": "Estados-membros da ONU e observadores; país no continente da maior parte do território, Cáucaso na Ásia."
+  },
+  "caracteristicasGeograficas": [
+    "Continente polar coberto por gelo"
+  ],
+  "climas": [
+    "Polar: frio e seco."
+  ],
+  "faunaFlora": [
+    "Pinguins e focas vivem na região antártica; há pouca vegetação terrestre."
+  ],
+  "cultura": [
+    "Estações de pesquisa reúnem equipes de diferentes países."
+  ],
+  "curiosidades": [
+    "O Tratado Antártico reserva o continente para fins pacíficos e pesquisa científica."
+  ],
+  "paises": [],
+  "territorios": [],
+  "fontesTexto": {
+    "descricao": [
+      "ng-antarctica",
+      "antarctic-treaty"
+    ],
+    "caracteristicasGeograficas": [
+      "ng-antarctica",
+      "antarctic-treaty"
+    ],
+    "climas": [
+      "ng-antarctica",
+      "antarctic-treaty"
+    ],
+    "faunaFlora": [
+      "ng-antarctica",
+      "antarctic-treaty"
+    ],
+    "cultura": [
+      "ng-antarctica",
+      "antarctic-treaty"
+    ],
+    "curiosidades": [
+      "ng-antarctica",
+      "antarctic-treaty"
+    ]
+  },
+  "marcador": {
+    "tipo": "barcode",
+    "id": 2,
+    "arquivo": "markers/antartida-ar.svg"
+  },
+  "modelo": {
+    "arquivo": "models/antartida.glb",
+    "tamanhoKb": 381.5
+  },
+  "pontosTuristicos": [
+    {
+      "id": "estacao-mcmurdo",
+      "nome": "Estação McMurdo",
+      "descricaoCurta": "Estação de pesquisa dos Estados Unidos na Ilha de Ross, junto ao Mar de Ross.",
+      "coordenadas": {
+        "lat": -77.8482089,
+        "lng": 166.6684219
+      },
+      "fontes": [
+        "wikidata-mcmurdo"
+      ]
+    },
+    {
+      "id": "estacao-amundsen-scott",
+      "nome": "Estação Amundsen–Scott",
+      "descricaoCurta": "Estação científica dos Estados Unidos próxima ao Polo Sul geográfico.",
+      "coordenadas": {
+        "lat": -89.9975,
+        "lng": 139.2728056
+      },
+      "fontes": [
+        "wikidata-amundsen-scott"
+      ]
+    },
+    {
+      "id": "estacao-vostok",
+      "nome": "Estação Vostok",
+      "descricaoCurta": "Estação científica russa no interior da Antártida Oriental.",
+      "coordenadas": {
+        "lat": -78.464167,
+        "lng": 106.86583
+      },
+      "fontes": [
+        "wikidata-vostok"
+      ]
+    }
+  ],
+  "dicaQr": {
+    "texto": "Procure a folha com o título “Antártida”, preparada pelo professor. O QR fica ao lado do quadrado preto.",
+    "imagem": "images/guia-qr.svg"
+  },
+  "saibaMais": {
+    "texto": "Gelo, frio e ciência fazem parte da Antártida. Pesquisadores trabalham em estações para conhecer esse ambiente.",
+    "links": [
+      {
+        "titulo": "Consultar a fonte",
+        "url": "https://www.ats.aq/e/antarctictreaty.html"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1744 @@
+{
+  "id": "africa",
+  "nome": "África",
+  "cor": "#ffd166",
+  "descricaoCurta": "Na África, encontramos desertos, savanas, florestas e grandes lagos. Cada ambiente abriga formas de vida diferentes.",
+  "descricao": "Na África, encontramos desertos, savanas, florestas e grandes lagos. Cada ambiente abriga formas de vida diferentes.",
+  "fichaCurta": {
+    "localizacao": "Entre os oceanos Atlântico e Índico, atravessada pela Linha do Equador.",
+    "curiosidade": "O Saara é o maior deserto quente do mundo.",
+    "ilustracao": "images/africa.svg",
+    "ilustracaoAlt": "Ilustração educativa de África: O Saara é o maior deserto quente do mundo."
+  },
+  "areaKm2": {
+    "valor": null,
+    "fonte": "natural-earth",
+    "verificar": true
+  },
+  "populacao": {
+    "valor": null,
+    "fonte": "natural-earth",
+    "verificar": true,
+    "anoReferencia": 0
+  },
+  "quantidadePaises": {
+    "valor": 54,
+    "fonte": "country-assignments",
+    "criterio": "Estados-membros da ONU e observadores; país no continente da maior parte do território, Cáucaso na Ásia."
+  },
+  "caracteristicasGeograficas": [
+    "Deserto do Saara",
+    "Grandes Lagos africanos",
+    "Vale do Rift"
+  ],
+  "climas": [
+    "Árido no Saara; condições tropicais e equatoriais em outras regiões."
+  ],
+  "faunaFlora": [
+    "Savanas abrigam girafas e elefantes; florestas úmidas têm grande diversidade de plantas."
+  ],
+  "cultura": [
+    "Comunidades do Saara produzem sal há milhares de anos."
+  ],
+  "curiosidades": [
+    "O Saara é o maior deserto quente do mundo."
+  ],
+  "paises": [
+    {
+      "id": "ZAF",
+      "nome": "África do Sul",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Bloemfontein / Pretoria / Cape Town",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 58558270,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, África do Sul faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/ZAF.glb"
+      }
+    },
+    {
+      "id": "AGO",
+      "nome": "Angola",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Luanda",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 31825295,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Angola faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/AGO.glb"
+      }
+    },
+    {
+      "id": "DZA",
+      "nome": "Argélia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Algiers",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 43053054,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Argélia faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/DZA.glb"
+      }
+    },
+    {
+      "id": "BEN",
+      "nome": "Benim",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Cotonou",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 11801151,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Benim faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/BEN.glb"
+      }
+    },
+    {
+      "id": "BWA",
+      "nome": "Botsuana",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Gaborone",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 2303697,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Botsuana faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/BWA.glb"
+      }
+    },
+    {
+      "id": "BFA",
+      "nome": "Burkina Faso",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Ouagadougou",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 20321378,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Burkina Faso faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/BFA.glb"
+      }
+    },
+    {
+      "id": "BDI",
+      "nome": "Burundi",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Bujumbura",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 11530580,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Burundi faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/BDI.glb"
+      }
+    },
+    {
+      "id": "CPV",
+      "nome": "Cabo Verde",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Praia",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 549935,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Cabo Verde faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/CPV.glb"
+      }
+    },
+    {
+      "id": "CMR",
+      "nome": "Camarões",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Yaoundé",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 25876380,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Camarões faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/CMR.glb"
+      }
+    },
+    {
+      "id": "TCD",
+      "nome": "Chade",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "N'Djamena",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 15946876,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Chade faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/TCD.glb"
+      }
+    },
+    {
+      "id": "COM",
+      "nome": "Comores",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Moroni",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 850886,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Comores faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/COM.glb"
+      }
+    },
+    {
+      "id": "CIV",
+      "nome": "Costa do Marfim",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Yamoussoukro / Abidjan",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 25716544,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Costa do Marfim faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/CIV.glb"
+      }
+    },
+    {
+      "id": "DJI",
+      "nome": "Djibouti",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Djibouti",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 973560,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Djibouti faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/DJI.glb"
+      }
+    },
+    {
+      "id": "EGY",
+      "nome": "Egito",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Cairo",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 100388073,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Egito faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "nota": "O Egito inclui a Península do Sinai, na Ásia; a maior parte de seu território fica na África.",
+      "modelo": {
+        "arquivo": "models/countries/EGY.glb"
+      }
+    },
+    {
+      "id": "ERI",
+      "nome": "Eritreia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Asmara",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 6081196,
+        "fonte": "natural-earth",
+        "anoReferencia": 2020
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Eritreia faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/ERI.glb"
+      }
+    },
+    {
+      "id": "SWZ",
+      "nome": "Essuatíni",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Mbabane",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 1148130,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Essuatíni faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/SWZ.glb"
+      }
+    },
+    {
+      "id": "ETH",
+      "nome": "Etiópia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Addis Ababa",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 112078730,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Etiópia faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/ETH.glb"
+      }
+    },
+    {
+      "id": "GAB",
+      "nome": "Gabão",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Libreville",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 2172579,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Gabão faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/GAB.glb"
+      }
+    },
+    {
+      "id": "GMB",
+      "nome": "Gâmbia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Banjul",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 2347706,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Gâmbia faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/GMB.glb"
+      }
+    },
+    {
+      "id": "GHA",
+      "nome": "Gana",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Accra",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 30417856,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Gana faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/GHA.glb"
+      }
+    },
+    {
+      "id": "GIN",
+      "nome": "Guiné",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Conakry",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 12771246,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Guiné faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/GIN.glb"
+      }
+    },
+    {
+      "id": "GNQ",
+      "nome": "Guiné Equatorial",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Malabo",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 1355986,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Guiné Equatorial faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/GNQ.glb"
+      }
+    },
+    {
+      "id": "GNB",
+      "nome": "Guiné-Bissau",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Bissau",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 1920922,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Guiné-Bissau faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/GNB.glb"
+      }
+    },
+    {
+      "id": "LSO",
+      "nome": "Lesoto",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Maseru",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 2125268,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Lesoto faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/LSO.glb"
+      }
+    },
+    {
+      "id": "LBR",
+      "nome": "Libéria",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Monrovia",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 4937374,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Libéria faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/LBR.glb"
+      }
+    },
+    {
+      "id": "LBY",
+      "nome": "Líbia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Tripoli",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 6777452,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Líbia faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/LBY.glb"
+      }
+    },
+    {
+      "id": "MDG",
+      "nome": "Madagáscar",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Antananarivo",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 26969307,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Madagáscar faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/MDG.glb"
+      }
+    },
+    {
+      "id": "MWI",
+      "nome": "Malawi",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Lilongwe",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 18628747,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Malawi faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/MWI.glb"
+      }
+    },
+    {
+      "id": "MLI",
+      "nome": "Mali",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Bamako",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 19658031,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Mali faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/MLI.glb"
+      }
+    },
+    {
+      "id": "MAR",
+      "nome": "Marrocos",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Rabat",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 36471769,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Marrocos faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/MAR.glb"
+      }
+    },
+    {
+      "id": "MUS",
+      "nome": "Maurícia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Port Louis",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 1265711,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Maurícia faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/MUS.glb"
+      }
+    },
+    {
+      "id": "MRT",
+      "nome": "Mauritânia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Nouakchott",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 4525696,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Mauritânia faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/MRT.glb"
+      }
+    },
+    {
+      "id": "MOZ",
+      "nome": "Moçambique",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Maputo",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 30366036,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Moçambique faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/MOZ.glb"
+      }
+    },
+    {
+      "id": "NAM",
+      "nome": "Namíbia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Windhoek",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 2494530,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Namíbia faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/NAM.glb"
+      }
+    },
+    {
+      "id": "NER",
+      "nome": "Níger",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Niamey",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 23310715,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Níger faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/NER.glb"
+      }
+    },
+    {
+      "id": "NGA",
+      "nome": "Nigéria",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Abuja",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 200963599,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Nigéria faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/NGA.glb"
+      }
+    },
+    {
+      "id": "KEN",
+      "nome": "Quénia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Nairobi",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 52573973,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Quénia faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/KEN.glb"
+      }
+    },
+    {
+      "id": "CAF",
+      "nome": "República Centro-Africana",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Bangui",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 4745185,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, República Centro-Africana faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/CAF.glb"
+      }
+    },
+    {
+      "id": "COD",
+      "nome": "República Democrática do Congo",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Kinshasa",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 86790567,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, República Democrática do Congo faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/COD.glb"
+      }
+    },
+    {
+      "id": "COG",
+      "nome": "República do Congo",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Brazzaville",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 5380508,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, República do Congo faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/COG.glb"
+      }
+    },
+    {
+      "id": "RWA",
+      "nome": "Ruanda",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Kigali",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 12626950,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Ruanda faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/RWA.glb"
+      }
+    },
+    {
+      "id": "STP",
+      "nome": "São Tomé e Príncipe",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "São Tomé",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 215056,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, São Tomé e Príncipe faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/STP.glb"
+      }
+    },
+    {
+      "id": "SEN",
+      "nome": "Senegal",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Dakar",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 16296364,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Senegal faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/SEN.glb"
+      }
+    },
+    {
+      "id": "SLE",
+      "nome": "Serra Leoa",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Freetown",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 7813215,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Serra Leoa faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/SLE.glb"
+      }
+    },
+    {
+      "id": "SYC",
+      "nome": "Seychelles",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Victoria",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 97625,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Seychelles faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ]
+    },
+    {
+      "id": "SOM",
+      "nome": "Somália",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Mogadishu",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 10192317.3,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Somália faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/SOM.glb"
+      }
+    },
+    {
+      "id": "SDN",
+      "nome": "Sudão",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Khartoum",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 42813238,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Sudão faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/SDN.glb"
+      }
+    },
+    {
+      "id": "SDS",
+      "nome": "Sudão do Sul",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 11062113,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Sudão do Sul faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "undata-south-sudan",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/SDS.glb"
+      },
+      "capital": {
+        "valor": "Juba",
+        "fonte": "undata-south-sudan"
+      }
+    },
+    {
+      "id": "TZA",
+      "nome": "Tanzânia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Dar es Salaam",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 58005463,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Tanzânia faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/TZA.glb"
+      }
+    },
+    {
+      "id": "TGO",
+      "nome": "Togo",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Lomé",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 8082366,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Togo faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/TGO.glb"
+      }
+    },
+    {
+      "id": "TUN",
+      "nome": "Tunísia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Tunis",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 11694719,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Tunísia faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/TUN.glb"
+      }
+    },
+    {
+      "id": "UGA",
+      "nome": "Uganda",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Kampala",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 44269594,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Uganda faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/UGA.glb"
+      }
+    },
+    {
+      "id": "ZMB",
+      "nome": "Zâmbia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Lusaka",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 17861030,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Zâmbia faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/ZMB.glb"
+      }
+    },
+    {
+      "id": "ZWE",
+      "nome": "Zimbábue",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Harare",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 14645468,
+        "fonte": "natural-earth",
+        "anoReferencia": 2019
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Zimbábue faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments",
+        "un-members"
+      ],
+      "modelo": {
+        "arquivo": "models/countries/ZWE.glb"
+      }
+    }
+  ],
+  "territorios": [
+    {
+      "id": "SHN",
+      "nome": "Santa Helena",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 4534,
+        "fonte": "natural-earth",
+        "anoReferencia": 2016
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Santa Helena faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "SAH",
+      "nome": "Sara Ocidental",
+      "nomeFonte": "natural-earth",
+      "populacao": {
+        "valor": 603253,
+        "fonte": "natural-earth",
+        "anoReferencia": 2017
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Sara Ocidental faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    },
+    {
+      "id": "SOL",
+      "nome": "Somalilândia",
+      "nomeFonte": "natural-earth",
+      "capital": {
+        "valor": "Hargeisa",
+        "fonte": "natural-earth"
+      },
+      "populacao": {
+        "valor": 5096159,
+        "fonte": "natural-earth",
+        "anoReferencia": 2014
+      },
+      "areaKm2": {
+        "valor": null,
+        "fonte": "natural-earth",
+        "verificar": true
+      },
+      "curiosidade": "No mapa desta coleção, Somalilândia faz parte de África.",
+      "fontes": [
+        "natural-earth",
+        "country-assignments"
+      ],
+      "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
+    }
+  ],
+  "fontesTexto": {
+    "descricao": [
+      "ng-africa"
+    ],
+    "caracteristicasGeograficas": [
+      "ng-africa"
+    ],
+    "climas": [
+      "ng-africa"
+    ],
+    "faunaFlora": [
+      "ng-africa"
+    ],
+    "cultura": [
+      "ng-africa"
+    ],
+    "curiosidades": [
+      "ng-africa"
+    ]
+  },
+  "marcador": {
+    "tipo": "barcode",
+    "id": 0,
+    "arquivo": "markers/africa-ar.svg"
+  },
+  "modelo": {
+    "arquivo": "models/africa.glb",
+    "tamanhoKb": 386.58
+  },
+  "pontosTuristicos": [
+    {
+      "id": "piramides-gize",
+      "nome": "Pirâmides de Gizé",
+      "descricaoCurta": "No Egito, este conjunto reúne três grandes pirâmides construídas para faraós do Egito Antigo.",
+      "coordenadas": {
+        "lat": 29.976111,
+        "lng": 31.132778
+      },
+      "fontes": [
+        "unesco-giza",
+        "wikidata-giza"
+      ],
+      "fontesPorCampo": {
+        "nome": [
+          "wikidata-giza"
+        ],
+        "descricaoCurta": [
+          "unesco-giza"
+        ],
+        "coordenadas": [
+          "wikidata-giza"
+        ]
+      }
+    },
+    {
+      "id": "cataratas-vitoria",
+      "nome": "Cataratas Vitória",
+      "descricaoCurta": "O rio Zambeze forma estas quedas-d’água entre a Zâmbia e o Zimbábue.",
+      "coordenadas": {
+        "lat": -17.924777777778,
+        "lng": 25.858055555556
+      },
+      "fontes": [
+        "unesco-victoria-falls",
+        "wikidata-victoria-falls"
+      ],
+      "fontesPorCampo": {
+        "nome": [
+          "wikidata-victoria-falls"
+        ],
+        "descricaoCurta": [
+          "unesco-victoria-falls"
+        ],
+        "coordenadas": [
+          "wikidata-victoria-falls"
+        ]
+      }
+    },
+    {
+      "id": "kilimanjaro",
+      "nome": "Kilimanjaro",
+      "descricaoCurta": "Na Tanzânia, esta montanha vulcânica abriga o ponto mais alto da África.",
+      "coordenadas": {
+        "lat": -3.0666666666667,
+        "lng": 37.359166666667
+      },
+      "fontes": [
+        "unesco-kilimanjaro",
+        "wikidata-kilimanjaro"
+      ],
+      "fontesPorCampo": {
+        "nome": [
+          "wikidata-kilimanjaro"
+        ],
+        "descricaoCurta": [
+          "unesco-kilimanjaro"
+        ],
+        "coordenadas": [
+          "wikidata-kilimanjaro"
+        ]
+      }
+    }
+  ],
+  "dicaQr": {
+    "texto": "Procure a folha com o título “África”, preparada pelo professor. O QR fica ao lado do quadrado preto.",
+    "imagem": "images/guia-qr.svg"
+  },
+  "saibaMais": {
+    "texto": "Na África, encontramos desertos, savanas, florestas e grandes lagos. Cada ambiente abriga formas de vida diferentes.",
+    "links": [
+      {
+        "titulo": "Consultar a fonte",
+        "url": "https://education.nationalgeographic.org/resource/africa-physical-geography/"
+      }
+    ]
+  }
+}
