@@ -9,8 +9,23 @@ const streams=new Set();
 const pointLayer=document.querySelector('#points'),pointEntries=[];
 const projectionBounds={left:0,top:0,width:innerWidth,height:innerHeight};
 let pointsAbort,pointsObserver,modelReady=false,selectedPointId='';
+let aimObserver,cameraReady=false;
+const markerAim=embedded?null:document.createElement('div');
+if(markerAim){document.documentElement.classList.add('standalone-camera');markerAim.id='marker-aim';markerAim.hidden=true;markerAim.setAttribute('aria-hidden','true');markerAim.innerHTML='<div class="marker-aim-frame"><i></i><i></i><i></i><i></i><span class="marker-aim-center"></span></div>';document.body.append(markerAim);}
+function positionAim(){
+ if(!markerAim)return;
+ const width=window.visualViewport?.width||innerWidth,height=window.visualViewport?.height||innerHeight;
+ const panelTop=document.querySelector('#standalone').getBoundingClientRect().top;
+ const available=Math.max(0,Math.min(height,panelTop)-24),size=Math.min(272,width*.58,available*.68);
+ Object.assign(markerAim.style,{left:`${width/2}px`,top:`${12+available/2}px`,width:`${size}px`,height:`${size}px`});
+}
+function showAim(visible){if(markerAim){markerAim.hidden=!visible;if(visible)positionAim();}}
+if(markerAim){
+ if(typeof ResizeObserver==='function'){aimObserver=new ResizeObserver(positionAim);aimObserver.observe(document.querySelector('#standalone'));}
+ window.addEventListener('resize',positionAim);window.visualViewport?.addEventListener('resize',positionAim);
+}
 const post=(type,payload)=>{if(embedded)window.parent.postMessage({app:'exploradores-ar',version:1,type,payload},origin);};
-function error(type,code,text){status.classList.remove('sr-only');status.setAttribute('role','alert');status.textContent=text;post(type,{code});}
+function error(type,code,text){cameraReady=false;showAim(false);status.classList.remove('sr-only');status.setAttribute('role','alert');status.textContent=text;post(type,{code});}
 function trackingStatus(text){status.classList.add('sr-only');status.setAttribute('role','status');status.textContent=text;}
 function updateProjectionBounds(){const rect=scene?.renderer?.domElement?.getBoundingClientRect();if(rect){projectionBounds.left=rect.left;projectionBounds.top=rect.top;projectionBounds.width=rect.width;projectionBounds.height=rect.height;}}
 function hidePoints(){for(const point of pointEntries)point.button.hidden=true;}
@@ -81,6 +96,7 @@ async function stableFound(){
 }
 function stop(){
  if(stopped){post('ar:stopped');return;}stopped=true;clearTimeout(stableTimer);
+ cameraReady=false;showAim(false);aimObserver?.disconnect();window.removeEventListener('resize',positionAim);window.visualViewport?.removeEventListener('resize',positionAim);
  window.removeEventListener('resize',updateProjectionBounds);
  pointsAbort?.abort();pointsObserver?.disconnect();hidePoints();pointers.clear();
  scene?.pause();
@@ -96,7 +112,7 @@ function stop(){
  post('ar:stopped');
 }
 window.addEventListener('pagehide',stop);
-document.addEventListener('visibilitychange',()=>{clearTimeout(stableTimer);if(document.hidden){scene?.pause();hidePoints();pointers.clear();}else if(!stopped){scene?.play();if(marker?.object3D?.visible){foundAt=performance.now();stableTimer=setTimeout(stableFound,510);}}});
+document.addEventListener('visibilitychange',()=>{clearTimeout(stableTimer);if(document.hidden){showAim(false);scene?.pause();hidePoints();pointers.clear();}else if(!stopped){showAim(cameraReady&&!marker?.object3D?.visible);scene?.play();if(marker?.object3D?.visible){foundAt=performance.now();stableTimer=setTimeout(stableFound,510);}}});
 function start(){
  if(!ids.includes(id)||(modelPath!==`models/${id}.glb`&&modelPath!==`models/${id}-terrain.glb`)){error('ar:model-error','invalid','Continente ou modelo inválido.');return;}
  const canvas=document.createElement('canvas');
@@ -117,8 +133,8 @@ function start(){
  const ambient=document.createElement('a-entity');ambient.setAttribute('light','type: ambient; intensity: 1');scene.append(ambient);
  const light=document.createElement('a-entity');light.setAttribute('light','type: directional; intensity: 1.5');light.setAttribute('position','1 3 2');scene.append(light);
  const camera=document.createElement('a-entity');camera.setAttribute('camera','');camera.setAttribute('look-controls','enabled: false');scene.append(camera);
- marker.addEventListener('markerFound',()=>{if(stopped)return;clearTimeout(stableTimer);foundAt=performance.now();trackingStatus('Marcador encontrado. Mantenha a folha visível…');stableTimer=setTimeout(stableFound,510);});
- marker.addEventListener('markerLost',()=>{clearTimeout(stableTimer);foundAt=0;hidePoints();post('ar:marker-lost',{continentId:id});trackingStatus('Reposicione a folha: mantenha o marcador inteiro na câmera.');});
+ marker.addEventListener('markerFound',()=>{if(stopped)return;showAim(false);clearTimeout(stableTimer);foundAt=performance.now();trackingStatus('Marcador encontrado. Mantenha a folha visível…');stableTimer=setTimeout(stableFound,510);});
+ marker.addEventListener('markerLost',()=>{showAim(cameraReady);clearTimeout(stableTimer);foundAt=0;hidePoints();post('ar:marker-lost',{continentId:id});trackingStatus('Reposicione a folha: mantenha o marcador inteiro na câmera.');});
  model.addEventListener('model-loaded',()=>{modelReady=true;post('ar:model-loaded');});
  model.addEventListener('model-error',()=>{modelReady=false;hidePoints();error('ar:model-error','load','Não foi possível carregar o modelo.');});
  scene.addEventListener('renderstart',()=>{
@@ -139,7 +155,7 @@ function start(){
  document.body.append(scene);
  window.addEventListener('resize',updateProjectionBounds);void loadPoints();
 }
-window.addEventListener('camera-init',()=>{if(stopped){document.querySelectorAll('video').forEach(v=>v.srcObject?.getTracks().forEach(t=>t.stop()));return;}post('ar:ready');trackingStatus('Aponte para o quadrado preto da folha.');});
+window.addEventListener('camera-init',()=>{if(stopped){document.querySelectorAll('video').forEach(v=>v.srcObject?.getTracks().forEach(t=>t.stop()));return;}cameraReady=true;showAim(!marker?.object3D?.visible);post('ar:ready');trackingStatus('Aponte para o quadrado preto da folha.');});
 window.addEventListener('camera-error',e=>{const err=e.detail?.error||e.detail||lastCameraError;const code=err?.name||'unknown';error(code==='NotAllowedError'?'ar:camera-denied':'ar:camera-error',code,code==='NotAllowedError'?'Câmera bloqueada. Autorize nas permissões do site.':'Não foi possível acessar a câmera.');});
 const overlay=document.querySelector('#gestures'),pointers=new Map();
 overlay.addEventListener('pointerdown',e=>{

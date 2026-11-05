@@ -37,11 +37,11 @@ export function ARFrame({continent,onMessage,onWindow,session=0,modelFile,childr
   frame.onload=()=>{if(stopping)sendARMessage(frame.contentWindow,'ar:stop');};
   const remove=()=>{if(timer)clearTimeout(timer);window.removeEventListener('message',listener);layer.remove();};
   const listener=(event:MessageEvent)=>{const message=receiveARMessage(event,frame.contentWindow,location.origin,continent.id);if(!message)return;if(message.type==='ar:stopped'){remove();return;}if(!stopping)callback.current(message);};
-  const position=()=>{if(expanded.current){Object.assign(layer.style,{left:'0px',top:'0px',width:'100%',height:'100dvh'});return;}const rect=host.current?.getBoundingClientRect();if(rect)Object.assign(layer.style,{left:`${rect.left+window.scrollX}px`,top:`${rect.top+window.scrollY}px`,width:`${rect.width}px`,height:`${rect.height}px`});};
-  reposition.current=position;const observer=new ResizeObserver(position);if(host.current)observer.observe(host.current);window.addEventListener('resize',position);window.addEventListener('scroll',position,{passive:true,capture:true});
+  const position=()=>{if(expanded.current){Object.assign(layer.style,{left:'0px',top:'0px',width:'100%',height:`${window.visualViewport?.height||window.innerHeight}px`});return;}const rect=host.current?.getBoundingClientRect();if(rect)Object.assign(layer.style,{left:`${rect.left+window.scrollX}px`,top:`${rect.top+window.scrollY}px`,width:`${rect.width}px`,height:`${rect.height}px`});};
+  reposition.current=position;const observer=new ResizeObserver(position);if(host.current)observer.observe(host.current);window.addEventListener('resize',position);window.visualViewport?.addEventListener('resize',position);window.addEventListener('scroll',position,{passive:true,capture:true});
   window.addEventListener('message',listener);layer.append(frame);setLayer(layer);position();windowCallback.current(frame.contentWindow);
   return()=>{
-   stopping=true;observer.disconnect();window.removeEventListener('resize',position);window.removeEventListener('scroll',position,true);reposition.current=()=>{};windowCallback.current(null);
+   stopping=true;observer.disconnect();window.removeEventListener('resize',position);window.visualViewport?.removeEventListener('resize',position);window.removeEventListener('scroll',position,true);reposition.current=()=>{};windowCallback.current(null);
    layer.hidden=true;sendARMessage(frame.contentWindow,'ar:stop');
    timer=setTimeout(()=>{console.warn('AR: sem confirmação de parada em 1500 ms; removendo iframe.');remove();},1500);
   };

@@ -20,6 +20,8 @@ Usar HTTPS e as folhas A4 em tamanho real (100%), geradas para a mesma origem e 
 | Perda e retorno do marcador | Modelo some ao perder o marcador e retorna preservando escala e rotação escolhidas |
 | Gestos e pontos | Arraste, pinça, troca de dedos e controles alternativos funcionam; pontos acompanham modelo e permitem seleção por toque/lista |
 | Câmera expandida | Expandir e restaurar conserva cena, pose e pontos; saída continua acessível com barras do navegador e áreas seguras |
+| Mira na página inteira | Antes do reconhecimento, mira visível acima dos controles; some ao encontrar o marcador e retorna na perda; não bloqueia arraste/pinça; conserva posição ao girar aparelho e expandir controles |
+| Versões de Android/iPhone | Registrar aparelho, versão do sistema e do navegador em cada execução; conferir carregamento azul, orientação, permissão de câmera, RA normal/página inteira e visualização 3D; emulação não substitui cada teste físico |
 | Cinco entradas e saídas da RA | Câmera encerra em cada saída, reabre sem travar e não acumula recursos; medir memória separadamente quando houver ferramenta disponível |
 | Sem câmera e progresso | Modelo disponível após descoberta; recarga preserva descobertas/atividades; contadores permanecem independentes |
 | Organizador | Entrada, edição e saída funcionam; progresso temporário não altera coleção do aluno, inclusive na RA em página inteira |

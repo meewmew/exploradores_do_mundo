@@ -7,4 +7,5 @@ import './styles/expedition.css';
 import './styles/entry.css';
 import './styles/mobile-exploration.css';
 import './styles/reference-map.css';
+import './styles/mobile-compat.css';
 createRoot(document.getElementById('root')!).render(<App/>);

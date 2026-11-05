@@ -1,0 +1,14 @@
+/* AR.js redimensiona o body para o vídeo; isso não deve alargar o viewport móvel. */
+html.standalone-camera { position: fixed; inset: 0; }
+#marker-aim { position: fixed; z-index: 5; left: 50%; top: 42%; width: 56vw; height: 56vw; max-width: 272px; max-height: 272px; transform: translate(-50%, -50%); pointer-events: none; color: var(--surface); }
+#marker-aim[hidden] { display: none; }
+.marker-aim-frame { position: absolute; inset: 0; filter: drop-shadow(0 1px 2px var(--camera-bg)); }
+.marker-aim-frame > i { position: absolute; width: 23%; height: 23%; box-sizing: border-box; border: 3px solid currentColor; }
+.marker-aim-frame > i:nth-child(1) { top: 0; left: 0; border-right: 0; border-bottom: 0; border-top-left-radius: 12px; }
+.marker-aim-frame > i:nth-child(2) { top: 0; right: 0; border-left: 0; border-bottom: 0; border-top-right-radius: 12px; }
+.marker-aim-frame > i:nth-child(3) { bottom: 0; left: 0; border-right: 0; border-top: 0; border-bottom-left-radius: 12px; }
+.marker-aim-frame > i:nth-child(4) { bottom: 0; right: 0; border-left: 0; border-top: 0; border-bottom-right-radius: 12px; }
+.marker-aim-center { position: absolute; left: 50%; top: 50%; width: 22px; height: 22px; transform: translate(-50%, -50%); }
+.marker-aim-center::before, .marker-aim-center::after { content: ''; position: absolute; background: currentColor; border-radius: 2px; }
+.marker-aim-center::before { top: 10px; left: 0; width: 22px; height: 2px; }
+.marker-aim-center::after { top: 0; left: 10px; width: 2px; height: 22px; }

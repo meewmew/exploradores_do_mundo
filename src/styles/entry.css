@@ -1,6 +1,6 @@
 /* A composição segue as referências: escolha, papel sobre o mapa e exploração. */
 body:has(.entry-shell) #root { padding-bottom: env(safe-area-inset-bottom, 0px); }
-body:has(.startup-shell) { background: var(--surface); }
+body:has(.startup-shell) { background: var(--canvas); }
 .entry-shell .site-footer { justify-content: center; }
 .role-choice { min-height: calc(100svh - 6rem); display: flex; flex-direction: column; align-items: center; justify-content: center; padding-block: 2rem 4rem; text-align: center; }
 .role-brand { display: flex; align-items: center; justify-content: center; gap: .625rem; font-family: var(--font-heading); font-size: 1.125rem; margin-bottom: 3rem; }
@@ -9,7 +9,7 @@ body:has(.startup-shell) { background: var(--surface); }
 .role-options { display: grid; gap: 1.5rem; width: min(100%, 27rem); container: role-options / inline-size; }
 .role-button { font-size: clamp(1.5rem, 5vw, 2rem); min-height: 5rem; border-radius: 3rem; padding: 1rem 1.5rem; overflow-wrap: anywhere; }
 .role-button.secondary { background: var(--yellow); border-color: var(--border-control); }
-.adventure-loading { min-height: 100svh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; background: var(--surface); text-align: center; }
+.adventure-loading { min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; background: var(--canvas); text-align: center; }
 .adventure-loading p { margin: 0; }
 .adventure-loading-dots { position: relative; display: block; width: 5rem; height: 5rem; }
 .adventure-loading-dots i { position: absolute; top: calc(50% - .375rem); left: calc(50% - .375rem); width: .75rem; height: .75rem; background: var(--ink); border-radius: 50%; animation: adventure-loading .8s linear infinite; }

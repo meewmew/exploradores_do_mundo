@@ -37,6 +37,14 @@ npm run check:budget
 
 React, TypeScript e Vite; A-Frame e AR.js para realidade aumentada; jsQR para leitura de QR Code; Three.js/model-viewer para modelos 3D; Zod para validação dos dados.
 
+## Android e iPhone
+
+Use Chrome atualizado no Android ou Safari atualizado no iPhone/iPad, por HTTPS e com acesso à câmera. A experiência de RA também depende de gráficos 3D disponíveis no aparelho. Há uma opção de abrir a câmera em página inteira quando o navegador tem limitações dentro do app.
+
+O código do aplicativo é compilado para a sintaxe de Chrome 100 e Safari 15.4, com alternativas para navegadores sem as unidades de altura dinâmica da tela. Isso amplia a compatibilidade do código; não é uma certificação de câmera, WebGL ou das bibliotecas 3D em todas essas versões. O `model-viewer` recomenda as duas versões principais mais recentes dos navegadores ([documentação oficial](https://modelviewer.dev/)).
+
+Na revisão de 05/11/2026, a mira e a câmera em página inteira foram conferidas em sete tamanhos de tela, incluindo paisagem, com vídeo sintético no Chrome. Não foram executados Safari real nem Android físico nesta revisão. O relato anterior de funcionamento em celular continua registrado acima; aparelhos e versões individuais precisam ser registrados no roteiro de teste para confirmar a cobertura.
+
 ## Documentação
 
 - [Fontes e licenças](SOURCES.md)

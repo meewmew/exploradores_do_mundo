@@ -52,7 +52,7 @@ export function useCountryShortcut(id?: ContinentId) {
     drag.current = null;
     sheetRef.current?.removeAttribute('data-dragging');
     if (event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.releasePointerCapture(event.pointerId);
-    const last = current.samples.at(-1);
+    const last = current.samples[current.samples.length - 1];
     if (last && event.timeStamp - last.time > 80) motion.current.velocity = 0;
     const state = motion.current;
     if (!cancelled && current.moved && id && id !== 'antartida' && shouldOpenCountries(state.position, state.velocity)) {

@@ -1,0 +1,12 @@
+/* Chrome Android anterior às unidades de viewport dinâmicas. */
+@supports not (height: 100svh) {
+  .role-choice { min-height: calc(100vh - 6rem); }
+  .journey-loading { min-height: 55vh; }
+  .ar-stage, .ar-layer { --ar-stage-min-height: max(560px, 72vh); }
+  @media (max-width: 640px) { .ar-stage, .ar-layer { --ar-stage-min-height: max(600px, 72vh); } }
+}
+@supports not (height: 100dvh) {
+  .camera-picker { max-height: 65vh; }
+  .instructions-dialog { max-height: calc(100vh - 2rem - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px)); }
+}
+.instructions-dialog-heading h2 { min-width: 0; overflow-wrap: anywhere; }
