@@ -6,7 +6,7 @@
 .map-zoom-controls .button { min-width: 44px; min-height: 44px; padding: .375rem .625rem; font-size: 1rem; }
 .map-zoom-controls output { font-weight: 800; min-width: 3.5rem; text-align: center; }
 .map-zoom-controls .map-fit { margin-left: auto; }
-.world-map-viewport { position: relative; width: 100%; height: clamp(20rem, 50svh, 34rem); overflow: hidden; border: 0; border-radius: 0; background: var(--canvas); touch-action: none; cursor: grab; }
+.world-map-viewport { position: relative; width: 100%; height: clamp(20rem, 50svh, 34rem); overflow: hidden; border: 2px solid var(--border-control); border-radius: 1rem; background: var(--canvas); touch-action: none; cursor: grab; }
 .world-map-viewport:active { cursor: grabbing; }
 .world-map-viewport:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
 .map-pan-plane { position: absolute; inset: 0; transform-origin: center; }

@@ -52,6 +52,8 @@ Conferido no Chrome em 390 × 844 e 1280 × 900: mesma cor calculada da página 
 
 Correção de cor em 05/11/2026: a confirmação visual do responsável pediu o azul mais escuro da imagem original, `#a8deef`. O token `--canvas` passa a usar esse azul, igual ao `--water`; página, mapa e faixas laterais conservam continuidade, sem borda externa. A alteração anterior havia usado `#e6f6fc`, claro demais para o pedido.
 
+Pedido posterior em 05/11/2026: restaurada a borda original do viewport do mapa, com `2px solid var(--border-control)` e cantos de `1rem`. Mantido o azul mais escuro já aprovado. O painel externo permanece integrado à página; esta correção recupera a linha azul escura ao redor do mapa mostrada na captura inicial.
+
 O primeiro deploy no novo endereço concluiu no workflow `41983031844`, commit `c64766b`. `node scripts/check-published.mjs` passou após corrigir a localização do hash na checagem: o build coloca a configuração PBKDF2 no chunk principal compartilhado, não necessariamente no chunk do Organizador. A comparação com a variável do repositório confirmou o mesmo valor sem expô-lo; nenhuma senha ou configuração de acesso foi alterada.
 
 ## Testado no celular e funcionou
