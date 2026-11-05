@@ -44,7 +44,7 @@ export default function ARExperience() {
     <div className={`ar-stage ${found ? 'recognized' : ''}`}>
       <ARFrame continent={c} modelFile={terrain.file} session={session} fullscreen={fullscreen} onExitFullscreen={()=>setFullscreen(false)} onMessage={m => void message(m)} onWindow={w => { target.current = w; }}>
         <div className="ar-view-toolbar"><button className="button secondary" aria-pressed={fullscreen} onClick={()=>setFullscreen(value=>!value)}>{fullscreen?'Sair da tela cheia':'Tela cheia'}</button></div>
-        <div className="ar-status" role={error ? 'alert' : 'status'}>{found ? '✓ ' : ''}{status}</div>
+        <div className={error ? 'ar-status' : 'sr-only'} role={error ? 'alert' : 'status'}>{status}</div>
         <div className="ar-gesture-space">{!found&&!error&&<div className="marker-framing-guide"><div className="marker-framing-square" aria-hidden="true"><i/><i/><i/><i/></div><p><img src={asset(c.marcador.arquivo)} alt={`Marcador de ${c.nome}: quadrado preto da folha`}/><span>Enquadre este quadrado inteiro.<br/>Deixe uma borda clara ao redor.</span></p></div>}</div>
         {unlocked && <section className="ar-fact" aria-label="Ficha sobreposta do continente"><details><summary>Sobre {c.nome}</summary><p>{c.fichaCurta.localizacao}</p><p>{c.fichaCurta.curiosidade}</p></details></section>}
         <div className="ar-exit"><Link className="button primary" to={`/continente/${c.id}`}>{unlocked ? 'Ver sem câmera' : 'Ver dica do QR'}</Link><Link className="button secondary" to="/mapa">Voltar ao mapa</Link></div>

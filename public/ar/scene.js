@@ -3,13 +3,15 @@ const ids=['africa','america','antartida','asia','europa','oceania'];
 const params=new URLSearchParams(location.search), id=params.get('continente'), modelPath=params.get('model');
 const embedded=window.parent!==window,origin=location.origin,repo=embedded?null:createStandaloneRepository(params.get('preview')==='1');
 const status=document.querySelector('#status');
+status.classList.add('sr-only');
 let scene,marker,model,stableTimer,foundAt=0,stopped=false,transformState=initialARTransform(),lastCameraError;
 const streams=new Set();
 const pointLayer=document.querySelector('#points'),pointEntries=[];
 const projectionBounds={left:0,top:0,width:innerWidth,height:innerHeight};
 let pointsAbort,pointsObserver,modelReady=false,selectedPointId='';
 const post=(type,payload)=>{if(embedded)window.parent.postMessage({app:'exploradores-ar',version:1,type,payload},origin);};
-function error(type,code,text){status.textContent=text;post(type,{code});}
+function error(type,code,text){status.classList.remove('sr-only');status.setAttribute('role','alert');status.textContent=text;post(type,{code});}
+function trackingStatus(text){status.classList.add('sr-only');status.setAttribute('role','status');status.textContent=text;}
 function updateProjectionBounds(){const rect=scene?.renderer?.domElement?.getBoundingClientRect();if(rect){projectionBounds.left=rect.left;projectionBounds.top=rect.top;projectionBounds.width=rect.width;projectionBounds.height=rect.height;}}
 function hidePoints(){for(const point of pointEntries)point.button.hidden=true;}
 function projectPoints(){
@@ -75,7 +77,7 @@ async function stableFound(){
  const stableMs=performance.now()-foundAt;if(stableMs<500)return;
  const payload={continentId:id,stableMs};
  if(embedded)post('ar:marker-found',payload);else await discoverFromMarker(repo,id,payload);
- status.textContent='Continente descoberto! O modelo acompanha a folha.';
+ trackingStatus('Continente descoberto! O modelo acompanha a folha.');
 }
 function stop(){
  if(stopped){post('ar:stopped');return;}stopped=true;clearTimeout(stableTimer);
@@ -115,8 +117,8 @@ function start(){
  const ambient=document.createElement('a-entity');ambient.setAttribute('light','type: ambient; intensity: 1');scene.append(ambient);
  const light=document.createElement('a-entity');light.setAttribute('light','type: directional; intensity: 1.5');light.setAttribute('position','1 3 2');scene.append(light);
  const camera=document.createElement('a-entity');camera.setAttribute('camera','');camera.setAttribute('look-controls','enabled: false');scene.append(camera);
- marker.addEventListener('markerFound',()=>{if(stopped)return;clearTimeout(stableTimer);foundAt=performance.now();status.textContent='Marcador encontrado. Mantenha a folha visível…';stableTimer=setTimeout(stableFound,510);});
- marker.addEventListener('markerLost',()=>{clearTimeout(stableTimer);foundAt=0;hidePoints();post('ar:marker-lost',{continentId:id});status.textContent='Reposicione a folha: mantenha o marcador inteiro na câmera.';});
+ marker.addEventListener('markerFound',()=>{if(stopped)return;clearTimeout(stableTimer);foundAt=performance.now();trackingStatus('Marcador encontrado. Mantenha a folha visível…');stableTimer=setTimeout(stableFound,510);});
+ marker.addEventListener('markerLost',()=>{clearTimeout(stableTimer);foundAt=0;hidePoints();post('ar:marker-lost',{continentId:id});trackingStatus('Reposicione a folha: mantenha o marcador inteiro na câmera.');});
  model.addEventListener('model-loaded',()=>{modelReady=true;post('ar:model-loaded');});
  model.addEventListener('model-error',()=>{modelReady=false;hidePoints();error('ar:model-error','load','Não foi possível carregar o modelo.');});
  scene.addEventListener('renderstart',()=>{
@@ -137,7 +139,7 @@ function start(){
  document.body.append(scene);
  window.addEventListener('resize',updateProjectionBounds);void loadPoints();
 }
-window.addEventListener('camera-init',()=>{if(stopped){document.querySelectorAll('video').forEach(v=>v.srcObject?.getTracks().forEach(t=>t.stop()));return;}post('ar:ready');status.textContent='Aponte para o quadrado preto da folha.';});
+window.addEventListener('camera-init',()=>{if(stopped){document.querySelectorAll('video').forEach(v=>v.srcObject?.getTracks().forEach(t=>t.stop()));return;}post('ar:ready');trackingStatus('Aponte para o quadrado preto da folha.');});
 window.addEventListener('camera-error',e=>{const err=e.detail?.error||e.detail||lastCameraError;const code=err?.name||'unknown';error(code==='NotAllowedError'?'ar:camera-denied':'ar:camera-error',code,code==='NotAllowedError'?'Câmera bloqueada. Autorize nas permissões do site.':'Não foi possível acessar a câmera.');});
 const overlay=document.querySelector('#gestures'),pointers=new Map();
 overlay.addEventListener('pointerdown',e=>{
