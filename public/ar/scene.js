@@ -102,13 +102,17 @@ function start(){
  if(!window.AFRAME||!AFRAME.systems.arjs){error('ar:camera-error','unsupported','As bibliotecas de RA não carregaram.');return;}
  if(!AFRAME.components['exploradores-points'])AFRAME.registerComponent('exploradores-points',{tock:projectPoints});
  scene=document.createElement('a-scene');scene.setAttribute('embedded','');scene.setAttribute('vr-mode-ui','enabled: false');scene.setAttribute('renderer','antialias: true; alpha: true; precision: mediump; colorManagement: true;');
+ // Marker tracking supplies the camera pose; motion-sensor access is unnecessary.
+ // Disable A-Frame's iOS permission dialog before the scene is attached so it
+ // cannot appear behind the parent page's instructions and gesture layer.
+ scene.setAttribute('device-orientation-permission-ui','enabled: false');
  scene.setAttribute('exploradores-points','');
  scene.setAttribute('arjs','sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3; cameraParametersUrl: ../vendor/camera_para.dat; patternRatio: 0.5; maxDetectionRate: 30;');
  marker=document.createElement('a-marker');marker.setAttribute('type','barcode');marker.setAttribute('value',String(ids.indexOf(id)));marker.setAttribute('emitevents','true');marker.setAttribute('smooth','false');
  model=document.createElement('a-entity');model.setAttribute('gltf-model',`../${modelPath}`);model.setAttribute('scale','1 1 1');marker.append(model);scene.append(marker);
  const ambient=document.createElement('a-entity');ambient.setAttribute('light','type: ambient; intensity: 1');scene.append(ambient);
  const light=document.createElement('a-entity');light.setAttribute('light','type: directional; intensity: 1.5');light.setAttribute('position','1 3 2');scene.append(light);
- const camera=document.createElement('a-entity');camera.setAttribute('camera','');scene.append(camera);
+ const camera=document.createElement('a-entity');camera.setAttribute('camera','');camera.setAttribute('look-controls','enabled: false');scene.append(camera);
  marker.addEventListener('markerFound',()=>{if(stopped)return;clearTimeout(stableTimer);foundAt=performance.now();status.textContent='Marcador encontrado. Mantenha a folha visível…';stableTimer=setTimeout(stableFound,510);});
  marker.addEventListener('markerLost',()=>{clearTimeout(stableTimer);foundAt=0;hidePoints();post('ar:marker-lost',{continentId:id});status.textContent='Reposicione a folha: mantenha o marcador inteiro na câmera.';});
  model.addEventListener('model-loaded',()=>{modelReady=true;post('ar:model-loaded');});
