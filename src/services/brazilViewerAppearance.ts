@@ -7,14 +7,14 @@ export interface ViewerPBRMaterial {
  setRoughnessFactor(value:number):void;
 }
 export interface ViewerModel {materials:{name:string;pbrMetallicRoughness:ViewerPBRMaterial}[]}
-export const BRAZIL_VIEWER_APPEARANCE={
+export const COUNTRY_VIEWER_APPEARANCE={
  environment:'lighting/brazil-soft-key.hdr',
- orbit:'0deg 42deg 112%',
+ orbit:'0deg 42deg 105%',
  exposure:'1',shadowIntensity:'0.18',shadowSoftness:'0.65',
 } as const;
-// Customize the displayed instance only. Restore its materials on teardown,
-// including model-viewer's generated line material, so cached assets stay intact.
-export function applyBrazilViewerAppearance(model:ViewerModel):()=>void {
+// Style only the displayed instance. Restore materials on teardown so the
+// viewer's shared model cache and the AR scene keep their original appearance.
+export function applyCountryViewerAppearance(model:ViewerModel):()=>void {
  const restore:(()=>void)[]=[];
  for(const material of model.materials){
   const pbr=material.pbrMetallicRoughness;
@@ -28,3 +28,7 @@ export function applyBrazilViewerAppearance(model:ViewerModel):()=>void {
  }
  return ()=>{for(const reset of restore)reset();};
 }
+
+// Keep the original exports for existing callers while the profile is shared.
+export const BRAZIL_VIEWER_APPEARANCE=COUNTRY_VIEWER_APPEARANCE;
+export const applyBrazilViewerAppearance=applyCountryViewerAppearance;

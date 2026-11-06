@@ -1,5 +1,7 @@
 # Aparência do Brasil — 06/11/2026
 
+Esta nota registra a primeira aplicação, restrita ao Brasil. Em seguida, o mesmo perfil foi ampliado às fichas dos 177 países com modelo; o estado atual está em [APARENCIA-PAISES.md](APARENCIA-PAISES.md).
+
 Alteração apenas da instância do visualizador 3D na ficha do Brasil. Sem publicação. A RA, os GLBs, a malha, o exagero vertical, os dados DEM, os rios e as coordenadas dos pontos não foram alterados nesta tarefa. Os ajustes não acrescentam detalhe geográfico que a malha não possua.
 
 Mudanças: acabamento fosco sem efeito metálico na instância exibida, equilíbrio das cores existentes, rios com menos destaque, laterais mais neutras, luz de estúdio lateral suave, sombra de contato reduzida e enquadramento/restauração com mais margem. O ambiente de iluminação é um HDR técnico autoral de 64×32 pixels (aproximadamente 8,5 KB), gerado por `scripts/build-brazil-lighting.mjs`, sem fotografias, sem texturas de terreno e sem luzes dinâmicas ou pós-processamento adicionados.
