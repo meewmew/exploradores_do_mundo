@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "countryId": "ROU",
+  "continentId": "europa",
+  "file": "models/countries/ROU.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 76.62131145460559,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -24.983181820553067,
+      -45.848413998435255
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      2064.3247102923633,
+      -13966.154694663579
+    ],
+    "horizontalScale": 0.000002491875745335109,
+    "elevationScale": 0.00019093078758949882,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -13
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 1628.3072221329344,
+      "max": 1769.227694606748
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -25,
+    "maximumSampleMeters": 1663,
+    "displayedMinimumMeters": -13,
+    "displayedMaximumMeters": 1663,
+    "coastalClampedVertexIndices": [
+      488,
+      489,
+      490,
+      491,
+      495,
+      496,
+      497,
+      498,
+      499,
+      500,
+      501,
+      503,
+      506,
+      513,
+      514,
+      516,
+      517,
+      518,
+      519,
+      524,
+      525,
+      526,
+      527
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "45c6634e890f56d87278929436df3341b22b0e0813ca6eef39c8d40975cb0cd8",
+    "inputHash": "1b6f7ad05332be0b0d45f2b36582dd2433d2aeed31dab227c9ee60bbd53d7d3c",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 35405.83119262084,
+    "simplification": 0.00015,
+    "topVertexCount": 530,
+    "topTriangleCount": 714,
+    "sourceGeometrySha256": "6dc2156331b7c18f4763a5c6507ab8bbe0ac0b9e9229fcee1647e10c05e0a474",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1637,
+    "bytes": 42732,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-588",
+      "nome": "Danube Delta",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 45.08333,
+        "lng": 29.5
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/588/",
+      "posicao": [
+        0.8779807686805725,
+        0.01971837691962719,
+        0.2218848466873169
+      ]
+    },
+    {
+      "id": "unesco-596",
+      "nome": "Villages with Fortified Churches in Transylvania",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 46.0552777778,
+        "lng": 25.0902777778
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/596/",
+      "posicao": [
+        0.015449069440364838,
+        0.13847732543945312,
+        -0.02253049984574318
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

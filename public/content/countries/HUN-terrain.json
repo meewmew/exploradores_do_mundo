@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "countryId": "HUN",
+  "continentId": "europa",
+  "file": "models/countries/HUN.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 131.81887361098168,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -19.379267832928974,
+      -47.16591255083838
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      5314.095318228996,
+      200.57774372512358
+    ],
+    "horizontalScale": 0.000003443366619558523,
+    "elevationScale": 0.0004539007092198582,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 1619.0484146038543,
+      "max": 1706.6923658479961
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": 62,
+    "maximumSampleMeters": 705,
+    "displayedMinimumMeters": 62,
+    "displayedMaximumMeters": 705,
+    "coastalClampedVertexIndices": [],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "4a924fc6e8f4ce4d275c17b39ae9e6b3d2b54f353d4218d699dac5a33b7c540b",
+    "inputHash": "dfe88f80289fc7ef91208a1a18ee89d4077d965777c924795ef26b9f828f5d41",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 23062.139953670496,
+    "simplification": 0.00015,
+    "topVertexCount": 455,
+    "topTriangleCount": 623,
+    "sourceGeometrySha256": "1d639cd9927f815d578dffe1b8cd43b9680882f9f84951506c36dc5b4f08c432",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1380,
+    "bytes": 36404,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-400",
+      "nome": "Budapest, including the Banks of the Danube, the Buda Castle Quarter and Andrássy Avenue",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 47.5043073,
+        "lng": 19.0618036
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/400/",
+      "posicao": [
+        -0.10041124373674393,
+        0.06792908161878586,
+        -0.13042376935482025
+      ]
+    },
+    {
+      "id": "unesco-401",
+      "nome": "Old Village of Hollókő and its Surroundings",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 47.99444,
+        "lng": 19.52917
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/401/",
+      "posicao": [
+        0.020111670717597008,
+        0.16007092595100403,
+        -0.31795552372932434
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

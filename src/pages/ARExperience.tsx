@@ -6,6 +6,7 @@ import { isStableMarker } from '../services/discovery';
 import { AR_SCENE_VERSION, sendARMessage, type ARMessage } from '../services/arBridge';
 import { arSceneQuery } from '../services/arTarget';
 import { asset } from '../services/contentRepository';
+import { useCountryTerrain } from '../hooks/useCountryTerrain';
 import { getTerrainConfig } from '../services/terrain';
 import { TouristPoints } from '../components/TouristPoints';
 
@@ -21,14 +22,16 @@ function ARSession() {
   const [error, setError] = useState(false), [found, setFound] = useState(false), [session, setSession] = useState(0);
   const [selectedPoint,setSelectedPoint]=useState('');
   const [fullscreen,setFullscreen]=useState(false);
+  const country = countryId ? c?.paises.find(country => country.id === countryId) : undefined;
+  const countryTerrain=useCountryTerrain(c,country);
   if (!c) return <Navigate to="/mapa" replace />;
   const continent = c, unlocked = app.unlocked.includes(c.id);
-  const country = countryId ? c.paises.find(country => country.id === countryId) : undefined;
   if (countryId && !unlocked) return <Navigate to={`/continente/${c.id}`} replace />;
   if (countryId && !country) return <Navigate to={`/paises/${c.id}`} replace />;
   const withoutCamera = country ? `/paises/${c.id}/${country.id}` : `/continente/${c.id}`;
   if (country && !country.modelo) return <main><h1>{country.nome}</h1><p>Este país ainda não tem modelo 3D para ver em RA.</p><Link className="button primary" to={withoutCamera}>Ver sem câmera</Link><Link className="back-link" to="/mapa">Voltar ao mapa</Link></main>;
-  const terrain = country ? {file: country.modelo!.arquivo, points: [], note: ''} : getTerrainConfig(c);
+  if(country&&!countryTerrain.config)return <main><h1>{country.nome}</h1><p role={countryTerrain.error?'alert':'status'}>{countryTerrain.error||'Preparando o relevo do país…'}</p>{countryTerrain.error&&<button className="button secondary" onClick={countryTerrain.retry}>Tentar novamente</button>}<Link className="button primary" to={withoutCamera}>Ver sem câmera</Link></main>;
+  const terrain = country ? countryTerrain.config! : getTerrainConfig(c);
   const modelName = country?.nome ?? c.nome;
   function message(m: ARMessage) {
     switch (m.type) {
@@ -68,7 +71,7 @@ function ARSession() {
         <button onClick={() => sendARMessage(target.current, 'ar:rotate', { degrees: 30 })}>Girar</button>
         <button onClick={() => sendARMessage(target.current, 'ar:reset')}>Restaurar</button>
     </div></details>
-    {unlocked&&<TouristPoints points={terrain.points} selected={selectedPoint} onSelect={pointId=>{setSelectedPoint(pointId);sendARMessage(target.current,'ar:select-point',{pointId});}}/>}
+    {unlocked&&<TouristPoints points={country?.pontosTuristicos||terrain.points} selected={selectedPoint} onSelect={pointId=>{setSelectedPoint(pointId);if(terrain.points.some(point=>point.id===pointId))sendARMessage(target.current,'ar:select-point',{pointId});}}/>}
     {terrain.note&&<p className="micro">{terrain.note}</p>}
     <div className="ar-summary">
       <p className="micro">Boa iluminação · folha plana · sem reflexos · marcador inteiro no enquadramento</p>

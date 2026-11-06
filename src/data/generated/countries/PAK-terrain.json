@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "countryId": "PAK",
+  "continentId": "asia",
+  "file": "models/countries/PAK.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 48.70896183421658,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -69.16843951107514,
+      -29.88394532810637
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -42548.31402333436,
+      -63136.39527877775
+    ],
+    "horizontalScale": 9.870241792579221e-7,
+    "elevationScale": 0.00004807692307692308,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -1
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 1952.531746705518,
+      "max": 2238.7801327990524
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -15,
+    "maximumSampleMeters": 6655,
+    "displayedMinimumMeters": -1,
+    "displayedMaximumMeters": 6655,
+    "coastalClampedVertexIndices": [
+      62,
+      63,
+      66,
+      115,
+      177,
+      190,
+      192
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "26651171cda6f5b63fbe172053d597f63292b18b361ae0fbf23f05f03e94bc3b",
+    "inputHash": "e8afe554df288fe8cc6d5089365d12ee41e69fee7976c864fcf6d8cc085a9f03",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 121913.73525530011,
+    "simplification": 0.0012,
+    "topVertexCount": 498,
+    "topTriangleCount": 532,
+    "sourceGeometrySha256": "a3ce7b4d280d2eebc9119505f4ade675f265081abb657966908ddbe8004075f9",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1733,
+    "bytes": 46784,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-138",
+      "nome": "Archaeological Ruins at Moenjodaro",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 27.32916667,
+        "lng": 68.13888889
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/138/",
+      "posicao": [
+        -0.05840965360403061,
+        0.020355768501758575,
+        0.3422454297542572
+      ]
+    },
+    {
+      "id": "unesco-139",
+      "nome": "Taxila",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 33.7439437902,
+        "lng": 72.8193318876
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/139/",
+      "posicao": [
+        0.37526947259902954,
+        0.042326923459768295,
+        -0.36669299006462097
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

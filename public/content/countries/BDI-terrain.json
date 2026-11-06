@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "countryId": "BDI",
+  "continentId": "africa",
+  "file": "models/countries/BDI.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 18.539954483805236,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -29.87522851266566,
+      3.359214984203053
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      4159.741507798317,
+      2811.146620798405
+    ],
+    "horizontalScale": 0.0000071618343563645785,
+    "elevationScale": 0.00013278008298755185,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2438.5918747079604,
+      "max": 2443.99209330539
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": 727,
+    "maximumSampleMeters": 2410,
+    "displayedMinimumMeters": 727,
+    "displayedMaximumMeters": 2410,
+    "coastalClampedVertexIndices": [],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "9704116e01a051a84683d3ecaed0926fc64db850c5ca391ad2975f770eede4eb",
+    "inputHash": "052f11beb542229232c122acdcec60a183d230055767af165c49ae8aa86464f3",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 12589.11548414397,
+    "simplification": 0.00015,
+    "topVertexCount": 322,
+    "topTriangleCount": 486,
+    "sourceGeometrySha256": "d17308aeb6efc0d3a039661e0aa4b6a34ffaad713960dc604158ceb74cf82029",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 868,
+    "bytes": 23548,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "wikidata-q3084675",
+      "nome": "Parque Nacional do Rusizi",
+      "descricaoCurta": "Este lugar fica em Burundi.",
+      "coordenadas": {
+        "lat": -3.247723,
+        "lng": 29.230671
+      },
+      "fontes": [
+        "wikidata-country-sites"
+      ],
+      "saibaMaisUrl": "https://www.wikidata.org/wiki/Q3084675",
+      "posicao": [
+        -0.5422641038894653,
+        0.1227634847164154,
+        -0.10875315964221954
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

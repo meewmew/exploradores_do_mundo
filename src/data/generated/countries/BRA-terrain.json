@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "countryId": "BRA",
+  "continentId": "america",
+  "file": "models/countries/BRA.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      53.21573390908137,
+      10.639048767052207
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -128250.77662805328,
+      398564.55841021193
+    ],
+    "horizontalScale": 3.8443515775726363e-7,
+    "elevationScale": 0.00006150962524116219,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -40
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2033.9473834800258,
+      "max": 2445.984887465815
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -40,
+    "maximumSampleMeters": 2146,
+    "displayedMinimumMeters": -40,
+    "displayedMaximumMeters": 2146,
+    "coastalClampedVertexIndices": [
+      243,
+      283,
+      290,
+      292,
+      300,
+      309,
+      334,
+      339,
+      346,
+      347,
+      348,
+      350,
+      355,
+      379,
+      393,
+      403,
+      451,
+      453,
+      461
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "e9d077628127ef7d81de278d262bcefaaa08a28ca780aa09884eed33fb7a92a5",
+    "inputHash": "e17070787027b1319cddac8af219bf26477fab0f893b4367b90e1b8457b437ea",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 549253.6695238379,
+    "simplification": 0.0192,
+    "topVertexCount": 466,
+    "topTriangleCount": 448,
+    "sourceGeometrySha256": "ca868908c389773803791ed1abed106affd63a3f28e53dca8268a70373b29d8e",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1649,
+    "bytes": 45308,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-1100",
+      "nome": "Rio de Janeiro: paisagens cariocas",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": -22.9477777778,
+        "lng": -43.2913888889
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1100/",
+      "posicao": [
+        0.4416171908378601,
+        0.054721247404813766,
+        0.38002726435661316
+      ]
+    },
+    {
+      "id": "unesco-355",
+      "nome": "Parque Nacional do Iguaçu",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": -25.4481472222,
+        "lng": -53.8001444444
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/355/",
+      "posicao": [
+        0.026556488126516342,
+        0.03768308088183403,
+        0.4780940115451813
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

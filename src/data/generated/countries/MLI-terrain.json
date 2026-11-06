@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "countryId": "MLI",
+  "continentId": "africa",
+  "file": "models/countries/MLI.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      3.590472991848376,
+      -17.315139002717885
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -51012.18604545912,
+      -30978.01907424425
+    ],
+    "horizontalScale": 9.413173655497158e-7,
+    "elevationScale": 0.00015061077848795452,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2216.867049569331,
+      "max": 2407.755350252416
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": 28,
+    "maximumSampleMeters": 839,
+    "displayedMinimumMeters": 28,
+    "displayedMaximumMeters": 839,
+    "coastalClampedVertexIndices": [],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "16e1581c96563b681a20a63c61790797435d31c5223beb314c84114413a5ede4",
+    "inputHash": "c0351d60d141e9bee4fbfcee4ec4a4b45c52e4775b0c9fb11d6b54fc5668f8dc",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 110333.06530657232,
+    "simplification": 0.0003,
+    "topVertexCount": 519,
+    "topTriangleCount": 604,
+    "sourceGeometrySha256": "1939f82e25c69d1e9b5ed67832be2f1c00b0ec55f71c83668ed5015e86425f9c",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1738,
+    "bytes": 46380,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-116",
+      "nome": "Old Towns of Djenné",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 13.9124695918,
+        "lng": -4.5692107589
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/116/",
+      "posicao": [
+        -0.05146264284849167,
+        0.05896613001823425,
+        0.38502341508865356
+      ]
+    },
+    {
+      "id": "unesco-119",
+      "nome": "Timbuktu",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 16.77333333,
+        "lng": -2.999444444
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/119/",
+      "posicao": [
+        0.10724975913763046,
+        0.058062467724084854,
+        0.08578034490346909
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

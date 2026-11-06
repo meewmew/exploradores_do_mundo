@@ -45,6 +45,21 @@
   ],
   "paises": [
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-1499",
+          "nome": "Antigua Naval Dockyard and Related Archaeological Sites",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 17.0069444444,
+            "lng": -61.7616666667
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1499/"
+        }
+      ],
       "id": "ATG",
       "nome": "Antígua e Barbuda",
       "nomeFonte": "natural-earth",
@@ -71,6 +86,34 @@
       "regiao": "Caribe"
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "cataratas-iguacu",
+          "nome": "Cataratas do Iguaçu",
+          "descricaoCurta": "O rio Iguaçu forma um grande conjunto de quedas-d’água na fronteira entre Brasil e Argentina.",
+          "coordenadas": {
+            "lat": -25.6952778,
+            "lng": -54.4366667
+          },
+          "fontes": [
+            "unesco-iguazu",
+            "wikidata-iguazu"
+          ]
+        },
+        {
+          "id": "unesco-145",
+          "nome": "Los Glaciares National Park",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": -50,
+            "lng": -73.24944
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/145/"
+        }
+      ],
       "id": "ARG",
       "nome": "Argentina",
       "nomeFonte": "natural-earth",
@@ -100,6 +143,21 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "wikidata-q1181185",
+          "nome": "Dean’s Blue Hole",
+          "descricaoCurta": "Este lugar fica em Bahamas.",
+          "coordenadas": {
+            "lat": 23.10638889,
+            "lng": -75.00861111
+          },
+          "fontes": [
+            "wikidata-country-sites"
+          ],
+          "saibaMaisUrl": "https://www.wikidata.org/wiki/Q1181185"
+        }
+      ],
       "id": "BHS",
       "nome": "Bahamas",
       "nomeFonte": "natural-earth",
@@ -129,6 +187,21 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-1376",
+          "nome": "Historic Bridgetown and its Garrison",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 13.0966666667,
+            "lng": -59.6138888889
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1376/"
+        }
+      ],
       "id": "BRB",
       "nome": "Barbados",
       "nomeFonte": "natural-earth",
@@ -155,6 +228,21 @@
       "regiao": "Caribe"
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-764",
+          "nome": "Belize Barrier Reef Reserve System",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 17.3159870305,
+            "lng": -87.5346969386
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/764/"
+        }
+      ],
       "id": "BLZ",
       "nome": "Belize",
       "nomeFonte": "natural-earth",
@@ -184,6 +272,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-420",
+          "nome": "City of Potosí",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": -19.599112,
+            "lng": -65.749813
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/420/"
+        },
+        {
+          "id": "unesco-529",
+          "nome": "Jesuit Missions of the Chiquitos",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": -16.583559,
+            "lng": -60.687518
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/529/"
+        }
+      ],
       "id": "BOL",
       "nome": "Bolívia",
       "nomeFonte": "natural-earth",
@@ -213,6 +329,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-1100",
+          "nome": "Rio de Janeiro: paisagens cariocas",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": -22.9477777778,
+            "lng": -43.2913888889
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1100/"
+        },
+        {
+          "id": "unesco-355",
+          "nome": "Parque Nacional do Iguaçu",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": -25.4481472222,
+            "lng": -53.8001444444
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/355/"
+        }
+      ],
       "id": "BRA",
       "nome": "Brasil",
       "nomeFonte": "natural-earth",
@@ -242,6 +386,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-4",
+          "nome": "L’Anse aux Meadows National Historic Site",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 51.5847222222,
+            "lng": -55.55
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/4/"
+        },
+        {
+          "id": "unesco-24",
+          "nome": "Nahanni National Park",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 61.54722222,
+            "lng": -125.5894444
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/24/"
+        }
+      ],
       "id": "CAN",
       "nome": "Canadá",
       "nomeFonte": "natural-earth",
@@ -271,6 +443,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-715",
+          "nome": "Rapa Nui National Park",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": -27.074403,
+            "lng": -109.365683
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/715/"
+        },
+        {
+          "id": "unesco-959",
+          "nome": "Historic Quarter of the Seaport City of Valparaíso",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": -33.04063889,
+            "lng": -71.628
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/959/"
+        }
+      ],
       "id": "CHL",
       "nome": "Chile",
       "nomeFonte": "natural-earth",
@@ -300,6 +500,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-285",
+          "nome": "Port, Fortresses and Group of Monuments, Cartagena",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 10.41666667,
+            "lng": -75.53333333
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/285/"
+        },
+        {
+          "id": "unesco-711",
+          "nome": "Los Katíos National Park",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 7.803975,
+            "lng": -77.146271
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/711/"
+        }
+      ],
       "id": "COL",
       "nome": "Colômbia",
       "nomeFonte": "natural-earth",
@@ -329,6 +557,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-820",
+          "nome": "Cocos Island National Park",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 5.533333333,
+            "lng": -87.06666667
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/820/"
+        },
+        {
+          "id": "unesco-928",
+          "nome": "Area de Conservación Guanacaste",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 10.85,
+            "lng": -85.61666667
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/928/"
+        }
+      ],
       "id": "CRI",
       "nome": "Costa Rica",
       "nomeFonte": "natural-earth",
@@ -358,6 +614,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-204",
+          "nome": "Old Havana and its Fortification System",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 23.136521,
+            "lng": -82.352078
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/204/"
+        },
+        {
+          "id": "unesco-460",
+          "nome": "Trinidad and the Valley de los Ingenios",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 21.8030555556,
+            "lng": -79.9844444444
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/460/"
+        }
+      ],
       "id": "CUB",
       "nome": "Cuba",
       "nomeFonte": "natural-earth",
@@ -387,6 +671,21 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-814",
+          "nome": "Morne Trois Pitons National Park",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 15.331113,
+            "lng": -61.30661
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/814/"
+        }
+      ],
       "id": "DMA",
       "nome": "Dominica",
       "nomeFonte": "natural-earth",
@@ -416,6 +715,21 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-675",
+          "nome": "Joya de Cerén Archaeological Site",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 13.8275,
+            "lng": -89.36916667
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/675/"
+        }
+      ],
       "id": "SLV",
       "nome": "El Salvador",
       "nomeFonte": "natural-earth",
@@ -445,6 +759,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-1",
+          "nome": "Galápagos Islands",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": -0.68986,
+            "lng": -90.501319
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1/"
+        },
+        {
+          "id": "unesco-2",
+          "nome": "City of Quito",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": -0.22,
+            "lng": -78.5120833333
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/2/"
+        }
+      ],
       "id": "ECU",
       "nome": "Equador",
       "nomeFonte": "natural-earth",
@@ -474,6 +816,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "grand-canyon",
+          "nome": "Grand Canyon",
+          "descricaoCurta": "O rio Colorado escavou este grande cânion no Arizona ao longo de milhões de anos.",
+          "coordenadas": {
+            "lat": 36.0553056,
+            "lng": -112.122
+          },
+          "fontes": [
+            "unesco-grand-canyon",
+            "wikidata-grand-canyon"
+          ]
+        },
+        {
+          "id": "unesco-27",
+          "nome": "Mesa Verde National Park",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 37.26166667,
+            "lng": -108.4855556
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/27/"
+        }
+      ],
       "id": "USA",
       "nome": "Estados Unidos",
       "nomeFonte": "natural-earth",
@@ -503,6 +873,21 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "wikidata-q5594534",
+          "nome": "Lago Grand Etang",
+          "descricaoCurta": "Este lugar fica em Granada.",
+          "coordenadas": {
+            "lat": 12.083333333333,
+            "lng": -61.7
+          },
+          "fontes": [
+            "wikidata-country-sites"
+          ],
+          "saibaMaisUrl": "https://www.wikidata.org/wiki/Q5594534"
+        }
+      ],
       "id": "GRD",
       "nome": "Granada",
       "nomeFonte": "natural-earth",
@@ -529,6 +914,34 @@
       "regiao": "Caribe"
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-64",
+          "nome": "Tikal National Park",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 17.21666667,
+            "lng": -89.61666667
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/64/"
+        },
+        {
+          "id": "unesco-65",
+          "nome": "Antigua Guatemala",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 14.549022,
+            "lng": -90.75448
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/65/"
+        }
+      ],
       "id": "GTM",
       "nome": "Guatemala",
       "nomeFonte": "natural-earth",
@@ -558,6 +971,21 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "wikidata-q38120",
+          "nome": "Cataratas de Kaieteur",
+          "descricaoCurta": "Este lugar fica em Guiana.",
+          "coordenadas": {
+            "lat": 5.1781111111111,
+            "lng": -59.482277777778
+          },
+          "fontes": [
+            "wikidata-country-sites"
+          ],
+          "saibaMaisUrl": "https://www.wikidata.org/wiki/Q38120"
+        }
+      ],
       "id": "GUY",
       "nome": "Guiana",
       "nomeFonte": "natural-earth",
@@ -587,6 +1015,21 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-180",
+          "nome": "National History Park – Citadel, Sans Souci, Ramiers",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 19.573025,
+            "lng": -72.234268
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/180/"
+        }
+      ],
       "id": "HTI",
       "nome": "Haiti",
       "nomeFonte": "natural-earth",
@@ -616,6 +1059,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-129",
+          "nome": "Maya Site of Copan",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 14.838,
+            "lng": -89.142
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/129/"
+        },
+        {
+          "id": "unesco-196",
+          "nome": "Río Plátano Biosphere Reserve",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 15.74444444,
+            "lng": -84.675
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/196/"
+        }
+      ],
       "id": "HND",
       "nome": "Honduras",
       "nomeFonte": "natural-earth",
@@ -645,6 +1116,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-1356",
+          "nome": "Blue and John Crow Mountains",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 18.0775,
+            "lng": -76.5711111111
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1356/"
+        },
+        {
+          "id": "unesco-1595",
+          "nome": "The Archaeological Ensemble of 17th Century Port Royal",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 17.9386138889,
+            "lng": -76.8433777778
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1595/"
+        }
+      ],
       "id": "JAM",
       "nome": "Jamaica",
       "nomeFonte": "natural-earth",
@@ -674,6 +1173,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-410",
+          "nome": "Sian Ka'an",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 19.38333,
+            "lng": -87.79167
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/410/"
+        },
+        {
+          "id": "unesco-411",
+          "nome": "Pre-Hispanic City and National Park of Palenque",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 17.48333,
+            "lng": -92.05
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/411/"
+        }
+      ],
       "id": "MEX",
       "nome": "México",
       "nomeFonte": "natural-earth",
@@ -703,6 +1230,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-613",
+          "nome": "Ruins of León Viejo",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 12.40047,
+            "lng": -86.616336
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/613/"
+        },
+        {
+          "id": "unesco-1236",
+          "nome": "León Cathedral",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 12.435,
+            "lng": -86.8780555556
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1236/"
+        }
+      ],
       "id": "NIC",
       "nome": "Nicarágua",
       "nomeFonte": "natural-earth",
@@ -732,6 +1287,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-135",
+          "nome": "Fortifications on the Caribbean Side of Panama: Portobelo-San Lorenzo",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 9.5538888889,
+            "lng": -79.6558333333
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/135/"
+        },
+        {
+          "id": "unesco-159",
+          "nome": "Darien National Park",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 7.736111111,
+            "lng": -77.54722222
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/159/"
+        }
+      ],
       "id": "PAN",
       "nome": "Panamá",
       "nomeFonte": "natural-earth",
@@ -761,6 +1344,21 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-648",
+          "nome": "Jesuit Missions of La Santísima Trinidad de Paraná and Jesús de Tavarangue",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": -27.05625,
+            "lng": -55.7529972222
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/648/"
+        }
+      ],
       "id": "PRY",
       "nome": "Paraguai",
       "nomeFonte": "natural-earth",
@@ -790,6 +1388,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-273",
+          "nome": "City of Cuzco",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": -13.5266555556,
+            "lng": -71.9811361111
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/273/"
+        },
+        {
+          "id": "unesco-274",
+          "nome": "Historic Sanctuary of Machu Picchu",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": -13.184934,
+            "lng": -72.533443
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/274/"
+        }
+      ],
       "id": "PER",
       "nome": "Peru",
       "nomeFonte": "natural-earth",
@@ -819,6 +1445,21 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-526",
+          "nome": "Colonial City of Santo Domingo",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 18.472394,
+            "lng": -69.885841
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/526/"
+        }
+      ],
       "id": "DOM",
       "nome": "República Dominicana",
       "nomeFonte": "natural-earth",
@@ -848,6 +1489,21 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-1161",
+          "nome": "Pitons Management Area",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 13.80708333,
+            "lng": -61.07036111
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1161/"
+        }
+      ],
       "id": "LCA",
       "nome": "Santa Lúcia",
       "nomeFonte": "natural-earth",
@@ -877,6 +1533,21 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-910",
+          "nome": "Brimstone Hill Fortress National Park",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 17.34694,
+            "lng": -62.83722
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/910/"
+        }
+      ],
       "id": "KNA",
       "nome": "São Cristóvão e Nevis",
       "nomeFonte": "natural-earth",
@@ -903,6 +1574,21 @@
       "regiao": "Caribe"
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "wikidata-q26544",
+          "nome": "Vulcão La Soufrière",
+          "descricaoCurta": "Este lugar fica em São Vicente e Granadinas.",
+          "coordenadas": {
+            "lat": 13.333333333333,
+            "lng": -61.183333333333
+          },
+          "fontes": [
+            "wikidata-country-sites"
+          ],
+          "saibaMaisUrl": "https://www.wikidata.org/wiki/Q26544"
+        }
+      ],
       "id": "VCT",
       "nome": "São Vicente e Granadinas",
       "nomeFonte": "natural-earth",
@@ -929,6 +1615,34 @@
       "regiao": "Caribe"
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-940",
+          "nome": "Historic Inner City of Paramaribo",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 5.82611,
+            "lng": -55.15
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/940/"
+        },
+        {
+          "id": "unesco-1017",
+          "nome": "Central Suriname Nature Reserve",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 4,
+            "lng": -56.5
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1017/"
+        }
+      ],
       "id": "SUR",
       "nome": "Suriname",
       "nomeFonte": "natural-earth",
@@ -958,6 +1672,21 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "fort-king-george",
+          "nome": "Forte King George",
+          "descricaoCurta": "Um lugar apresentado pelo órgão oficial de patrimônio ou turismo do país.",
+          "coordenadas": {
+            "lat": 11.1791588329924,
+            "lng": -60.7279751668
+          },
+          "fontes": [
+            "tourism-official-sites"
+          ],
+          "saibaMaisUrl": "https://nationaltrust.tt/location/fort-king-george-tobago/"
+        }
+      ],
       "id": "TTO",
       "nome": "Trinidad e Tobago",
       "nomeFonte": "natural-earth",
@@ -987,6 +1716,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-747",
+          "nome": "Historic Quarter of the City of Colonia del Sacramento",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": -34.47119,
+            "lng": -57.849898
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/747/"
+        },
+        {
+          "id": "unesco-1464",
+          "nome": "Fray Bentos Industrial Landscape",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": -33.1177777778,
+            "lng": -58.3316666667
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1464/"
+        }
+      ],
       "id": "URY",
       "nome": "Uruguai",
       "nomeFonte": "natural-earth",
@@ -1016,6 +1773,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-658",
+          "nome": "Coro and its Port",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 11.4097916667,
+            "lng": -69.6792277778
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/658/"
+        },
+        {
+          "id": "unesco-701",
+          "nome": "Canaima National Park",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 5.337994,
+            "lng": -62.037883
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/701/"
+        }
+      ],
       "id": "VEN",
       "nome": "Venezuela",
       "nomeFonte": "natural-earth",
@@ -1047,6 +1832,7 @@
   ],
   "territorios": [
     {
+      "pontosTuristicos": [],
       "id": "AIA",
       "nome": "Anguilla",
       "nomeFonte": "natural-earth",
@@ -1069,6 +1855,7 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
+      "pontosTuristicos": [],
       "id": "ABW",
       "nome": "Aruba",
       "nomeFonte": "natural-earth",
@@ -1091,6 +1878,7 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
+      "pontosTuristicos": [],
       "id": "BMU",
       "nome": "Bermudas",
       "nomeFonte": "natural-earth",
@@ -1117,6 +1905,7 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
+      "pontosTuristicos": [],
       "id": "BLM",
       "nome": "Coletividade de São Bartolomeu",
       "nomeFonte": "natural-earth",
@@ -1139,6 +1928,7 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
+      "pontosTuristicos": [],
       "id": "CUW",
       "nome": "Curaçao",
       "nomeFonte": "natural-earth",
@@ -1161,6 +1951,7 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
+      "pontosTuristicos": [],
       "id": "GRL",
       "nome": "Groenlândia",
       "nomeFonte": "natural-earth",
@@ -1183,6 +1974,7 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
+      "pontosTuristicos": [],
       "id": "CYM",
       "nome": "Ilhas Caimão",
       "nomeFonte": "natural-earth",
@@ -1205,6 +1997,7 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
+      "pontosTuristicos": [],
       "id": "FLK",
       "nome": "Ilhas Malvinas",
       "nomeFonte": "natural-earth",
@@ -1227,6 +2020,7 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
+      "pontosTuristicos": [],
       "id": "VIR",
       "nome": "Ilhas Virgens Americanas",
       "nomeFonte": "natural-earth",
@@ -1249,6 +2043,7 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
+      "pontosTuristicos": [],
       "id": "VGB",
       "nome": "Ilhas Virgens Britânicas",
       "nomeFonte": "natural-earth",
@@ -1271,6 +2066,7 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
+      "pontosTuristicos": [],
       "id": "MSR",
       "nome": "Montserrat",
       "nomeFonte": "natural-earth",
@@ -1293,6 +2089,7 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
+      "pontosTuristicos": [],
       "id": "PRI",
       "nome": "Porto Rico",
       "nomeFonte": "natural-earth",
@@ -1315,6 +2112,7 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
+      "pontosTuristicos": [],
       "id": "SPM",
       "nome": "Saint-Pierre e Miquelon",
       "nomeFonte": "natural-earth",
@@ -1337,6 +2135,7 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
+      "pontosTuristicos": [],
       "id": "MAF",
       "nome": "São Martinho",
       "nomeFonte": "natural-earth",
@@ -1359,6 +2158,7 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
+      "pontosTuristicos": [],
       "id": "SXM",
       "nome": "São Martinho",
       "nomeFonte": "natural-earth",
@@ -1381,6 +2181,7 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
+      "pontosTuristicos": [],
       "id": "TCA",
       "nome": "Turks e Caicos",
       "nomeFonte": "natural-earth",

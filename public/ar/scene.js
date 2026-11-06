@@ -1,4 +1,4 @@
-import { arCountry, isARModelAllowed, initialARTransform, updateARGesture, applyARTransformAction } from './domain.js?v=20261105-countries';
+import { COUNTRY_TERRAIN_VERSION, arCountry, isARModelAllowed, initialARTransform, updateARGesture, applyARTransformAction } from './domain.js?v=20261105-terrain-countries';
 const ids=['africa','america','antartida','asia','europa','oceania'];
 const params=new URLSearchParams(location.search), id=params.get('continente'), modelPath=params.get('model'),countryId=params.get('pais');
 const selectedCountry=countryId===null?undefined:arCountry(id,countryId);
@@ -49,12 +49,14 @@ function selectPoint(pointId,notify=false){
  if(notify&&selected)post('ar:point-selected',{continentId:id,pointId:selected.data.id});
 }
 async function loadPoints(){
- if(!ids.includes(id)||modelPath!==`models/${id}-terrain.glb`)return;
+ if(!ids.includes(id))return;
+ if(countryId===null&&modelPath!==`models/${id}-terrain.glb`)return;
  pointsAbort=new AbortController();
  try{
-  const response=await fetch(`../content/${id}-terrain.json`,{signal:pointsAbort.signal});
+  const response=await fetch(countryId===null?`../content/${id}-terrain.json`:`../content/countries/${countryId}-terrain.json?v=${COUNTRY_TERRAIN_VERSION}`,{signal:pointsAbort.signal});
   if(!response.ok)throw new Error('Dados dos lugares indisponíveis.');
-  const data=await response.json();if(stopped||data.file!==modelPath||data.continentId!==id||!Array.isArray(data.points)||data.points.length!==3)return;
+  const data=await response.json();if(stopped||data.file!==modelPath||data.continentId!==id||!Array.isArray(data.points)||(countryId===null?data.points.length!==3:(data.countryId!==countryId||data.points.length>2)))return;
+  if(!embedded&&countryId!==null&&!document.querySelector('#terrain-note')){const note=document.createElement('p');note.id='terrain-note';note.textContent=data.verticalExaggeration>1?'Relevo baseado em dados reais. Alturas ampliadas para destacar o terreno.':'Relevo baseado em dados reais e simplificado.';document.querySelector('#point-detail').before(note);}
   for(const [index,point] of data.points.entries()){
    if(!point||typeof point.id!=='string'||!/^[a-z0-9-]{1,100}$/.test(point.id)||typeof point.nome!=='string'||typeof point.descricaoCurta!=='string'||!Array.isArray(point.posicao)||point.posicao.length!==3||!point.posicao.every(value=>typeof value==='number'&&Number.isFinite(value)))continue;
    const button=document.createElement('button');button.type='button';button.className='point-pin';button.textContent=String(index+1);button.setAttribute('aria-label',`${index+1}. ${point.nome}`);button.setAttribute('aria-pressed','false');button.hidden=true;
@@ -67,6 +69,13 @@ async function loadPoints(){
     choices.append(listButton);
    }
    pointEntries.push({data:point,button,listButton,local:new AFRAME.THREE.Vector3(...point.posicao),projected:new AFRAME.THREE.Vector3()});
+  }
+  if(!embedded&&countryId!==null&&Array.isArray(data.textOnlyPoints)&&data.textOnlyPoints.length+data.points.length<=2){
+   for(const point of data.textOnlyPoints){
+    if(!point||typeof point.nome!=='string'||typeof point.descricaoCurta!=='string')continue;
+    let choices=document.querySelector('#text-only-places');if(!choices){choices=document.createElement('details');choices.id='text-only-places';const summary=document.createElement('summary');summary.textContent='Outros lugares para conhecer';choices.append(summary);document.querySelector('#point-detail').before(choices);}
+    const title=document.createElement('strong'),text=document.createElement('p');title.textContent=point.nome;text.textContent=point.descricaoCurta;choices.append(title,text);
+   }
   }
   if(selectedPointId)selectPoint(selectedPointId);
  }catch(error){if(!stopped&&error?.name!=='AbortError')console.warn('Não foi possível carregar os lugares do continente.',error);}
@@ -130,7 +139,7 @@ function start(){
  // barcodes then lose their inner cells, even when the preview looks large.
  scene.setAttribute('arjs','sourceType: webcam; sourceWidth: 1280; sourceHeight: 960; canvasWidth: 640; canvasHeight: 480; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3; cameraParametersUrl: ../vendor/camera_para.dat; patternRatio: 0.5; maxDetectionRate: 30;');
  marker=document.createElement('a-marker');marker.setAttribute('type','barcode');marker.setAttribute('value',String(ids.indexOf(id)));marker.setAttribute('emitevents','true');marker.setAttribute('smooth','false');
- model=document.createElement('a-entity');model.setAttribute('gltf-model',`../${modelPath}`);model.setAttribute('scale','1 1 1');marker.append(model);scene.append(marker);
+ model=document.createElement('a-entity');model.setAttribute('gltf-model',`../${modelPath}${countryId!==null?`?v=${COUNTRY_TERRAIN_VERSION}`:''}`);model.setAttribute('scale','1 1 1');marker.append(model);scene.append(marker);
  const ambient=document.createElement('a-entity');ambient.setAttribute('light','type: ambient; intensity: 1');scene.append(ambient);
  const light=document.createElement('a-entity');light.setAttribute('light','type: directional; intensity: 1.5');light.setAttribute('position','1 3 2');scene.append(light);
  const camera=document.createElement('a-entity');camera.setAttribute('camera','');camera.setAttribute('look-controls','enabled: false');scene.append(camera);

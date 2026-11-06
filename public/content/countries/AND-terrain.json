@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "countryId": "AND",
+  "continentId": "europa",
+  "file": "models/countries/AND.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 1.8985142778262634,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -1.5605245781091965,
+      -42.542286408472194
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      1392.7999696542347,
+      407.84034355214135
+    ],
+    "horizontalScale": 0.000060943426709171526,
+    "elevationScale": 0.00011570196574702058,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 9,
+    "pixelResolutionMeters": {
+      "min": 224.90590932534747,
+      "max": 225.65724241343972
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": 886.97265625,
+    "maximumSampleMeters": 2765.7265625,
+    "displayedMinimumMeters": 886.97265625,
+    "displayedMaximumMeters": 2765.7265625,
+    "coastalClampedVertexIndices": [],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "147443d4391c2a706b86484223606b76a685e4b6096b4e7c220906fb396206f7",
+    "inputHash": "f3ebc420458112c6e09348c2da150623779fe34c278e3b01a3d5f0691c9360f8",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 1434.309364389244,
+    "simplification": 0.00015,
+    "topVertexCount": 303,
+    "topTriangleCount": 517,
+    "sourceGeometrySha256": "d71a7655afa3397a14df8593110084b5a73ae3574f2b5604561b351b93b68417",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 706,
+    "bytes": 18740,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-1160",
+      "nome": "Madriu-Perafita-Claror Valley",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 42.49472222,
+        "lng": 1.595555556
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1160/",
+      "posicao": [
+        0.0901557207107544,
+        0.25381144881248474,
+        0.2974320948123932
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "countryId": "SEN",
+  "continentId": "africa",
+  "file": "models/countries/SEN.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      14.469447821000822,
+      -14.36481109549319
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      2746.3669676092977,
+      -15982.488245348854
+    ],
+    "horizontalScale": 0.0000023226637103156943,
+    "elevationScale": 0.0003716261936505111,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -2
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2343.0779773412764,
+      "max": 2389.5835528248804
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -41,
+    "maximumSampleMeters": 427,
+    "displayedMinimumMeters": -2,
+    "displayedMaximumMeters": 427,
+    "coastalClampedVertexIndices": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      8,
+      9,
+      10,
+      11,
+      14,
+      16,
+      18,
+      21,
+      22,
+      23,
+      25,
+      26,
+      31,
+      33,
+      35,
+      36,
+      37,
+      38,
+      44,
+      47,
+      48,
+      49,
+      50,
+      64,
+      65,
+      83,
+      84,
+      88
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "3a84bd0a4409a111d7c3402c5db0402c90d9dcff1744fadbb2c62084e6c079aa",
+    "inputHash": "d376f828ea34e181f0a051b5ef45e0a682e946e5b2f714c388cc28860ace5944",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 32707.462902188472,
+    "simplification": 0.00015,
+    "topVertexCount": 509,
+    "topTriangleCount": 667,
+    "sourceGeometrySha256": "8e07b2a07238bd9e41decea69f69c8474609c6da0e14529b828092dc2ae57be3",
+    "omittedPointIds": [
+      "unesco-26"
+    ]
+  },
+  "limits": {
+    "triangles": 1524,
+    "bytes": 40844,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-25",
+      "nome": "Djoudj National Bird Sanctuary",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 16.414602,
+        "lng": -16.237906
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/25/",
+      "posicao": [
+        -0.4445491433143616,
+        0.01985813118517399,
+        -0.4939824640750885
+      ]
+    }
+  ],
+  "textOnlyPoints": [
+    {
+      "id": "unesco-26",
+      "nome": "Island of Gorée",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 14.66722,
+        "lng": -17.40083
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/26/"
+    }
+  ]
+}

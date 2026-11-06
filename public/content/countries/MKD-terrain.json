@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "countryId": "MKD",
+  "continentId": "europa",
+  "file": "models/countries/MKD.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 16.555167439234285,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -21.680595860012005,
+      -41.595191566453586
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      3708.008757543008,
+      -1181.8048557835427
+    ],
+    "horizontalScale": 0.00000828162476548571,
+    "elevationScale": 0.0001371036846615253,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 1807.4547259188441,
+      "max": 1850.2057686848477
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": 53,
+    "maximumSampleMeters": 2334,
+    "displayedMinimumMeters": 53,
+    "displayedMaximumMeters": 2334,
+    "coastalClampedVertexIndices": [],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "70412de24a019e5ec18938ff78fc5ced90aa91a244893f5fefd9cbc62acebdfa",
+    "inputHash": "9c5ab65a6057112fb2958154e5bd06c0992bf61ebb00abaa6bcab4af858d0861",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 10896.91703876813,
+    "simplification": 0.00015,
+    "topVertexCount": 362,
+    "topTriangleCount": 574,
+    "sourceGeometrySha256": "e79620d3a26797f9c50937bab12297db6b0f0d767a391b2f7d9d4c5f24796bb2",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 944,
+    "bytes": 24760,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-99",
+      "nome": "Natural and Cultural Heritage of the Ohrid region",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 41.028,
+        "lng": 20.722
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/99/",
+      "posicao": [
+        -0.6966328024864197,
+        0.11410968005657196,
+        0.5284095406532288
+      ]
+    },
+    {
+      "id": "unesco-1133",
+      "nome": "Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 41.764,
+        "lng": 20.591
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1133/",
+      "posicao": [
+        -0.7790995836257935,
+        0.243809774518013,
+        -0.15039226412773132
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

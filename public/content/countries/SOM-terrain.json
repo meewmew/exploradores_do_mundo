@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "countryId": "SOM",
+  "continentId": "africa",
+  "file": "models/countries/SOM.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -45.67929276613253,
+      -4.739406093796056
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      50744.172212299716,
+      -46805.75460813701
+    ],
+    "horizontalScale": 0.0000010109285399331874,
+    "elevationScale": 0.00016174856638931,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2392.678925722146,
+      "max": 2445.9835716803022
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -118,
+    "maximumSampleMeters": 1603,
+    "displayedMinimumMeters": 0,
+    "displayedMaximumMeters": 1603,
+    "coastalClampedVertexIndices": [
+      22,
+      46,
+      47,
+      80,
+      125,
+      163,
+      164,
+      165,
+      177,
+      181,
+      183,
+      185,
+      191,
+      199,
+      200,
+      204,
+      209,
+      216,
+      217,
+      222,
+      224,
+      229,
+      230,
+      231,
+      234,
+      236,
+      237,
+      238,
+      239,
+      246,
+      250
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "7764d97ef61dcd3c4a16cdf9827210d72c5d15680d62192dc555e0dabbc865f4",
+    "inputHash": "4de5b99650c4f916606d1754cb08f1705dcb5c200b315b094bbcad248f909ae6",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 76337.72319537276,
+    "simplification": 0.00015,
+    "topVertexCount": 255,
+    "topTriangleCount": 331,
+    "sourceGeometrySha256": "6c93846d25213e857c082b8678072b18c94f9321b4f4c491bb5b7bcfc5a322d8",
+    "omittedPointIds": [
+      "wikidata-q962672"
+    ]
+  },
+  "limits": {
+    "triangles": 790,
+    "bytes": 22220,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [],
+  "textOnlyPoints": [
+    {
+      "id": "wikidata-q962672",
+      "nome": "Catedral de Mogadíscio",
+      "descricaoCurta": "Este lugar fica em Somália.",
+      "coordenadas": {
+        "lat": 2.035736,
+        "lng": 45.341614
+      },
+      "fontes": [
+        "wikidata-country-sites"
+      ],
+      "saibaMaisUrl": "https://www.wikidata.org/wiki/Q962672"
+    }
+  ]
+}

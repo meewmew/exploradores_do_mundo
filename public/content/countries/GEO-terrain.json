@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "countryId": "GEO",
+  "continentId": "asia",
+  "file": "models/countries/GEO.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 25.699413447034193,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -43.52425592579916,
+      -42.17294198649984
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -11656.201883777598,
+      -21109.458190437552
+    ],
+    "horizontalScale": 0.0000031214956261033144,
+    "elevationScale": 0.00008022060666833794,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 1772.2030252201575,
+      "max": 1844.0403099857524
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -221,
+    "maximumSampleMeters": 3989,
+    "displayedMinimumMeters": 0,
+    "displayedMaximumMeters": 3989,
+    "coastalClampedVertexIndices": [
+      9,
+      15,
+      24,
+      31,
+      32,
+      33,
+      34,
+      42,
+      48,
+      54,
+      56,
+      57,
+      62,
+      76,
+      77
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "04892c7e0cffd13a1e2a89e10e7a31bc3f86fb3e17c2ce22bbbdf8d6542c54f1",
+    "inputHash": "b6a6dc4074653e9f81cb08c8b10cff9d3b458b9f550ce03d40eff979fbef6aa4",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 22611.01862028709,
+    "simplification": 0.00015,
+    "topVertexCount": 380,
+    "topTriangleCount": 514,
+    "sourceGeometrySha256": "037188db10fa7a06e8a5f39fda7d708a5de2899d8c4a3ac5d9f8b98494a8d56b",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1152,
+    "bytes": 31044,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-708",
+      "nome": "Historical Monuments of Mtskheta",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 41.8428333333,
+        "lng": 44.7209444444
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/708/",
+      "posicao": [
+        0.3458096981048584,
+        0.061399348080158234,
+        0.1783057451248169
+      ]
+    },
+    {
+      "id": "unesco-709",
+      "nome": "Upper Svaneti",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 42.914,
+        "lng": 43.009
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/709/",
+      "posicao": [
+        -0.09459695219993591,
+        0.21702732145786285,
+        -0.19171908497810364
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

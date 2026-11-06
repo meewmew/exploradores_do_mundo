@@ -1,0 +1,191 @@
+{
+  "version": 1,
+  "countryId": "GBR",
+  "continentId": "europa",
+  "file": "models/countries/GBR.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      2.7581420728782544,
+      -54.01164976122859
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -20759.221259871585,
+      -158342.33126843485
+    ],
+    "horizontalScale": 0.0000015103693920060517,
+    "elevationScale": 0.00024165910272096829,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 1192.8515292329275,
+      "max": 1571.549265923422
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -62,
+    "maximumSampleMeters": 749,
+    "displayedMinimumMeters": 0,
+    "displayedMaximumMeters": 749,
+    "coastalClampedVertexIndices": [
+      11,
+      12,
+      18,
+      23,
+      51,
+      61,
+      68,
+      72,
+      73,
+      74,
+      76,
+      79,
+      80,
+      93,
+      94,
+      110,
+      112,
+      117,
+      125,
+      126,
+      127,
+      131,
+      133,
+      137,
+      145,
+      146,
+      149,
+      152,
+      157,
+      164,
+      173,
+      174,
+      180,
+      188,
+      196,
+      197,
+      201,
+      203,
+      205,
+      208,
+      218,
+      223,
+      226,
+      234,
+      247,
+      249,
+      263,
+      264,
+      272,
+      283,
+      288,
+      290,
+      291,
+      301,
+      317,
+      321,
+      322,
+      323,
+      335,
+      340,
+      343,
+      345,
+      347,
+      356,
+      358,
+      368,
+      371,
+      372,
+      373,
+      377,
+      381,
+      382,
+      391,
+      395,
+      397,
+      414,
+      438,
+      444,
+      445,
+      469,
+      479,
+      480,
+      486,
+      497
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "556e9b6414c10ab23da6513ae01c1b54b5719b1bb8f7ffb89b7f25b37747ef92",
+    "inputHash": "282c9e512debb3d0c75b1e62834fa94d090950d53b1127b02368f82fa2b5b920",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 89877.87578888088,
+    "simplification": 0.0048,
+    "topVertexCount": 500,
+    "topTriangleCount": 457,
+    "sourceGeometrySha256": "2ec46fd7b637481ebae3384e5f13f5be48a09b7d39f2875e2f3b7722b398ca91",
+    "omittedPointIds": [
+      "unesco-369"
+    ]
+  },
+  "limits": {
+    "triangles": 1692,
+    "bytes": 48376,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-370",
+      "nome": "Durham Castle and Cathedral",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 54.77472222,
+        "lng": -1.576111111
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/370/",
+      "posicao": [
+        0.14585356414318085,
+        0.033707842230796814,
+        0.11004383862018585
+      ]
+    }
+  ],
+  "textOnlyPoints": [
+    {
+      "id": "unesco-369",
+      "nome": "Giant's Causeway and Causeway Coast",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 55.2408333333,
+        "lng": -6.5116666667
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/369/"
+    }
+  ]
+}

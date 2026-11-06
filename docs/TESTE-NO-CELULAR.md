@@ -54,3 +54,27 @@ Executar cada caso em Android/Chrome e iPhone/Safari. Registrar aparelho, sistem
 | Página inteira | Repetir país, marcador correto/incorreto, perda/retorno e saída em ar/scene.html; conferir o link para a mesma ficha e o percurso de entrada existente | [ ] Passou [ ] Falhou — Observações: |
 
 A página inteira volta ao endereço da mesma ficha. Como esse retorno recarrega o app, a escolha de perfil/instruções existente é solicitada novamente e leva ao mapa com o continente pendente. A ficha precisa ser reaberta pelo percurso existente; esse fluxo de entrada não foi alterado nesta tarefa.
+
+## Relevo e lugares dos países — versão local de 06/11/2026
+
+**NÃO VALIDADO em aparelho físico nesta alteração.** A confirmação de funcionamento recebida do usuário durante a implementação não identifica os novos modelos, ainda em geração naquele momento. Não converter esse relato em aprovação do novo relevo/pins/desempenho. Alteração local, sem publicação.
+
+Implementados 177 países com geometria DEM (mesmo GLB na ficha/RA) e 195 países com até dois locais confirmados. Elevações/costas/limites e verificações automatizadas descritos em `RELEVO-PAISES.md`. 59 testes passaram; no Chrome, GLBs, interface, navegação e metadados foram conferidos, sem câmera falsa ou evento de rastreamento simulado.
+
+Usar as mesmas folhas/QR/marcadores: não precisam ser regenerados. Registrar aparelho, sistema, navegador, data, versão do app e responsável. Repetir Android/Chrome e iPhone/Safari.
+
+| Caso | Esperado | Registro |
+|---|---|---|
+| Brasil | Terreno e dois locais (Rio de Janeiro e Parque Nacional do Iguaçu); lista/pins abrem a informação e fonte | [ ] Passou [ ] Falhou — Observações: |
+| Mesmo arquivo | Ficha e RA exibem o mesmo relevo; cores, proporções e coordenadas dos pins correspondem | [ ] Passou [ ] Falhou — Observações: |
+| Relevo acentuado | Nepal/Andorra apresentam terreno sem picos procedurais; indicação de alturas ampliadas visível | [ ] Passou [ ] Falhou — Observações: |
+| Antimeridiano e ilhas | Rússia/Fiji não saltam pelo mapa nem ligam ilhas por terreno; contornos permanecem reconhecíveis | [ ] Passou [ ] Falhou — Observações: |
+| Países planos e depressões | Conferir Países Baixos/Jordânia; não esperar variação artificial; limites da normalização costeira são cartográficos | [ ] Passou [ ] Falhou — Observações: |
+| Locais textuais | Trinidad e Tobago oferece Forte King George na lista sem fabricar pin; países sem GLB mantêm símbolo/ficha e locais | [ ] Passou [ ] Falhou — Observações: |
+| Rastreamento | Somente marcador do continente correspondente ancora o país; movimento e orientação acompanham o marcador | [ ] Passou [ ] Falhou — Observações: |
+| Perda/retorno | Modelo/pins somem com marcador perdido e voltam preservando gesto; restaurar funciona | [ ] Passou [ ] Falhou — Observações: |
+| Gestos e acesso | Arraste/pinça/botões, seleção por lista, foco e texto ampliado funcionam; saída à ficha continua acessível | [ ] Passou [ ] Falhou — Observações: |
+| Falhas e troca rápida | Modelo/metadados indisponíveis têm erro e nova tentativa; trocar país não mostra modelo/pontos do anterior | [ ] Passou [ ] Falhou — Observações: |
+| Cinco ciclos | Entrar/sair cinco vezes; câmera libera a cada saída; medir FPS/memória sem declarar aprovação só por impressão visual | [ ] Passou [ ] Falhou — Observações: |
+| Página inteira | País e pontos disponíveis; indicação de alturas ampliadas; locais sem pin permanecem legíveis; câmera para na saída | [ ] Passou [ ] Falhou — Observações: |
+| Progresso | RA/URL não descobrem nem concluem atividade; somente QR válido no leitor interno mantém descoberta | [ ] Passou [ ] Falhou — Observações: |

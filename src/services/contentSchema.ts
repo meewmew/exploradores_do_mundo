@@ -8,7 +8,7 @@ const sourceList=z.array(z.string().min(1)).min(1);
 export const touristSpotSchema=z.object({
  id:z.string().min(1).max(80).regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),nome:z.string().min(1).max(120),descricaoCurta:z.string().min(1).max(140),
  coordenadas:z.object({lat:z.number().finite().min(-90).max(90),lng:z.number().finite().min(-180).max(180)}).strict(),
- fontes:sourceList,fontesPorCampo:z.object({nome:sourceList,descricaoCurta:sourceList,coordenadas:sourceList}).strict().optional(),imagemUrl:localPath.optional(),
+ fontes:sourceList,fontesPorCampo:z.object({nome:sourceList,descricaoCurta:sourceList,coordenadas:sourceList}).strict().optional(),imagemUrl:localPath.optional(),saibaMaisUrl:z.string().url().refine(url=>url.startsWith('https://')).optional(),
 }).strict().refine(point=>!point.fontesPorCampo||Object.values(point.fontesPorCampo).flat().every(source=>point.fontes.includes(source)),'Fontes por campo devem constar na lista de fontes');
 const touristSpots=z.array(touristSpotSchema).max(5).refine(points=>new Set(points.map(point=>point.id)).size===points.length,'IDs de pontos turísticos devem ser únicos');
 export const continentSchema=z.object({
@@ -16,7 +16,7 @@ export const continentSchema=z.object({
  fichaCurta:z.object({localizacao:z.string().min(1).max(140),curiosidade:z.string().min(1).max(140),ilustracao:localPath,ilustracaoAlt:z.string().min(1)}),
  areaKm2:sourced,populacao:sourced,quantidadePaises:sourced,
  caracteristicasGeograficas:z.array(z.string()),climas:z.array(z.string()),faunaFlora:z.array(z.string()),cultura:z.array(z.string()),curiosidades:z.array(z.string()),
- paises:z.array(z.object({id:z.string(),nome:z.string(),fontes:z.array(z.string()).min(1),areaKm2:sourced,populacao:sourced}).passthrough()),territorios:z.array(z.object({id:z.string(),nome:z.string()}).passthrough()),
+ paises:z.array(z.object({id:z.string(),nome:z.string(),fontes:z.array(z.string()).min(1),areaKm2:sourced,populacao:sourced,pontosTuristicos:z.array(touristSpotSchema).max(2).refine(points=>new Set(points.map(p=>p.id)).size===points.length,'IDs de pontos devem ser únicos').optional()}).passthrough()),territorios:z.array(z.object({id:z.string(),nome:z.string()}).passthrough()),
  marcador:z.object({tipo:z.enum(['barcode','pattern']),id:z.union([z.string(),z.number()]),arquivo:localPath}),modelo:z.object({arquivo:localPath,tamanhoKb:z.number().optional()}),
  fontesTexto:z.record(z.array(z.string()).min(1)),pontosTuristicos:touristSpots.optional(),
 }).passthrough().refine(c=>c.id!=='antartida'||c.paises.length===0,'Antártida não tem lista de países');

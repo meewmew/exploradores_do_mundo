@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "countryId": "JOR",
+  "continentId": "asia",
+  "file": "models/countries/JOR.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 49.35781226970186,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -36.75768365821878,
+      -31.238702678694032
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      31628.69998196303,
+      -5727.564735376029
+    ],
+    "horizontalScale": 0.000003159488071537572,
+    "elevationScale": 0.00015594541910331385,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -414
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2042.6779401477543,
+      "max": 2135.352488434127
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -414,
+    "maximumSampleMeters": 1638,
+    "displayedMinimumMeters": -414,
+    "displayedMaximumMeters": 1638,
+    "coastalClampedVertexIndices": [
+      21
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "d0441ace070fb5161b9540c7ed431e2eedf1d75ef2182e69154c6e996a74d689",
+    "inputHash": "1ab9433023ef5db094702c1e062d28cf0072a2620a0584e1bbfa75c7d80a3dee",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 25356.91932357207,
+    "simplification": 0.00015,
+    "topVertexCount": 280,
+    "topTriangleCount": 413,
+    "sourceGeometrySha256": "7c2f73c5d601ad3370973f7d057488905a055d3cdbfb75272c98b4f17beb4cc5",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 758,
+    "bytes": 21120,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-326",
+      "nome": "Petra",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 30.33056,
+        "lng": 35.44333
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/326/",
+      "posicao": [
+        -0.49848243594169617,
+        0.23866276443004608,
+        0.3347853124141693
+      ]
+    },
+    {
+      "id": "unesco-327",
+      "nome": "Quseir Amra",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 31.8018055556,
+        "lng": 36.5873055556
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/327/",
+      "posicao": [
+        -0.15080218017101288,
+        0.17051461338996887,
+        -0.17977118492126465
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

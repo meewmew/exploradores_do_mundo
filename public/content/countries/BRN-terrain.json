@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "countryId": "BRN",
+  "continentId": "asia",
+  "file": "models/countries/BRN.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 17.857630709238403,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -114.72196608305846,
+      -4.519683681828102
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -2944.4351229790773,
+      -390.9520923576638
+    ],
+    "horizontalScale": 0.000013099057342134216,
+    "elevationScale": 0.00023391812865497074,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -21
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 7,
+    "pixelResolutionMeters": {
+      "min": 1218.2969010033326,
+      "max": 1219.9774995757757
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -21,
+    "maximumSampleMeters": 1347,
+    "displayedMinimumMeters": -21,
+    "displayedMaximumMeters": 1347,
+    "coastalClampedVertexIndices": [
+      68,
+      69,
+      76,
+      114
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "b7a3df9de854f30a49b958f2d4b163a644268c42a2e8bbb02f68793d3175ee73",
+    "inputHash": "0460481eef635667a112213854fab017a751c62733b3c69acd0bd4b26fa0e491",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 7197.748127900665,
+    "simplification": 0.00015,
+    "topVertexCount": 256,
+    "topTriangleCount": 363,
+    "sourceGeometrySha256": "3217a9be642db8d6f121e4fa942fbe38032b12478e00fdd103d34bfc8992a321",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 702,
+    "bytes": 20156,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "wikidata-q842921",
+      "nome": "Mesquita Omar Ali Saifuddien",
+      "descricaoCurta": "Este lugar fica em Brunei.",
+      "coordenadas": {
+        "lat": 4.889578,
+        "lng": 114.939136
+      },
+      "fontes": [
+        "wikidata-country-sites"
+      ],
+      "saibaMaisUrl": "https://www.wikidata.org/wiki/Q842921",
+      "posicao": [
+        0.3537381887435913,
+        0.02571929804980755,
+        -0.5336951017379761
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

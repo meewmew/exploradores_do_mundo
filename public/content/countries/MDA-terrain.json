@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "countryId": "MDA",
+  "continentId": "europa",
+  "file": "models/countries/MDA.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -28.46561916721804,
+      -47.187172797844156
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -4525.134845408189,
+      24588.812326245665
+    ],
+    "horizontalScale": 0.000004741263532792788,
+    "elevationScale": 0.0007586021652468461,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -8
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 1621.4704305692649,
+      "max": 1715.9219222087572
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -8,
+    "maximumSampleMeters": 294,
+    "displayedMinimumMeters": -8,
+    "displayedMaximumMeters": 294,
+    "coastalClampedVertexIndices": [],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "8106647a3b64b5c2e94ff16c2c292ae07e2a481a3ae8979687c1a1feeca36b81",
+    "inputHash": "349bad810801a49897ebeeaea4e74dded80af55c334e2a22279fdcdbd4f4ef96",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 17231.4889197512,
+    "simplification": 0.00015,
+    "topVertexCount": 343,
+    "topTriangleCount": 449,
+    "sourceGeometrySha256": "11cc2bde1755bb53a00fd3aaff9cd4d4b8e1e878441e0ec8e2576919140b2a27",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1048,
+    "bytes": 28804,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-1187",
+      "nome": "Struve Geodetic Arc",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 48.3188888889,
+        "lng": 27.8766666667
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1187/",
+      "posicao": [
+        -0.1850293129682541,
+        0.22054678201675415,
+        -0.7140001654624939
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

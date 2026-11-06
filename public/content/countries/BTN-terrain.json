@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "countryId": "BTN",
+  "continentId": "asia",
+  "file": "models/countries/BTN.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 9.194173863548782,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -90.40215961054375,
+      -27.412137864723537
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      796.6361956519831,
+      -10594.106705205624
+    ],
+    "horizontalScale": 0.0000053055868345358525,
+    "elevationScale": 0.00004878048780487805,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2153.407961829258,
+      "max": 2185.142948791762
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": 74,
+    "maximumSampleMeters": 6560,
+    "displayedMinimumMeters": 74,
+    "displayedMaximumMeters": 6560,
+    "coastalClampedVertexIndices": [],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "2ba3f07f9e130ee3be0cc706227fcd0582d243ade0dabee28aad5176f779fd41",
+    "inputHash": "0e4f92439078447ff526515f0861e8462bf44580bb0a2b74fbafc44be0bd33f6",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 14041.778202602218,
+    "simplification": 0.00015,
+    "topVertexCount": 375,
+    "topTriangleCount": 577,
+    "sourceGeometrySha256": "2d87ffc1b2aee888bf0b3757dcb1f5f46807b8ca9e427c9537a6060f99965a73",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1012,
+    "bytes": 26628,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "wikidata-q2209873",
+      "nome": "Mosteiro Paro Taktsang",
+      "descricaoCurta": "Este lugar fica em Butão.",
+      "coordenadas": {
+        "lat": 27.491666666667,
+        "lng": 89.363333333333
+      },
+      "fontes": [
+        "wikidata-country-sites"
+      ],
+      "saibaMaisUrl": "https://www.wikidata.org/wiki/Q2209873",
+      "posicao": [
+        -0.5478692054748535,
+        0.19029268622398376,
+        0.007019050419330597
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

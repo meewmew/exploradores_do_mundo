@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "countryId": "CIV",
+  "continentId": "africa",
+  "file": "models/countries/CIV.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 141.21741358713533,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      5.56910293828067,
+      -7.6258783038325
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      935.9023748734326,
+      9544.391535029397
+    ],
+    "horizontalScale": 0.0000022547358155836627,
+    "elevationScale": 0.000318407960199005,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -1
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2403.2650563553752,
+      "max": 2438.934543203722
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -11,
+    "maximumSampleMeters": 1004,
+    "displayedMinimumMeters": -1,
+    "displayedMaximumMeters": 1004,
+    "coastalClampedVertexIndices": [
+      433,
+      452,
+      457,
+      508,
+      512
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "ed5cb5b5ac0d7df9e96140d503fd771bded5974d2b3ff90f5f372a14bffe2a7c",
+    "inputHash": "aba0de5903610c1a8ec34c7ce13cddc3f9b749014e9581d697fb2a1dab247812",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 39836.783899685295,
+    "simplification": 0.00015,
+    "topVertexCount": 581,
+    "topTriangleCount": 772,
+    "sourceGeometrySha256": "16d11008771e8236478da8227d41fb93a7c5a0d016d16374854ee61cfd62e47d",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1788,
+    "bytes": 46684,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-195",
+      "nome": "Taï National Park",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 5.6488888889,
+        "lng": -7.0952777778
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/195/",
+      "posicao": [
+        -0.38293221592903137,
+        0.07786069810390472,
+        0.47348687052726746
+      ]
+    },
+    {
+      "id": "unesco-227",
+      "nome": "Comoé National Park",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 9.077,
+        "lng": -3.758
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/227/",
+      "posicao": [
+        0.44629067182540894,
+        0.09441790729761124,
+        -0.38631361722946167
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

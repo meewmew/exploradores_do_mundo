@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "countryId": "PLW",
+  "continentId": "oceania",
+  "file": "models/countries/PLW.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -134.4057812740144,
+      -7.286684966259899
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -167712.19525609113,
+      212652.3103948878
+    ],
+    "horizontalScale": 0.000002888926393014692,
+    "elevationScale": 0.0004622282228823507,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2423.8606308992066,
+      "max": 2442.576129394888
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -1879,
+    "maximumSampleMeters": 49,
+    "displayedMinimumMeters": 0,
+    "displayedMaximumMeters": 49,
+    "coastalClampedVertexIndices": [
+      0,
+      1,
+      2,
+      3,
+      11,
+      16
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "aeff78738b93622e76a57c285f22c922e72e0b70eb8f50578ad83ba7fb7239e3",
+    "inputHash": "dd007f097b8b0d9078f8caffc9d63ae16fe07c5bf0085c74424129fc07962ae7",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 26043.543320668967,
+    "simplification": 0.00015,
+    "topVertexCount": 18,
+    "topTriangleCount": 14,
+    "sourceGeometrySha256": "30a2a0936eef69d3cf289afff1aee0431a0db9bf2b899e670038501073071f96",
+    "omittedPointIds": [
+      "unesco-1386"
+    ]
+  },
+  "limits": {
+    "triangles": 60,
+    "bytes": 3552,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [],
+  "textOnlyPoints": [
+    {
+      "id": "unesco-1386",
+      "nome": "Rock Islands Southern Lagoon",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 7.246925,
+        "lng": 134.3525
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1386/"
+    }
+  ]
+}

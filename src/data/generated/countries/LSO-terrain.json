@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "countryId": "LSO",
+  "continentId": "africa",
+  "file": "models/countries/LSO.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 12.729989237025427,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -28.228962186561322,
+      29.57906368968632
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -527.1456879406614,
+      3705.5765584164983
+    ],
+    "horizontalScale": 0.00000776327726846858,
+    "elevationScale": 0.00009882643607164917,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2104.442527032002,
+      "max": 2147.906190508299
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": 1420,
+    "maximumSampleMeters": 3238,
+    "displayedMinimumMeters": 1420,
+    "displayedMaximumMeters": 3238,
+    "coastalClampedVertexIndices": [],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "c0f0d4daf600da48eee9dd6abc1bd8cced469021118f42a440d7014d3ab509df",
+    "inputHash": "e08d32f8e22cc608aa02f9402bb44a5c5491190ecfe1702e29dfef0082752ce3",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 13148.884029675151,
+    "simplification": 0.00015,
+    "topVertexCount": 304,
+    "topTriangleCount": 477,
+    "sourceGeometrySha256": "3c0703e029db1eb3d2bb5183b6c45b8681bb9b565976c58b6c8f094dfb39198b",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 794,
+    "bytes": 21304,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "wikidata-q7849277",
+      "nome": "Parque Nacional de Ts’ehlanyane",
+      "descricaoCurta": "Este lugar fica em Lesoto.",
+      "coordenadas": {
+        "lat": -28.924,
+        "lng": 28.458
+      },
+      "fontes": [
+        "wikidata-country-sites"
+      ],
+      "saibaMaisUrl": "https://www.wikidata.org/wiki/Q7849277",
+      "posicao": [
+        0.17714649438858032,
+        0.27435576915740967,
+        -0.5940697193145752
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "countryId": "KHM",
+  "continentId": "asia",
+  "file": "models/countries/KHM.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 104.28991119677629,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -104.90533757599688,
+      -12.719494851869491
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      6249.9591278962325,
+      17180.7422385604
+    ],
+    "horizontalScale": 0.00000257846190431431,
+    "elevationScale": 0.0002689075630252101,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -3
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2365.8673029796173,
+      "max": 2405.7143810692805
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -6,
+    "maximumSampleMeters": 1187,
+    "displayedMinimumMeters": -3,
+    "displayedMaximumMeters": 1187,
+    "coastalClampedVertexIndices": [
+      10,
+      12,
+      89,
+      139,
+      172,
+      174,
+      175,
+      195,
+      218
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "8b104fc8b99786d18c4a4872a6534b797a407a67cbab498ea868dce4b6ac0b9b",
+    "inputHash": "58963b6958c5fb8c2cb80a420350dbc8a8fdae229ac46487117b780f14d57db5",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 30202.46310812803,
+    "simplification": 0.00015,
+    "topVertexCount": 508,
+    "topTriangleCount": 699,
+    "sourceGeometrySha256": "84a6eec4bc607249b472f36ae1b31eb7adb3c89eda85e0d5077809ca374752ff",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1523,
+    "bytes": 39988,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-668",
+      "nome": "Angkor",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 13.4388888889,
+        "lng": 103.8677777778
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/668/",
+      "posicao": [
+        -0.3054516315460205,
+        0.02875630185008049,
+        -0.2511422038078308
+      ]
+    },
+    {
+      "id": "unesco-1224",
+      "nome": "Temple of Preah Vihear",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 14.390841,
+        "lng": 104.680325
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1224/",
+      "posicao": [
+        -0.07861140370368958,
+        0.0747394934296608,
+        -0.5235055685043335
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

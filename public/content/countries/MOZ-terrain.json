@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "countryId": "MOZ",
+  "continentId": "africa",
+  "file": "models/countries/MOZ.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -35.60272770611205,
+      17.195857631902573
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -6816.053194620123,
+      167278.66192015132
+    ],
+    "horizontalScale": 8.892351209428858e-7,
+    "elevationScale": 0.00014227761935086173,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2182.064083738439,
+      "max": 2405.303504615633
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -99,
+    "maximumSampleMeters": 1973,
+    "displayedMinimumMeters": 0,
+    "displayedMaximumMeters": 1973,
+    "coastalClampedVertexIndices": [
+      159,
+      160,
+      161,
+      162,
+      227,
+      290,
+      292,
+      301,
+      304,
+      316,
+      321,
+      325,
+      360,
+      391,
+      392,
+      464,
+      475,
+      481,
+      486,
+      491,
+      493,
+      497,
+      501,
+      512,
+      513,
+      520
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "67b8f10028299871aa257001733cd2c28f475d50cd9cc25c069e47e03089d7c9",
+    "inputHash": "ab627c48165baf4b940226357f96d9661f3211fbfa8a5e5aa9086735767f1101",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 104320.0793579398,
+    "simplification": 0.0006,
+    "topVertexCount": 525,
+    "topTriangleCount": 579,
+    "sourceGeometrySha256": "6772ae94b85c87ac675d38d9275c914d0d10bde2ba69dd145a5aa5e5e2c88478",
+    "omittedPointIds": [
+      "unesco-599"
+    ]
+  },
+  "limits": {
+    "triangles": 1845,
+    "bytes": 49124,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-914",
+      "nome": "iSimangaliso Wetland Park – Maputo National Park",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": -26.4363888889,
+        "lng": 32.8705555556
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/914/",
+      "posicao": [
+        -0.23659777641296387,
+        0.023121993988752365,
+        0.7658835053443909
+      ]
+    }
+  ],
+  "textOnlyPoints": [
+    {
+      "id": "unesco-599",
+      "nome": "Island of Mozambique",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": -15.0503611111,
+        "lng": 40.7263888889
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/599/"
+    }
+  ]
+}

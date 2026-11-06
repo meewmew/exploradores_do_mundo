@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "countryId": "MYS",
+  "continentId": "asia",
+  "file": "models/countries/MYS.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -109.69934301906183,
+      -3.811140334347203
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -25798.953514659195,
+      -35138.826567073906
+    ],
+    "horizontalScale": 8.429214846594444e-7,
+    "elevationScale": 0.0001348674375455111,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2425.87762081089,
+      "max": 2445.7081169270887
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -28,
+    "maximumSampleMeters": 1571,
+    "displayedMinimumMeters": 0,
+    "displayedMaximumMeters": 1571,
+    "coastalClampedVertexIndices": [
+      60,
+      62,
+      72,
+      73,
+      74,
+      75,
+      76,
+      78,
+      90,
+      95,
+      96,
+      97,
+      99,
+      102,
+      103,
+      124,
+      133,
+      139,
+      140,
+      141,
+      159,
+      196,
+      209,
+      210,
+      214,
+      278,
+      313,
+      316,
+      335,
+      338,
+      347,
+      351,
+      352,
+      358,
+      363,
+      364,
+      374,
+      378,
+      380,
+      381,
+      389,
+      391,
+      402,
+      407,
+      411,
+      432,
+      433
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "304917cc117c930665a071d2f939fd4956bf0b307280f04aac205145679c5a94",
+    "inputHash": "8580fdad72cc64f97c5de5c8a7f291a7b344a43c5e2c0923786274fe12dcff67",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 101757.6609063221,
+    "simplification": 0.0012,
+    "topVertexCount": 438,
+    "topTriangleCount": 446,
+    "sourceGeometrySha256": "e47ef3ddfa3cd80634111a7c2c56213b7eac0b1392dbb5a16fb7ec4aa08f51a3",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1558,
+    "bytes": 42736,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-1012",
+      "nome": "Kinabalu Park",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 6.147,
+        "lng": 116.642
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1012/",
+      "posicao": [
+        0.6684602499008179,
+        0.21342292428016663,
+        -0.19230930507183075
+      ]
+    },
+    {
+      "id": "unesco-1013",
+      "nome": "Gunung Mulu National Park",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 4.13333,
+        "lng": 114.91667
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1013/",
+      "posicao": [
+        0.5093182921409607,
+        0.0878613293170929,
+        -0.0020867923740297556
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "countryId": "RWA",
+  "continentId": "africa",
+  "file": "models/countries/RWA.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 14.011715364766303,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -29.919982910385347,
+      1.9903248653704182
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -5864.978109098782,
+      -6049.447792905703
+    ],
+    "horizontalScale": 0.000007022764982600065,
+    "elevationScale": 0.0000984009840098401,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2443.0467854971967,
+      "max": 2445.563885005874
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": 955,
+    "maximumSampleMeters": 3252,
+    "displayedMinimumMeters": 955,
+    "displayedMaximumMeters": 3252,
+    "coastalClampedVertexIndices": [],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "30362956c6789d87738cce1ab09e0b33f875a7e1c9fe2d50024bfbc0f9c4bddf",
+    "inputHash": "2693354fde7331cd3dd13d6e7dc62aec7414ca73c2169409cf1ec0bac87e7476",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 12046.780961992541,
+    "simplification": 0.00015,
+    "topVertexCount": 333,
+    "topTriangleCount": 509,
+    "sourceGeometrySha256": "3ba78e7cd7bc1de77a3fd1175059dc37b06c4156a4b44bcf557afa8b2e14130b",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 895,
+    "bytes": 23976,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-1586",
+      "nome": "Memorial sites of the Genocide: Nyamata, Murambi, Gisozi and Bisesero",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": -2.1489444444,
+        "lng": 30.0936666666
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1586/",
+      "posicao": [
+        0.1767219752073288,
+        0.15861500799655914,
+        0.16635645925998688
+      ]
+    },
+    {
+      "id": "unesco-1697",
+      "nome": "Nyungwe National Park",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": -2.5553,
+        "lng": 29.2473333333
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1697/",
+      "posicao": [
+        -0.4835619330406189,
+        0.23713898658752441,
+        0.4837833642959595
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

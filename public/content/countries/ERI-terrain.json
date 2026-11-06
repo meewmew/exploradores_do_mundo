@@ -1,0 +1,129 @@
+{
+  "version": 1,
+  "countryId": "ERI",
+  "continentId": "africa",
+  "file": "models/countries/ERI.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 60.31122423614564,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -38.857274077660215,
+      -15.361124450319817
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      100577.41644589047,
+      17184.107905429875
+    ],
+    "horizontalScale": 0.000002074203171764223,
+    "elevationScale": 0.00012509773260359656,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -118
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2326.2028842257173,
+      "max": 2389.140309984925
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -118,
+    "maximumSampleMeters": 2440,
+    "displayedMinimumMeters": -118,
+    "displayedMaximumMeters": 2440,
+    "coastalClampedVertexIndices": [
+      141,
+      142,
+      156,
+      158,
+      159,
+      160,
+      161,
+      181,
+      191,
+      192,
+      194,
+      199,
+      200,
+      210,
+      213,
+      215,
+      216,
+      226,
+      234,
+      235,
+      236,
+      244,
+      255,
+      257,
+      258,
+      279,
+      289,
+      303,
+      306,
+      312,
+      314,
+      322,
+      326,
+      331,
+      338,
+      343,
+      346,
+      347
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "40959ec08357e3290b927f6abcbb9d6d9a84e5fbfdfe266a6a05421585c13e4a",
+    "inputHash": "74b35f4e9a6976f50703aab11fb2044f5b50bdb92c1acc2452397133a8b11e7c",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 38724.65640415594,
+    "simplification": 0.00015,
+    "topVertexCount": 351,
+    "topTriangleCount": 424,
+    "sourceGeometrySha256": "2a900e9d45dc13669c83648facb12910ddc65b9b76771cca4fcad72e4c1dff46",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1129,
+    "bytes": 31288,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-1550",
+      "nome": "Asmara: A Modernist African City",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 15.3352777778,
+        "lng": 38.9358333333
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1550/",
+      "posicao": [
+        -0.1911441534757614,
+        0.33024394512176514,
+        -0.029685204848647118
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

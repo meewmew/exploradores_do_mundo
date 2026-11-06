@@ -1,0 +1,172 @@
+{
+  "version": 1,
+  "countryId": "FJI",
+  "continentId": "oceania",
+  "file": "models/countries/FJI.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -178.51202846731044,
+      17.427545862984225
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -31689.637227645202,
+      -34904.306875517796
+    ],
+    "horizontalScale": 0.0000014786219943978883,
+    "elevationScale": 0.00023657951910366213,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2272.551750567594,
+      "max": 2388.2180554313622
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -1951,
+    "maximumSampleMeters": 682,
+    "displayedMinimumMeters": 0,
+    "displayedMaximumMeters": 682,
+    "coastalClampedVertexIndices": [
+      9,
+      20,
+      26,
+      28,
+      38,
+      41,
+      42,
+      45,
+      54,
+      61,
+      65,
+      68,
+      73,
+      77,
+      78,
+      88,
+      91,
+      103,
+      104,
+      109,
+      110,
+      113,
+      120,
+      122,
+      123,
+      130,
+      133,
+      135,
+      138,
+      139,
+      142,
+      144,
+      151,
+      158,
+      159,
+      160,
+      163,
+      166,
+      167,
+      169,
+      171,
+      173,
+      175,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      192,
+      193,
+      195,
+      196,
+      206,
+      208,
+      210,
+      211,
+      214,
+      215,
+      217,
+      223,
+      224,
+      230,
+      234,
+      239,
+      240,
+      241,
+      243,
+      244,
+      245,
+      247,
+      251,
+      261,
+      262,
+      263,
+      264,
+      265,
+      266,
+      267,
+      268
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "d51e90dbd76a22691e4509d58274d45eb8b348724d274530c91eeee02a84edec",
+    "inputHash": "bd84b470c1ff5de691b0a1697c7d6531a3ffee78e4a0182235288b8ce2842cc1",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 50671.71567876055,
+    "simplification": 0.00015,
+    "topVertexCount": 270,
+    "topTriangleCount": 239,
+    "sourceGeometrySha256": "3c9f8e65ad093dfc6e912412455d39473c5603bda01e987f2155f57c5a589fdf",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 950,
+    "bytes": 27680,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-1399",
+      "nome": "Levuka Historical Port Town",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": -17.6833777778,
+        "lng": 178.8345333333
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1399/",
+      "posicao": [
+        0.09737632423639297,
+        0.06697195768356323,
+        0.09371564537286758
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

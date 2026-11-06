@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "countryId": "VUT",
+  "continentId": "oceania",
+  "file": "models/countries/VUT.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -167.67534617111076,
+      16.216969629078747
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      54162.19037401494,
+      84974.14719299634
+    ],
+    "horizontalScale": 0.0000023311415947662263,
+    "elevationScale": 0.0003729826551625962,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2294.9230290301534,
+      "max": 2376.2986706155716
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -1899,
+    "maximumSampleMeters": 761,
+    "displayedMinimumMeters": 0,
+    "displayedMaximumMeters": 761,
+    "coastalClampedVertexIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      14,
+      15,
+      16,
+      17,
+      21,
+      23,
+      24,
+      25,
+      26,
+      29,
+      48,
+      51,
+      55,
+      57,
+      60,
+      63,
+      67,
+      77,
+      79,
+      81,
+      94,
+      96,
+      102,
+      111,
+      113,
+      114,
+      119,
+      120,
+      132,
+      134,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      161,
+      164,
+      175,
+      181,
+      183,
+      194,
+      197,
+      198,
+      204,
+      205,
+      221,
+      229,
+      244
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "bad8b3a785db0142df86a039709e530ac277b84c9f5f0d032d2d92dc908e8247",
+    "inputHash": "31a312ba43ef1ac1106caa166e340e6c60f91645a4b137be616f50c7955e7cb5",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 29361.534347376964,
+    "simplification": 0.00015,
+    "topVertexCount": 255,
+    "topTriangleCount": 240,
+    "sourceGeometrySha256": "2363f1e7648ceaa4f56fb56af1d12c53379a64f9b5d565a3e7103953e210da81",
+    "omittedPointIds": [
+      "unesco-1280"
+    ]
+  },
+  "limits": {
+    "triangles": 866,
+    "bytes": 25792,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [],
+  "textOnlyPoints": [
+    {
+      "id": "unesco-1280",
+      "nome": "Chief Roi Mata’s Domain",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": -17.6280694444,
+        "lng": 168.1777194444
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1280/"
+    }
+  ]
+}

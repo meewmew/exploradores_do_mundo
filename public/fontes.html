@@ -32,7 +32,7 @@
         <div><dt>Mapas e países</dt><dd>O <a href="#natural-earth">Natural Earth</a> fornece os contornos dos mapas e dados geográficos. As listas de países e as informações sobre capitais também consultam a <a href="#un-members">ONU</a> e a <a href="#undata-south-sudan">UNdata</a>.</dd></div>
         <div><dt>Continentes e ambientes</dt><dd>Os materiais educativos da <a href="#ng-continents">National Geographic</a> ajudam a explicar o relevo, os climas, a fauna e a flora. O <a href="#antarctic-treaty">Tratado Antártico</a> é uma referência para o conteúdo sobre a Antártida.</dd></div>
         <div><dt>Lugares de interesse</dt><dd>As descrições consultam a <a href="#unesco-giza">UNESCO</a>, e as localizações usam referências da UNESCO e do <a href="#wikidata-giza">Wikidata</a>. Os textos adaptados da UNESCO recebem os créditos e a licença indicados nas referências completas.</dd></div>
-        <div><dt>Relevo em 3D</dt><dd>Os dados de elevação do <a href="#noaa-etopo5">NOAA ETOPO5</a> ajudam a representar o relevo dos continentes nos modelos 3D.</dd></div>
+        <div><dt>Relevo em 3D</dt><dd>Os dados de elevação do <a href="#noaa-etopo5">NOAA ETOPO5</a> ajudam a representar o relevo dos continentes nos modelos 3D. Os países usam o DEM composto do <a href="#mapzen-terrain">Mapzen e seus fornecedores</a>, com <a href="licenses/mapzen-terrain-attribution.md">créditos e licenças completos</a>.</dd></div>
       </dl>
       <aside class="reading-note"><h3>Um cuidado com os dados</h3><p>As populações são acompanhadas do ano de referência. Dados ainda não confirmados não são apresentados como definitivos. Os mapas são simplificados e não resolvem disputas territoriais.</p></aside>
     </section>
@@ -60,29 +60,34 @@
     <p class="reference-meta">referência factual; página e tabelas não redistribuídas · Consulta em 29/10/2026.</p>
     <p>Campo “Capital city”: Juba. Correção pontual registrada em <code>data-src/country-facts.json</code> e aplicada pelo pipeline. O Natural Earth local omitia a capital porque Juba tem <code>adm0cap: 0</code> e código <code>SSD</code>, enquanto a geometria usa <code>SDS</code>. Nenhuma população ou área foi inferida dessa diferença.</p>
     <a class="reference-link" href="https://data.un.org/legacy/en/iso/ss.html">Consultar a fonte</a>
+
   </article>
 <article id="natural-earth" class="reference">
     <h3>Natural Earth 5.1.2</h3>
     <p class="reference-meta">domínio público · Consulta em 28/10/2026.</p>
     <p><code>ne_50m_admin_0_countries.geojson</code>: geometria, nomes em português, POP_EST/POP_YEAR, regiões. <code>ne_50m_populated_places_simple.geojson</code>: capitais. Arquivos e SHA-256 em data-src/assets-manifest.json. Licença: <a href="https://www.naturalearthdata.com/about/terms-of-use/">https://www.naturalearthdata.com/about/terms-of-use/</a> . Limites cartográficos simplificados não resolvem disputas territoriais.</p>
     <a class="reference-link" href="https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2/geojson">Consultar a fonte</a>
+
   </article>
 <article id="un-members" class="reference">
     <h3>ONU, Estados-membros</h3>
     <p class="reference-meta">fatos e nomes; página não redistribuída no app · Consulta em 28/10/2026.</p>
     <p>Lista oficial consultada e snapshot de auditoria em data-src/. Contagem gerada pelo cruzamento com Natural Earth; aliases explícitos no script.</p>
     <a class="reference-link" href="https://www.un.org/en/about-us/member-states">Consultar a fonte</a>
+
   </article>
 <article id="un-observers" class="reference">
     <h3>ONU, Estados observadores</h3>
     <p class="reference-meta">fatos; página não redistribuída no app · Consulta em 28/10/2026.</p>
     <p>Santa Sé e Estado da Palestina, identificados no snapshot de auditoria. Não confundir territórios e áreas disputadas com Estados-membros.</p>
     <a class="reference-link" href="https://www.un.org/en/about-us/non-member-states">Consultar a fonte</a>
+
   </article>
 <article id="country-assignments" class="reference">
     <h3>Lista e contagens derivadas de ONU e Natural Earth</h3>
     <p class="reference-meta">nomes/geometrias Natural Earth em domínio público; seleção e código autorais MIT · Consulta em 28/10/2026.</p>
     <p>Reproduzível por scripts/build-data.mjs: cruza os 193 nomes de un-members e os dois Estados de un-observers com os códigos Natural Earth, aplica a regra da maior parte do território e exceções documentadas do Cáucaso. Fonte da quantidadePaises e da atribuição didática de país a continente. Distribuição gerada: África 54, América 35, Antártida 0, Ásia 49, Europa 43, Oceania 14; total 195, sem duplicar Estados. Não é uma contagem oficial da ONU por continente.</p>
+
 
   </article>
 <article id="ng-continents" class="reference">
@@ -90,78 +95,91 @@
     <p class="reference-meta">referência factual, redação própria; artigo/imagens não redistribuídos · Consulta em 28/10/2026.</p>
     <p>Modelo de sete continentes; neste projeto adaptado ao modelo de seis, com América unificada. Geografia e história agrícola da América.</p>
     <a class="reference-link" href="https://education.nationalgeographic.org/resource/Continent/">Consultar a fonte</a>
+
   </article>
 <article id="ng-africa" class="reference">
     <h3>National Geographic, Africa: Physical Geography</h3>
     <p class="reference-meta">referência factual, redação própria · Consulta em 28/10/2026.</p>
     <p>Localização, Saara, ambientes, sal, fauna e flora.</p>
     <a class="reference-link" href="https://education.nationalgeographic.org/resource/africa-physical-geography/">Consultar a fonte</a>
+
   </article>
 <article id="ng-asia" class="reference">
     <h3>National Geographic, Asia: Physical Geography</h3>
     <p class="reference-meta">referência factual, redação própria · Consulta em 28/10/2026.</p>
     <p>Himalaia, climas e ambientes. Fronteira Europa/Ásia é convencional.</p>
     <a class="reference-link" href="https://education.nationalgeographic.org/resource/asia/">Consultar a fonte</a>
+
   </article>
 <article id="ng-europa" class="reference">
     <h3>National Geographic, Europe: Physical Geography</h3>
     <p class="reference-meta">referência factual, redação própria · Consulta em 28/10/2026.</p>
     <p>Penínsulas, relevo, rios e ambientes.</p>
     <a class="reference-link" href="https://education.nationalgeographic.org/resource/europe-physical-geography/">Consultar a fonte</a>
+
   </article>
 <article id="ng-oceania" class="reference">
     <h3>National Geographic, Australia and Oceania: Physical Geography</h3>
     <p class="reference-meta">referência factual, redação própria · Consulta em 28/10/2026.</p>
     <p>Ilhas e ambientes; modelo escolar trata Oceania como continente.</p>
     <a class="reference-link" href="https://education.nationalgeographic.org/resource/oceania-physical-geography/">Consultar a fonte</a>
+
   </article>
 <article id="ng-antarctica" class="reference">
     <h3>National Geographic, Antarctica</h3>
     <p class="reference-meta">referência factual, redação própria · Consulta em 28/10/2026.</p>
     <p>Gelo, clima polar, fauna e pesquisa.</p>
     <a class="reference-link" href="https://education.nationalgeographic.org/resource/antarctica/">Consultar a fonte</a>
+
   </article>
 <article id="antarctic-treaty" class="reference">
     <h3>Secretaria do Tratado Antártico</h3>
     <p class="reference-meta">referência factual ao tratado; redação própria · Consulta em 28/10/2026.</p>
     <p>Uso pacífico, cooperação científica, estações e reivindicações preservadas pelo Artigo IV. Antártida não recebe lista de países.</p>
     <a class="reference-link" href="https://www.ats.aq/e/antarctictreaty.html">Consultar a fonte</a>
+
   </article></div></details>
 <details class="reference-group"><summary>Lugares de interesse e relevo</summary><div class="reference-list"><article id="unesco-giza" class="reference">
     <h3>Memphis and its Necropolis - the Pyramid Fields from Giza to Dahshur</h3>
     <p class="reference-meta">CC BY-SA 3.0 IGO (descrição) · Consulta em 04/11/2026.</p>
     <p>Descrição curta das Pirâmides de Gizé adaptada em português para o público infantil, com atribuição à UNESCO. A adaptação textual segue CC BY-SA 3.0 IGO; código e ilustrações autorais mantêm suas licenças próprias. Licença: <a href="https://creativecommons.org/licenses/by-sa/3.0/igo/">https://creativecommons.org/licenses/by-sa/3.0/igo/</a> . Nenhuma fotografia copiada.</p>
     <a class="reference-link" href="https://whc.unesco.org/en/list/86/">Consultar a fonte</a>
+
   </article>
 <article id="unesco-victoria-falls" class="reference">
     <h3>Mosi-oa-Tunya / Victoria Falls</h3>
     <p class="reference-meta">CC BY-SA 3.0 IGO (descrição) · Consulta em 04/11/2026.</p>
     <p>Texto infantil adaptado da descrição: rio Zambeze e localização compartilhada por Zâmbia e Zimbábue. Adaptação sob CC BY-SA 3.0 IGO com atribuição à UNESCO. Nenhuma fotografia copiada.</p>
     <a class="reference-link" href="https://whc.unesco.org/en/list/509/">Consultar a fonte</a>
+
   </article>
 <article id="unesco-kilimanjaro" class="reference">
     <h3>Kilimanjaro National Park</h3>
     <p class="reference-meta">CC BY-SA 3.0 IGO (descrição) · Consulta em 04/11/2026.</p>
     <p>Texto infantil adaptado da descrição: montanha vulcânica na Tanzânia e ponto mais alto da África. Adaptação sob CC BY-SA 3.0 IGO com atribuição à UNESCO. Nenhuma fotografia copiada.</p>
     <a class="reference-link" href="https://whc.unesco.org/en/list/403/">Consultar a fonte</a>
+
   </article>
 <article id="wikidata-giza" class="reference">
     <h3>Giza pyramid complex, Q12508</h3>
     <p class="reference-meta">CC0 1.0 · Consulta em 04/11/2026.</p>
     <p>Rótulo e coordenada P625 do conjunto de Gizé; revisão e precisão declarada preservadas em <code>data-src/tourist-spots.json</code>. Dados estruturados: <a href="https://www.wikidata.org/wiki/Wikidata:Copyright">https://www.wikidata.org/wiki/Wikidata:Copyright</a> . Coordenada representativa, sem pretensão de precisão topográfica.</p>
     <a class="reference-link" href="https://www.wikidata.org/wiki/Q12508">Consultar a fonte</a>
+
   </article>
 <article id="wikidata-victoria-falls" class="reference">
     <h3>Victoria Falls, Q43278</h3>
     <p class="reference-meta">CC0 1.0 · Consulta em 04/11/2026.</p>
     <p>Rótulo e coordenada P625 das cataratas; revisão e precisão preservadas em <code>data-src/tourist-spots.json</code>. Não representa limites do sítio ou uma rota de visitação.</p>
     <a class="reference-link" href="https://www.wikidata.org/wiki/Q43278">Consultar a fonte</a>
+
   </article>
 <article id="wikidata-kilimanjaro" class="reference">
     <h3>Kilimanjaro, Q7296</h3>
     <p class="reference-meta">CC0 1.0 · Consulta em 04/11/2026.</p>
     <p>Rótulo e coordenada P625 da montanha; revisão e precisão preservadas em <code>data-src/tourist-spots.json</code>. Coordenadas geográficas WGS84 mantidas separadas das posições locais do modelo 3D.</p>
     <a class="reference-link" href="https://www.wikidata.org/wiki/Q7296">Consultar a fonte</a>
+
   </article>
 <article id="noaa-etopo5" class="reference">
     <h3>NOAA ETOPO5, amostragem global via ERDDAP IOOS</h3>
@@ -169,162 +187,217 @@
     <p>DEM histórico global de 5 minutos de arco, variável <code>ROSE</code> em metros, substituído por versões mais recentes. Catálogo e identificador: <a href="https://doi.org/10.7289/V5D798BF">https://doi.org/10.7289/V5D798BF</a> . O distribuidor autoriza uso e redistribuição gratuitos, com ressalva de inexatidões e sem garantia. Licença integral, URLs das consultas, eixos e hashes das respostas preservados em <code>data-src/dem/etopo5-global-0.5deg.json</code>; o recorte africano original permanece em <code>data-src/dem/etopo5-africa.json</code>.</p>
 <p>Piloto África: amostragem de aproximadamente 0,5 grau, malha projetada de 100 km e exagero vertical de 160 vezes; valores negativos limitados a zero na visualização. Cores por vértice são uma convenção gráfica. Não usar este modelo para medições nem apresentar altura de vértice como altitude exata dos cumes. Processo, transformação reversível e limitações em <code>docs/AFRICA-DEM.md</code>. Arquivo GLB adicional; os modelos de contorno anteriores permanecem disponíveis.</p>
     <a class="reference-link" href="https://erddap.ioos.us/erddap/info/etopo5_EDDGridCopy/index.html">Consultar a fonte</a>
+
   </article>
 <article id="unesco-grand-canyon" class="reference">
     <h3>Grand Canyon National Park</h3>
     <p class="reference-meta">CC BY-SA 3.0 IGO (descrição) · Consulta em 04/11/2026.</p>
     <p>Descrição infantil adaptada da página do Patrimônio Mundial; coordenadas vêm do item Wikidata cadastrado separadamente. Sem mídia copiada.</p>
     <a class="reference-link" href="https://whc.unesco.org/en/list/75/">Consultar a fonte</a>
+
   </article>
 <article id="unesco-machu-picchu" class="reference">
     <h3>Historic Sanctuary of Machu Picchu</h3>
     <p class="reference-meta">CC BY-SA 3.0 IGO (descrição) · Consulta em 04/11/2026.</p>
     <p>Descrição infantil adaptada da página do Patrimônio Mundial; coordenadas vêm do item Wikidata cadastrado separadamente. Sem mídia copiada.</p>
     <a class="reference-link" href="https://whc.unesco.org/en/list/274/">Consultar a fonte</a>
+
   </article>
 <article id="unesco-iguazu" class="reference">
     <h3>Iguazu National Park</h3>
     <p class="reference-meta">CC BY-SA 3.0 IGO (descrição) · Consulta em 04/11/2026.</p>
     <p>Descrição infantil adaptada da página do Patrimônio Mundial; coordenadas vêm do item Wikidata cadastrado separadamente. Sem mídia copiada.</p>
     <a class="reference-link" href="https://whc.unesco.org/en/list/355/">Consultar a fonte</a>
+
   </article>
 <article id="unesco-great-wall" class="reference">
     <h3>The Great Wall</h3>
     <p class="reference-meta">CC BY-SA 3.0 IGO (descrição) · Consulta em 04/11/2026.</p>
     <p>Descrição infantil adaptada da página do Patrimônio Mundial; coordenadas vêm do item Wikidata cadastrado separadamente. Sem mídia copiada.</p>
     <a class="reference-link" href="https://whc.unesco.org/en/list/438">Consultar a fonte</a>
+
   </article>
 <article id="unesco-taj-mahal" class="reference">
     <h3>Taj Mahal</h3>
     <p class="reference-meta">CC BY-SA 3.0 IGO · Consulta em 04/11/2026.</p>
     <p>Descrição e coordenada representativa conferidas na página do Patrimônio Mundial. Sem mídia copiada.</p>
     <a class="reference-link" href="https://whc.unesco.org/en/list/252">Consultar a fonte</a>
+
   </article>
 <article id="unesco-fujisan" class="reference">
     <h3>Fujisan, sacred place and source of artistic inspiration</h3>
     <p class="reference-meta">CC BY-SA 3.0 IGO (descrição) · Consulta em 04/11/2026.</p>
     <p>Descrição infantil adaptada da página do Patrimônio Mundial; coordenadas vêm do item Wikidata cadastrado separadamente. Sem mídia copiada.</p>
     <a class="reference-link" href="https://whc.unesco.org/en/list/1418">Consultar a fonte</a>
+
   </article>
 <article id="unesco-rome" class="reference">
     <h3>Historic Centre of Rome</h3>
     <p class="reference-meta">CC BY-SA 3.0 IGO (descrição) · Consulta em 04/11/2026.</p>
     <p>Confirma a inclusão do Coliseu no conjunto patrimonial do centro histórico; as coordenadas do monumento vêm do Wikidata. Sem mídia copiada.</p>
     <a class="reference-link" href="https://whc.unesco.org/en/list/91">Consultar a fonte</a>
+
   </article>
 <article id="unesco-acropolis" class="reference">
     <h3>Acropolis, Athens</h3>
     <p class="reference-meta">CC BY-SA 3.0 IGO · Consulta em 04/11/2026.</p>
     <p>Descrição e coordenada representativa do sítio conferidas na página do Patrimônio Mundial. Sem mídia copiada.</p>
     <a class="reference-link" href="https://whc.unesco.org/en/list/404">Consultar a fonte</a>
+
   </article>
 <article id="unesco-paris-seine" class="reference">
     <h3>Paris, Banks of the Seine</h3>
     <p class="reference-meta">CC BY-SA 3.0 IGO (descrição) · Consulta em 04/11/2026.</p>
     <p>Confirma o contexto patrimonial de Paris; o nome e as coordenadas da Torre Eiffel vêm do Wikidata. Sem mídia copiada.</p>
     <a class="reference-link" href="https://whc.unesco.org/en/list/600">Consultar a fonte</a>
+
   </article>
 <article id="unesco-great-barrier" class="reference">
     <h3>Great Barrier Reef</h3>
     <p class="reference-meta">CC BY-SA 3.0 IGO · Consulta em 04/11/2026.</p>
     <p>Descrição e coordenada representativa do sítio conferidas na página do Patrimônio Mundial. O pin fica no recife costeiro e pode aparecer sobre a base do modelo continental.</p>
     <a class="reference-link" href="https://whc.unesco.org/en/list/154">Consultar a fonte</a>
+
   </article>
 <article id="unesco-sydney-opera" class="reference">
     <h3>Sydney Opera House</h3>
     <p class="reference-meta">CC BY-SA 3.0 IGO · Consulta em 04/11/2026.</p>
     <p>Descrição e coordenada representativa conferidas na página do Patrimônio Mundial. Sem mídia copiada.</p>
     <a class="reference-link" href="https://whc.unesco.org/en/list/166">Consultar a fonte</a>
+
   </article>
 <article id="unesco-uluru" class="reference">
     <h3>Uluru-Kata Tjuta National Park</h3>
     <p class="reference-meta">CC BY-SA 3.0 IGO (descrição) · Consulta em 04/11/2026.</p>
     <p>Descrição infantil adaptada da página do Patrimônio Mundial; coordenadas vêm do item Wikidata cadastrado separadamente. Sem mídia copiada.</p>
     <a class="reference-link" href="https://whc.unesco.org/en/list/447">Consultar a fonte</a>
+
   </article>
 <article id="wikidata-grand-canyon" class="reference">
     <h3>Grand Canyon National Park, Q220289</h3>
     <p class="reference-meta">CC0 1.0 · Consulta em 04/11/2026.</p>
     <p>Rótulo e coordenada P625 consultados; ponto representativo, não é limite do parque.</p>
     <a class="reference-link" href="https://www.wikidata.org/wiki/Q220289">Consultar a fonte</a>
+
   </article>
 <article id="wikidata-machu-picchu" class="reference">
     <h3>Machu Picchu, Q676203</h3>
     <p class="reference-meta">CC0 1.0 · Consulta em 04/11/2026.</p>
     <p>Rótulo e coordenada P625 consultados; ponto representativo, não é limite do sítio.</p>
     <a class="reference-link" href="https://www.wikidata.org/wiki/Q676203">Consultar a fonte</a>
+
   </article>
 <article id="wikidata-iguazu" class="reference">
     <h3>Iguaçu Falls, Q36332</h3>
     <p class="reference-meta">CC0 1.0 · Consulta em 04/11/2026.</p>
     <p>Rótulo e coordenada P625 consultados; ponto representativo das cataratas compartilhadas por Brasil e Argentina.</p>
     <a class="reference-link" href="https://www.wikidata.org/wiki/Q36332">Consultar a fonte</a>
+
   </article>
 <article id="wikidata-great-wall" class="reference">
     <h3>Great Wall of China, Q12501</h3>
     <p class="reference-meta">CC0 1.0 · Consulta em 04/11/2026.</p>
     <p>Rótulo e coordenada P625 consultados; ponto representativo de um conjunto extenso de fortificações.</p>
     <a class="reference-link" href="https://www.wikidata.org/wiki/Q12501">Consultar a fonte</a>
+
   </article>
 <article id="wikidata-fuji" class="reference">
     <h3>Mount Fuji, Q39231</h3>
     <p class="reference-meta">CC0 1.0 · Consulta em 04/11/2026.</p>
     <p>Rótulo e coordenada P625 consultados; posição representativa da montanha.</p>
     <a class="reference-link" href="https://www.wikidata.org/wiki/Q39231">Consultar a fonte</a>
+
   </article>
 <article id="wikidata-colosseum" class="reference">
     <h3>Colosseum, Q10285</h3>
     <p class="reference-meta">CC0 1.0 · Consulta em 04/11/2026.</p>
     <p>Rótulo e coordenada P625 consultados; posição representativa do monumento.</p>
     <a class="reference-link" href="https://www.wikidata.org/wiki/Q10285">Consultar a fonte</a>
+
   </article>
 <article id="wikidata-eiffel" class="reference">
     <h3>Eiffel Tower, Q243</h3>
     <p class="reference-meta">CC0 1.0 · Consulta em 04/11/2026.</p>
     <p>Rótulo e coordenada P625 consultados; posição representativa da torre.</p>
     <a class="reference-link" href="https://www.wikidata.org/wiki/Q243">Consultar a fonte</a>
+
   </article>
 <article id="wikidata-uluru" class="reference">
     <h3>Uluṟu-Kata Tjuṯa National Park, Q251999</h3>
     <p class="reference-meta">CC0 1.0 · Consulta em 04/11/2026.</p>
     <p>Rótulo e coordenada P625 consultados; posição representativa do parque cultural Anangu.</p>
     <a class="reference-link" href="https://www.wikidata.org/wiki/Q251999">Consultar a fonte</a>
+
   </article>
 <article id="wikidata-mcmurdo" class="reference">
     <h3>McMurdo Station, Q498627</h3>
     <p class="reference-meta">CC0 1.0 · Consulta em 04/11/2026.</p>
     <p>Rótulo e coordenada P625 consultados; estação de pesquisa na Ilha de Ross.</p>
     <a class="reference-link" href="https://www.wikidata.org/wiki/Q498627">Consultar a fonte</a>
+
   </article>
 <article id="wikidata-amundsen-scott" class="reference">
     <h3>Amundsen–Scott South Pole Station, Q243307</h3>
     <p class="reference-meta">CC0 1.0 · Consulta em 04/11/2026.</p>
     <p>Rótulo e coordenada P625 consultados; estação científica junto ao Polo Sul geográfico.</p>
     <a class="reference-link" href="https://www.wikidata.org/wiki/Q243307">Consultar a fonte</a>
+
   </article>
 <article id="wikidata-vostok" class="reference">
     <h3>Vostok Station, Q211014</h3>
     <p class="reference-meta">CC0 1.0 · Consulta em 04/11/2026.</p>
     <p>Rótulo e coordenada P625 consultados; estação científica no interior da Antártida Oriental.</p>
     <a class="reference-link" href="https://www.wikidata.org/wiki/Q211014">Consultar a fonte</a>
+
+  </article>
+<article id="mapzen-terrain" class="reference">
+    <h3>Mapzen Terrain Tiles</h3>
+    <p class="reference-meta">licenças abertas das fontes, com atribuição · Consulta em 05/11/2026.</p>
+    <p>Dados DEM compostos (SRTM/GMTED2010/ETOPO1 e fornecedores regionais), distribuídos publicamente pelo projeto Mapzen/Linux Foundation em AWS Open Data, sem chave ou conta. Usados exclusivamente na preparação offline; o app serve GLBs locais. Formato Terrarium e fórmula: <a href="https://github.com/tilezen/joerd/blob/master/docs/formats.md">https://github.com/tilezen/joerd/blob/master/docs/formats.md</a> . Créditos integrais e links das licenças de cada fornecedor preservados em <code>public/licenses/mapzen-terrain-attribution.md</code>, obtidos de <a href="https://github.com/tilezen/joerd/blob/master/docs/attribution.md">https://github.com/tilezen/joerd/blob/master/docs/attribution.md</a> . Pixels Web Mercator EPSG:3857 convertidos para coordenadas WGS84; o mosaico tem resolução nativa variável. Cada amostra registra tile/URL/SHA-256, pixel, zoom, coordenada, elevação em metros e resolução nominal do pixel em <code>data-src/dem/countries/</code>. Amostragem pelo pixel mais próximo, sem inventar valores ausentes. Metadados da malha registram simplificação, normalização, datum mínimo e exagero vertical por país. Na visualização, amostras negativas até dois pixels do litoral externo Natural Earth, excluindo fronteiras políticas, são normalizadas ao nível do mar para excluir batimetria da costa generalizada; depressões internas são preservadas. Índices tratados ficam nos metadados, e valores originais continuam no snapshot. O recorte é educativo e não mede altitudes exatas de cumes ou monumentos.</p>
+    <a class="reference-link" href="https://registry.opendata.aws/terrain-tiles/">Consultar a fonte</a>
+    <a href="licenses/mapzen-terrain-attribution.md">Créditos e licenças de todos os fornecedores do terreno</a>
+  </article>
+<article id="unesco-country-sites" class="reference">
+    <h3>UNESCO World Heritage List</h3>
+    <p class="reference-meta">CC BY-SA 4.0 · Consulta em 05/11/2026.</p>
+    <p>Nomes próprios e coordenadas representativas do conjunto oficial <code>whc001</code>, sem copiar os textos longos ou imagens. Consulta e SHA-256 das respostas preservados em <code>data-src/points/unesco-country-sites.json</code>. Os pontos são escolhidos entre sítios atribuídos ao país pela UNESCO, no máximo dois; nos sítios transnacionais, usa-se somente coordenada componente situada no limite Natural Earth do país. Para sítios de um único país fora da silhueta cartográfica simplificada, manter o local na lista textual sem fabricar pin. Nomes não traduzidos preservam o nome próprio oficial da fonte. Descrição curta redigida pelo projeto identifica a inclusão no Patrimônio Mundial; não representa instrução de acesso ou garantia de visitação. A seleção/adaptação dos dados em <code>data-src/country-tourist-spots.json</code> mantém CC BY-SA 4.0 para as partes derivadas desta fonte. Licença: <a href="https://creativecommons.org/licenses/by-sa/4.0/">https://creativecommons.org/licenses/by-sa/4.0/</a> .</p>
+    <a class="reference-link" href="https://data.unesco.org/explore/assets/whc001/">Consultar a fonte</a>
+
+  </article>
+<article id="wikidata-country-sites" class="reference">
+    <h3>Wikidata</h3>
+    <p class="reference-meta">https://www.wikidata.org/wiki/Wikidata:Copyright</p>
+    <p>Nomes, coordenadas terrestres P625 e país P17 dos locais selecionados, consultados pela API oficial e por <code>Special:EntityData</code>. IDs, consultas, revisão e afirmações de evidência estão em <code>data-src/points/wikidata-country-sites.json</code>; cada local também tem link para sua entidade na interface. Rótulos em português podem ser traduções do nome próprio pelo projeto; descrições curtas restringem-se ao país confirmado na fonte. Coordenada representativa não define entrada ou limite da área de visitação. Sem download de fotos e sem reutilização de texto da Wikipédia.</p>
+
+
+  </article>
+<article id="tourism-official-sites" class="reference">
+    <h3>National Trust de Trinidad e Tobago e Samoa Tourism Authority</h3>
+    <p class="reference-meta">fatos geográficos; textos e imagens não reutilizados · Consulta em 05/11/2026.</p>
+    <p>Forte King George: nome, país e coordenada dos campos do mapa do órgão nacional de patrimônio. To Sua Ocean Trench: nome, país e coordenada do mapa incorporado pela autoridade oficial de turismo em <a href="https://www.samoa.travel/plan-book/activities/to-sua-ocean-trench/">https://www.samoa.travel/plan-book/activities/to-sua-ocean-trench/</a> . Extração, URL, coordenada e SHA-256 da página estão em <code>data-src/points/official-country-sites.json</code>. Somente nomes próprios e fatos geográficos são utilizados; descrição curta autoral, sem copiar textos, fotos ou cartografia desses sites.</p>
+    <a class="reference-link" href="https://nationaltrust.tt/location/fort-king-george-tobago/">Consultar a fonte</a>
+
   </article></div></details>
 <details class="reference-group"><summary>Letras, ilustrações e autoria</summary><div class="reference-list"><article id="font-fredoka" class="reference">
     <h3>Fredoka, fonte variável</h3>
     <p class="reference-meta">SIL Open Font License 1.1 · Consulta em 04/11/2026.</p>
     <p>Fonte de títulos e botões. Arquivo oficial servido localmente em <code>public/fonts/Fredoka.ttf</code>; licença completa em <code>public/fonts/Fredoka-OFL.txt</code>. Sem chamada a serviço externo de fontes durante o uso.</p>
     <a class="reference-link" href="https://github.com/google/fonts/tree/main/ofl/fredoka">Consultar a fonte</a>
+
   </article>
 <article id="font-nunito" class="reference">
     <h3>Nunito, fonte variável</h3>
     <p class="reference-meta">SIL Open Font License 1.1 · Consulta em 04/11/2026.</p>
     <p>Fonte dos textos e instruções. Arquivo oficial servido localmente em <code>public/fonts/Nunito.ttf</code>; licença completa em <code>public/fonts/Nunito-OFL.txt</code>.</p>
     <a class="reference-link" href="https://github.com/google/fonts/tree/main/ofl/nunito">Consultar a fonte</a>
+
   </article>
 <article id="autoral" class="reference">
     <h3>Exploradores do Mundo, arte e conteúdo gerados neste projeto</h3>
     <p class="reference-meta">MIT · Consulta em 28/10/2026.</p>
     <p>SVGs ilustrados, ícones, composição das folhas e atividades. Silhuetas/mapas/modelos derivados do Natural Earth (domínio público). Não há texturas ou fotografias externas.</p>
 <p>Reformulação de 2026-10-29: <code>public/images/planeta-guia.svg</code>, redesenho de <code>guia-qr.svg</code> e dos seis SVGs de paisagens, além das cenas de <code>GuideScene.tsx</code> e ícones de <code>InterfaceIcon.tsx</code>: desenhos vetoriais autorais, MIT. Planeta e mapa dobrado das instruções são lúdicos, sem pretensão cartográfica. Paisagens são recortes ilustrativos, sem representar todos os ambientes de um continente; mantêm os temas já usados no projeto. O diagrama do QR/marcador é esquemático e não substitui as folhas imprimíveis de <code>public/markers/</code>. Os SVGs autorais são fontes versionadas independentes: <code>build:data</code> atualiza dados e preserva os desenhos. Nenhuma imagem, fonte ou biblioteca externa nova.</p>
+
 
   </article></div></details>
 <details class="reference-group"><summary>Bibliotecas e licenças de software</summary><div class="reference-list"><article id="ar-libraries" class="reference">
@@ -333,29 +406,34 @@
     <p>Distribuições locais sem alteração funcional em public/vendor/; avisos de licença preservados e cópias em public/vendor/licenses/. A-Frame: <a href="https://github.com/aframevr/aframe/tree/v1.6.0">https://github.com/aframevr/aframe/tree/v1.6.0</a> . Parâmetros da câmera provenientes do AR.js. Referência barcode: <a href="https://ar-js-org.github.io/AR.js-Docs/marker-based/">https://ar-js-org.github.io/AR.js-Docs/marker-based/</a> . Marcadores binários gerados por algoritmo (sem imagem externa).</p>
 <p>Conferência de 2026-11-04: as nove células dos marcadores 0 a 5 foram comparadas aos padrões oficiais em <a href="https://github.com/artoolkit/artoolkit5/tree/master/doc/patterns/Matrix%20code%203x3%20(72dpi)">https://github.com/artoolkit/artoolkit5/tree/master/doc/patterns/Matrix%20code%203x3%20(72dpi)</a> . Referências de pixels registradas em <code>tests/markers.test.ts</code>; os PNGs continuam gerados pelo algoritmo do projeto. A comparação de arquivos não comprova reconhecimento por câmera física.</p>
     <a class="reference-link" href="https://github.com/AR-js-org/AR.js/tree/3.4.7">Consultar a fonte</a>
+
   </article>
 <article id="viewer" class="reference">
     <h3>Google model-viewer 4.0.0</h3>
     <p class="reference-meta">Apache-2.0 · Consulta em 28/10/2026.</p>
     <p>Bundle local; Three.js incorporado sob MIT; licenças em public/vendor/licenses/.</p>
     <a class="reference-link" href="https://github.com/google/model-viewer/tree/v4.0.0">Consultar a fonte</a>
+
   </article>
 <article id="jsqr" class="reference">
     <h3>jsQR 1.4.0</h3>
     <p class="reference-meta">Apache-2.0 · Consulta em 28/10/2026.</p>
     <p>Leitura real de QR em frames de getUserMedia. Bundle e licença locais.</p>
     <a class="reference-link" href="https://github.com/cozmo/jsQR/tree/v1.4.0">Consultar a fonte</a>
+
   </article>
 <article id="ui-libraries" class="reference">
     <h3>React 19.2.0, React DOM 19.2.0, React Router 7.9.4 e Zod 3.25.76</h3>
     <p class="reference-meta">MIT · Consulta em 28/10/2026.</p>
     <p>Versões fixadas no lockfile; avisos de licença copiados dos pacotes para public/vendor/licenses/. Fontes: <a href="https://github.com/facebook/react">https://github.com/facebook/react</a> , <a href="https://github.com/remix-run/react-router">https://github.com/remix-run/react-router</a> , <a href="https://github.com/colinhacks/zod">https://github.com/colinhacks/zod</a> .</p>
 
+
   </article></div></details>
 <details class="reference-group"><summary>Referências visuais da interface</summary><div class="reference-list"><article id="visual-reference-expedition" class="reference">
     <h3>Interface e paleta enviadas pelo responsável</h3>
     <p class="reference-meta">referência visual não redistribuída · Consulta em 04/11/2026.</p>
     <p>As telas e a prancha infantil orientam a interface: céu azul, papel creme, tinta marinho, ação laranja e apoio amarelo. Os arquivos recebidos não são incluídos no app. A capa usa os contornos Natural Earth já registrados e detalhes vetoriais autorais MIT. O visual anterior de atlas lilás fica registrado apenas como histórico abaixo.</p>
+
 
   </article>
 <article id="visual-reference-atlas" class="reference">
@@ -364,17 +442,20 @@
     <p>Paleta amostrada: fundo <code>#faf7fd</code>, lilás <code>#eeeafb</code>, destaque <code>#ded8f5</code>, pêssego <code>#f9ddd3</code>, menta <code>#d7eee1</code>, amarelo <code>#ffedbc</code>, tinta <code>#39334f</code> e apoio <code>#655a73</code>. A correção do responsável substitui a direção sálvia. Recolorações e interface autorais MIT, conforme [autoral]. O mapa de capa usa os mesmos contornos Natural Earth já registrados, sem novos dados ou imagens externas.</p>
 <p>Consulta original: 2026-10-28; acréscimos identificados em 2026-10-29. Textos educativos são redação original em português baseada em fatos das referências; não reproduzem artigos ou fotografias. Ilustrações e modelos são gerados localmente. Dados históricos são identificados pelo ano e não apresentados como atuais.</p>
 
+
   </article>
 <article id="visual-reference" class="reference">
     <h3>Referência estética fornecida pelo responsável</h3>
     <p class="reference-meta">licença de redistribuição não informada; somente consulta local · Consulta em 29/10/2026.</p>
     <p>Inspiração para cores pastel, cartões e hierarquia visual. A imagem, a marca, os textos e os desenhos originais não são distribuídos em <code>public/</code> nem no build. A ilustração <code>public/images/companheiros-de-viagem.svg</code> é autoral MIT, conforme [autoral]; representa um planeta lúdico, não um mapa geográfico.</p>
 
+
   </article>
 <article id="visual-reference-salvia" class="reference">
     <h3>Paleta da imagem enviada pelo responsável</h3>
     <p class="reference-meta">somente consulta de cor; imagem não redistribuída · Consulta em 29/10/2026.</p>
     <p>Fundo <code>#eef3e9</code>, suporte <code>#e0e9d8</code>, neutro <code>#e0e5d9</code> e tinta <code>#344b46</code> amostrados do arquivo fornecido. Fonte do sistema operacional, sem redistribuição de fontes Apple. Recoloração dos SVGs autorais e novos ícones permanecem MIT, conforme [autoral]. A referência orienta cores; a composição e os desenhos são do projeto.</p>
+
 
   </article></div></details>
     </section>

@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "countryId": "BEL",
+  "continentId": "europa",
+  "file": "models/countries/BEL.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 72.44429203902196,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -4.645938288390595,
+      -50.638894966414625
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -13041.166673106789,
+      15149.710370964349
+    ],
+    "horizontalScale": 0.000006212640234590403,
+    "elevationScale": 0.00045007032348804506,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -41
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 1522.958300127851,
+      "max": 1588.1866143502407
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -41,
+    "maximumSampleMeters": 670,
+    "displayedMinimumMeters": -41,
+    "displayedMaximumMeters": 670,
+    "coastalClampedVertexIndices": [
+      0,
+      1,
+      2,
+      5,
+      14,
+      24,
+      25,
+      26,
+      27,
+      35,
+      36,
+      50
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "92299f9321857c4eaee590d663e250c7ce36a53e3aebceb8ac9a85af760714aa",
+    "inputHash": "661df585dcf936d1b8858f9275bd66d2fb29e5e0ff043bb0861dfb4c2d031e89",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 14068.51119313132,
+    "simplification": 0.00015,
+    "topVertexCount": 391,
+    "topTriangleCount": 537,
+    "sourceGeometrySha256": "ed450d257092c7e21d8e0726137b4180602817311145a69d23a1c86da5fd59a2",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1153,
+    "bytes": 30992,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-855",
+      "nome": "Flemish Béguinages",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 50.9877887913,
+        "lng": 5.0614801939
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/855/",
+      "posicao": [
+        0.2617214322090149,
+        0.047254569828510284,
+        -0.3356473743915558
+      ]
+    },
+    {
+      "id": "unesco-856",
+      "nome": "The Four Lifts on the Canal du Centre and their Environs, La Louvière and Le Roeulx (Hainaut)",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 50.48111,
+        "lng": 4.13722
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/856/",
+      "posicao": [
+        -0.1426042914390564,
+        0.08281012624502182,
+        0.01411320362240076
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

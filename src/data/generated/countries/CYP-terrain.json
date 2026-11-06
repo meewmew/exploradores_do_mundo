@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "countryId": "CYP",
+  "continentId": "asia",
+  "file": "models/countries/CYP.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 16.007404687057573,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -33.00581039384659,
+      -34.917087356570136
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      15502.506936818558,
+      4526.605604936045
+    ],
+    "horizontalScale": 0.000011332623822416488,
+    "elevationScale": 0.00018140589569160998,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 7,
+    "pixelResolutionMeters": {
+      "min": 999.5752766554124,
+      "max": 1007.0581378815751
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -49,
+    "maximumSampleMeters": 1764,
+    "displayedMinimumMeters": 0,
+    "displayedMaximumMeters": 1764,
+    "coastalClampedVertexIndices": [
+      4,
+      12,
+      13,
+      22,
+      23,
+      24,
+      25,
+      35,
+      111,
+      154,
+      156,
+      157,
+      158,
+      159,
+      171,
+      172,
+      173,
+      186,
+      220,
+      233,
+      256,
+      263,
+      270,
+      279
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "05ac567e6e78f1bd0ba91348ecd84e1820f2238b92629b55612011857281c667",
+    "inputHash": "b65e479b09a1ba8f60a6212fca87f03b936d55b82ce6ebe8d26b83852de9ac67",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 6018.59243236461,
+    "simplification": 0.00015,
+    "topVertexCount": 298,
+    "topTriangleCount": 454,
+    "sourceGeometrySha256": "55c166989cd86563202cdae51dc51ed4a026941e8427e69fc0253d381d2e3c43",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 786,
+    "bytes": 21624,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-79",
+      "nome": "Paphos",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 34.7086111111,
+        "lng": 32.5733333333
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/79/",
+      "posicao": [
+        -0.6236860156059265,
+        0.029065759852528572,
+        0.21044223010540009
+      ]
+    },
+    {
+      "id": "unesco-351",
+      "nome": "Painted Churches in the Troodos Region",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 34.9218331732,
+        "lng": 33.0947801737
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/351/",
+      "posicao": [
+        -0.08375843614339828,
+        0.1845306158065796,
+        -0.0573195181787014
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

@@ -1,0 +1,173 @@
+{
+  "version": 1,
+  "countryId": "PAN",
+  "continentId": "america",
+  "file": "models/countries/PAN.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 42.28468114507974,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      80.11877621875496,
+      -8.520232969915467
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      930.1799648439337,
+      12146.787155840204
+    ],
+    "horizontalScale": 0.0000028354261767593037,
+    "elevationScale": 0.00011989509179467966,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -26
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2411.7467140494314,
+      "max": 2426.5900601409994
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -54,
+    "maximumSampleMeters": 2643,
+    "displayedMinimumMeters": -26,
+    "displayedMaximumMeters": 2643,
+    "coastalClampedVertexIndices": [
+      60,
+      71,
+      72,
+      86,
+      91,
+      92,
+      93,
+      94,
+      95,
+      126,
+      127,
+      129,
+      134,
+      139,
+      149,
+      150,
+      151,
+      163,
+      181,
+      182,
+      199,
+      213,
+      223,
+      225,
+      226,
+      235,
+      237,
+      246,
+      247,
+      252,
+      254,
+      269,
+      276,
+      281,
+      284,
+      286,
+      289,
+      291,
+      292,
+      293,
+      294,
+      298,
+      308,
+      310,
+      319,
+      355,
+      358,
+      368,
+      373,
+      375,
+      376,
+      381,
+      393,
+      407,
+      408,
+      431,
+      448,
+      482,
+      483,
+      492,
+      493,
+      499,
+      506,
+      509
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "e722ad115bfee9211aaef698eeeeec1160c855d6abd41d1188188491a0440e9a",
+    "inputHash": "e5a8bb303f0622b5d2c7f747e7c122b9bc7b2d9fedd7c30b0133a67c63f9af1b",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 23796.377431580375,
+    "simplification": 0.00015,
+    "topVertexCount": 517,
+    "topTriangleCount": 600,
+    "sourceGeometrySha256": "54d65698c41f93f86d23bc326245721dc9c9e91637b7797a993aaa90f68290ab",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1553,
+    "bytes": 43712,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-135",
+      "nome": "Fortifications on the Caribbean Side of Panama: Portobelo-San Lorenzo",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 9.5538888889,
+        "lng": -79.6558333333
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/135/",
+      "posicao": [
+        0.1413024663925171,
+        0.026872236281633377,
+        -0.3604218661785126
+      ]
+    },
+    {
+      "id": "unesco-159",
+      "nome": "Darien National Park",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 7.736111111,
+        "lng": -77.54722222
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/159/",
+      "posicao": [
+        0.8007031083106995,
+        0.04054027795791626,
+        0.21016821265220642
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

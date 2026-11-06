@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "countryId": "DZA",
+  "continentId": "africa",
+  "file": "models/countries/DZA.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -2.631188352995757,
+      -28.055993376399048
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -82055.24701774074,
+      -2467.3074911818258
+    ],
+    "horizontalScale": 8.030942707781533e-7,
+    "elevationScale": 0.00012849508332450453,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -27
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 1951.0743804674105,
+      "max": 2312.8856322354695
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -274,
+    "maximumSampleMeters": 1914,
+    "displayedMinimumMeters": -27,
+    "displayedMaximumMeters": 1914,
+    "coastalClampedVertexIndices": [
+      123,
+      124,
+      125,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      188,
+      189,
+      190,
+      215,
+      245,
+      276,
+      320,
+      322,
+      323,
+      343,
+      344,
+      350,
+      351,
+      372,
+      373,
+      375,
+      376,
+      377,
+      379,
+      380
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "f3ce3d475b60d443a1de17770935b9cb565aedf94a464b9fcf2c3a374d414e1f",
+    "inputHash": "71a6f643714c66382276330aacacd7f2fd346349378e435a102b960b9dab0c08",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 117921.61984516641,
+    "simplification": 0.00015,
+    "topVertexCount": 541,
+    "topTriangleCount": 696,
+    "sourceGeometrySha256": "42d308c60564ed6c1d9332ce4bbc61f33f58bcf6c8a3ec3449de37091c391c11",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1705,
+    "bytes": 44796,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-102",
+      "nome": "Al Qal'a of Beni Hammad",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 35.81844,
+        "lng": 4.78684
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/102/",
+      "posicao": [
+        0.22233320772647858,
+        0.17335055768489838,
+        -0.692147433757782
+      ]
+    },
+    {
+      "id": "unesco-179",
+      "nome": "Tassili n'Ajjer",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 25.5,
+        "lng": 9
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/179/",
+      "posicao": [
+        0.5789321064949036,
+        0.16975268721580505,
+        0.21706917881965637
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

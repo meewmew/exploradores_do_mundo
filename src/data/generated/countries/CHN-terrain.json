@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "countryId": "CHN",
+  "continentId": "asia",
+  "file": "models/countries/CHN.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 158.71558168998519,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -103.37804950754068,
+      -36.69140669006067
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -112476.76539534354,
+      1365.2502290717093
+    ],
+    "horizontalScale": 3.2346946206895587e-7,
+    "elevationScale": 0.00005133964383122093,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -9
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 1453.3302029869403,
+      "max": 2323.373679705796
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -68,
+    "maximumSampleMeters": 6224,
+    "displayedMinimumMeters": -9,
+    "displayedMaximumMeters": 6224,
+    "coastalClampedVertexIndices": [
+      266,
+      273,
+      279,
+      287,
+      291,
+      315,
+      319,
+      322,
+      324,
+      328,
+      330,
+      331,
+      332,
+      333,
+      334,
+      335,
+      336,
+      338,
+      344,
+      345,
+      347,
+      348,
+      351,
+      353,
+      365,
+      374,
+      377,
+      381,
+      383,
+      384,
+      385,
+      423,
+      424,
+      425
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "cc748d82baed71a21e9d7e8f305a80ea96c6deafe80092d1c617773e3c6af5f3",
+    "inputHash": "9b4293fe64e2fd3f83a69625803cc3f091315ff3d15e27f74832bfcc22065b53",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 630363.1291340648,
+    "simplification": 0.0384,
+    "topVertexCount": 439,
+    "topTriangleCount": 444,
+    "sourceGeometrySha256": "e46b60c89d98d5b82e3421cd22c5d0ebed1ab020b689e23f26e78300156d27f9",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1608,
+    "bytes": 43244,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "grande-muralha",
+      "nome": "Grande Muralha da China",
+      "descricaoCurta": "Fortificações de várias épocas formam uma longa defesa histórica no norte da China.",
+      "coordenadas": {
+        "lat": 40.4313889,
+        "lng": 116.5644444
+      },
+      "fontes": [
+        "unesco-great-wall",
+        "wikidata-great-wall"
+      ],
+      "posicao": [
+        0.3958674967288971,
+        0.043515801429748535,
+        -0.16030968725681305
+      ]
+    },
+    {
+      "id": "unesco-437",
+      "nome": "Mount Taishan",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 36.26667,
+        "lng": 117.1
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/437/",
+      "posicao": [
+        0.43236181139945984,
+        0.06862089037895203,
+        -0.013561860658228397
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

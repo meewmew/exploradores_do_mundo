@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "countryId": "NLD",
+  "continentId": "europa",
+  "file": "models/countries/NLD.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -4.991548167275711,
+      -52.226919489298616
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -3574540.988377222,
+      292191.34235615307
+    ],
+    "horizontalScale": 2.5075730975817054e-7,
+    "elevationScale": 0.00004012116956130729,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -27
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 1450.6176943734238,
+      "max": 2392.2491540459305
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -90,
+    "maximumSampleMeters": 308,
+    "displayedMinimumMeters": -27,
+    "displayedMaximumMeters": 308,
+    "coastalClampedVertexIndices": [
+      5,
+      6,
+      7,
+      8,
+      26,
+      27,
+      28,
+      29,
+      32,
+      33,
+      36,
+      37,
+      38,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      49,
+      50,
+      51,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      171,
+      172,
+      173,
+      174,
+      175,
+      177,
+      182,
+      184,
+      187,
+      188,
+      190,
+      192,
+      193,
+      194,
+      195,
+      199,
+      200,
+      201,
+      202,
+      203,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      216,
+      218,
+      221,
+      223,
+      224,
+      234,
+      235,
+      238
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "82dff689e8fb33537331a6a986490502eec786b8fb67e1bbb23cbb2fe13445b8",
+    "inputHash": "89e88d69c0780620181eef18b4ec26bf0fe6559b8521e5edf3c8eb51b93b6cfa",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 149298.2849556546,
+    "simplification": 0.00015,
+    "topVertexCount": 241,
+    "topTriangleCount": 221,
+    "sourceGeometrySha256": "0666a075b11abe76a189f260c118bd5503b864beca09a63c18a15821d56ad57e",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 906,
+    "bytes": 25464,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-739",
+      "nome": "Schokland and Surroundings",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 52.63861111,
+        "lng": 5.771666667
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/739/",
+      "posicao": [
+        0.9095420837402344,
+        0.018962908536195755,
+        -0.08481939136981964
+      ]
+    },
+    {
+      "id": "unesco-759",
+      "nome": "Dutch Water Defence Lines",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 52.165,
+        "lng": 5.083
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/759/",
+      "posicao": [
+        0.8979063630104065,
+        0.01900302991271019,
+        -0.0715436041355133
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "countryId": "GTM",
+  "continentId": "america",
+  "file": "models/countries/GTM.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 24.834270753950147,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      90.36721218769378,
+      -15.690119534956487
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      13931.997676240033,
+      -9709.5513590739
+    ],
+    "horizontalScale": 0.0000036942143449677238,
+    "elevationScale": 0.00009174311926605505,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -28
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2328.6641235828583,
+      "max": 2376.0247248876353
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -28,
+    "maximumSampleMeters": 3460,
+    "displayedMinimumMeters": -28,
+    "displayedMaximumMeters": 3460,
+    "coastalClampedVertexIndices": [
+      309,
+      310,
+      312,
+      313,
+      330
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "ffd6528f5157e777fcd74eee5ce896437953da045e4c2b35437c31edea400a51",
+    "inputHash": "6d9c64d7a11d81cf70b1c44f414df658555df794a8cc64e257209ea972205cdb",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 25503.273352104996,
+    "simplification": 0.00015,
+    "topVertexCount": 335,
+    "topTriangleCount": 498,
+    "sourceGeometrySha256": "c469bdc30f0c3443d40914237ad21a047c4cbf71a9c0fe0c4adbfc52e96d53ce",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 924,
+    "bytes": 24928,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-64",
+      "nome": "Tikal National Park",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 17.21666667,
+        "lng": -89.61666667
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/64/",
+      "posicao": [
+        0.24304869771003723,
+        0.04488073289394379,
+        -0.5917181372642517
+      ]
+    },
+    {
+      "id": "unesco-65",
+      "nome": "Antigua Guatemala",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 14.549022,
+        "lng": -90.75448
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/65/",
+      "posicao": [
+        -0.20545488595962524,
+        0.16616514325141907,
+        0.5044608116149902
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

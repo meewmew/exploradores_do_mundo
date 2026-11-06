@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "countryId": "LTU",
+  "continentId": "europa",
+  "file": "models/countries/LTU.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -23.897099824644297,
+      -55.32377012433149
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -3723.6107332360843,
+      18568.359979845452
+    ],
+    "horizontalScale": 0.000004639320210508968,
+    "elevationScale": 0.0007422912336814348,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -9
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 1353.1897427999734,
+      "max": 1441.4079090762955
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -21,
+    "maximumSampleMeters": 260,
+    "displayedMinimumMeters": -9,
+    "displayedMaximumMeters": 260,
+    "coastalClampedVertexIndices": [
+      0,
+      1,
+      4,
+      5,
+      6,
+      7,
+      12,
+      17,
+      18,
+      24,
+      26,
+      28,
+      29,
+      31,
+      32,
+      33
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "991f072ec152b9ec8938f3f8941112e9dca297865031a23c08b501be4fce9b28",
+    "inputHash": "0c63c293f68fca6b70e26d5b48402affa88b35ddcd8844e2b037053eda2f92c4",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 18663.039032117817,
+    "simplification": 0.00015,
+    "topVertexCount": 431,
+    "topTriangleCount": 610,
+    "sourceGeometrySha256": "8eae094cec5c290c2e3f3a0af0a06e8b7ea261f4f895785b49cd1f5b15ddec12",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1239,
+    "bytes": 32984,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-541",
+      "nome": "Vilnius Historic Centre",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 54.68667,
+        "lng": 25.29306
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/541/",
+      "posicao": [
+        0.4335211515426636,
+        0.11004411429166794,
+        0.23835159838199615
+      ]
+    },
+    {
+      "id": "unesco-1137",
+      "nome": "Kernavė Archaeological Site (Cultural Reserve of Kernavė)",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 54.879,
+        "lng": 24.853
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1137/",
+      "posicao": [
+        0.3009611666202545,
+        0.09668286889791489,
+        0.14135436713695526
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

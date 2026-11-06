@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "countryId": "MNE",
+  "continentId": "europa",
+  "file": "models/countries/MNE.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 16.05454643591496,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -19.238630679785217,
+      -42.78800334289025
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      12345.767671979207,
+      9130.631452965914
+    ],
+    "horizontalScale": 0.000009500499814935239,
+    "elevationScale": 0.0001525262154432793,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -37
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 1773.0102427251365,
+      "max": 1821.4557319954472
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -37,
+    "maximumSampleMeters": 2061,
+    "displayedMinimumMeters": -37,
+    "displayedMaximumMeters": 2061,
+    "coastalClampedVertexIndices": [
+      43,
+      47,
+      62,
+      196,
+      197
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "4fabb50ee27c29412cb9f36a3f26d706375034a8dce9ddc5f102d2272bc3de2b",
+    "inputHash": "98f715728dd327e2f16637f8695537e8f4f166832dc654782cb9b2df51801399",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 9840.33013990961,
+    "simplification": 0.00015,
+    "topVertexCount": 312,
+    "topTriangleCount": 448,
+    "sourceGeometrySha256": "5614531295d14fb50ab4bae7d0ac521aed6389b929f2fa1240bd3b692a13b87f",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 867,
+    "bytes": 23992,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-100",
+      "nome": "Durmitor National Park",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 43.133,
+        "lng": 19.0166
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/100/",
+      "posicao": [
+        -0.28846225142478943,
+        0.3274756968021393,
+        -0.451427698135376
+      ]
+    },
+    {
+      "id": "unesco-125",
+      "nome": "Natural and Culturo-Historical Region of Kotor",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 42.48333,
+        "lng": 18.7
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/125/",
+      "posicao": [
+        -0.5369213223457336,
+        0.057046711444854736,
+        0.2337752878665924
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

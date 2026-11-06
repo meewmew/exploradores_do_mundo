@@ -1,0 +1,172 @@
+{
+  "version": 1,
+  "countryId": "TUN",
+  "continentId": "africa",
+  "file": "models/countries/TUN.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 112.3949731510609,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -9.55612870614369,
+      -34.08895553717081
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -2128.7774275856063,
+      33790.29451914792
+    ],
+    "horizontalScale": 0.000002376546260031377,
+    "elevationScale": 0.0002671118530884808,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -30
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 1944.6709893316986,
+      "max": 2113.3716081048733
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -30,
+    "maximumSampleMeters": 1168,
+    "displayedMinimumMeters": -30,
+    "displayedMaximumMeters": 1168,
+    "coastalClampedVertexIndices": [
+      93,
+      94,
+      181,
+      193,
+      222,
+      225,
+      226,
+      227,
+      238,
+      239,
+      240,
+      242,
+      243,
+      244,
+      245,
+      269,
+      271,
+      273,
+      274,
+      275,
+      279,
+      280,
+      281,
+      283,
+      285,
+      293,
+      294,
+      295,
+      313,
+      314,
+      315,
+      316,
+      324,
+      326,
+      336,
+      337,
+      338,
+      339,
+      340,
+      342,
+      364,
+      368,
+      371,
+      372,
+      375,
+      376,
+      377,
+      378,
+      384,
+      386,
+      387,
+      388,
+      389,
+      404,
+      405,
+      406,
+      407,
+      408,
+      409,
+      410,
+      411,
+      415,
+      419
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "6a05827ad5b64a350f87a89a0f95d2b23ff3e4317f7c2b77a847492138127cd0",
+    "inputHash": "304227958c6a8ad36ca55253277b0565b163581298e17bb5b4456c8789c86d49",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 31465.671514908317,
+    "simplification": 0.00015,
+    "topVertexCount": 428,
+    "topTriangleCount": 580,
+    "sourceGeometrySha256": "52e2ad8fe64f40d5ed7c9164e1d2f1112c244e96ac81b471e532cf75a2d9e3da",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1299,
+    "bytes": 34736,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-8",
+      "nome": "Ichkeul National Park",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 37.16361,
+        "lng": 9.67472
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/8/",
+      "posicao": [
+        0.030042540282011032,
+        0.017999999225139618,
+        -0.8927293419837952
+      ]
+    },
+    {
+      "id": "unesco-36",
+      "nome": "Medina of Tunis",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 36.81667,
+        "lng": 10.16667
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/36/",
+      "posicao": [
+        0.13425764441490173,
+        0.03349248692393303,
+        -0.8014542460441589
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

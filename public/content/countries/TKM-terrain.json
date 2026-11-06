@@ -1,0 +1,221 @@
+{
+  "version": 1,
+  "countryId": "TKM",
+  "continentId": "asia",
+  "file": "models/countries/TKM.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 82.26376590877048,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -59.446422429887704,
+      -39.125470699544785
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      26628.251198716403,
+      14587.778733943414
+    ],
+    "horizontalScale": 0.0000013663247149814986,
+    "elevationScale": 0.00011239901650860555,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -44
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 1795.3166256119055,
+      "max": 1999.4423612426203
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -52,
+    "maximumSampleMeters": 2803,
+    "displayedMinimumMeters": -44,
+    "displayedMaximumMeters": 2803,
+    "coastalClampedVertexIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      14,
+      15,
+      16,
+      17,
+      18,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      78,
+      79,
+      81,
+      82,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      111,
+      112,
+      113,
+      114,
+      115,
+      117,
+      118,
+      119,
+      120,
+      126,
+      127,
+      137,
+      138,
+      139,
+      140,
+      141,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "1b1d52a7207a6b2c365d9e8195c7986f0280a5665040ae2f734f9e9b5c1d7547",
+    "inputHash": "0e4a48d529ca21592c4b97af97d73269a9fc259445f27facc2349e79ccf0e6c0",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 72953.07781263287,
+    "simplification": 0.0006,
+    "topVertexCount": 493,
+    "topTriangleCount": 553,
+    "sourceGeometrySha256": "33ccaa9033bde700665522e69cff07e9f1a5a6fd3a3cb979bc7cd71ae6e33220",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1648,
+    "bytes": 44552,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-886",
+      "nome": "State Historical and Cultural Park “Ancient Merv”",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 37.6648296397,
+        "lng": 62.1748923337
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/886/",
+      "posicao": [
+        0.2917199432849884,
+        0.049022126942873,
+        0.19708319008350372
+      ]
+    },
+    {
+      "id": "unesco-1199",
+      "nome": "Kunya-Urgench",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 42.3258333333,
+        "lng": 59.1458333333
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1199/",
+      "posicao": [
+        -0.07015953958034515,
+        0.030813487246632576,
+        -0.5061511993408203
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

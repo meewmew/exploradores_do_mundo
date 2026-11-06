@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "countryId": "NPL",
+  "continentId": "asia",
+  "file": "models/countries/NPL.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 18.831527613120528,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -83.94684432365517,
+      -28.258042502317878
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      19647.400610996614,
+      -16213.921916550025
+    ],
+    "horizontalScale": 0.000002119064682920733,
+    "elevationScale": 0.00003990522509041028,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2109.965400503453,
+      "max": 2191.650435273011
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": 63,
+    "maximumSampleMeters": 8019,
+    "displayedMinimumMeters": 63,
+    "displayedMaximumMeters": 8019,
+    "coastalClampedVertexIndices": [],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "8286e86d06dc94951cdf4ed63643808a6a8f7959f2db419b00b26284e0d1ecbb",
+    "inputHash": "83f3394e2b24c131a485347c73ff64bac559111dec6882c2736380ce3497c2d6",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 34412.75083447523,
+    "simplification": 0.00015,
+    "topVertexCount": 398,
+    "topTriangleCount": 517,
+    "sourceGeometrySha256": "e16cc25710908fd12618a60c3dc1b67dfb5bdd9e30989b9e1cea276d8b40971f",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1259,
+    "bytes": 33832,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-120",
+      "nome": "Sagarmatha National Park",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 27.96528,
+        "lng": 86.91306
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/120/",
+      "posicao": [
+        0.5755677819252014,
+        0.3344484269618988,
+        0.09579408168792725
+      ]
+    },
+    {
+      "id": "unesco-121",
+      "nome": "Kathmandu Valley",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 27.7144444444,
+        "lng": 85.2925
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/121/",
+      "posicao": [
+        0.23905807733535767,
+        0.07127347588539124,
+        0.16089172661304474
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

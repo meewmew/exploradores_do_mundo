@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "countryId": "ETH",
+  "continentId": "africa",
+  "file": "models/countries/ETH.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 86.7860220938446,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -39.60979221400505,
+      -8.6144006280961
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      96458.22167788958,
+      -60196.46787210816
+    ],
+    "horizontalScale": 0.0000011258716704225155,
+    "elevationScale": 0.00009770992366412215,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -118
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2364.2641470616486,
+      "max": 2441.5363351141123
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -118,
+    "maximumSampleMeters": 3157,
+    "displayedMinimumMeters": -118,
+    "displayedMaximumMeters": 3157,
+    "coastalClampedVertexIndices": [],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "35d58f66832eaae7db8cf6744f3d83a56a8f2e3be7ab6ca28753d509afa37beb",
+    "inputHash": "361babff49522265ad8fd74d257dad7adbd03381d2955910f06b6f20d21dc57c",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 83440.27821239344,
+    "simplification": 0.00015,
+    "topVertexCount": 506,
+    "topTriangleCount": 659,
+    "sourceGeometrySha256": "00cf829293f28be53a5459dc3577af1d192b184df2b3fd9bd17500ec0d860d13",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1600,
+    "bytes": 41988,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-9",
+      "nome": "Simien National Park",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 13.1833333333,
+        "lng": 38.0666666667
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/9/",
+      "posicao": [
+        -0.29683730006217957,
+        0.29158779978752136,
+        -0.5044949054718018
+      ]
+    },
+    {
+      "id": "unesco-10",
+      "nome": "Lower Valley of the Awash",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 11.10006,
+        "lng": 40.57939
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/10/",
+      "posicao": [
+        0.010541213676333427,
+        0.0801435112953186,
+        -0.24354663491249084
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

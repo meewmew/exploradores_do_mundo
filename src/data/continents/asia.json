@@ -45,6 +45,34 @@
   ],
   "paises": [
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-208",
+          "nome": "Cultural Landscape and Archaeological Remains of the Bamiyan Valley",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 34.8469444444,
+            "lng": 67.82525
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/208/"
+        },
+        {
+          "id": "unesco-211",
+          "nome": "Minaret and Archaeological Remains of Jam",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 34.3964166667,
+            "lng": 64.5158888889
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/211/"
+        }
+      ],
       "id": "AFG",
       "nome": "Afeganistão",
       "nomeFonte": "natural-earth",
@@ -73,6 +101,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-1293",
+          "nome": "Hegra Archaeological Site (al-Hijr / Madā ͐ in Ṣāliḥ)",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 26.7836111111,
+            "lng": 37.955
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1293/"
+        },
+        {
+          "id": "unesco-1329",
+          "nome": "At-Turaif District in ad-Dir'iyah",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 24.7341333333,
+            "lng": 46.5724666667
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1329/"
+        }
+      ],
       "id": "SAU",
       "nome": "Arábia Saudita",
       "nomeFonte": "natural-earth",
@@ -101,6 +157,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-777",
+          "nome": "Monasteries of Haghpat and Sanahin",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 41.0991128309,
+            "lng": 44.6581005821
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/777/"
+        },
+        {
+          "id": "unesco-960",
+          "nome": "Monastery of Geghard and the Upper Azat Valley",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 40.140439,
+            "lng": 44.818525
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/960/"
+        }
+      ],
       "id": "ARM",
       "nome": "Arménia",
       "nomeFonte": "natural-earth",
@@ -130,6 +214,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-958",
+          "nome": "Walled City of Baku with the Shirvanshah's Palace and Maiden Tower",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 40.36666667,
+            "lng": 49.83333333
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/958/"
+        },
+        {
+          "id": "unesco-1076",
+          "nome": "Gobustan Rock Art Cultural Landscape",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 40.112561,
+            "lng": 49.381896
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1076/"
+        }
+      ],
       "id": "AZE",
       "nome": "Azerbaijão",
       "nomeFonte": "natural-earth",
@@ -159,6 +271,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-1192",
+          "nome": "Qal’at al-Bahrain – Ancient Harbour and Capital of Dilmun",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 26.2344444444,
+            "lng": 50.5183333333
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1192/"
+        },
+        {
+          "id": "unesco-1364",
+          "nome": "Pearling, Testimony of an Island Economy",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 26.24962,
+            "lng": 50.61361
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1364/"
+        }
+      ],
       "id": "BHR",
       "nome": "Bahrein",
       "nomeFonte": "natural-earth",
@@ -187,6 +327,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-321",
+          "nome": "Historic Mosque City of Bagerhat",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 22.66667,
+            "lng": 89.8
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/321/"
+        },
+        {
+          "id": "unesco-322",
+          "nome": "Ruins of the Buddhist Vihara at Paharpur",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 25.03333333,
+            "lng": 88.98333333
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/322/"
+        }
+      ],
       "id": "BGD",
       "nome": "Bangladesh",
       "nomeFonte": "natural-earth",
@@ -215,6 +383,21 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "wikidata-q842921",
+          "nome": "Mesquita Omar Ali Saifuddien",
+          "descricaoCurta": "Este lugar fica em Brunei.",
+          "coordenadas": {
+            "lat": 4.889578,
+            "lng": 114.939136
+          },
+          "fontes": [
+            "wikidata-country-sites"
+          ],
+          "saibaMaisUrl": "https://www.wikidata.org/wiki/Q842921"
+        }
+      ],
       "id": "BRN",
       "nome": "Brunei",
       "nomeFonte": "natural-earth",
@@ -243,6 +426,21 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "wikidata-q2209873",
+          "nome": "Mosteiro Paro Taktsang",
+          "descricaoCurta": "Este lugar fica em Butão.",
+          "coordenadas": {
+            "lat": 27.491666666667,
+            "lng": 89.363333333333
+          },
+          "fontes": [
+            "wikidata-country-sites"
+          ],
+          "saibaMaisUrl": "https://www.wikidata.org/wiki/Q2209873"
+        }
+      ],
       "id": "BTN",
       "nome": "Butão",
       "nomeFonte": "natural-earth",
@@ -271,6 +469,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-668",
+          "nome": "Angkor",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 13.4388888889,
+            "lng": 103.8677777778
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/668/"
+        },
+        {
+          "id": "unesco-1224",
+          "nome": "Temple of Preah Vihear",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 14.390841,
+            "lng": 104.680325
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1224/"
+        }
+      ],
       "id": "KHM",
       "nome": "Camboja",
       "nomeFonte": "natural-earth",
@@ -299,6 +525,21 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-1402",
+          "nome": "Al Zubarah Archaeological Site",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 25.9780555556,
+            "lng": 51.0297222222
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1402/"
+        }
+      ],
       "id": "QAT",
       "nome": "Catar",
       "nomeFonte": "natural-earth",
@@ -327,6 +568,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-1102",
+          "nome": "Saryarka – Steppe and Lakes of Northern Kazakhstan",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 51.4861111111,
+            "lng": 64.3036111111
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1102/"
+        },
+        {
+          "id": "unesco-1103",
+          "nome": "Mausoleum of Khoja Ahmed Yasawi",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 43.2976944444,
+            "lng": 68.2710555556
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1103/"
+        }
+      ],
       "id": "KAZ",
       "nome": "Cazaquistão",
       "nomeFonte": "natural-earth",
@@ -356,6 +625,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "grande-muralha",
+          "nome": "Grande Muralha da China",
+          "descricaoCurta": "Fortificações de várias épocas formam uma longa defesa histórica no norte da China.",
+          "coordenadas": {
+            "lat": 40.4313889,
+            "lng": 116.5644444
+          },
+          "fontes": [
+            "unesco-great-wall",
+            "wikidata-great-wall"
+          ]
+        },
+        {
+          "id": "unesco-437",
+          "nome": "Mount Taishan",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 36.26667,
+            "lng": 117.1
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/437/"
+        }
+      ],
       "id": "CHN",
       "nome": "China",
       "nomeFonte": "natural-earth",
@@ -384,6 +681,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-79",
+          "nome": "Paphos",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 34.7086111111,
+            "lng": 32.5733333333
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/79/"
+        },
+        {
+          "id": "unesco-351",
+          "nome": "Painted Churches in the Troodos Region",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 34.9218331732,
+            "lng": 33.0947801737
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/351/"
+        }
+      ],
       "id": "CYP",
       "nome": "Chipre",
       "nomeFonte": "natural-earth",
@@ -412,6 +737,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-1091",
+          "nome": "Complex of Koguryo Tombs",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 38.9188888889,
+            "lng": 125.413333333
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1091/"
+        },
+        {
+          "id": "unesco-1278",
+          "nome": "Historic Monuments and Sites in Kaesong",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 37.985589,
+            "lng": 126.505203
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1278/"
+        }
+      ],
       "id": "PRK",
       "nome": "Coreia do Norte",
       "nomeFonte": "natural-earth",
@@ -440,6 +793,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-736",
+          "nome": "Seokguram Grotto and Bulguksa Temple",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 35.791498,
+            "lng": 129.349029
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/736/"
+        },
+        {
+          "id": "unesco-737",
+          "nome": "Haeinsa Temple Janggyeong Panjeon, the Depositories for the Tripitaka Koreana Woodblocks",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 35.801672,
+            "lng": 128.098711
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/737/"
+        }
+      ],
       "id": "KOR",
       "nome": "Coreia do Sul",
       "nomeFonte": "natural-earth",
@@ -468,6 +849,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-1343",
+          "nome": "Cultural Sites of Al Ain (Hafit, Hili, Bidaa Bint Saud and Oases Areas)",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 24.290984,
+            "lng": 55.77942
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1343/"
+        },
+        {
+          "id": "unesco-1724",
+          "nome": "Wadi Wurayah",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 25.4823305556,
+            "lng": 56.2657916667
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1724/"
+        }
+      ],
       "id": "ARE",
       "nome": "Emirados Árabes Unidos",
       "nomeFonte": "natural-earth",
@@ -496,6 +905,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-502",
+          "nome": "Historic City of Vigan",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 17.575,
+            "lng": 120.3875
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/502/"
+        },
+        {
+          "id": "unesco-652",
+          "nome": "Puerto-Princesa Subterranean River National Park",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 10.16666667,
+            "lng": 118.9166667
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/652/"
+        }
+      ],
       "id": "PHL",
       "nome": "Filipinas",
       "nomeFonte": "natural-earth",
@@ -524,6 +961,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-708",
+          "nome": "Historical Monuments of Mtskheta",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 41.8428333333,
+            "lng": 44.7209444444
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/708/"
+        },
+        {
+          "id": "unesco-709",
+          "nome": "Upper Svaneti",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 42.914,
+            "lng": 43.009
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/709/"
+        }
+      ],
       "id": "GEO",
       "nome": "Geórgia",
       "nomeFonte": "natural-earth",
@@ -553,6 +1018,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-192",
+          "nome": "Old Walled City of Shibam",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 15.92694,
+            "lng": 48.62667
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/192/"
+        },
+        {
+          "id": "unesco-385",
+          "nome": "Old City of Sana'a",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 15.35555556,
+            "lng": 44.20805556
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/385/"
+        }
+      ],
       "id": "YEM",
       "nome": "Iémen",
       "nomeFonte": "natural-earth",
@@ -581,6 +1074,33 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "taj-mahal",
+          "nome": "Taj Mahal",
+          "descricaoCurta": "Mausoléu de mármore branco construído em Agra no século XVII por ordem do imperador Shah Jahan.",
+          "coordenadas": {
+            "lat": 27.17417,
+            "lng": 78.04222
+          },
+          "fontes": [
+            "unesco-taj-mahal"
+          ]
+        },
+        {
+          "id": "unesco-231",
+          "nome": "Red Fort Complex",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 28.6555555556,
+            "lng": 77.2408333333
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/231/"
+        }
+      ],
       "id": "IND",
       "nome": "Índia",
       "nomeFonte": "natural-earth",
@@ -609,6 +1129,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-592",
+          "nome": "Borobudur Temple Compounds",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": -7.606083,
+            "lng": 110.219611
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/592/"
+        },
+        {
+          "id": "unesco-593",
+          "nome": "Sangiran Early Man Site",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": -7.4,
+            "lng": 110.8166667
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/593/"
+        }
+      ],
       "id": "IDN",
       "nome": "Indonésia",
       "nomeFonte": "natural-earth",
@@ -638,6 +1186,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-113",
+          "nome": "Tchogha Zanbil",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 32.00857,
+            "lng": 48.522118
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/113/"
+        },
+        {
+          "id": "unesco-114",
+          "nome": "Persepolis",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 29.93444,
+            "lng": 52.89028
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/114/"
+        }
+      ],
       "id": "IRN",
       "nome": "Irão",
       "nomeFonte": "natural-earth",
@@ -666,6 +1242,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-276",
+          "nome": "Samarra Archaeological City",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 34.2321197222,
+            "lng": 43.8398688889
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/276/"
+        },
+        {
+          "id": "unesco-277",
+          "nome": "Hatra",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 35.58806,
+            "lng": 42.71833
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/277/"
+        }
+      ],
       "id": "IRQ",
       "nome": "Iraque",
       "nomeFonte": "natural-earth",
@@ -694,6 +1298,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-1040",
+          "nome": "Masada",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 31.3155555556,
+            "lng": 35.3536111111
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1040/"
+        },
+        {
+          "id": "unesco-1042",
+          "nome": "Old City of Acre",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 32.9216666667,
+            "lng": 35.0688888889
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1042/"
+        }
+      ],
       "id": "ISR",
       "nome": "Israel",
       "nomeFonte": "natural-earth",
@@ -722,6 +1354,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "monte-fuji",
+          "nome": "Monte Fuji",
+          "descricaoCurta": "Vulcão de forma quase cônica, considerado sagrado e conhecido por inspirar artistas japoneses.",
+          "coordenadas": {
+            "lat": 35.3605556,
+            "lng": 138.7275
+          },
+          "fontes": [
+            "unesco-fujisan",
+            "wikidata-fuji"
+          ]
+        },
+        {
+          "id": "unesco-660",
+          "nome": "Buddhist Monuments in the Horyu-ji Area",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 34.614472,
+            "lng": 135.734222
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/660/"
+        }
+      ],
       "id": "JPN",
       "nome": "Japão",
       "nomeFonte": "natural-earth",
@@ -750,6 +1410,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-326",
+          "nome": "Petra",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 30.33056,
+            "lng": 35.44333
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/326/"
+        },
+        {
+          "id": "unesco-327",
+          "nome": "Quseir Amra",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 31.8018055556,
+            "lng": 36.5873055556
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/327/"
+        }
+      ],
       "id": "JOR",
       "nome": "Jordânia",
       "nomeFonte": "natural-earth",
@@ -778,6 +1466,21 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "wikidata-q1335640",
+          "nome": "Torres do Kuwait",
+          "descricaoCurta": "Este lugar fica em Kuwait.",
+          "coordenadas": {
+            "lat": 29.39,
+            "lng": 48.003055555555555
+          },
+          "fontes": [
+            "wikidata-country-sites"
+          ],
+          "saibaMaisUrl": "https://www.wikidata.org/wiki/Q1335640"
+        }
+      ],
       "id": "KWT",
       "nome": "Kuwait",
       "nomeFonte": "natural-earth",
@@ -806,6 +1509,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-479",
+          "nome": "Town of Luang Prabang",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 19.88889,
+            "lng": 102.13333
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/479/"
+        },
+        {
+          "id": "unesco-481",
+          "nome": "Vat Phou and Associated Ancient Settlements within the Champasak Cultural Landscape",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 14.8483333333,
+            "lng": 105.8222222222
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/481/"
+        }
+      ],
       "id": "LAO",
       "nome": "Laos",
       "nomeFonte": "natural-earth",
@@ -834,6 +1565,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-293",
+          "nome": "Anjar",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 33.7319444444,
+            "lng": 35.9333333333
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/293/"
+        },
+        {
+          "id": "unesco-294",
+          "nome": "Baalbek",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 34.0066666667,
+            "lng": 36.2041666667
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/294/"
+        }
+      ],
       "id": "LBN",
       "nome": "Líbano",
       "nomeFonte": "natural-earth",
@@ -862,6 +1621,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-1012",
+          "nome": "Kinabalu Park",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 6.147,
+            "lng": 116.642
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1012/"
+        },
+        {
+          "id": "unesco-1013",
+          "nome": "Gunung Mulu National Park",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 4.13333,
+            "lng": 114.91667
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1013/"
+        }
+      ],
       "id": "MYS",
       "nome": "Malásia",
       "nomeFonte": "natural-earth",
@@ -890,6 +1677,21 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "wikidata-q123375976",
+          "nome": "Hukuru Miskiy Mosque",
+          "descricaoCurta": "Este lugar fica em Maldivas.",
+          "coordenadas": {
+            "lat": 3.471651,
+            "lng": 73.546204
+          },
+          "fontes": [
+            "wikidata-country-sites"
+          ],
+          "saibaMaisUrl": "https://www.wikidata.org/wiki/Q123375976"
+        }
+      ],
       "id": "MDV",
       "nome": "Maldivas",
       "nomeFonte": "natural-earth",
@@ -915,6 +1717,34 @@
       ]
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-769",
+          "nome": "Uvs Nuur Basin",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 49.7666666667,
+            "lng": 91.3666666667
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/769/"
+        },
+        {
+          "id": "unesco-1081",
+          "nome": "Orkhon Valley Cultural Landscape",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 47.479214,
+            "lng": 102.678482
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1081/"
+        }
+      ],
       "id": "MNG",
       "nome": "Mongólia",
       "nomeFonte": "natural-earth",
@@ -943,6 +1773,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-1444",
+          "nome": "Pyu Ancient Cities",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 22.47,
+            "lng": 95.8186111111
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1444/"
+        },
+        {
+          "id": "unesco-1588",
+          "nome": "Bagan",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 21.1488888889,
+            "lng": 94.8844416666
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1588/"
+        }
+      ],
       "id": "MMR",
       "nome": "Myanmar",
       "nomeFonte": "natural-earth",
@@ -971,6 +1829,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-120",
+          "nome": "Sagarmatha National Park",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 27.96528,
+            "lng": 86.91306
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/120/"
+        },
+        {
+          "id": "unesco-121",
+          "nome": "Kathmandu Valley",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 27.7144444444,
+            "lng": 85.2925
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/121/"
+        }
+      ],
       "id": "NPL",
       "nome": "Nepal",
       "nomeFonte": "natural-earth",
@@ -999,6 +1885,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-433",
+          "nome": "Bahla Fort",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 22.96417,
+            "lng": 57.30111
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/433/"
+        },
+        {
+          "id": "unesco-434",
+          "nome": "Archaeological Sites of Bat, Al-Khutm and Al-Ayn",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 23.26986,
+            "lng": 56.745
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/434/"
+        }
+      ],
       "id": "OMN",
       "nome": "Omã",
       "nomeFonte": "natural-earth",
@@ -1027,6 +1941,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-1433",
+          "nome": "Birthplace of Jesus: Church of the Nativity and the Pilgrimage Route, Bethlehem",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 31.7043527778,
+            "lng": 35.2075
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1433/"
+        },
+        {
+          "id": "unesco-1492",
+          "nome": "Palestine: Land of Olives and Vines – Cultural Landscape of Southern Jerusalem, Battir",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 31.7163888889,
+            "lng": 35.1588888889
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1492/"
+        }
+      ],
       "id": "PSX",
       "nome": "Palestina",
       "nomeFonte": "natural-earth",
@@ -1051,6 +1993,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-138",
+          "nome": "Archaeological Ruins at Moenjodaro",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 27.32916667,
+            "lng": 68.13888889
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/138/"
+        },
+        {
+          "id": "unesco-139",
+          "nome": "Taxila",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 33.7439437902,
+            "lng": 72.8193318876
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/139/"
+        }
+      ],
       "id": "PAK",
       "nome": "Paquistão",
       "nomeFonte": "natural-earth",
@@ -1079,6 +2049,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-1230",
+          "nome": "Sulaiman-Too Sacred Mountain",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 40.5311111111,
+            "lng": 72.7827777778
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1230/"
+        },
+        {
+          "id": "unesco-1442",
+          "nome": "Silk Roads: the Routes Network of Chang'an-Tianshan Corridor",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 42.8019444444,
+            "lng": 75.2033333333
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1442/"
+        }
+      ],
       "id": "KGZ",
       "nome": "Quirguistão",
       "nomeFonte": "natural-earth",
@@ -1107,6 +2105,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-540",
+          "nome": "Historic Centre of Saint Petersburg and Related Groups of Monuments",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 59.5770252437,
+            "lng": 30.1322821271
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/540/"
+        },
+        {
+          "id": "unesco-544",
+          "nome": "Kizhi Pogost",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 62.0675833333,
+            "lng": 35.2243611111
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/544/"
+        }
+      ],
       "id": "RUS",
       "nome": "Rússia",
       "nomeFonte": "natural-earth",
@@ -1136,6 +2162,21 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-1483",
+          "nome": "Singapore Botanic Gardens",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 1.3152777778,
+            "lng": 103.8161111111
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1483/"
+        }
+      ],
       "id": "SGP",
       "nome": "Singapura",
       "nomeFonte": "natural-earth",
@@ -1164,6 +2205,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-20",
+          "nome": "Ancient City of Damascus",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 33.5108333333,
+            "lng": 36.3097222222
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/20/"
+        },
+        {
+          "id": "unesco-21",
+          "nome": "Ancient City of Aleppo",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 36.1991666667,
+            "lng": 37.1627777778
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/21/"
+        }
+      ],
       "id": "SYR",
       "nome": "Síria",
       "nomeFonte": "natural-earth",
@@ -1192,6 +2261,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-200",
+          "nome": "Sacred City of Anuradhapura",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 8.333333333,
+            "lng": 80.38333333
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/200/"
+        },
+        {
+          "id": "unesco-201",
+          "nome": "Ancient City of Polonnaruwa",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 7.915833333,
+            "lng": 81.00055556
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/201/"
+        }
+      ],
       "id": "LKA",
       "nome": "Sri Lanka",
       "nomeFonte": "natural-earth",
@@ -1220,6 +2317,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-574",
+          "nome": "Historic Town of Sukhothai and Associated Historic Towns",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 17.018012,
+            "lng": 99.704313
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/574/"
+        },
+        {
+          "id": "unesco-575",
+          "nome": "Ban Chiang Archaeological Site",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 17.407772,
+            "lng": 103.237589
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/575/"
+        }
+      ],
       "id": "THA",
       "nome": "Tailândia",
       "nomeFonte": "natural-earth",
@@ -1248,6 +2373,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-1141",
+          "nome": "Proto-urban Site of Sarazm",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 39.5078888889,
+            "lng": 67.4587222222
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1141/"
+        },
+        {
+          "id": "unesco-1252",
+          "nome": "Tajik National Park (Mountains of the Pamirs)",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 38.765,
+            "lng": 72.3052777778
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1252/"
+        }
+      ],
       "id": "TJK",
       "nome": "Tajiquistão",
       "nomeFonte": "natural-earth",
@@ -1276,6 +2429,21 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "wikidata-q680813",
+          "nome": "Cristo Rei de Díli",
+          "descricaoCurta": "Este lugar fica em Timor-Leste.",
+          "coordenadas": {
+            "lat": -8.520527,
+            "lng": 125.608322
+          },
+          "fontes": [
+            "wikidata-country-sites"
+          ],
+          "saibaMaisUrl": "https://www.wikidata.org/wiki/Q680813"
+        }
+      ],
       "id": "TLS",
       "nome": "Timor-Leste",
       "nomeFonte": "natural-earth",
@@ -1304,6 +2472,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-886",
+          "nome": "State Historical and Cultural Park “Ancient Merv”",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 37.6648296397,
+            "lng": 62.1748923337
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/886/"
+        },
+        {
+          "id": "unesco-1199",
+          "nome": "Kunya-Urgench",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 42.3258333333,
+            "lng": 59.1458333333
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/1199/"
+        }
+      ],
       "id": "TKM",
       "nome": "Turquemenistão",
       "nomeFonte": "natural-earth",
@@ -1332,6 +2528,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-356",
+          "nome": "Historic Areas of Istanbul",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 41.0166666667,
+            "lng": 28.9611111111
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/356/"
+        },
+        {
+          "id": "unesco-357",
+          "nome": "Göreme National Park and the Rock Sites of Cappadocia",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 38.5947222222,
+            "lng": 34.9988055556
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/357/"
+        }
+      ],
       "id": "TUR",
       "nome": "Turquia",
       "nomeFonte": "natural-earth",
@@ -1361,6 +2585,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-543",
+          "nome": "Itchan Kala",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 41.378088,
+            "lng": 60.360253
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/543/"
+        },
+        {
+          "id": "unesco-602",
+          "nome": "Historic Centre of Bukhara",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 39.77472,
+            "lng": 64.42861
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/602/"
+        }
+      ],
       "id": "UZB",
       "nome": "Uzbequistão",
       "nomeFonte": "natural-earth",
@@ -1389,6 +2641,34 @@
       }
     },
     {
+      "pontosTuristicos": [
+        {
+          "id": "unesco-672",
+          "nome": "Ha Long Bay - Cat Ba Archipelago",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 20.8327777778,
+            "lng": 107.1611111111
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/672/"
+        },
+        {
+          "id": "unesco-678",
+          "nome": "Complex of Hué Monuments",
+          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+          "coordenadas": {
+            "lat": 16.4694444444,
+            "lng": 107.577777778
+          },
+          "fontes": [
+            "unesco-country-sites"
+          ],
+          "saibaMaisUrl": "https://whc.unesco.org/en/list/678/"
+        }
+      ],
       "id": "VNM",
       "nome": "Vietname",
       "nomeFonte": "natural-earth",
@@ -1419,6 +2699,7 @@
   ],
   "territorios": [
     {
+      "pontosTuristicos": [],
       "id": "KAS",
       "nome": "Glaciar de Siachen",
       "nomeFonte": "natural-earth",
@@ -1440,6 +2721,7 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
+      "pontosTuristicos": [],
       "id": "HKG",
       "nome": "Hong Kong",
       "nomeFonte": "natural-earth",
@@ -1461,6 +2743,7 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
+      "pontosTuristicos": [],
       "id": "MAC",
       "nome": "Macau",
       "nomeFonte": "natural-earth",
@@ -1482,6 +2765,7 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
+      "pontosTuristicos": [],
       "id": "CYN",
       "nome": "República Turca do Chipre do Norte",
       "nomeFonte": "natural-earth",
@@ -1503,6 +2787,7 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
+      "pontosTuristicos": [],
       "id": "TWN",
       "nome": "Taiwan",
       "nomeFonte": "natural-earth",
@@ -1528,6 +2813,7 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
+      "pontosTuristicos": [],
       "id": "IOT",
       "nome": "Território Britânico do Oceano Índico",
       "nomeFonte": "natural-earth",
@@ -1549,6 +2835,7 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
+      "pontosTuristicos": [],
       "id": "IOA",
       "nome": "Territórios australianos do Oceano Índico",
       "nomeFonte": "natural-earth",

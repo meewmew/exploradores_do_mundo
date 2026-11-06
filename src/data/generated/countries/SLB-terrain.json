@@ -1,0 +1,177 @@
+{
+  "version": 1,
+  "countryId": "SLB",
+  "continentId": "oceania",
+  "file": "models/countries/SLB.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -159.62234275306952,
+      8.923117567327832
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      180043.62579784362,
+      33818.55293130096
+    ],
+    "horizontalScale": 0.00000139091098645555,
+    "elevationScale": 0.000222545757832888,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2394.013135413206,
+      "max": 2429.7311545437356
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -985,
+    "maximumSampleMeters": 1037,
+    "displayedMinimumMeters": 0,
+    "displayedMaximumMeters": 1037,
+    "coastalClampedVertexIndices": [
+      13,
+      14,
+      21,
+      23,
+      33,
+      34,
+      38,
+      39,
+      50,
+      51,
+      53,
+      60,
+      70,
+      71,
+      72,
+      73,
+      74,
+      80,
+      83,
+      86,
+      91,
+      92,
+      116,
+      118,
+      120,
+      127,
+      128,
+      131,
+      133,
+      140,
+      142,
+      170,
+      171,
+      179,
+      194,
+      205,
+      206,
+      212,
+      234,
+      235,
+      240,
+      241,
+      248,
+      252,
+      259,
+      262,
+      268,
+      270,
+      273,
+      274,
+      277,
+      278,
+      279,
+      281,
+      285,
+      313,
+      314,
+      322,
+      324,
+      325,
+      326,
+      343,
+      344,
+      348,
+      351,
+      354,
+      356,
+      359,
+      362,
+      363,
+      365,
+      369,
+      371,
+      372,
+      374,
+      376,
+      377,
+      378,
+      395,
+      396,
+      403,
+      404,
+      405,
+      406,
+      409,
+      410
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "797322d5dcfca5c19f51302851a4c060fac200aabaaa248b7dc1e1cc5a97c8ed",
+    "inputHash": "78efba378274b96603ad503fe8efecc126b29f628c1ce882b7e43f1b61e7b1ab",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 48755.45698946395,
+    "simplification": 0.00015,
+    "topVertexCount": 419,
+    "topTriangleCount": 389,
+    "sourceGeometrySha256": "e0404724edaddc38bc3a6af65fce0e8a6437d160cf1aa6f8032c857a7858fdbb",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1463,
+    "bytes": 41752,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-854",
+      "nome": "East Rennell",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": -11.68333,
+        "lng": 160.33333
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/854/",
+      "posicao": [
+        -0.14270952343940735,
+        0.03469093143939972,
+        0.3799324035644531
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

@@ -1,0 +1,176 @@
+{
+  "version": 1,
+  "countryId": "COL",
+  "continentId": "america",
+  "file": "models/countries/COL.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 95.98816032494676,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      73.0770322024613,
+      -3.903479988826402
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      14107.322706626554,
+      -21869.454252391006
+    ],
+    "horizontalScale": 9.557753680816356e-7,
+    "elevationScale": 0.00009174311926605505,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2388.62940108655,
+      "max": 2445.984776862926
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -106,
+    "maximumSampleMeters": 3488,
+    "displayedMinimumMeters": 0,
+    "displayedMaximumMeters": 3488,
+    "coastalClampedVertexIndices": [
+      1,
+      2,
+      3,
+      7,
+      16,
+      20,
+      23,
+      35,
+      36,
+      52,
+      53,
+      54,
+      66,
+      71,
+      72,
+      73,
+      74,
+      75,
+      78,
+      79,
+      80,
+      81,
+      82,
+      86,
+      89,
+      92,
+      93,
+      94,
+      118,
+      123,
+      139,
+      140,
+      141,
+      142,
+      143,
+      147,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      181,
+      182,
+      183,
+      184,
+      185,
+      188,
+      189,
+      190,
+      192,
+      195,
+      196,
+      223,
+      224,
+      225,
+      226,
+      227,
+      264,
+      265,
+      267,
+      269,
+      270,
+      280,
+      281,
+      282,
+      325,
+      327
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "360f20cb2f418df0140b5d8e10cef7562c065fb978bc0271de34b432592929c7",
+    "inputHash": "2e2752a72f6f772890a4b7d8ba52e1c1a2ded4144009329d3b94bb9e5749af84",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 128257.64242511969,
+    "simplification": 0.0012,
+    "topVertexCount": 521,
+    "topTriangleCount": 573,
+    "sourceGeometrySha256": "8277b61a87b85940cefb1f0c093b10c565feefb7a964582cad48422e89d29001",
+    "omittedPointIds": [
+      "unesco-285"
+    ]
+  },
+  "limits": {
+    "triangles": 1838,
+    "bytes": 49044,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-711",
+      "nome": "Los Katíos National Park",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 7.803975,
+        "lng": -77.146271
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/711/",
+      "posicao": [
+        -0.44210150837898254,
+        0.021669724956154823,
+        -0.3948473632335663
+      ]
+    }
+  ],
+  "textOnlyPoints": [
+    {
+      "id": "unesco-285",
+      "nome": "Port, Fortresses and Group of Monuments, Cartagena",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 10.41666667,
+        "lng": -75.53333333
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/285/"
+    }
+  ]
+}

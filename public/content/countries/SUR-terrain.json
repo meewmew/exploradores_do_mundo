@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "countryId": "SUR",
+  "continentId": "america",
+  "file": "models/countries/SUR.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 122.8447959310631,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      55.91243117650263,
+      -4.1298483510930835
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -12128.41280590529,
+      23546.722587487326
+    ],
+    "horizontalScale": 0.0000031047830178141656,
+    "elevationScale": 0.00038140643623361145,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2432.6147253216377,
+      "max": 2444.7206590152878
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -2,
+    "maximumSampleMeters": 839,
+    "displayedMinimumMeters": 0,
+    "displayedMaximumMeters": 839,
+    "coastalClampedVertexIndices": [
+      119,
+      195,
+      295,
+      315,
+      316,
+      339
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "d9be590d8dae84b3999422665dbe0a56641289ab851ea35bf298d56c1af1abb6",
+    "inputHash": "ae6b4d84ffd81f6d274a6375b9695dc7ab735bdbacd0dabaf2c107365092a42d",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 26337.99178305795,
+    "simplification": 0.00015,
+    "topVertexCount": 457,
+    "topTriangleCount": 664,
+    "sourceGeometrySha256": "55f405b488d9b0015bc555a0b15239bbcd8bae3a203de9f73097a52d43c930e9",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1328,
+    "bytes": 34512,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-940",
+      "nome": "Historic Inner City of Paramaribo",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 5.82611,
+        "lng": -55.15
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/940/",
+      "posicao": [
+        0.2995419502258301,
+        0.01876281201839447,
+        -0.658835232257843
+      ]
+    },
+    {
+      "id": "unesco-1017",
+      "nome": "Central Suriname Nature Reserve",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 4,
+        "lng": -56.5
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1017/",
+      "posicao": [
+        -0.164698988199234,
+        0.055759236216545105,
+        -0.028353270143270493
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

@@ -1,0 +1,199 @@
+{
+  "version": 1,
+  "countryId": "USA",
+  "continentId": "america",
+  "file": "models/countries/USA.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      103.62956273538823,
+      -44.74373163352131
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -1248197.5134733308,
+      -812461.3398234781
+    ],
+    "horizontalScale": 2.0890784181979188e-7,
+    "elevationScale": 0.0000334252546911667,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -2
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 779.8594772002382,
+      "max": 2312.5571618551694
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -250,
+    "maximumSampleMeters": 3957,
+    "displayedMinimumMeters": -2,
+    "displayedMaximumMeters": 3957,
+    "coastalClampedVertexIndices": [
+      1,
+      12,
+      13,
+      15,
+      26,
+      27,
+      28,
+      29,
+      31,
+      32,
+      33,
+      34,
+      36,
+      43,
+      44,
+      47,
+      55,
+      69,
+      73,
+      81,
+      82,
+      84,
+      91,
+      92,
+      93,
+      95,
+      101,
+      102,
+      104,
+      107,
+      110,
+      113,
+      115,
+      120,
+      124,
+      125,
+      126,
+      127,
+      128,
+      131,
+      133,
+      134,
+      139,
+      140,
+      141,
+      142,
+      144,
+      162,
+      174,
+      177,
+      184,
+      187,
+      192,
+      206,
+      211,
+      221,
+      246,
+      247,
+      248,
+      250,
+      253,
+      258,
+      260,
+      262,
+      269,
+      281,
+      310,
+      350,
+      352,
+      354,
+      357,
+      363,
+      364,
+      372,
+      374,
+      393,
+      403,
+      404,
+      405,
+      406,
+      407,
+      409,
+      411,
+      414,
+      415,
+      422,
+      424,
+      431,
+      433,
+      435
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "07d58ab43654e451578f26adda31e46bb007a96bc890791d066788aeed650dc6",
+    "inputHash": "bc400dd7c9efe411def48ec9a0263a6c812879b3aab9098c4004f2e77039b17a",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 1087753.0682769082,
+    "simplification": 0.0768,
+    "topVertexCount": 438,
+    "topTriangleCount": 336,
+    "sourceGeometrySha256": "4c89f776d5906858ecd7d3f5bc1da5382c7fe25eddb4c4265f14fff88529e495",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1435,
+    "bytes": 41780,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "grand-canyon",
+      "nome": "Grand Canyon",
+      "descricaoCurta": "O rio Colorado escavou este grande cânion no Arizona ao longo de milhões de anos.",
+      "coordenadas": {
+        "lat": 36.0553056,
+        "lng": -112.122
+      },
+      "fontes": [
+        "unesco-grand-canyon",
+        "wikidata-grand-canyon"
+      ],
+      "posicao": [
+        0.10114401578903198,
+        0.08140771090984344,
+        0.36334168910980225
+      ]
+    },
+    {
+      "id": "unesco-27",
+      "nome": "Mesa Verde National Park",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 37.26166667,
+        "lng": -108.4855556
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/27/",
+      "posicao": [
+        0.17085148394107819,
+        0.0978195071220398,
+        0.34081563353538513
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "countryId": "ARG",
+  "continentId": "america",
+  "file": "models/countries/ARG.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 113.93605630374866,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      64.7626148799037,
+      34.6839876899398
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      233491.21672174416,
+      411759.1779240997
+    ],
+    "horizontalScale": 4.977127256124979e-7,
+    "elevationScale": 0.00005670742512847777,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 1401.8355335297497,
+      "max": 2271.022061955617
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -38,
+    "maximumSampleMeters": 5643,
+    "displayedMinimumMeters": 0,
+    "displayedMaximumMeters": 5643,
+    "coastalClampedVertexIndices": [
+      145,
+      186,
+      192,
+      193,
+      196,
+      197,
+      200,
+      201,
+      202,
+      208,
+      211,
+      214,
+      257,
+      266,
+      268,
+      276,
+      277,
+      284,
+      286,
+      287,
+      307,
+      311,
+      357,
+      365,
+      370,
+      401,
+      415,
+      422
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "8c7ec405a4820ed09b04cd769adfab1bff1b8535bea9998000bba763d578a68c",
+    "inputHash": "cd146db04397e30727d2347d837c28ceba5f46a73276f3fd69235a7eebc8af5f",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 288838.31082245806,
+    "simplification": 0.0096,
+    "topVertexCount": 425,
+    "topTriangleCount": 439,
+    "sourceGeometrySha256": "ca1fe37154061686127e52939b3e5a77735ce26a335d578258a5e939ed6fb33d",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1529,
+    "bytes": 41420,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "cataratas-iguacu",
+      "nome": "Cataratas do Iguaçu",
+      "descricaoCurta": "O rio Iguaçu forma um grande conjunto de quedas-d’água na fronteira entre Brasil e Argentina.",
+      "coordenadas": {
+        "lat": -25.6952778,
+        "lng": -54.4366667
+      },
+      "fontes": [
+        "unesco-iguazu",
+        "wikidata-iguazu"
+      ],
+      "posicao": [
+        0.39910227060317993,
+        0.02866099588572979,
+        -0.6769023537635803
+      ]
+    },
+    {
+      "id": "unesco-145",
+      "nome": "Los Glaciares National Park",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": -50,
+        "lng": -73.24944
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/145/",
+      "posicao": [
+        -0.42017313838005066,
+        0.034275032579898834,
+        0.6542583703994751
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

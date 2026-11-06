@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "countryId": "PRK",
+  "continentId": "asia",
+  "file": "models/countries/PRK.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 53.32850546389341,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -127.15912288945765,
+      -40.14007428895942
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      25216.201515455847,
+      -26784.494496868138
+    ],
+    "horizontalScale": 0.000002593147443596559,
+    "elevationScale": 0.00013828867761452032,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -2
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 1788.9341215666918,
+      "max": 1934.8235673688428
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -160,
+    "maximumSampleMeters": 2312,
+    "displayedMinimumMeters": -2,
+    "displayedMaximumMeters": 2312,
+    "coastalClampedVertexIndices": [
+      20,
+      23,
+      25,
+      32,
+      49,
+      58,
+      74,
+      75,
+      92,
+      136,
+      157,
+      158,
+      194,
+      235,
+      236,
+      237,
+      239,
+      240,
+      241,
+      244,
+      247,
+      263,
+      269,
+      271,
+      273,
+      274,
+      312,
+      334,
+      342,
+      358,
+      359,
+      360,
+      376,
+      379,
+      400,
+      403,
+      404,
+      405,
+      408,
+      410,
+      443,
+      449
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "ac301bd063f1508717c0b785ccf55ba544107195017b1329d1ff88c727f2b7d0",
+    "inputHash": "22f225585a3e218879256eded1a0c2b81a3ae6962f42b86faaca740f5a2031a1",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 32249.302466528778,
+    "simplification": 0.00015,
+    "topVertexCount": 459,
+    "topTriangleCount": 562,
+    "sourceGeometrySha256": "436e41c6f9349554291acbb4fa3704884056cd3b1254d443b64403f277eb8940",
+    "omittedPointIds": [
+      "unesco-1091"
+    ]
+  },
+  "limits": {
+    "triangles": 1489,
+    "bytes": 40176,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-1278",
+      "nome": "Historic Monuments and Sites in Kaesong",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 37.985589,
+        "lng": 126.505203
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1278/",
+      "posicao": [
+        -0.21402594447135925,
+        0.03362661972641945,
+        0.6901135444641113
+      ]
+    }
+  ],
+  "textOnlyPoints": [
+    {
+      "id": "unesco-1091",
+      "nome": "Complex of Koguryo Tombs",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 38.9188888889,
+        "lng": 125.413333333
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1091/"
+    }
+  ]
+}

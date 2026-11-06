@@ -1,0 +1,1958 @@
+{
+  "version": 1,
+  "retrievedOn": "2026-11-05",
+  "license": "CC0-1.0",
+  "evidence": {
+    "BDI": {
+      "qid": "Q3084675",
+      "query": "Rusizi National Park",
+      "searchUrl": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Rusizi%20National%20Park&language=en&format=json",
+      "entityDataUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q3084675.json",
+      "revision": 2553492443,
+      "label": "Rusizi National Park",
+      "portugueseLabel": "Parque Nacional da Rusizi",
+      "description": "national park in Burundi",
+      "countries": [
+        "Q967"
+      ],
+      "coordinateStatement": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "fe214974e1c3708b4603e0bc1184f3d1f6279718",
+            "datavalue": {
+              "value": {
+                "latitude": -3.247723,
+                "longitude": 29.230671,
+                "altitude": null,
+                "precision": 2.77777777778e-06,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "Q3084675$4897E237-7AF3-4C1F-996B-FCC4482DE7A4",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 328,
+                        "id": "Q328"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryStatements": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "bf0650631aa7f6763b65fc76b855b80ea77253e6",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 967,
+                "id": "Q967"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q3084675$D782A956-A0C5-4B11-A9BA-8B357887EA23",
+          "rank": "normal"
+        }
+      ],
+      "countryMatched": "Q967"
+    },
+    "DJI": {
+      "qid": "Q81239",
+      "query": "Lake Assal",
+      "searchUrl": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Lake%20Assal&language=en&format=json",
+      "entityDataUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q81239.json",
+      "revision": 2515837459,
+      "label": "Lake Assal",
+      "portugueseLabel": "Lago Assal",
+      "description": "crater lake in Djibouti",
+      "countries": [
+        "Q977"
+      ],
+      "coordinateStatement": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "64c9fa83d80b4bfcba3c21771e9125da0ecdb773",
+            "datavalue": {
+              "value": {
+                "latitude": 11.65,
+                "longitude": 42.416667,
+                "altitude": null,
+                "precision": 1e-06,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "q81239$5F5F211D-C662-4447-9B72-3FBAD31B4BF1",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "1f1ad4e8b24154f402e1afe4c76421acd00932f9",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "889b94c40f0dc1125270051a5044b24e92e7236a",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 175482,
+                        "id": "Q175482"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryStatements": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "6b0b2f8129550aba3a4775ec72058d0bf7e9f81f",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 977,
+                "id": "Q977"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q81239$5D5F385D-59C3-4CFA-B800-14315D05CF71",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "288ab581e7d2d02995a26dfa8b091d96e78457fc",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "6a164248fc96bfa583bbb495cb63ae6401ec203c",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 206855,
+                        "id": "Q206855"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryMatched": "Q977"
+    },
+    "SWZ": {
+      "qid": "Q9067090",
+      "query": "Hlane Royal National Park",
+      "searchUrl": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Hlane%20Royal%20National%20Park&language=en&format=json",
+      "entityDataUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q9067090.json",
+      "revision": 2436765087,
+      "label": "Hlane Royal National Park",
+      "description": "nature preserve in Eswatini",
+      "countries": [
+        "Q1050"
+      ],
+      "coordinateStatement": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "30e22fd53de294a93f8d218001f042e8bcc8380b",
+            "datavalue": {
+              "value": {
+                "latitude": -26.25,
+                "longitude": 31.88,
+                "altitude": null,
+                "precision": 0.00027777777777778,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "q9067090$75C25156-5E93-48CE-B504-7DC442236D1D",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 328,
+                        "id": "Q328"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryStatements": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "3494213a8e41ed62f22364cd84d8634ca6450c0b",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 1050,
+                "id": "Q1050"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "q9067090$AEDF803A-4223-4BB6-8668-6F20C1B2EC96",
+          "rank": "normal"
+        }
+      ],
+      "countryMatched": "Q1050"
+    },
+    "GNQ": {
+      "qid": "Q6904640",
+      "query": "Monte Alén National Park",
+      "searchUrl": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Monte%20Al%C3%A9n%20National%20Park&language=en&format=json",
+      "entityDataUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q6904640.json",
+      "revision": 2515705844,
+      "label": "Monte Alén National Park",
+      "description": "a park in Equatorial Guinea",
+      "countries": [
+        "Q983"
+      ],
+      "coordinateStatement": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "60d4ed14161cfa559730a4effcb22b8ff2be70c1",
+            "datavalue": {
+              "value": {
+                "latitude": 1.53,
+                "longitude": 10.11,
+                "altitude": null,
+                "precision": 0.00027777777777778,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "Q6904640$A3FE585A-CA97-4020-8D46-069BE7BF7980",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 328,
+                        "id": "Q328"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryStatements": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "aedfee15d1940a5faba20ace89289da9213d53ba",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 983,
+                "id": "Q983"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q6904640$AD781A4F-3EFC-4491-A731-50724D969B1D",
+          "rank": "normal"
+        }
+      ],
+      "countryMatched": "Q983"
+    },
+    "LSO": {
+      "qid": "Q7849277",
+      "query": "Ts’ehlanyane National Park",
+      "searchUrl": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Ts%E2%80%99ehlanyane%20National%20Park&language=en&format=json",
+      "entityDataUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q7849277.json",
+      "revision": 2295201262,
+      "label": "Ts'ehlanyane National Park",
+      "description": "national park in Lesotho",
+      "countries": [
+        "Q1013"
+      ],
+      "coordinateStatement": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "3c5969e8f188797dd0d08b373e57c707b9d3aa90",
+            "datavalue": {
+              "value": {
+                "latitude": -28.924,
+                "longitude": 28.458,
+                "altitude": null,
+                "precision": 0.001,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "Q7849277$93f63e6c-4cc3-23de-3209-744e8341848d",
+          "rank": "normal"
+        }
+      ],
+      "countryStatements": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "96445fdfef92e9dfcfe06ea01b2135ebd92efa15",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 1013,
+                "id": "Q1013"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q7849277$3c3eeeb2-4bf1-8acb-bb93-e9c4f3ac68c4",
+          "rank": "normal"
+        }
+      ],
+      "countryMatched": "Q1013"
+    },
+    "LBR": {
+      "qid": "Q1969043",
+      "query": "Sapo National Park",
+      "searchUrl": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Sapo%20National%20Park&language=en&format=json",
+      "entityDataUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q1969043.json",
+      "revision": 2531861152,
+      "label": "Sapo National Park",
+      "portugueseLabel": "Parque Nacional de Sapo",
+      "description": "national park in Liberia",
+      "countries": [
+        "Q1014"
+      ],
+      "coordinateStatement": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "034c286439b3933759ef4f9b53e2be19248fb743",
+            "datavalue": {
+              "value": {
+                "latitude": 5.47638889,
+                "longitude": -8.55083333,
+                "altitude": null,
+                "precision": 0.00027777777777778,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "Q1969043$4870C0E1-04CD-40D2-8B64-F1972432128F",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "9a24f7c0208b05d6be97077d855671d1dfdbc0dd",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "d38375ffe6fe142663ff55cd783aa4df4301d83d",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 48183,
+                        "id": "Q48183"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "29d30d375b84bd651a51b4ace7416abb52e9fd26",
+            "datavalue": {
+              "value": {
+                "latitude": 5.36985,
+                "longitude": -8.50503,
+                "altitude": null,
+                "precision": 1e-05,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "Q1969043$DFA8924F-1086-46C4-AFB9-7FA6BC947AA7",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "43a0088c51fd85e5a85d1b46412c3a635e6d4edc",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "d8fbf8671e3c630db61bfac691068cfb6857f243",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 837615,
+                        "id": "Q837615"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryStatements": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "10680e734f67ce65b3b8cb06bc9f911c30f90b14",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 1014,
+                "id": "Q1014"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q1969043$0D3476F9-A875-4D40-BAF4-9DD9EF20B48B",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "43a0088c51fd85e5a85d1b46412c3a635e6d4edc",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "d8fbf8671e3c630db61bfac691068cfb6857f243",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 837615,
+                        "id": "Q837615"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryMatched": "Q1014"
+    },
+    "BHS": {
+      "qid": "Q1181185",
+      "query": "Dean’s Blue Hole",
+      "searchUrl": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Dean%E2%80%99s%20Blue%20Hole&language=en&format=json",
+      "entityDataUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q1181185.json",
+      "revision": 2465804386,
+      "label": "Dean's Blue Hole",
+      "description": "world's deepest known blue hole",
+      "countries": [
+        "Q778"
+      ],
+      "coordinateStatement": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "df5daa531a3fdbd354d2c1b8264689806d32ae51",
+            "datavalue": {
+              "value": {
+                "latitude": 23.10638889,
+                "longitude": -75.00861111,
+                "altitude": null,
+                "precision": 0.00027777777777778,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "Q1181185$6796B4B9-CF13-4326-B94C-AE55CAFE7BE9",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "9a24f7c0208b05d6be97077d855671d1dfdbc0dd",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "d38375ffe6fe142663ff55cd783aa4df4301d83d",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 48183,
+                        "id": "Q48183"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryStatements": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "f61db75ae757516e1c4ad6bfd1e4567cb5ffe5fb",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 778,
+                "id": "Q778"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q1181185$C9FCB931-AFAA-403A-BBD5-C05C4E056BFD",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "d4bd87b862b12d99d26e86472d44f26858dee639",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "f30cbd35620c4ea6d0633aaf0210a8916130469b",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 8447,
+                        "id": "Q8447"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryMatched": "Q778"
+    },
+    "GUY": {
+      "qid": "Q38120",
+      "query": "Kaieteur Falls",
+      "searchUrl": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Kaieteur%20Falls&language=en&format=json",
+      "entityDataUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q38120.json",
+      "revision": 2516872757,
+      "label": "Kaieteur Falls",
+      "portugueseLabel": "Cataratas de Kaieteur",
+      "description": "waterfall on the Potaro River in Guyana",
+      "countries": [
+        "Q734"
+      ],
+      "coordinateStatement": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "4d1478b3fff67d0ae95a3aa91079d6d413514bdd",
+            "datavalue": {
+              "value": {
+                "latitude": 5.1781111111111,
+                "longitude": -59.482277777778,
+                "altitude": null,
+                "precision": 2.7777777777778e-05,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "q38120$24E4A767-0304-4DCA-92B2-6A20DC9E1A5D",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "288ab581e7d2d02995a26dfa8b091d96e78457fc",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "6a164248fc96bfa583bbb495cb63ae6401ec203c",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 206855,
+                        "id": "Q206855"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryStatements": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "e09ebb91d19d9f5b0aef3a5b54017797cca81a16",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 734,
+                "id": "Q734"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q38120$b3826435-4522-9ab5-5a1e-f25b2eb78929",
+          "rank": "normal"
+        }
+      ],
+      "countryMatched": "Q734"
+    },
+    "VCT": {
+      "qid": "Q26544",
+      "query": "La Soufrière",
+      "searchUrl": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=La%20Soufri%C3%A8re&language=en&format=json",
+      "entityDataUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q26544.json",
+      "revision": 2560083894,
+      "label": "La Soufrière",
+      "portugueseLabel": "La Soufrière",
+      "description": "volcano on the island of Saint Vincent in Saint Vincent and the Grenadines",
+      "countries": [
+        "Q757"
+      ],
+      "coordinateStatement": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "6faeb2e17105f3f093f8120bb47ea24ca6a95cf0",
+            "datavalue": {
+              "value": {
+                "latitude": 13.333333333333,
+                "longitude": -61.183333333333,
+                "altitude": null,
+                "precision": 0.016666666666667,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "q26544$64DA5228-B2DE-4DAB-BE98-E8E6A25A2D8E",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "288ab581e7d2d02995a26dfa8b091d96e78457fc",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "6a164248fc96bfa583bbb495cb63ae6401ec203c",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 206855,
+                        "id": "Q206855"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryStatements": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "835befb8218da3806a9df2eb037d93e441e513da",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 757,
+                "id": "Q757"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "q26544$A08FDCD2-E664-478B-9466-3D6997BEFC95",
+          "rank": "normal"
+        }
+      ],
+      "countryMatched": "Q757"
+    },
+    "BRN": {
+      "qid": "Q842921",
+      "query": "Omar Ali Saifuddien Mosque",
+      "searchUrl": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Omar%20Ali%20Saifuddien%20Mosque&language=en&format=json",
+      "entityDataUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q842921.json",
+      "revision": 2547873921,
+      "label": "Omar Ali Saifuddien Mosque",
+      "portugueseLabel": "Grande Mesquita de Omar Ali Saifuddin",
+      "description": "architectural structure",
+      "countries": [
+        "Q921"
+      ],
+      "coordinateStatement": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "ea762b630e3418f007f7900eec160502bd27fd54",
+            "datavalue": {
+              "value": {
+                "latitude": 4.889578,
+                "longitude": 114.939136,
+                "altitude": null,
+                "precision": 1e-05,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "q842921$609D9895-DD30-436F-97E3-F663580B22EA",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "732ec1c90a6f0694c7db9a71bf09fe7f2b674172",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "9123b0de1cc9c3954366ba797d598e4e1ea4146f",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 10000,
+                        "id": "Q10000"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryStatements": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "606939f7ec0f966c6873a6797c6c6131f5676031",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 921,
+                "id": "Q921"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "q842921$0FC77810-7175-44DC-AE60-525E6E93C5B1",
+          "rank": "normal"
+        }
+      ],
+      "countryMatched": "Q921"
+    },
+    "BTN": {
+      "qid": "Q2209873",
+      "query": "Paro Taktsang",
+      "searchUrl": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Paro%20Taktsang&language=en&format=json",
+      "entityDataUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q2209873.json",
+      "revision": 2532229175,
+      "label": "Paro Taktsang",
+      "portugueseLabel": "Mosteiro de Takshang",
+      "description": "temple complex in Bhutan",
+      "countries": [
+        "Q917"
+      ],
+      "coordinateStatement": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "0aa8eed74beb2454ddddf6a3d02478ce66b97be2",
+            "datavalue": {
+              "value": {
+                "latitude": 27.491666666667,
+                "longitude": 89.363333333333,
+                "altitude": null,
+                "precision": 0.00027777777777778,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "q2209873$F2D86B28-8B5B-45B0-A60A-CEDF92573F8E",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "288ab581e7d2d02995a26dfa8b091d96e78457fc",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "6a164248fc96bfa583bbb495cb63ae6401ec203c",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 206855,
+                        "id": "Q206855"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryStatements": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "8057e4d63e19a3e162051d2bef01cc11edd5c758",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 917,
+                "id": "Q917"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "q2209873$A27669A3-F322-4BFE-8CE5-80BB237B4253",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "288ab581e7d2d02995a26dfa8b091d96e78457fc",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "6a164248fc96bfa583bbb495cb63ae6401ec203c",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 206855,
+                        "id": "Q206855"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryMatched": "Q917"
+    },
+    "KWT": {
+      "qid": "Q1335640",
+      "query": "Kuwait Towers",
+      "searchUrl": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Kuwait%20Towers&language=en&format=json",
+      "entityDataUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q1335640.json",
+      "revision": 2530404571,
+      "label": "Kuwait Towers",
+      "portugueseLabel": "Torres Kuwait",
+      "description": "group of 3 towers in Kuwait City, standing on a promontory into the Arabian Gulf, inaugurated on 26 February 1977",
+      "countries": [
+        "Q817"
+      ],
+      "coordinateStatement": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "9fd3f27b591dbc6ed5ae0dae75e82215bfd88ba4",
+            "datavalue": {
+              "value": {
+                "latitude": 29.39,
+                "longitude": 48.003055555555555,
+                "altitude": null,
+                "precision": 0.000277778,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "q1335640$70083624-0D57-4329-92B4-00A0761EE6F3",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 328,
+                        "id": "Q328"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryStatements": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "3c33066c36135bf88142424f4bed91ad33b16d39",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 817,
+                "id": "Q817"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "q1335640$0034BFF5-406D-4707-A49C-009DDABCEC58",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "288ab581e7d2d02995a26dfa8b091d96e78457fc",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "6a164248fc96bfa583bbb495cb63ae6401ec203c",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 206855,
+                        "id": "Q206855"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryMatched": "Q817"
+    },
+    "TLS": {
+      "qid": "Q680813",
+      "query": "Cristo Rei of Dili",
+      "searchUrl": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Cristo%20Rei%20of%20Dili&language=en&format=json",
+      "entityDataUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q680813.json",
+      "revision": 2430539101,
+      "label": "Cristo Rei of Dili",
+      "portugueseLabel": "Cristo Rei de Díli",
+      "description": "large statue of Christ in Cristo Rei administrative post, Dili, East Timor",
+      "countries": [
+        "Q574"
+      ],
+      "coordinateStatement": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "ef70b7fa3f1c75c47cdcce87777fc6266fa80354",
+            "datavalue": {
+              "value": {
+                "latitude": -8.520527,
+                "longitude": 125.608322,
+                "altitude": null,
+                "precision": 1e-06,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "Q680813$3663189e-4c9f-e365-aac1-c40124da7f8f",
+          "rank": "normal"
+        }
+      ],
+      "countryStatements": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "f7ce41418e95b76774ad4f20eb5b2c5a222c77ee",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 574,
+                "id": "Q574"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q680813$11657317-706B-44DE-8809-F72F3B42EDDB",
+          "rank": "normal"
+        }
+      ],
+      "countryMatched": "Q574"
+    },
+    "LIE": {
+      "qid": "Q694782",
+      "query": "Vaduz Castle",
+      "searchUrl": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Vaduz%20Castle&language=en&format=json",
+      "entityDataUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q694782.json",
+      "revision": 2549950838,
+      "label": "Vaduz Castle",
+      "portugueseLabel": "Castelo de Vaduz",
+      "description": "palace and official residence of the Prince of Liechtenstein",
+      "countries": [
+        "Q347"
+      ],
+      "coordinateStatement": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "0085b7070b61f3b46c0de61434054e041d3b4810",
+            "datavalue": {
+              "value": {
+                "latitude": 47.139444444444,
+                "longitude": 9.5244444444444,
+                "altitude": null,
+                "precision": 0.00027777777777778,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "q694782$BA1504EE-6002-4599-BB34-DCE2CC54AA9C",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "288ab581e7d2d02995a26dfa8b091d96e78457fc",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "6a164248fc96bfa583bbb495cb63ae6401ec203c",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 206855,
+                        "id": "Q206855"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryStatements": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "9d197f7c931799051031d0385221dede0a5955cd",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 347,
+                "id": "Q347"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "q694782$E8165F6F-8F1F-40EF-B536-A79582E82D4A",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "288ab581e7d2d02995a26dfa8b091d96e78457fc",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "6a164248fc96bfa583bbb495cb63ae6401ec203c",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 206855,
+                        "id": "Q206855"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryMatched": "Q347"
+    },
+    "NRU": {
+      "qid": "Q997345",
+      "query": "Buada Lagoon",
+      "searchUrl": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Buada%20Lagoon&language=en&format=json",
+      "entityDataUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q997345.json",
+      "revision": 2556678773,
+      "label": "Buada Lagoon",
+      "portugueseLabel": "Laguna Buada",
+      "description": "lake in Buada District, Nauru",
+      "countries": [
+        "Q697"
+      ],
+      "coordinateStatement": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "fd5f8cdffb190e4796a7c8a01c835b69f767a8bd",
+            "datavalue": {
+              "value": {
+                "latitude": -0.53506388888889,
+                "longitude": 166.92228888889,
+                "altitude": null,
+                "precision": 2.7777777777778e-06,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "q997345$D7278A3B-859F-4896-837A-8C78C3E46D23",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "288ab581e7d2d02995a26dfa8b091d96e78457fc",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "6a164248fc96bfa583bbb495cb63ae6401ec203c",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 206855,
+                        "id": "Q206855"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryStatements": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "0107f5793fed42a768d2ae960015e599b596a7bd",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 697,
+                "id": "Q697"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "q997345$ED7FFA20-8879-4C92-969C-8C9BF4E80FB6",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "288ab581e7d2d02995a26dfa8b091d96e78457fc",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "6a164248fc96bfa583bbb495cb63ae6401ec203c",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 206855,
+                        "id": "Q206855"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryMatched": "Q697"
+    },
+    "TUV": {
+      "qid": "Q5508708",
+      "query": "Funafuti Conservation Area",
+      "searchUrl": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Funafuti%20Conservation%20Area&language=en&format=json",
+      "entityDataUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q5508708.json",
+      "revision": 1793041178,
+      "label": "Funafuti Conservation Area",
+      "description": "marine conservation area",
+      "countries": [
+        "Q672"
+      ],
+      "coordinateStatement": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "56a6f0b8c5210682351c298a1a983765ae4c3830",
+            "datavalue": {
+              "value": {
+                "latitude": -8.51666667,
+                "longitude": 179.05,
+                "altitude": null,
+                "precision": 0.016666666666667,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "Q5508708$BBBBA5FC-9FE7-48A8-A595-D1A2FECC4679",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 328,
+                        "id": "Q328"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryStatements": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "5f3857444a88c5e025851ce1bb54540f5bc35d28",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 672,
+                "id": "Q672"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q5508708$79D480CE-0CA7-4874-8C1F-C30BB705C79E",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 328,
+                        "id": "Q328"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryMatched": "Q672"
+    },
+    "SOM": {
+      "qid": "Q962672",
+      "query": "Mogadishu Cathedral",
+      "searchUrl": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Mogadishu%20Cathedral&language=en&format=json",
+      "entityDataUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q962672.json",
+      "revision": 2529912888,
+      "label": "Mogadishu Cathedral",
+      "description": "ruined cathedral in Somalia",
+      "countries": [
+        "Q1045"
+      ],
+      "coordinateStatement": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "92934ff9f925285d044a41a7f78f25e63c859c38",
+            "datavalue": {
+              "value": {
+                "latitude": 2.035736,
+                "longitude": 45.341614,
+                "altitude": null,
+                "precision": 1e-06,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "q962672$B63C280A-FF48-4B65-BE94-BF3A5A6423D7",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 328,
+                        "id": "Q328"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryStatements": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "d702a17d69ce4e4179068fa2930489867f63b6da",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 1045,
+                "id": "Q1045"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q962672$5D555393-684B-4012-9123-D93741CC5A6F",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 328,
+                        "id": "Q328"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryMatched": "Q1045"
+    },
+    "GRD": {
+      "qid": "Q5594534",
+      "query": "Grand Etang Lake",
+      "searchUrl": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Grand%20Etang%20Lake&language=en&format=json",
+      "entityDataUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q5594534.json",
+      "revision": 2496879591,
+      "label": "Grand Etang Lake",
+      "description": "lake in Saint Andrew Parish, Grenada",
+      "countries": [
+        "Q769"
+      ],
+      "coordinateStatement": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "43e5b818b1b8ed3211c24309b846ddb5d99020dc",
+            "datavalue": {
+              "value": {
+                "latitude": 12.083333333333,
+                "longitude": -61.7,
+                "altitude": null,
+                "precision": 0.016666666666667,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "q5594534$488B12C7-F7A1-4D46-976C-6D0702F01D87",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 328,
+                        "id": "Q328"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryStatements": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "86cb435cbdc1fea3aa149bd146fb26ccc6ca4f71",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 769,
+                "id": "Q769"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "q5594534$5FC21782-54FD-4555-9F9F-4670DB42F052",
+          "rank": "normal"
+        }
+      ],
+      "countryMatched": "Q769"
+    },
+    "MDV": {
+      "qid": "Q123375976",
+      "query": "Hukuru Miskiy",
+      "searchUrl": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Hukuru%20Miskiy&language=en&format=json",
+      "entityDataUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q123375976.json",
+      "revision": 2173665699,
+      "label": "Hukuru Miskiy Mosque",
+      "description": "mosque in Felidhu, Maldives",
+      "countries": [
+        "Q826"
+      ],
+      "coordinateStatement": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "074e9d2e4dfc804a6209acdafad170b7dd30ff47",
+            "datavalue": {
+              "value": {
+                "latitude": 3.471651,
+                "longitude": 73.546204,
+                "altitude": null,
+                "precision": 1e-06,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "Q123375976$8fd192e8-4490-fdde-5592-a6bb26571e4d",
+          "rank": "normal"
+        }
+      ],
+      "countryStatements": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "07bcefd3227ed262993d241bcce6d28d5deac8a2",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 826,
+                "id": "Q826"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q123375976$9973e066-4e02-6225-54b5-c06322892c0a",
+          "rank": "normal"
+        }
+      ],
+      "countryMatched": "Q826"
+    },
+    "MCO": {
+      "qid": "Q851527",
+      "query": "Oceanographic Museum",
+      "searchUrl": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Oceanographic%20Museum&language=en&format=json",
+      "entityDataUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q851527.json",
+      "revision": 2551126594,
+      "label": "Musée océanographique de Monaco",
+      "portugueseLabel": "Museu Oceanográfico do Mónaco",
+      "description": "museum of marine sciences",
+      "countries": [
+        "Q235"
+      ],
+      "coordinateStatement": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "ab8e864bf315279528dd39b9a308cd3e851c3366",
+            "datavalue": {
+              "value": {
+                "latitude": 43.730833333333,
+                "longitude": 7.4252777777778,
+                "altitude": null,
+                "precision": 0.00027777777777778,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "q851527$2ABB7451-79A3-490D-B8E2-4BB923EEF332",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 328,
+                        "id": "Q328"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryStatements": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "823cb1d8e9510ad51dd926ff0abc795aa8914784",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 235,
+                "id": "Q235"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "q851527$DE9190D6-9E7D-4A48-8203-14A120F25FA3",
+          "rank": "normal"
+        }
+      ],
+      "countryMatched": "Q235"
+    },
+    "TON": {
+      "qid": "Q1433433",
+      "entityDataUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q1433433.json",
+      "revision": 2561754630,
+      "coordinateStatement": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "c294d933148b22efedff469e4b6b0aee279bc714",
+            "datavalue": {
+              "value": {
+                "latitude": -21.13666667,
+                "longitude": -175.04805556,
+                "altitude": null,
+                "precision": 0.00027777777777778,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "Q1433433$F6F5FE6A-3FA4-4E49-8F86-8188F3B6D1ED",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 328,
+                        "id": "Q328"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "countryStatements": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "6976a3f54d5368b72a7354504a229656c0616009",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 678,
+                "id": "Q678"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q1433433$5928ebf5-473b-e77a-ab7b-572577d59301",
+          "rank": "normal"
+        }
+      ]
+    }
+  },
+  "unresolved": []
+}

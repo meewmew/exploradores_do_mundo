@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "countryId": "URY",
+  "continentId": "america",
+  "file": "models/countries/URY.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      56.02520567382524,
+      32.79134099518995
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      24006.167280973124,
+      -30043.47649653918
+    ],
+    "horizontalScale": 0.0000030059329538312314,
+    "elevationScale": 0.000480949272612997,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -63
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2005.2773156806527,
+      "max": 2116.124320929899
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -63,
+    "maximumSampleMeters": 364,
+    "displayedMinimumMeters": -63,
+    "displayedMaximumMeters": 364,
+    "coastalClampedVertexIndices": [
+      0,
+      2,
+      10,
+      47,
+      96,
+      99,
+      102,
+      148,
+      172,
+      173,
+      195,
+      244,
+      293,
+      334,
+      349,
+      351,
+      352,
+      368
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "4d899ceb8fbc2bc068165f077b4c673fbf1d50adb80acb2d9e9795d37f7489e6",
+    "inputHash": "1b60323336cbaf67f2f87eecdb4901f7aed0cde442a0afa198bf93ab51d1bf1b",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 29756.720482936646,
+    "simplification": 0.00015,
+    "topVertexCount": 416,
+    "topTriangleCount": 612,
+    "sourceGeometrySha256": "9e28752a7240e33385c09771dfae6266c6024b519c9b00a861a13e4d7c846613",
+    "omittedPointIds": [
+      "unesco-747",
+      "unesco-1464"
+    ]
+  },
+  "limits": {
+    "triangles": 1186,
+    "bytes": 31068,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [],
+  "textOnlyPoints": [
+    {
+      "id": "unesco-747",
+      "nome": "Historic Quarter of the City of Colonia del Sacramento",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": -34.47119,
+        "lng": -57.849898
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/747/"
+    },
+    {
+      "id": "unesco-1464",
+      "nome": "Fray Bentos Industrial Landscape",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": -33.1177777778,
+        "lng": -58.3316666667
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1464/"
+    }
+  ]
+}

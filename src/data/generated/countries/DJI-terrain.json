@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "countryId": "DJI",
+  "continentId": "africa",
+  "file": "models/countries/DJI.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 28.963168465491027,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -42.56007888678913,
+      -11.748306745108662
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      2825.901100941941,
+      -8571.056203128777
+    ],
+    "horizontalScale": 0.000007385370960721013,
+    "elevationScale": 0.000213903743315508,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -150
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2386.06208444782,
+      "max": 2401.5244684874087
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -256,
+    "maximumSampleMeters": 1346,
+    "displayedMinimumMeters": -150,
+    "displayedMaximumMeters": 1346,
+    "coastalClampedVertexIndices": [
+      146,
+      168,
+      187,
+      188,
+      263,
+      272,
+      283,
+      285,
+      303,
+      306,
+      309,
+      316
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "e3d334a96bdb5a1b01b5fbedcb2038ccb28893d643a7ae60ff876bb1afe56d65",
+    "inputHash": "61c94ab20ec5816b995a919ffff2a8b5ba30d820585a1130b1db3d4bd8c9b29b",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 10830.427352309276,
+    "simplification": 0.00015,
+    "topVertexCount": 322,
+    "topTriangleCount": 502,
+    "sourceGeometrySha256": "c63485e345be1fd4a178ef18e2c17c0c2eee1ac879cf6040ef8b920b45b236a1",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 830,
+    "bytes": 22552,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "wikidata-q81239",
+      "nome": "Lago Assal",
+      "descricaoCurta": "Este lugar fica em Djibouti.",
+      "coordenadas": {
+        "lat": 11.65,
+        "lng": 42.416667
+      },
+      "fontes": [
+        "wikidata-country-sites"
+      ],
+      "saibaMaisUrl": "https://www.wikidata.org/wiki/Q81239",
+      "posicao": [
+        -0.13621626794338226,
+        0.017999999225139618,
+        0.14400213956832886
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

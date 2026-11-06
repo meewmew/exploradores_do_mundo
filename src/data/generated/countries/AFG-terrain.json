@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "countryId": "AFG",
+  "continentId": "asia",
+  "file": "models/countries/AFG.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 46.23798614771631,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -65.92599982364429,
+      -33.818756400148665
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      144811.88105802145,
+      -17824.217879658652
+    ],
+    "horizontalScale": 0.0000012111859707967184,
+    "elevationScale": 0.000056002800140007,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 1915.4059799737117,
+      "max": 2131.144659986124
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": 252,
+    "maximumSampleMeters": 5714,
+    "displayedMinimumMeters": 252,
+    "displayedMaximumMeters": 5714,
+    "coastalClampedVertexIndices": [],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "2db7578985d736e887d87970b1a026278b016c5fbd176336f45136f063bedba9",
+    "inputHash": "ca77739a5428128a201d163e1351ddd0151b122ef820acc4eefca16ff2c5f38f",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 74209.70160582199,
+    "simplification": 0.0003,
+    "topVertexCount": 547,
+    "topTriangleCount": 647,
+    "sourceGeometrySha256": "e6a6e059a0f18dcffb60369c5621442fae568044ce1e478001d35ac8b61436f9",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1830,
+    "bytes": 48504,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-208",
+      "nome": "Cultural Landscape and Archaeological Remains of the Bamiyan Valley",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 34.8469444444,
+        "lng": 67.82525
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/208/",
+      "posicao": [
+        0.03451492637395859,
+        0.1645033210515976,
+        -0.11883320659399033
+      ]
+    },
+    {
+      "id": "unesco-211",
+      "nome": "Minaret and Archaeological Remains of Jam",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 34.3964166667,
+        "lng": 64.5158888889
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/211/",
+      "posicao": [
+        -0.33209288120269775,
+        0.1387980431318283,
+        -0.05728650465607643
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

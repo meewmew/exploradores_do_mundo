@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "countryId": "GMB",
+  "continentId": "africa",
+  "file": "models/countries/GMB.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      15.39632386333528,
+      -13.450953352817281
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      7610.618863964861,
+      1212.2380920029827
+    ],
+    "horizontalScale": 0.000005784513707366681,
+    "elevationScale": 0.0009255221931786689,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 7,
+    "pixelResolutionMeters": {
+      "min": 1187.6282145899593,
+      "max": 1191.3384152358171
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -7,
+    "maximumSampleMeters": 59,
+    "displayedMinimumMeters": 0,
+    "displayedMaximumMeters": 59,
+    "coastalClampedVertexIndices": [
+      4,
+      10,
+      19,
+      29,
+      30,
+      32,
+      38,
+      44,
+      45,
+      51,
+      58,
+      59,
+      60
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "a2835723ae11dc52d7b66eb71db059c2a78011a8027fdb42340a6b7fd8cf434f",
+    "inputHash": "09a49a13905df4255a031b1b75d1dd464b715f0971cd809df54e52fa306c86c8",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 9459.837234546347,
+    "simplification": 0.00015,
+    "topVertexCount": 312,
+    "topTriangleCount": 410,
+    "sourceGeometrySha256": "ced89aa693821bb86f35572f7783330250c188b8b4311940f06ea233fe06a347",
+    "omittedPointIds": [
+      "unesco-761"
+    ]
+  },
+  "limits": {
+    "triangles": 859,
+    "bytes": 25148,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-1226",
+      "nome": "Stone Circles of Senegambia",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 13.692,
+        "lng": -14.873
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1226/",
+      "posicao": [
+        0.2830164432525635,
+        0.03836148977279663,
+        -0.16240431368350983
+      ]
+    }
+  ],
+  "textOnlyPoints": [
+    {
+      "id": "unesco-761",
+      "nome": "Kunta Kinteh Island and Related Sites",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 13.485261602,
+        "lng": -16.5474714259
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/761/"
+    }
+  ]
+}

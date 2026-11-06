@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "countryId": "ZAF",
+  "continentId": "africa",
+  "file": "models/countries/ZAF.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -25.19343822608611,
+      28.97420850364894
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      59873.53013136552,
+      650314.6771581022
+    ],
+    "horizontalScale": 5.63339483498037e-7,
+    "elevationScale": 0.00009013431735968592,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 1669.315955625831,
+      "max": 2265.53084896518
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -182,
+    "maximumSampleMeters": 3196,
+    "displayedMinimumMeters": 0,
+    "displayedMaximumMeters": 3196,
+    "coastalClampedVertexIndices": [
+      0,
+      54,
+      55,
+      62,
+      63,
+      67,
+      69,
+      72,
+      80,
+      85,
+      87,
+      88,
+      140,
+      141,
+      142,
+      145,
+      174,
+      178,
+      235,
+      343,
+      398,
+      500
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "dfaa32fb0336b2572f8aedf018b07d339d86f2b294ed8f0ded197591ce4d9e84",
+    "inputHash": "075ee473ada19ac10425f4945903a1f2bfca8c23c01769846824eacc10ce3539",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 146190.74512464445,
+    "simplification": 0.0003,
+    "topVertexCount": 507,
+    "topTriangleCount": 546,
+    "sourceGeometrySha256": "b84f40e07f74229a5b84a292e52dc92157f99a27bb61f5d96b5f07eee496c190",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1811,
+    "bytes": 48348,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-914",
+      "nome": "iSimangaliso Wetland Park – Maputo National Park",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": -27.8388888889,
+        "lng": 32.55
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/914/",
+      "posicao": [
+        0.37330612540245056,
+        0.01980268582701683,
+        -0.4249016046524048
+      ]
+    },
+    {
+      "id": "unesco-915",
+      "nome": "Fossil Hominid Sites of South Africa",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": -24.1586111111,
+        "lng": 29.1769444444
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/915/",
+      "posicao": [
+        0.1940726339817047,
+        0.14409790933132172,
+        -0.6642186641693115
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

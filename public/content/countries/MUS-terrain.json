@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "countryId": "MUS",
+  "continentId": "africa",
+  "file": "models/countries/MUS.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 15.603287585130852,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -57.571264586617275,
+      20.27761966600511
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -1696.1149209779996,
+      -2895.930937560961
+    ],
+    "horizontalScale": 0.000028260480871956197,
+    "elevationScale": 0.00044095641033922207,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -7.6953125
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 8,
+    "pixelResolutionMeters": {
+      "min": 572.7222168955469,
+      "max": 574.6552005030384
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -31.40625,
+    "maximumSampleMeters": 718,
+    "displayedMinimumMeters": -7.6953125,
+    "displayedMaximumMeters": 718,
+    "coastalClampedVertexIndices": [
+      2,
+      13,
+      40,
+      58,
+      59,
+      60,
+      74,
+      89,
+      90,
+      91,
+      92,
+      94,
+      96,
+      111,
+      112,
+      114,
+      133,
+      154,
+      155,
+      197,
+      198,
+      199,
+      219,
+      220,
+      221,
+      239,
+      240,
+      241,
+      252,
+      253,
+      257,
+      258,
+      274,
+      280,
+      281,
+      282,
+      287,
+      288
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "2d6f93a3caad1c2fa303c7146bd41d13ad37704bb99c2699054066812582b77a",
+    "inputHash": "7c56501ef812b1262d2fb5331fdcb7022c414d5d1d840c4e4ae247dc13cb476a",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 3096.993540098149,
+    "simplification": 0.00015,
+    "topVertexCount": 290,
+    "topTriangleCount": 488,
+    "sourceGeometrySha256": "f5b1a250b4e16006dda354cdf2919964c2edf6a46b420a7ebc16e9fd3505cffb",
+    "omittedPointIds": [
+      "unesco-1259"
+    ]
+  },
+  "limits": {
+    "triangles": 684,
+    "bytes": 18388,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-1227",
+      "nome": "Aapravasi Ghat",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": -20.1586388889,
+        "lng": 57.5031666666
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1227/",
+      "posicao": [
+        -0.1529507339000702,
+        0.02492094784975052,
+        -0.2920060455799103
+      ]
+    }
+  ],
+  "textOnlyPoints": [
+    {
+      "id": "unesco-1259",
+      "nome": "Le Morne Cultural Landscape",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": -20.4519444444,
+        "lng": 57.3283333333
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1259/"
+    }
+  ]
+}

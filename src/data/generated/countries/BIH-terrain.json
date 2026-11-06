@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "countryId": "BIH",
+  "continentId": "europa",
+  "file": "models/countries/BIH.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 37.198934889402686,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -17.774891584393888,
+      -44.1714743505993
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -8129.316314511743,
+      27884.092706236705
+    ],
+    "horizontalScale": 0.000004592844015753552,
+    "elevationScale": 0.00017084890549919914,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -67
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 1721.2038929760831,
+      "max": 1801.6459429979311
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -67,
+    "maximumSampleMeters": 1806,
+    "displayedMinimumMeters": -67,
+    "displayedMaximumMeters": 1806,
+    "coastalClampedVertexIndices": [],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "e95c75c2c9f354644188dd5ec8b91fec4ee9e89de35a1fd7b33e63eb10d030cb",
+    "inputHash": "1675e7bdae56cc5451326adb670c809708f8486f45522ec97dd09ac889e3f500",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 17544.313079266736,
+    "simplification": 0.00015,
+    "topVertexCount": 392,
+    "topTriangleCount": 556,
+    "sourceGeometrySha256": "4560bfadf266be1de6f2781c5fc46054d33708b7ca2b6e781dc1f96b64156a98",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1125,
+    "bytes": 30148,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-946",
+      "nome": "Old Bridge Area of the Old City of Mostar",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 43.3373055556,
+        "lng": 17.815
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/946/",
+      "posicao": [
+        0.0522351898252964,
+        0.04106460139155388,
+        0.2979361414909363
+      ]
+    },
+    {
+      "id": "unesco-1133",
+      "nome": "Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 44.146,
+        "lng": 17.282
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1133/",
+      "posicao": [
+        -0.14328815042972565,
+        0.26573091745376587,
+        -0.11559882014989853
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

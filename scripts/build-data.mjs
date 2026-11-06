@@ -7,6 +7,8 @@ const geo = await json('data-src/geo/ne_50m_admin_0_countries.geojson');
 const places = await json('data-src/geo/ne_50m_populated_places_simple.geojson');
 const countryFacts = await json('data-src/country-facts.json');
 const touristSpots = await json('data-src/tourist-spots.json');
+const countrySpots = await json('data-src/country-tourist-spots.json');
+if(Object.values(countrySpots.countries).some(points=>!Array.isArray(points)||points.length>2))throw new Error('Máximo de dois pontos por país.');
 if(touristSpots.version!==1||!touristSpots.continents||Object.entries(touristSpots.continents).some(([id,points])=>!IMPLEMENTED_CONTINENTS.includes(id)||!Array.isArray(points)||points.length>(id==='africa'?3:5)))throw new Error('Pontos turísticos inválidos: piloto África limitado a três locais.');
 const countryModelFiles=new Set(await readdir('public/models/countries').catch(error=>{if(error.code==='ENOENT')return [];throw error;}));
 const html = await readFile('data-src/un-members.html', 'utf8');
@@ -59,6 +61,7 @@ function country(f, continentId) {
   const p = f.properties;
   const capitals = places.features.filter(x => Number(x.properties.adm0cap) === 1 && x.properties.adm0_a3 === p.ADM0_A3).map(x => x.properties.name);
   return {
+    pontosTuristicos:countrySpots.countries[p.ADM0_A3]||[],
     id:p.ADM0_A3, nome:p.NAME_PT || p.NAME_EN, nomeFonte:'natural-earth',
     ...(!countryFacts[p.ADM0_A3]?.capital&&capitals.length ? { capital:{ valor:[...new Set(capitals)].join(' / '), fonte:'natural-earth' } } : {}),
     populacao: p.POP_EST > 0 && p.POP_YEAR > 0 ? { valor:p.POP_EST, fonte:'natural-earth', anoReferencia:p.POP_YEAR } : { ...missing, anoReferencia:0 },

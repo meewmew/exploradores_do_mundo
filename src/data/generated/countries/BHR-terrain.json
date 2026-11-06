@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "countryId": "BHR",
+  "continentId": "asia",
+  "file": "models/countries/BHR.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 87.24669821686788,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -50.54199333196571,
+      -26.041964003819054
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -695.6553503011137,
+      1706.816925377907
+    ],
+    "horizontalScale": 0.000037954109185697934,
+    "elevationScale": 0.003311370710214641,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -4.63671875
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 9,
+    "pixelResolutionMeters": {
+      "min": 274.22555963800744,
+      "max": 275.25500064844914
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -13.08203125,
+    "maximumSampleMeters": 92,
+    "displayedMinimumMeters": -4.63671875,
+    "displayedMaximumMeters": 92,
+    "coastalClampedVertexIndices": [
+      3,
+      4,
+      93,
+      95,
+      96,
+      97,
+      123,
+      125,
+      126,
+      127,
+      155,
+      157,
+      158,
+      189,
+      192,
+      193,
+      227,
+      255,
+      256
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "c28787cbac8c78bebe9b92dcf6fce153782cbd9dbcafc89b82f687e687f2e236",
+    "inputHash": "a7d90cfa8fb6fb7aa8a36e8ac4887ab555fadbcf70604e59eeca6ca05824d21c",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 1638.7231422745483,
+    "simplification": 0.00015,
+    "topVertexCount": 300,
+    "topTriangleCount": 501,
+    "sourceGeometrySha256": "b015a52ea2f3a602ec790dd8be92c48fdbfef8fb6dbac2c52b39fb0162ec567f",
+    "omittedPointIds": [
+      "unesco-1364"
+    ]
+  },
+  "limits": {
+    "triangles": 705,
+    "bytes": 19128,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-1192",
+      "nome": "Qal’at al-Bahrain – Ancient Harbour and Capital of Dilmun",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 26.2344444444,
+        "lng": 50.5183333333
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1192/",
+      "posicao": [
+        -0.06316402554512024,
+        0.0465993769466877,
+        -0.8771145343780518
+      ]
+    }
+  ],
+  "textOnlyPoints": [
+    {
+      "id": "unesco-1364",
+      "nome": "Pearling, Testimony of an Island Economy",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 26.24962,
+        "lng": 50.61361
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1364/"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "countryId": "BEN",
+  "continentId": "africa",
+  "file": "models/countries/BEN.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -2.326614658252217,
+      -9.63561216267076
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -3085.811037675594,
+      37213.544354970334
+    ],
+    "horizontalScale": 0.000002679054669867132,
+    "elevationScale": 0.0004286487471787411,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2389.0737145965263,
+      "max": 2431.6007034673703
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -6,
+    "maximumSampleMeters": 616,
+    "displayedMinimumMeters": 0,
+    "displayedMaximumMeters": 616,
+    "coastalClampedVertexIndices": [
+      119,
+      120,
+      148,
+      175,
+      176
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "a4b26deadcb0befd29fc5bf7abccb6014921057421f235cbc429a8a9e76732eb",
+    "inputHash": "8480a52a0ace90f93cb730768b5586bd56d16cdf241d50375093fb609fe08c9c",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 27701.71284381946,
+    "simplification": 0.00015,
+    "topVertexCount": 361,
+    "topTriangleCount": 507,
+    "sourceGeometrySha256": "099a72bdf9b75d1f3d9c5d7f5342ac384395965dd76961dc4e5415712ed8f403",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1060,
+    "bytes": 28464,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-323",
+      "nome": "Royal Palaces of Abomey",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 7.1875,
+        "lng": 1.9922222222
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/323/",
+      "posicao": [
+        -0.09058718383312225,
+        0.11701785773038864,
+        0.6294881105422974
+      ]
+    },
+    {
+      "id": "unesco-749",
+      "nome": "W-Arly-Pendjari Complex",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 11.8841666667,
+        "lng": 2.6544444444
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/749/",
+      "posicao": [
+        0.10385167598724365,
+        0.11787515878677368,
+        -0.7695408463478088
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

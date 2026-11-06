@@ -1,0 +1,206 @@
+{
+  "version": 1,
+  "countryId": "ITA",
+  "continentId": "europa",
+  "file": "models/countries/ITA.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 62.478164271723735,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -12.201048454167655,
+      -42.71568610532394
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      48526.633563144336,
+      90097.16952740564
+    ],
+    "horizontalScale": 0.0000014529899029869028,
+    "elevationScale": 0.00009078014184397165,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -3
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 1665.5917619844477,
+      "max": 1961.4412649272626
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -211,
+    "maximumSampleMeters": 3522,
+    "displayedMinimumMeters": -3,
+    "displayedMaximumMeters": 3522,
+    "coastalClampedVertexIndices": [
+      43,
+      93,
+      94,
+      95,
+      98,
+      106,
+      118,
+      122,
+      129,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      148,
+      149,
+      150,
+      151,
+      152,
+      154,
+      157,
+      161,
+      162,
+      164,
+      165,
+      166,
+      190,
+      193,
+      194,
+      196,
+      198,
+      199,
+      201,
+      208,
+      209,
+      213,
+      214,
+      215,
+      226,
+      227,
+      233,
+      234,
+      235,
+      236,
+      237,
+      240,
+      241,
+      243,
+      244,
+      245,
+      250,
+      253,
+      254,
+      259,
+      263,
+      265,
+      271,
+      273,
+      274,
+      275,
+      276,
+      289,
+      290,
+      298,
+      318,
+      322,
+      323,
+      324,
+      331,
+      333,
+      334,
+      335,
+      336,
+      348,
+      351,
+      352,
+      353,
+      357,
+      358,
+      363,
+      369,
+      371,
+      376,
+      379,
+      380,
+      381,
+      389,
+      397,
+      398,
+      401,
+      403,
+      407,
+      413,
+      417,
+      427,
+      428
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "4e0fe8c6d0617b182b132ba6d12b742ebca2489bc893fca1fd44a63f9b7a1dae",
+    "inputHash": "a1e57e7c5c6a56bac16009b882963592b9ef5bf6a9b69314978fd41447c465a4",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 96042.91474907234,
+    "simplification": 0.0024,
+    "topVertexCount": 433,
+    "topTriangleCount": 435,
+    "sourceGeometrySha256": "fdb72ad3a8f07182e34aae18a880d8ef7a72898ae9b919314fe0d77beee33a0d",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1542,
+    "bytes": 42396,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "coliseu",
+      "nome": "Coliseu",
+      "descricaoCurta": "Anfiteatro romano do século I, parte da área histórica de Roma.",
+      "coordenadas": {
+        "lat": 41.8902778,
+        "lng": 12.4922222
+      },
+      "fontes": [
+        "unesco-rome",
+        "wikidata-colosseum"
+      ],
+      "posicao": [
+        -0.035487525165081024,
+        0.021994326263666153,
+        0.0023856188636273146
+      ]
+    },
+    {
+      "id": "unesco-93",
+      "nome": "Church and Dominican Convent of Santa Maria delle Grazie with “The Last Supper” by Leonardo da Vinci",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 45.466,
+        "lng": 9.171
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/93/",
+      "posicao": [
+        -0.41384679079055786,
+        0.029801419004797935,
+        -0.5814624428749084
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "countryId": "JAM",
+  "continentId": "america",
+  "file": "models/countries/JAM.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 24.6870448916063,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      77.3143961046842,
+      -18.157450928073715
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      4268.133192450929,
+      4275.597200403932
+    ],
+    "horizontalScale": 0.000008193593092807296,
+    "elevationScale": 0.000202275600505689,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 7,
+    "pixelResolutionMeters": {
+      "min": 1159.642111182636,
+      "max": 1165.0007997949929
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -249,
+    "maximumSampleMeters": 1582,
+    "displayedMinimumMeters": 0,
+    "displayedMaximumMeters": 1582,
+    "coastalClampedVertexIndices": [
+      8,
+      26,
+      34,
+      35,
+      38,
+      39,
+      45,
+      48,
+      49,
+      50,
+      58,
+      59,
+      60,
+      61,
+      71,
+      171,
+      183,
+      184,
+      213,
+      224,
+      225,
+      226,
+      242,
+      244,
+      245,
+      246,
+      247,
+      254,
+      255
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "7a6cbf60a29806334a4d4dc95fd1b1c8c60d0ae0d8a320b68bad7a1fa6c1262d",
+    "inputHash": "0b399422113f2874bcfe71096ced94cb51e8ba25d016385b4822e0e01b4dbcd4",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 8208.91102654163,
+    "simplification": 0.00015,
+    "topVertexCount": 293,
+    "topTriangleCount": 452,
+    "sourceGeometrySha256": "c12b445af5eff1c8f0e2b31d34fb05e216454ef6eb8a85006e59c9687f2e45c5",
+    "omittedPointIds": [
+      "unesco-1595"
+    ]
+  },
+  "limits": {
+    "triangles": 757,
+    "bytes": 20852,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-1356",
+      "nome": "Blue and John Crow Mountains",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 18.0775,
+        "lng": -76.5711111111
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1356/",
+      "posicao": [
+        0.6087915301322937,
+        0.27266499400138855,
+        0.03650975599884987
+      ]
+    }
+  ],
+  "textOnlyPoints": [
+    {
+      "id": "unesco-1595",
+      "nome": "The Archaeological Ensemble of 17th Century Port Royal",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 17.9386138889,
+        "lng": -76.8433777778
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1595/"
+    }
+  ]
+}

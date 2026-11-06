@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "countryId": "SYR",
+  "continentId": "asia",
+  "file": "models/countries/SYR.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 55.43434828784779,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -38.484462078340876,
+      -35.01677730522279
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      45610.8205613702,
+      19541.670138301386
+    ],
+    "horizontalScale": 0.0000023465830271431965,
+    "elevationScale": 0.00013008130081300815,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 1945.78685280446,
+      "max": 2067.1032895282756
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -3,
+    "maximumSampleMeters": 2460,
+    "displayedMinimumMeters": 0,
+    "displayedMaximumMeters": 2460,
+    "coastalClampedVertexIndices": [
+      63,
+      71
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "31e0390e63a90f16e2120fad5109e443404143fb17dfa037b3a8474b1f41c571",
+    "inputHash": "ef2bc47eb8e45aeeef2f920722567403e85037dca2930b7232f9088c75ba61f9",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 33307.99628291501,
+    "simplification": 0.00015,
+    "topVertexCount": 407,
+    "topTriangleCount": 566,
+    "sourceGeometrySha256": "f95738b3597cac771c9e67c674be4cde0729a058c9cfec0e9f0af098b27f24d8",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1177,
+    "bytes": 31604,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-20",
+      "nome": "Ancient City of Damascus",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 33.5108333333,
+        "lng": 36.3097222222
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/20/",
+      "posicao": [
+        -0.5801449418067932,
+        0.10658536851406097,
+        0.34197115898132324
+      ]
+    },
+    {
+      "id": "unesco-21",
+      "nome": "Ancient City of Aleppo",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 36.1991666667,
+        "lng": 37.1627777778
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/21/",
+      "posicao": [
+        -0.38532695174217224,
+        0.06873171031475067,
+        -0.35622483491897583
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

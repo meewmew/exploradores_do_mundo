@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "countryId": "TUR",
+  "continentId": "asia",
+  "file": "models/countries/TUR.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 95.90740382047517,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -35.172801394534204,
+      -39.13701327497539
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      21601.02280740469,
+      5475.863767042669
+    ],
+    "horizontalScale": 0.0000011155304522224174,
+    "elevationScale": 0.00010698762955533267,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 1815.4471450649,
+      "max": 1983.0032808518847
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -236,
+    "maximumSampleMeters": 2991,
+    "displayedMinimumMeters": 0,
+    "displayedMaximumMeters": 2991,
+    "coastalClampedVertexIndices": [
+      3,
+      9,
+      12,
+      13,
+      15,
+      16,
+      21,
+      23,
+      30,
+      36,
+      37,
+      41,
+      43,
+      49,
+      59,
+      60,
+      61,
+      65,
+      67,
+      68,
+      69,
+      70,
+      74,
+      78,
+      79,
+      83,
+      89,
+      91,
+      104,
+      108,
+      109,
+      111,
+      112,
+      117,
+      121,
+      122,
+      125,
+      129,
+      130,
+      131,
+      132,
+      135,
+      148,
+      153,
+      172,
+      180,
+      182,
+      198,
+      199,
+      203,
+      206,
+      207,
+      220,
+      221,
+      222,
+      224,
+      225,
+      226,
+      227,
+      228,
+      235,
+      237,
+      239,
+      248,
+      251,
+      252,
+      254,
+      255,
+      256,
+      257,
+      258,
+      276,
+      277,
+      278,
+      279,
+      290,
+      293,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308,
+      309,
+      320,
+      321,
+      429,
+      446,
+      447,
+      465,
+      467,
+      468,
+      469
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "8b3643edcc4c5dd5b907a3d29b67daa98462d18b8757eb1b376f0b74b4d4618b",
+    "inputHash": "583cd2c206c012e9f16fea4a08b9561339068930c8c01f5b1c4ef2f54ec608a8",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 99347.40944016517,
+    "simplification": 0.0024,
+    "topVertexCount": 477,
+    "topTriangleCount": 547,
+    "sourceGeometrySha256": "3923f60642eccff28bbb1d27c247045db3ed5e3a1b558f0013475db4ff98c518",
+    "omittedPointIds": [
+      "unesco-356"
+    ]
+  },
+  "limits": {
+    "triangles": 1647,
+    "bytes": 44048,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-357",
+      "nome": "Göreme National Park and the Rock Sites of Cappadocia",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 38.5947222222,
+        "lng": 34.9988055556
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/357/",
+      "posicao": [
+        -0.04096531495451927,
+        0.15612103044986725,
+        0.061141639947891235
+      ]
+    }
+  ],
+  "textOnlyPoints": [
+    {
+      "id": "unesco-356",
+      "nome": "Historic Areas of Istanbul",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 41.0166666667,
+        "lng": 28.9611111111
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/356/"
+    }
+  ]
+}

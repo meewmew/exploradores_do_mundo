@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "countryId": "SRB",
+  "continentId": "europa",
+  "file": "models/countries/SRB.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 44.102369392738076,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -20.80660626161307,
+      -44.211319817899266
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      11753.089857765575,
+      128.73031407275994
+    ],
+    "horizontalScale": 0.000003759505693034066,
+    "elevationScale": 0.00016580310880829013,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 1693.9208683499144,
+      "max": 1810.7879888295918
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": 32,
+    "maximumSampleMeters": 1930,
+    "displayedMinimumMeters": 32,
+    "displayedMaximumMeters": 1930,
+    "coastalClampedVertexIndices": [],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "831b94af0ff980f8b5f59c37497bea8c4dfcdf6a33c845a9bb2cd6d49c5640d3",
+    "inputHash": "0a44c7aadc2599818d039fcc941dedabda07732c3a54d49c8b1d3f356a9929b6",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 21870.014699222244,
+    "simplification": 0.00015,
+    "topVertexCount": 496,
+    "topTriangleCount": 640,
+    "sourceGeometrySha256": "15f71593640df29d4591dfe55dd2edb0a87b250e349755eb6d2d71881ff03c88",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1541,
+    "bytes": 41060,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-96",
+      "nome": "Stari Ras and Sopoćani",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 43.1655555556,
+        "lng": 20.5261111111
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/96/",
+      "posicao": [
+        -0.12971453368663788,
+        0.1100207269191742,
+        0.4365338385105133
+      ]
+    },
+    {
+      "id": "unesco-389",
+      "nome": "Studenica Monastery",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 43.4865277778,
+        "lng": 20.5316666667
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/389/",
+      "posicao": [
+        -0.12757691740989685,
+        0.12477720528841019,
+        0.3023655414581299
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

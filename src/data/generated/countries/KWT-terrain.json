@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "countryId": "KWT",
+  "continentId": "asia",
+  "file": "models/countries/KWT.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 150.44794988361747,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -47.58777962536429,
+      -29.333278348684665
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -9572.966626014124,
+      2049.990503908426
+    ],
+    "horizontalScale": 0.0000074369981096229994,
+    "elevationScale": 0.0011188811188811189,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2116.2225880197993,
+      "max": 2148.897680437407
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -11,
+    "maximumSampleMeters": 286,
+    "displayedMinimumMeters": 0,
+    "displayedMaximumMeters": 286,
+    "coastalClampedVertexIndices": [
+      12,
+      18,
+      19,
+      20,
+      21,
+      25,
+      31,
+      202,
+      204,
+      205,
+      225,
+      226,
+      227,
+      250,
+      251,
+      252,
+      253,
+      271,
+      291,
+      293,
+      300,
+      301,
+      302,
+      306,
+      310,
+      311,
+      312,
+      313,
+      314
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "60f7b51aff796112d69dcd5630eeaf91d1c3a1a5f3fdf6d66332c1357cbeefcc",
+    "inputHash": "af42d210cd73d169de48707b3948cf7a92988039b8b2be3d23cbb861e9698956",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 10384.926114593121,
+    "simplification": 0.00015,
+    "topVertexCount": 315,
+    "topTriangleCount": 475,
+    "sourceGeometrySha256": "37f0c70af66aac08ce9cade4973b1ce6c68f8f388a76bae00035558066d8a3bc",
+    "omittedPointIds": [
+      "wikidata-q1335640"
+    ]
+  },
+  "limits": {
+    "triangles": 829,
+    "bytes": 22884,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [],
+  "textOnlyPoints": [
+    {
+      "id": "wikidata-q1335640",
+      "nome": "Torres do Kuwait",
+      "descricaoCurta": "Este lugar fica em Kuwait.",
+      "coordenadas": {
+        "lat": 29.39,
+        "lng": 48.003055555555555
+      },
+      "fontes": [
+        "wikidata-country-sites"
+      ],
+      "saibaMaisUrl": "https://www.wikidata.org/wiki/Q1335640"
+    }
+  ]
+}

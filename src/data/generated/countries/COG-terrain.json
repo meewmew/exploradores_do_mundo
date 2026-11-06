@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "countryId": "COG",
+  "continentId": "africa",
+  "file": "models/countries/COG.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -15.221142402863855,
+      0.8369923019699113
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -38080.085396139475,
+      -19683.700423228845
+    ],
+    "horizontalScale": 0.0000015120644906293989,
+    "elevationScale": 0.00024193031850070382,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2436.6611993063293,
+      "max": 2445.9838824803674
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -2,
+    "maximumSampleMeters": 860,
+    "displayedMinimumMeters": 0,
+    "displayedMaximumMeters": 860,
+    "coastalClampedVertexIndices": [
+      56
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "b98e7a096928550f676e26b45ced702480ebfb8fedd70e304632f596277eb43c",
+    "inputHash": "416ec8d74039892e9b8b73bec98fce9946b51d7eac55f71b7d6f6cbe8b3af77d",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 51763.74915679576,
+    "simplification": 0.00015,
+    "topVertexCount": 522,
+    "topTriangleCount": 638,
+    "sourceGeometrySha256": "0489000a2ead95e390fcb6d41f5f82e2690ce74a65210cc037f4987a2d3aa486",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1701,
+    "bytes": 45284,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-692",
+      "nome": "Forest Massif of Odzala-Kokoua",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 1.3355555556,
+        "lng": 14.8602777778
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/692/",
+      "posicao": [
+        -0.0030883520375937223,
+        0.15275518596172333,
+        -0.3354930579662323
+      ]
+    },
+    {
+      "id": "unesco-1380",
+      "nome": "Sangha Trinational",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 2.6094444444,
+        "lng": 16.5541666667
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1380/",
+      "posicao": [
+        0.2815699577331543,
+        0.12977181375026703,
+        -0.5496135950088501
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

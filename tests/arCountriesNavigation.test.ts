@@ -7,8 +7,11 @@ import ARExperience from '../src/pages/ARExperience';
 import { useApp } from '../src/hooks/useApp';
 import america from '../src/data/continents/america.json';
 import europe from '../src/data/continents/europa.json';
-import type { Continent } from '../src/types/continent';
+import brazilTerrain from '../src/data/generated/countries/BRA-terrain.json';
+import { parseCountryTerrain } from '../src/services/countryTerrain';
+import type { Country, Continent } from '../src/types/continent';
 
+vi.mock('../src/hooks/useCountryTerrain',()=>({useCountryTerrain:(continent:Continent|undefined,country:Country|undefined)=>({config:country?.id==='BRA'&&continent?parseCountryTerrain(brazilTerrain,country,continent.id):undefined,loading:false,error:undefined,retry:()=>{}})}));
 vi.mock('../src/hooks/useApp', () => ({ useApp: vi.fn() }));
 // Only inspect React's model selection. No camera or tracking events are emitted.
 vi.mock('../src/components/ARFrame', () => ({ ARFrame: (props: { modelFile: string; countryId?: string; children: ReactNode }) =>
@@ -31,7 +34,7 @@ it('ficha abre RA do país e ambas as saídas mantêm o país selecionado', () =
   expect(html).toContain('href="/paises/america/BRA"');
   expect(html).toContain('continente=america&amp;model=models%2Fcountries%2FBRA.glb&amp;pais=BRA');
   expect(html).toContain('Sobre Brasil');
-  expect(html).not.toContain('Lugares para conhecer');
+  expect(html).toContain('lugares para conhecer');
   expect(html).not.toContain('Continente descoberto!');
 });
 it('sem país, conserva modelo e resumo do continente; sem GLB, conserva ficha', () => {

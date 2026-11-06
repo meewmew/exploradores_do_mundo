@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "countryId": "POL",
+  "continentId": "europa",
+  "file": "models/countries/POL.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 70.42197880765336,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -19.41970628568953,
+      -52.111835670097584
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -12417.822511337698,
+      17148.029422928754
+    ],
+    "horizontalScale": 0.000002277712231636887,
+    "elevationScale": 0.0001604010025062657,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -4
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 1408.6124084438798,
+      "max": 1604.0417694764292
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -14,
+    "maximumSampleMeters": 1991,
+    "displayedMinimumMeters": -4,
+    "displayedMaximumMeters": 1991,
+    "coastalClampedVertexIndices": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      15,
+      16,
+      17,
+      18,
+      19,
+      24,
+      25,
+      26,
+      27,
+      82,
+      83,
+      84,
+      104,
+      126,
+      127,
+      128,
+      129,
+      130,
+      132,
+      133,
+      134,
+      167,
+      169,
+      170,
+      198,
+      229,
+      230,
+      258,
+      259,
+      261,
+      262,
+      263,
+      264,
+      265,
+      266,
+      267,
+      292,
+      293,
+      294,
+      295,
+      318,
+      319
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "55bef16941141e058b5818b57c631797735e8e8143bc3776ca3f0e3fe81d2bb1",
+    "inputHash": "bddba67072c8ac413ed755c315595dbc66cc3bbd7c4f250d82f2464d46330264",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 38264.43746131744,
+    "simplification": 0.00015,
+    "topVertexCount": 590,
+    "topTriangleCount": 784,
+    "sourceGeometrySha256": "bcf26eb5b9f0b1012788092dbf3c3490011a85152671b4615ea201653c89033b",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1807,
+    "bytes": 47044,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-29",
+      "nome": "Historic Centre of Kraków",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 50.0613888889,
+        "lng": 19.9372222222
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/29/",
+      "posicao": [
+        0.11244026571512222,
+        0.05168421193957329,
+        0.47993290424346924
+      ]
+    },
+    {
+      "id": "unesco-30",
+      "nome": "Historic Centre of Warsaw",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 52.25,
+        "lng": 21.013
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/30/",
+      "posicao": [
+        0.27531176805496216,
+        0.03387970104813576,
+        -0.07676330208778381
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

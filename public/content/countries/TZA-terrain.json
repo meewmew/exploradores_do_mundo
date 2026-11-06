@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "countryId": "TZA",
+  "continentId": "africa",
+  "file": "models/countries/TZA.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 48.56036906547442,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -34.801810701384674,
+      6.26824790696101
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      6244.119325454405,
+      10309.27147931431
+    ],
+    "horizontalScale": 0.0000012264537034586013,
+    "elevationScale": 0.0000595570444816676,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 2395.0237775980836,
+      "max": 2445.6161435451377
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -119,
+    "maximumSampleMeters": 5373,
+    "displayedMinimumMeters": 0,
+    "displayedMaximumMeters": 5373,
+    "coastalClampedVertexIndices": [
+      26,
+      27,
+      34,
+      38,
+      503,
+      506,
+      508,
+      510,
+      524,
+      527,
+      542,
+      547,
+      565,
+      567,
+      571,
+      572,
+      587
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "32609406071a342dc9c1915e189abe9d971024b92d54fe5b911aa970bf0fae67",
+    "inputHash": "6f06d4b1398718096ef7ddca5f4dd33358e7dd77bea1f7b89f7e11c05bb1c706",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 69772.06914563886,
+    "simplification": 0.00015,
+    "topVertexCount": 591,
+    "topTriangleCount": 780,
+    "sourceGeometrySha256": "be8235f00719d1232b87d9a8b7b309df414d605f3f6fe698f20b94c5a4259191",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1867,
+    "bytes": 48440,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "kilimanjaro",
+      "nome": "Kilimanjaro",
+      "descricaoCurta": "Na Tanzânia, esta montanha vulcânica abriga o ponto mais alto da África.",
+      "coordenadas": {
+        "lat": -3.0666666666667,
+        "lng": 37.359166666667
+      },
+      "fontes": [
+        "unesco-kilimanjaro",
+        "wikidata-kilimanjaro"
+      ],
+      "fontesPorCampo": {
+        "nome": [
+          "wikidata-kilimanjaro"
+        ],
+        "descricaoCurta": [
+          "unesco-kilimanjaro"
+        ],
+        "coordenadas": [
+          "wikidata-kilimanjaro"
+        ]
+      },
+      "posicao": [
+        0.3407094180583954,
+        0.33799999952316284,
+        -0.4484630823135376
+      ]
+    },
+    {
+      "id": "unesco-39",
+      "nome": "Ngorongoro Conservation Area",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": -3.18722,
+        "lng": 35.54083
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/39/",
+      "posicao": [
+        0.09300573170185089,
+        0.11841318011283875,
+        -0.4327075183391571
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

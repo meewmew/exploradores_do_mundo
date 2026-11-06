@@ -1,0 +1,211 @@
+{
+  "version": 1,
+  "countryId": "MAR",
+  "continentId": "africa",
+  "file": "models/countries/MAR.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 160,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      8.727847819101049,
+      -29.766859053027858
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -69822.95372747071,
+      109530.27316577506
+    ],
+    "horizontalScale": 8.431012374691727e-7,
+    "elevationScale": 0.00013489619799506762,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": 0
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 6,
+    "pixelResolutionMeters": {
+      "min": 1980.6013087101887,
+      "max": 2277.0258369240414
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -518,
+    "maximumSampleMeters": 2161,
+    "displayedMinimumMeters": 0,
+    "displayedMaximumMeters": 2161,
+    "coastalClampedVertexIndices": [
+      1,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      17,
+      18,
+      19,
+      21,
+      23,
+      24,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      41,
+      44,
+      54,
+      55,
+      56,
+      59,
+      60,
+      61,
+      63,
+      64,
+      65,
+      66,
+      67,
+      69,
+      95,
+      97,
+      98,
+      100,
+      102,
+      103,
+      121,
+      123,
+      125,
+      145,
+      147,
+      148,
+      173,
+      175,
+      177,
+      178,
+      179,
+      198,
+      203,
+      204,
+      205,
+      207,
+      208,
+      209,
+      210,
+      212,
+      213,
+      214,
+      215,
+      232,
+      233,
+      235,
+      236,
+      237,
+      239,
+      240,
+      268,
+      271,
+      272,
+      291,
+      292,
+      293,
+      294,
+      296,
+      297,
+      313,
+      314,
+      316,
+      319,
+      320,
+      344,
+      348,
+      352,
+      367,
+      369,
+      385,
+      386,
+      387,
+      392,
+      393,
+      394,
+      395,
+      426,
+      428
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "521c7b2fff480035fa7cae3416a0bdabcc0ae2d3e3991eaa997b8504cb96a298",
+    "inputHash": "d94603ccb98b6bfd5fc29f0a4100022f9ca55ce8a5ba02621d65ff7685242f06",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 91618.79409268645,
+    "simplification": 0.00015,
+    "topVertexCount": 477,
+    "topTriangleCount": 538,
+    "sourceGeometrySha256": "165cced56da7a580dfcd42acb2441c7ae85b557efac9b4d4d0c341a38afab5ef",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 1673,
+    "bytes": 44632,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-170",
+      "nome": "Medina of Fez",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 34.0551111111,
+        "lng": -4.9903611111
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/170/",
+      "posicao": [
+        0.34926941990852356,
+        0.06710221618413925,
+        -0.4991269111633301
+      ]
+    },
+    {
+      "id": "unesco-331",
+      "nome": "Medina of Marrakesh",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 31.6138888889,
+        "lng": -8.0222222222
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/331/",
+      "posicao": [
+        0.11520902812480927,
+        0.08113142102956772,
+        -0.26566872000694275
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}

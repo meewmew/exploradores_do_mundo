@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "countryId": "PSX",
+  "continentId": "asia",
+  "file": "models/countries/PSX.glb",
+  "sourceIds": [
+    "natural-earth",
+    "mapzen-terrain"
+  ],
+  "verticalExaggeration": 23.202728567752732,
+  "projection": {
+    "name": "Azimutal equivalente de Lambert, esfera",
+    "rotate": [
+      -35.19548000308445,
+      -31.91522046868581
+    ],
+    "sphereRadiusMeters": 6371000,
+    "axes": {
+      "x": "leste",
+      "y": "elevação",
+      "z": "sul"
+    }
+  },
+  "normalization": {
+    "projectedOriginMeters": [
+      -29657.55819777682,
+      4679.618438432139
+    ],
+    "horizontalScale": 0.000009858099658885885,
+    "elevationScale": 0.00022873481057898498,
+    "baseHeight": 0.018,
+    "minimumDatumMeters": -416
+  },
+  "dem": {
+    "dataset": "Mapzen Terrain Tiles — DEM composto",
+    "zoom": 7,
+    "pixelResolutionMeters": {
+      "min": 1031.0663849543246,
+      "max": 1046.0122358006597
+    },
+    "nativeResolution": "variável conforme as fontes do mosaico; resolução de pixel abaixo não é precisão de medição",
+    "sampling": "pixel mais próximo, sem interpolação ou preenchimento de lacunas",
+    "nodata": "interromper geração; nenhuma altitude fabricada",
+    "elevationUnits": "m",
+    "minimumSampleMeters": -416,
+    "maximumSampleMeters": 983,
+    "displayedMinimumMeters": -416,
+    "displayedMaximumMeters": 983,
+    "coastalClampedVertexIndices": [
+      0,
+      1,
+      4,
+      8,
+      9,
+      16,
+      18,
+      22
+    ],
+    "coastalTreatment": "Amostras negativas a até dois pixels do litoral externo Natural Earth (excluindo fronteiras políticas) normalizadas ao nível do mar (0 m), para evitar batimetria da costa generalizada. Depressões internas preservadas; valores DEM originais permanecem no snapshot.",
+    "sha256": "4cd6e230d8280d5faa4bbee598d843fa790c42c609b992c21a267ef90eb0ee31",
+    "inputHash": "358b25ec55b7a46af24979cb2ccc3ef7181a8380ea2ebda01b0a558740a9ae60",
+    "referencePeriod": "variável entre as fontes do mosaico; não informado por pixel"
+  },
+  "mesh": {
+    "stepMeters": 7987.673357962897,
+    "simplification": 0.00015,
+    "topVertexCount": 222,
+    "topTriangleCount": 319,
+    "sourceGeometrySha256": "68c61b59d84557767763e673f364277321bd7d686ecb0cad3f4928c12abf99ca",
+    "omittedPointIds": []
+  },
+  "limits": {
+    "triangles": 604,
+    "bytes": 17492,
+    "materials": 2,
+    "textures": 0
+  },
+  "points": [
+    {
+      "id": "unesco-1433",
+      "nome": "Birthplace of Jesus: Church of the Nativity and the Pilgrimage Route, Bethlehem",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 31.7043527778,
+        "lng": 35.2075
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1433/",
+      "posicao": [
+        0.30357691645622253,
+        0.2876783311367035,
+        0.18501408398151398
+      ]
+    },
+    {
+      "id": "unesco-1492",
+      "nome": "Palestine: Land of Olives and Vines – Cultural Landscape of Southern Jerusalem, Battir",
+      "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
+      "coordenadas": {
+        "lat": 31.7163888889,
+        "lng": 35.1588888889
+      },
+      "fontes": [
+        "unesco-country-sites"
+      ],
+      "saibaMaisUrl": "https://whc.unesco.org/en/list/1492/",
+      "posicao": [
+        0.2582470178604126,
+        0.3039185106754303,
+        0.17181533575057983
+      ]
+    }
+  ],
+  "textOnlyPoints": []
+}
