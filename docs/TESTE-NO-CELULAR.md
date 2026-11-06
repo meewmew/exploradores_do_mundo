@@ -78,3 +78,15 @@ Usar as mesmas folhas/QR/marcadores: não precisam ser regenerados. Registrar ap
 | Cinco ciclos | Entrar/sair cinco vezes; câmera libera a cada saída; medir FPS/memória sem declarar aprovação só por impressão visual | [ ] Passou [ ] Falhou — Observações: |
 | Página inteira | País e pontos disponíveis; indicação de alturas ampliadas; locais sem pin permanecem legíveis; câmera para na saída | [ ] Passou [ ] Falhou — Observações: |
 | Progresso | RA/URL não descobrem nem concluem atividade; somente QR válido no leitor interno mantém descoberta | [ ] Passou [ ] Falhou — Observações: |
+
+## Aparência somente da ficha do Brasil — 06/11/2026
+
+Pendente de aparelho físico. Perfil visual aplicado apenas no visualizador sem câmera da ficha BRA; RA, malha, GLB, posições dos pontos/rios e demais países permanecem como estavam antes desta tarefa. Nenhum reconhecimento simulado.
+
+| Caso | Esperado | Registro |
+|---|---|---|
+| Brasil | Material fosco, rios discretos, iluminação lateral e norte inteiro dentro do enquadramento | [ ] Passou [ ] Falhou — Observações: |
+| Giro/zoom/restaurar | Gestos e botões funcionam; restaurar recupera o novo enquadramento | [ ] Passou [ ] Falhou — Observações: |
+| Pontos | Dois pins/lista continuam selecionáveis e alinhados, sem alteração de coordenadas | [ ] Passou [ ] Falhou — Observações: |
+| Isolamento | Benim e outros países mantêm o visual anterior; sair/voltar ao Brasil reaplica somente seu perfil | [ ] Passou [ ] Falhou — Observações: |
+| Carregamento | Luz local carrega sem erro; conferir fluidez e medir FPS/memória antes de declarar desempenho aprovado | [ ] Passou [ ] Falhou — Observações: |

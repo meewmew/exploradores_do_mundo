@@ -179,3 +179,6 @@ Nomes, coordenadas terrestres P625 e país P17 dos locais selecionados, consulta
 
 ## [tourism-official-sites] National Trust de Trinidad e Tobago e Samoa Tourism Authority — https://nationaltrust.tt/location/fort-king-george-tobago/ — fatos geográficos; textos e imagens não reutilizados — 2026-11-05
 Forte King George: nome, país e coordenada dos campos do mapa do órgão nacional de patrimônio. To Sua Ocean Trench: nome, país e coordenada do mapa incorporado pela autoridade oficial de turismo em https://www.samoa.travel/plan-book/activities/to-sua-ocean-trench/ . Extração, URL, coordenada e SHA-256 da página estão em `data-src/points/official-country-sites.json`. Somente nomes próprios e fatos geográficos são utilizados; descrição curta autoral, sem copiar textos, fotos ou cartografia desses sites.
+
+## [brazil-studio-light] Iluminação de estúdio do visualizador do Brasil — autoria do projeto — MIT — 2026-11-06
+Ambiente HDR técnico de 64×32 pixels gerado por `scripts/build-brazil-lighting.mjs`, com luz lateral suave e preenchimento, sem fotografias ou dados externos. Arquivo `public/lighting/brazil-soft-key.hdr`. É iluminação da cena, não textura de terreno ou dado geográfico; não altera a malha, altitudes, rios ou coordenadas dos pontos. Aplicado somente na ficha 3D do Brasil, sem mudar a RA ou os outros países.
