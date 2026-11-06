@@ -33,7 +33,7 @@ function Shell(){
    {ready?(redirect?<Navigate to={redirect} replace/>:<Routes>
     <Route path="/" element={<Home/>}/><Route path="/orientacao" element={<Orientation/>}/>
     <Route path="/mapa" element={<Collection/>}/><Route path="/continente/:id" element={<Continent/>}/>
-    <Route path="/qr/:id" element={<QRScanner/>}/><Route path="/ar/:id" element={<ARExperience/>}/>
+    <Route path="/qr/:id" element={<QRScanner/>}/><Route path="/ar/:id/:countryId" element={<ARExperience/>}/><Route path="/ar/:id" element={<ARExperience/>}/>
     <Route path="/paises/:id" element={<Countries/>}/><Route path="/paises/:id/:countryId" element={<Countries/>}/>
     <Route path="/atividade/:id" element={<Activity/>}/><Route path="/conclusao" element={<Completion/>}/>
     <Route path="/configuracoes" element={<Settings/>}/>

@@ -16,7 +16,7 @@ Usar HTTPS e as folhas A4 em tamanho real (100%), geradas para a mesma origem e 
 | Mapa e instruções | Passos e ações visíveis; fechar e reabrir instruções; selecionar continente; ampliar por pinça/botões, arrastar e restaurar sem seleção acidental |
 | QR correto e incorreto | Leitor interno descobre somente o continente selecionado com QR válido; QR de outro continente ou origem exibe aviso |
 | Permissão e cancelamento | Permitir câmera inicia captura; negar mostra instrução de recuperação; cancelar retorna ao mapa e encerra captura |
-| Marcadores dos seis continentes | Modelo acompanha posição e orientação do marcador correspondente; descoberta ocorre após reconhecimento estável; URL sozinha não desbloqueia |
+| Marcadores dos seis continentes | Modelo acompanha posição e orientação do marcador correspondente; reconhecer marcador não altera progresso; somente o QR válido no leitor interno descobre |
 | Perda e retorno do marcador | Modelo some ao perder o marcador e retorna preservando escala e rotação escolhidas |
 | Gestos e pontos | Arraste, pinça, troca de dedos e controles alternativos funcionam; pontos acompanham modelo e permitem seleção por toque/lista |
 | Câmera expandida | Expandir e restaurar conserva cena, pose e pontos; saída continua acessível com barras do navegador e áreas seguras |
@@ -28,3 +28,29 @@ Usar HTTPS e as folhas A4 em tamanho real (100%), geradas para a mesma origem e 
 | Interface e acessibilidade | Paisagem, texto ampliado, teclado virtual, foco, leitor de tela e áudio disponível; conferir compreensão com crianças em avaliação própria |
 
 Ao repetir, registrar falhas e limitações sem transformar o relato geral de funcionamento em aprovação automática de todos os casos.
+
+## País selecionado em RA — implementação local de 05/11/2026
+
+**NÃO VALIDADO em aparelho físico nesta alteração.** A confirmação histórica acima refere-se à versão anterior. Esta implementação não foi publicada, conforme pedido. O QR da folha continua exclusivo da descoberta pelo leitor interno; a pose da RA é fornecida pelo marcador quadrado AR.js 3×3 que já fica ao lado do QR, e não pelo desenho completo do QR.
+
+Verificado nesta sessão: `npm.cmd run typecheck`, `npm.cmd test` (55/55), `npm.cmd run build`, `npm.cmd run check:budget` (189 modelos), `node scripts/verify-subpath.mjs` (build em subpasta), `node --check public/ar/scene.js` e `git diff --check`. Os testes leem/parseiam GLBs locais, validam país/continente/modelo, rotas, bloqueios e ausência de escrita de progresso pela RA. Não executam câmera física.
+
+Chrome local automatizado: ficha do Brasil com GLB carregado, ação “Ver em RA”, endereço da cena com `continente=america`, `pais=BRA` e `models/countries/BRA.glb`; resumo do país, expansão/Escape sem troca de endereço, retorno à ficha do Brasil e remoção do iframe. Conferidos 320/390/1280 px e texto a 200% em 390 px, sem overflow horizontal, com foco por teclado. Conferidos aviso do Vaticano sem GLB, RA sem país usando o relevo da América e início/retorno da página inteira conservando o Brasil. Progresso permaneceu igual durante a navegação. Contexto de navegador descartável com coleção preparada para revisão da interface; nenhuma leitura de QR, imagem de câmera ou evento de marcador foi simulado. Capturas e resultados em `.cache/ar-countries-review/`.
+
+Executar cada caso em Android/Chrome e iPhone/Safari. Registrar aparelho, sistema/navegador, versão local do app, data, responsável e observações.
+
+| Caso físico | Resultado esperado | Registro |
+|---|---|---|
+| Descoberta | URL e reconhecimento AR não descobrem; QR correto no leitor interno descobre somente seu continente | [ ] Passou [ ] Falhou — Observações: |
+| País da América | Países → Brasil → Ver em RA → marcador AR da América mostra o Brasil; repetir com Argentina na mesma folha | [ ] Passou [ ] Falhou — Observações: |
+| Outros continentes | Um país com GLB em África, Ásia, Europa e Oceania aparece apenas no marcador correspondente; marcador de outro continente não exibe o modelo | [ ] Passou [ ] Falhou — Observações: |
+| Movimento | Translação e orientação do marcador movem/orientam o modelo real, sem ancoragem em superfície | [ ] Passou [ ] Falhou — Observações: |
+| Perda/retorno | Tirar marcador do enquadramento esconde modelo; retorno mantém escala/rotação; restaurar volta ao padrão | [ ] Passou [ ] Falhou — Observações: |
+| Sem país | Ver em RA pela ficha de continente mantém seu relevo e seus pontos; Antártida continua sem países | [ ] Passou [ ] Falhou — Observações: |
+| País sem modelo | Vaticano (ou outro sem GLB) informa limitação sem abrir câmera nem mostrar continente no lugar | [ ] Passou [ ] Falhou — Observações: |
+| Falha/permissão | Negar câmera e falhar carregamento exibem recuperação; tentar novamente mantém o país; Ver sem câmera retorna à ficha correta | [ ] Passou [ ] Falhou — Observações: |
+| Saída e reentrada | Ver sem câmera, mapa e página inteira desligam captura; cinco ciclos reabrem sem travar; progresso/atividades permanecem iguais | [ ] Passou [ ] Falhou — Observações: |
+| Gestos e acessibilidade | Arraste/pinça e botões de zoom/girar/restaurar funcionam; tela cheia conserva país e oferece saída | [ ] Passou [ ] Falhou — Observações: |
+| Página inteira | Repetir país, marcador correto/incorreto, perda/retorno e saída em ar/scene.html; conferir o link para a mesma ficha e o percurso de entrada existente | [ ] Passou [ ] Falhou — Observações: |
+
+A página inteira volta ao endereço da mesma ficha. Como esse retorno recarrega o app, a escolha de perfil/instruções existente é solicitada novamente e leva ao mapa com o continente pendente. A ficha precisa ser reaberta pelo percurso existente; esse fluxo de entrada não foi alterado nesta tarefa.

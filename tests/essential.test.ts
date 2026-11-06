@@ -3,7 +3,7 @@ import { readFile, stat } from 'node:fs/promises';
 import { NodeIO } from '@gltf-transform/core';
 import { CONTINENT_IDS, type ContinentId } from '../src/types/continent';
 import { LocalStorageRepository, type StoragePort } from '../src/services/collectionRepository';
-import { discoverFromMarker, discoverFromQR, continentFromURL } from '../src/services/discovery';
+import { isStableMarker, discoverFromQR, continentFromURL } from '../src/services/discovery';
 import { receiveARMessage } from '../src/services/arBridge';
 import { IMPLEMENTED_CONTINENTS } from '../scripts/config.mjs';
 import { continentSchema, validateOverrides } from '../src/services/contentSchema';
@@ -44,9 +44,9 @@ describe('Verificações essenciais da especificação',()=>{
   for(const text of ['https://example.org/jogo/?continente=asia','https://outro.org/jogo/?continente=africa','invalido','https://example.org/jogo/','https://example.org/errado/?continente=africa'])expect((await discoverFromQR(r,text,'africa',base)).ok).toBe(false);
   expect(await r.getUnlocked()).toEqual([]);expect((await discoverFromQR(r,`${base}?continente=africa`,'africa',base)).ok).toBe(true);expect(await r.getUnlocked()).toEqual(['africa']);
  });
- it('somente marcador correspondente com estabilidade mínima descobre',async()=>{
-  const r=new LocalStorageRepository(new MemoryStorage());expect(await discoverFromMarker(r,'africa',undefined)).toBe(false);expect(await discoverFromMarker(r,'africa',{continentId:'asia',stableMs:800})).toBe(false);expect(await discoverFromMarker(r,'africa',{continentId:'africa',stableMs:499})).toBe(false);expect(await r.getUnlocked()).toEqual([]);
-  expect(await discoverFromMarker(r,'africa',{continentId:'africa',stableMs:500})).toBe(true);expect(await r.getUnlocked()).toEqual(['africa']);
+ it('marcador estável valida o evento sem descobrir nem modificar progresso',async()=>{
+  const r=new LocalStorageRepository(new MemoryStorage());expect(isStableMarker('africa',undefined)).toBe(false);expect(isStableMarker('africa',{continentId:'asia',stableMs:800})).toBe(false);expect(isStableMarker('africa',{continentId:'africa',stableMs:499})).toBe(false);expect(await r.getUnlocked()).toEqual([]);
+  expect(isStableMarker('africa',{continentId:'africa',stableMs:500})).toBe(true);expect(await r.getUnlocked()).toEqual([]);
  });
  it('ponte AR exige origem, janela, versão e payload esperados',()=>{
   const source={} as Window;const input={origin:'https://example.org',source,data:{app:'exploradores-ar',version:1,type:'ar:marker-found',payload:{continentId:'africa',stableMs:500}}};

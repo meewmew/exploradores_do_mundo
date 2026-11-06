@@ -14,4 +14,4 @@ export function receiveARMessage(event:MessageEvent,source:Window|null,origin:st
  return m as unknown as ARMessage;
 }
 export function sendARMessage(target:Window|null,type:'ar:reset'|'ar:set-scale'|'ar:rotate'|'ar:select-point'|'ar:stop',payload?:Record<string,unknown>){target?.postMessage({app:'exploradores-ar',version:1,type,payload},window.location.origin);}
-export const AR_SCENE_VERSION='20261105-aim';
+export const AR_SCENE_VERSION='20261105-countries';

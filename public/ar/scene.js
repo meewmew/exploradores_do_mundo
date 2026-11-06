@@ -1,7 +1,8 @@
-import { createStandaloneRepository, discoverFromMarker, initialARTransform, updateARGesture, applyARTransformAction } from './domain.js';
+import { arCountry, isARModelAllowed, initialARTransform, updateARGesture, applyARTransformAction } from './domain.js?v=20261105-countries';
 const ids=['africa','america','antartida','asia','europa','oceania'];
-const params=new URLSearchParams(location.search), id=params.get('continente'), modelPath=params.get('model');
-const embedded=window.parent!==window,origin=location.origin,repo=embedded?null:createStandaloneRepository(params.get('preview')==='1');
+const params=new URLSearchParams(location.search), id=params.get('continente'), modelPath=params.get('model'),countryId=params.get('pais');
+const selectedCountry=countryId===null?undefined:arCountry(id,countryId);
+const embedded=window.parent!==window,origin=location.origin;
 const status=document.querySelector('#status');
 status.classList.add('sr-only');
 let scene,marker,model,stableTimer,foundAt=0,stopped=false,transformState=initialARTransform(),lastCameraError;
@@ -87,12 +88,12 @@ function action(type,payload={}){
  transform();
 }
 window.addEventListener('message',e=>{const m=e.data;if(!embedded||e.origin!==origin||e.source!==window.parent||!m||m.app!=='exploradores-ar'||m.version!==1||typeof m.type!=='string')return;if(m.payload!==undefined&&(!m.payload||typeof m.payload!=='object'||Array.isArray(m.payload)))return;action(m.type,m.payload);});
-async function stableFound(){
+function stableFound(){
  if(stopped||document.hidden||!marker?.object3D?.visible)return;
  const stableMs=performance.now()-foundAt;if(stableMs<500)return;
  const payload={continentId:id,stableMs};
- if(embedded)post('ar:marker-found',payload);else await discoverFromMarker(repo,id,payload);
- trackingStatus('Continente descoberto! O modelo acompanha a folha.');
+ post('ar:marker-found',payload);
+ trackingStatus('Marcador reconhecido. O modelo acompanha a folha.');
 }
 function stop(){
  if(stopped){post('ar:stopped');return;}stopped=true;clearTimeout(stableTimer);
@@ -114,7 +115,7 @@ function stop(){
 window.addEventListener('pagehide',stop);
 document.addEventListener('visibilitychange',()=>{clearTimeout(stableTimer);if(document.hidden){showAim(false);scene?.pause();hidePoints();pointers.clear();}else if(!stopped){showAim(cameraReady&&!marker?.object3D?.visible);scene?.play();if(marker?.object3D?.visible){foundAt=performance.now();stableTimer=setTimeout(stableFound,510);}}});
 function start(){
- if(!ids.includes(id)||(modelPath!==`models/${id}.glb`&&modelPath!==`models/${id}-terrain.glb`)){error('ar:model-error','invalid','Continente ou modelo inválido.');return;}
+ if(!isARModelAllowed(id,countryId,modelPath)){error('ar:model-error','invalid','Não foi possível abrir este modelo. Volte à ficha e escolha um país com modelo 3D.');return;}
  const canvas=document.createElement('canvas');
  if(!isSecureContext||!navigator.mediaDevices?.getUserMedia||!(canvas.getContext('webgl2')||canvas.getContext('webgl'))){error('ar:camera-error','unsupported','É necessário HTTPS, câmera e WebGL para usar a RA.');return;}
  if(!window.AFRAME||!AFRAME.systems.arjs){error('ar:camera-error','unsupported','As bibliotecas de RA não carregaram.');return;}
@@ -135,8 +136,8 @@ function start(){
  const camera=document.createElement('a-entity');camera.setAttribute('camera','');camera.setAttribute('look-controls','enabled: false');scene.append(camera);
  marker.addEventListener('markerFound',()=>{if(stopped)return;showAim(false);clearTimeout(stableTimer);foundAt=performance.now();trackingStatus('Marcador encontrado. Mantenha a folha visível…');stableTimer=setTimeout(stableFound,510);});
  marker.addEventListener('markerLost',()=>{showAim(cameraReady);clearTimeout(stableTimer);foundAt=0;hidePoints();post('ar:marker-lost',{continentId:id});trackingStatus('Reposicione a folha: mantenha o marcador inteiro na câmera.');});
- model.addEventListener('model-loaded',()=>{modelReady=true;post('ar:model-loaded');});
- model.addEventListener('model-error',()=>{modelReady=false;hidePoints();error('ar:model-error','load','Não foi possível carregar o modelo.');});
+ model.addEventListener('model-loaded',()=>{if(stopped){model.getObject3D('mesh')?.traverse(o=>{o.geometry?.dispose();const materials=Array.isArray(o.material)?o.material:[o.material];materials.filter(Boolean).forEach(m=>m.dispose());});return;}modelReady=true;post('ar:model-loaded');});
+ model.addEventListener('model-error',()=>{if(stopped)return;modelReady=false;hidePoints();error('ar:model-error','load','Não foi possível carregar o modelo.');});
  scene.addEventListener('renderstart',()=>{
   scene.renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.5));pointsObserver=new ResizeObserver(updateProjectionBounds);pointsObserver.observe(scene.renderer.domElement);updateProjectionBounds();
   // AR.js creates its session in another renderstart listener.
@@ -175,7 +176,7 @@ overlay.addEventListener('pointercancel',release);
 overlay.addEventListener('lostpointercapture',e=>{pointers.delete(e.pointerId);});
 overlay.addEventListener('contextmenu',e=>e.preventDefault());
 if(!embedded){
- document.querySelector('#standalone').style.display='block';const back=document.querySelector('#back');back.href=`../?continente=${encodeURIComponent(id||'')}#/continente/${encodeURIComponent(id||'')}`;back.addEventListener('click',stop);
+ document.querySelector('#standalone').style.display='block';const back=document.querySelector('#back');back.href=selectedCountry?`../?continente=${encodeURIComponent(id||'')}#/paises/${encodeURIComponent(id||'')}/${encodeURIComponent(countryId)}`:`../?continente=${encodeURIComponent(id||'')}#/continente/${encodeURIComponent(id||'')}`;back.addEventListener('click',stop);
  document.querySelectorAll('[data-action]').forEach(b=>b.addEventListener('click',()=>{const type=b.dataset.action;if(type==='plus')action('ar:set-scale',{delta:.25});if(type==='minus')action('ar:set-scale',{delta:-.25});if(type==='rotate')action('ar:rotate',{degrees:30});if(type==='reset')action('ar:reset');}));
- const prompt=document.createElement('div');prompt.id='start';prompt.innerHTML='<h1>Realidade aumentada</h1><p>Separe a folha do continente. O modelo acompanhará o quadrado preto.</p><button>Iniciar câmera</button>';prompt.querySelector('button').onclick=()=>{prompt.remove();start();};document.body.append(prompt);
+ const prompt=document.createElement('div');prompt.id='start';prompt.innerHTML='<h1>Realidade aumentada</h1><p>Separe a folha do continente. O modelo acompanhará o quadrado preto.</p><button>Iniciar câmera</button>';if(selectedCountry){prompt.querySelector('h1').textContent=`${selectedCountry.nome} em RA`;prompt.querySelector('p').textContent='Use a mesma folha do continente. O modelo do país acompanhará o quadrado preto.';}prompt.querySelector('button').onclick=()=>{prompt.remove();start();};document.body.append(prompt);
 }else start();
