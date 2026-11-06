@@ -21,9 +21,15 @@
     "check:budget": "node scripts/check-budget.mjs"
   },
   "dependencies": {
+    "@react-three/drei": "10.7.9",
+    "@react-three/fiber": "9.8.2",
+    "@react-three/postprocessing": "3.2.2",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "react-router-dom": "7.9.4",
+    "three": "0.180.0",
+    "three-custom-shader-material": "6.4.0",
+    "three-stdlib": "2.36.1",
     "zod": "3.25.76"
   },
   "devDependencies": {
@@ -40,7 +46,6 @@
     "pdfkit": "0.17.2",
     "pngjs": "7.0.0",
     "qrcode": "1.5.4",
-    "three": "0.180.0",
     "topojson-client": "3.1.0",
     "topojson-server": "3.0.1",
     "topojson-simplify": "3.0.3",
