@@ -11,637 +11,425 @@
     "id": "ZAF",
     "tipo": "pais",
     "arquivo": "models/countries/ZAF.glb",
-    "triangulos": 1811,
-    "tamanhoKb": 47.21,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 752,
+    "tamanhoKb": 48.55,
+    "simplificacao": 0.03
   },
   {
     "id": "AGO",
     "tipo": "pais",
     "arquivo": "models/countries/AGO.glb",
-    "triangulos": 1760,
-    "tamanhoKb": 44.88,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 744,
+    "tamanhoKb": 48.8,
+    "simplificacao": 0.015
   },
   {
     "id": "DZA",
     "tipo": "pais",
     "arquivo": "models/countries/DZA.glb",
-    "triangulos": 1705,
-    "tamanhoKb": 43.75,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 796,
+    "tamanhoKb": 51.44,
+    "simplificacao": 0.015
   },
   {
     "id": "BEN",
     "tipo": "pais",
     "arquivo": "models/countries/BEN.glb",
-    "triangulos": 1060,
-    "tamanhoKb": 27.8,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 244,
+    "tamanhoKb": 16.72,
+    "simplificacao": 0.015
   },
   {
     "id": "BWA",
     "tipo": "pais",
     "arquivo": "models/countries/BWA.glb",
-    "triangulos": 1358,
-    "tamanhoKb": 34.73,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 412,
+    "tamanhoKb": 26.71,
+    "simplificacao": 0.015
   },
   {
     "id": "BFA",
     "tipo": "pais",
     "arquivo": "models/countries/BFA.glb",
-    "triangulos": 1517,
-    "tamanhoKb": 39.05,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 460,
+    "tamanhoKb": 30.27,
+    "simplificacao": 0.015
   },
   {
     "id": "BDI",
     "tipo": "pais",
     "arquivo": "models/countries/BDI.glb",
-    "triangulos": 868,
-    "tamanhoKb": 23,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 140,
+    "tamanhoKb": 10.04,
+    "simplificacao": 0.015
   },
   {
     "id": "CPV",
     "tipo": "pais",
     "arquivo": "models/countries/CPV.glb",
-    "triangulos": 476,
-    "tamanhoKb": 14.87,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 96,
+    "tamanhoKb": 9.06,
+    "simplificacao": 0.015
   },
   {
     "id": "CMR",
     "tipo": "pais",
     "arquivo": "models/countries/CMR.glb",
-    "triangulos": 1805,
-    "tamanhoKb": 46.56,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 652,
+    "tamanhoKb": 42.39,
+    "simplificacao": 0.015
   },
   {
     "id": "TCD",
     "tipo": "pais",
     "arquivo": "models/countries/TCD.glb",
-    "triangulos": 1584,
-    "tamanhoKb": 40.41,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 564,
+    "tamanhoKb": 36.32,
+    "simplificacao": 0.015
   },
   {
     "id": "COM",
     "tipo": "pais",
     "arquivo": "models/countries/COM.glb",
-    "triangulos": 332,
-    "tamanhoKb": 10.79,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 48,
+    "tamanhoKb": 4.89,
+    "simplificacao": 0.015
   },
   {
     "id": "CIV",
     "tipo": "pais",
     "arquivo": "models/countries/CIV.glb",
-    "triangulos": 1788,
-    "tamanhoKb": 45.59,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 524,
+    "tamanhoKb": 34.42,
+    "simplificacao": 0.015
   },
   {
     "id": "DJI",
     "tipo": "pais",
     "arquivo": "models/countries/DJI.glb",
-    "triangulos": 830,
-    "tamanhoKb": 22.02,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 116,
+    "tamanhoKb": 8.66,
+    "simplificacao": 0.015
   },
   {
     "id": "EGY",
     "tipo": "pais",
     "arquivo": "models/countries/EGY.glb",
-    "triangulos": 1419,
-    "tamanhoKb": 36.89,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 532,
+    "tamanhoKb": 34.49,
+    "simplificacao": 0.015
   },
   {
     "id": "ERI",
     "tipo": "pais",
     "arquivo": "models/countries/ERI.glb",
-    "triangulos": 1129,
-    "tamanhoKb": 30.55,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 368,
+    "tamanhoKb": 24.87,
+    "simplificacao": 0.015
   },
   {
     "id": "SWZ",
     "tipo": "pais",
     "arquivo": "models/countries/SWZ.glb",
-    "triangulos": 790,
-    "tamanhoKb": 20.3,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 84,
+    "tamanhoKb": 6.46,
+    "simplificacao": 0.015
   },
   {
     "id": "ETH",
     "tipo": "pais",
     "arquivo": "models/countries/ETH.glb",
-    "triangulos": 1600,
-    "tamanhoKb": 41,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 580,
+    "tamanhoKb": 37.35,
+    "simplificacao": 0.015
   },
   {
     "id": "GAB",
     "tipo": "pais",
     "arquivo": "models/countries/GAB.glb",
-    "triangulos": 1612,
-    "tamanhoKb": 42.21,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 476,
+    "tamanhoKb": 30.88,
+    "simplificacao": 0.015
   },
   {
     "id": "GMB",
     "tipo": "pais",
     "arquivo": "models/countries/GMB.glb",
-    "triangulos": 859,
-    "tamanhoKb": 24.56,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 180,
+    "tamanhoKb": 12.51,
+    "simplificacao": 0.015
   },
   {
     "id": "GHA",
     "tipo": "pais",
     "arquivo": "models/countries/GHA.glb",
-    "triangulos": 1464,
-    "tamanhoKb": 37.54,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 340,
+    "tamanhoKb": 22.42,
+    "simplificacao": 0.015
   },
   {
     "id": "GIN",
     "tipo": "pais",
     "arquivo": "models/countries/GIN.glb",
-    "triangulos": 1856,
-    "tamanhoKb": 47.23,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 556,
+    "tamanhoKb": 36.02,
+    "simplificacao": 0.015
   },
   {
     "id": "GNQ",
     "tipo": "pais",
     "arquivo": "models/countries/GNQ.glb",
-    "triangulos": 516,
-    "tamanhoKb": 14.75,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 80,
+    "tamanhoKb": 6.91,
+    "simplificacao": 0.015
   },
   {
     "id": "GNB",
     "tipo": "pais",
     "arquivo": "models/countries/GNB.glb",
-    "triangulos": 1211,
-    "tamanhoKb": 33.52,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 172,
+    "tamanhoKb": 11.99,
+    "simplificacao": 0.015
   },
   {
     "id": "LSO",
     "tipo": "pais",
     "arquivo": "models/countries/LSO.glb",
-    "triangulos": 794,
-    "tamanhoKb": 20.8,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 116,
+    "tamanhoKb": 8.52,
+    "simplificacao": 0.015
   },
   {
     "id": "LBR",
     "tipo": "pais",
     "arquivo": "models/countries/LBR.glb",
-    "triangulos": 1034,
-    "tamanhoKb": 27.43,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 252,
+    "tamanhoKb": 17.07,
+    "simplificacao": 0.015
   },
   {
     "id": "LBY",
     "tipo": "pais",
     "arquivo": "models/countries/LBY.glb",
-    "triangulos": 1390,
-    "tamanhoKb": 35.32,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 612,
+    "tamanhoKb": 39.63,
+    "simplificacao": 0.015
   },
   {
     "id": "MDG",
     "tipo": "pais",
     "arquivo": "models/countries/MDG.glb",
-    "triangulos": 1594,
-    "tamanhoKb": 41.83,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 604,
+    "tamanhoKb": 39.44,
+    "simplificacao": 0.015
   },
   {
     "id": "MWI",
     "tipo": "pais",
     "arquivo": "models/countries/MWI.glb",
-    "triangulos": 1424,
-    "tamanhoKb": 37.57,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 372,
+    "tamanhoKb": 24.44,
+    "simplificacao": 0.015
   },
   {
     "id": "MLI",
     "tipo": "pais",
     "arquivo": "models/countries/MLI.glb",
-    "triangulos": 1738,
-    "tamanhoKb": 45.29,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 820,
+    "tamanhoKb": 52.02,
+    "simplificacao": 0.015
   },
   {
     "id": "MAR",
     "tipo": "pais",
     "arquivo": "models/countries/MAR.glb",
-    "triangulos": 1673,
-    "tamanhoKb": 43.59,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 780,
+    "tamanhoKb": 49.82,
+    "simplificacao": 0.015
   },
   {
     "id": "MUS",
     "tipo": "pais",
     "arquivo": "models/countries/MUS.glb",
-    "triangulos": 684,
-    "tamanhoKb": 17.96,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 36,
+    "tamanhoKb": 3.48,
+    "simplificacao": 0.015
   },
   {
     "id": "MRT",
     "tipo": "pais",
     "arquivo": "models/countries/MRT.glb",
-    "triangulos": 1293,
-    "tamanhoKb": 33.67,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 420,
+    "tamanhoKb": 27.58,
+    "simplificacao": 0.015
   },
   {
     "id": "MOZ",
     "tipo": "pais",
     "arquivo": "models/countries/MOZ.glb",
-    "triangulos": 1845,
-    "tamanhoKb": 47.97,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 628,
+    "tamanhoKb": 40.94,
+    "simplificacao": 0.03
   },
   {
     "id": "NAM",
     "tipo": "pais",
     "arquivo": "models/countries/NAM.glb",
-    "triangulos": 1211,
-    "tamanhoKb": 31.67,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 484,
+    "tamanhoKb": 31.02,
+    "simplificacao": 0.015
   },
   {
     "id": "NER",
     "tipo": "pais",
     "arquivo": "models/countries/NER.glb",
-    "triangulos": 1370,
-    "tamanhoKb": 35.32,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 564,
+    "tamanhoKb": 36.63,
+    "simplificacao": 0.015
   },
   {
     "id": "NGA",
     "tipo": "pais",
     "arquivo": "models/countries/NGA.glb",
-    "triangulos": 1811,
-    "tamanhoKb": 46.46,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 692,
+    "tamanhoKb": 44.55,
+    "simplificacao": 0.015
   },
   {
     "id": "KEN",
     "tipo": "pais",
     "arquivo": "models/countries/KEN.glb",
-    "triangulos": 1263,
-    "tamanhoKb": 32.54,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 340,
+    "tamanhoKb": 22.58,
+    "simplificacao": 0.015
   },
   {
     "id": "CAF",
     "tipo": "pais",
     "arquivo": "models/countries/CAF.glb",
-    "triangulos": 1744,
-    "tamanhoKb": 44.91,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 660,
+    "tamanhoKb": 42.48,
+    "simplificacao": 0.015
   },
   {
     "id": "COD",
     "tipo": "pais",
     "arquivo": "models/countries/COD.glb",
-    "triangulos": 1558,
-    "tamanhoKb": 40.3,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 916,
+    "tamanhoKb": 58.23,
+    "simplificacao": 0.03
   },
   {
     "id": "COG",
     "tipo": "pais",
     "arquivo": "models/countries/COG.glb",
-    "triangulos": 1701,
-    "tamanhoKb": 44.22,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 620,
+    "tamanhoKb": 40.33,
+    "simplificacao": 0.015
   },
   {
     "id": "RWA",
     "tipo": "pais",
     "arquivo": "models/countries/RWA.glb",
-    "triangulos": 895,
-    "tamanhoKb": 23.41,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 140,
+    "tamanhoKb": 10.09,
+    "simplificacao": 0.015
   },
   {
     "id": "STP",
     "tipo": "pais",
     "arquivo": "models/countries/STP.glb",
-    "triangulos": 180,
-    "tamanhoKb": 6.66,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 20,
+    "tamanhoKb": 2.38,
+    "simplificacao": 0.015
   },
   {
     "id": "SEN",
     "tipo": "pais",
     "arquivo": "models/countries/SEN.glb",
-    "triangulos": 1524,
-    "tamanhoKb": 39.89,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 444,
+    "tamanhoKb": 29.2,
+    "simplificacao": 0.015
   },
   {
     "id": "SLE",
     "tipo": "pais",
     "arquivo": "models/countries/SLE.glb",
-    "triangulos": 1116,
-    "tamanhoKb": 29.13,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 232,
+    "tamanhoKb": 16.5,
+    "simplificacao": 0.015
   },
   {
     "id": "SOM",
     "tipo": "pais",
     "arquivo": "models/countries/SOM.glb",
-    "triangulos": 790,
-    "tamanhoKb": 21.7,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 340,
+    "tamanhoKb": 22.28,
+    "simplificacao": 0.015
   },
   {
     "id": "SDN",
     "tipo": "pais",
     "arquivo": "models/countries/SDN.glb",
-    "triangulos": 1841,
-    "tamanhoKb": 46.59,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 812,
+    "tamanhoKb": 51.72,
+    "simplificacao": 0.015
   },
   {
     "id": "SDS",
     "tipo": "pais",
     "arquivo": "models/countries/SDS.glb",
-    "triangulos": 1672,
-    "tamanhoKb": 42.96,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 636,
+    "tamanhoKb": 41.15,
+    "simplificacao": 0.015
   },
   {
     "id": "TZA",
     "tipo": "pais",
     "arquivo": "models/countries/TZA.glb",
-    "triangulos": 1867,
-    "tamanhoKb": 47.3,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 624,
+    "tamanhoKb": 42.25,
+    "simplificacao": 0.015
   },
   {
     "id": "TGO",
     "tipo": "pais",
     "arquivo": "models/countries/TGO.glb",
-    "triangulos": 1022,
-    "tamanhoKb": 27,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 228,
+    "tamanhoKb": 15.41,
+    "simplificacao": 0.015
   },
   {
     "id": "TUN",
     "tipo": "pais",
     "arquivo": "models/countries/TUN.glb",
-    "triangulos": 1299,
-    "tamanhoKb": 33.92,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 392,
+    "tamanhoKb": 26.72,
+    "simplificacao": 0.015
   },
   {
     "id": "UGA",
     "tipo": "pais",
     "arquivo": "models/countries/UGA.glb",
-    "triangulos": 1236,
-    "tamanhoKb": 31.59,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 300,
+    "tamanhoKb": 20.17,
+    "simplificacao": 0.015
   },
   {
     "id": "ZMB",
     "tipo": "pais",
     "arquivo": "models/countries/ZMB.glb",
-    "triangulos": 1896,
-    "tamanhoKb": 48.72,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 660,
+    "tamanhoKb": 42.32,
+    "simplificacao": 0.015
   },
   {
     "id": "ZWE",
     "tipo": "pais",
     "arquivo": "models/countries/ZWE.glb",
-    "triangulos": 1220,
-    "tamanhoKb": 31.12,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 388,
+    "tamanhoKb": 25.14,
+    "simplificacao": 0.015
   },
   {
     "id": "america",
@@ -655,361 +443,241 @@
     "id": "ARG",
     "tipo": "pais",
     "arquivo": "models/countries/ARG.glb",
-    "triangulos": 1529,
-    "tamanhoKb": 40.45,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 840,
+    "tamanhoKb": 54.84,
+    "simplificacao": 0.12
   },
   {
     "id": "BHS",
     "tipo": "pais",
     "arquivo": "models/countries/BHS.glb",
-    "triangulos": 1222,
-    "tamanhoKb": 34.32,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 236,
+    "tamanhoKb": 20.45,
+    "simplificacao": 0.015
   },
   {
     "id": "BLZ",
     "tipo": "pais",
     "arquivo": "models/countries/BLZ.glb",
-    "triangulos": 770,
-    "tamanhoKb": 20.93,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 108,
+    "tamanhoKb": 7.88,
+    "simplificacao": 0.015
   },
   {
     "id": "BOL",
     "tipo": "pais",
     "arquivo": "models/countries/BOL.glb",
-    "triangulos": 1878,
-    "tamanhoKb": 48.18,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 780,
+    "tamanhoKb": 50.3,
+    "simplificacao": 0.015
   },
   {
     "id": "BRA",
     "tipo": "pais",
     "arquivo": "models/countries/BRA.glb",
-    "triangulos": 1649,
-    "tamanhoKb": 44.25,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 848,
+    "tamanhoKb": 55.66,
+    "simplificacao": 0.24
   },
   {
     "id": "CAN",
     "tipo": "pais",
     "arquivo": "models/countries/CAN.glb",
-    "triangulos": 1431,
-    "tamanhoKb": 39.25,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 772,
+    "tamanhoKb": 57.3,
+    "simplificacao": 3.84
   },
   {
     "id": "CHL",
     "tipo": "pais",
     "arquivo": "models/countries/CHL.glb",
-    "triangulos": 1368,
-    "tamanhoKb": 38.32,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 660,
+    "tamanhoKb": 45.54,
+    "simplificacao": 0.24
   },
   {
     "id": "COL",
     "tipo": "pais",
     "arquivo": "models/countries/COL.glb",
-    "triangulos": 1838,
-    "tamanhoKb": 47.89,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 812,
+    "tamanhoKb": 52.2,
+    "simplificacao": 0.03
   },
   {
     "id": "CRI",
     "tipo": "pais",
     "arquivo": "models/countries/CRI.glb",
-    "triangulos": 1041,
-    "tamanhoKb": 28.14,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 292,
+    "tamanhoKb": 19.46,
+    "simplificacao": 0.015
   },
   {
     "id": "CUB",
     "tipo": "pais",
     "arquivo": "models/countries/CUB.glb",
-    "triangulos": 1678,
-    "tamanhoKb": 45.45,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 532,
+    "tamanhoKb": 36.03,
+    "simplificacao": 0.015
   },
   {
     "id": "DMA",
     "tipo": "pais",
     "arquivo": "models/countries/DMA.glb",
-    "triangulos": 624,
-    "tamanhoKb": 16.62,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 28,
+    "tamanhoKb": 2.95,
+    "simplificacao": 0.015
   },
   {
     "id": "SLV",
     "tipo": "pais",
     "arquivo": "models/countries/SLV.glb",
-    "triangulos": 849,
-    "tamanhoKb": 22.63,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 84,
+    "tamanhoKb": 6.47,
+    "simplificacao": 0.015
   },
   {
     "id": "ECU",
     "tipo": "pais",
     "arquivo": "models/countries/ECU.glb",
-    "triangulos": 1501,
-    "tamanhoKb": 40.14,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 604,
+    "tamanhoKb": 43.15,
+    "simplificacao": 0.015
   },
   {
     "id": "USA",
     "tipo": "pais",
     "arquivo": "models/countries/USA.glb",
-    "triangulos": 1435,
-    "tamanhoKb": 40.8,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 664,
+    "tamanhoKb": 43.75,
+    "simplificacao": 0.96
   },
   {
     "id": "GTM",
     "tipo": "pais",
     "arquivo": "models/countries/GTM.glb",
-    "triangulos": 924,
-    "tamanhoKb": 24.34,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 212,
+    "tamanhoKb": 14.7,
+    "simplificacao": 0.015
   },
   {
     "id": "GUY",
     "tipo": "pais",
     "arquivo": "models/countries/GUY.glb",
-    "triangulos": 1598,
-    "tamanhoKb": 41.68,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 460,
+    "tamanhoKb": 30.24,
+    "simplificacao": 0.015
   },
   {
     "id": "HTI",
     "tipo": "pais",
     "arquivo": "models/countries/HTI.glb",
-    "triangulos": 997,
-    "tamanhoKb": 27.3,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 240,
+    "tamanhoKb": 17.1,
+    "simplificacao": 0.015
   },
   {
     "id": "HND",
     "tipo": "pais",
     "arquivo": "models/countries/HND.glb",
-    "triangulos": 1292,
-    "tamanhoKb": 33.95,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 308,
+    "tamanhoKb": 20.58,
+    "simplificacao": 0.015
   },
   {
     "id": "JAM",
     "tipo": "pais",
     "arquivo": "models/countries/JAM.glb",
-    "triangulos": 757,
-    "tamanhoKb": 20.36,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 108,
+    "tamanhoKb": 7.95,
+    "simplificacao": 0.015
   },
   {
     "id": "MEX",
     "tipo": "pais",
     "arquivo": "models/countries/MEX.glb",
-    "triangulos": 1360,
-    "tamanhoKb": 37.98,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 716,
+    "tamanhoKb": 45.62,
+    "simplificacao": 0.12
   },
   {
     "id": "NIC",
     "tipo": "pais",
     "arquivo": "models/countries/NIC.glb",
-    "triangulos": 1237,
-    "tamanhoKb": 32.37,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 316,
+    "tamanhoKb": 21.19,
+    "simplificacao": 0.015
   },
   {
     "id": "PAN",
     "tipo": "pais",
     "arquivo": "models/countries/PAN.glb",
-    "triangulos": 1553,
-    "tamanhoKb": 42.69,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 416,
+    "tamanhoKb": 27.97,
+    "simplificacao": 0.015
   },
   {
     "id": "PRY",
     "tipo": "pais",
     "arquivo": "models/countries/PRY.glb",
-    "triangulos": 1447,
-    "tamanhoKb": 37.59,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 428,
+    "tamanhoKb": 28.16,
+    "simplificacao": 0.015
   },
   {
     "id": "PER",
     "tipo": "pais",
     "arquivo": "models/countries/PER.glb",
-    "triangulos": 1706,
-    "tamanhoKb": 44.78,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 772,
+    "tamanhoKb": 49.02,
+    "simplificacao": 0.03
   },
   {
     "id": "DOM",
     "tipo": "pais",
     "arquivo": "models/countries/DOM.glb",
-    "triangulos": 992,
-    "tamanhoKb": 26.44,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 236,
+    "tamanhoKb": 15.94,
+    "simplificacao": 0.015
   },
   {
     "id": "LCA",
     "tipo": "pais",
     "arquivo": "models/countries/LCA.glb",
-    "triangulos": 654,
-    "tamanhoKb": 17.27,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 20,
+    "tamanhoKb": 2.39,
+    "simplificacao": 0.015
   },
   {
     "id": "SUR",
     "tipo": "pais",
     "arquivo": "models/countries/SUR.glb",
-    "triangulos": 1328,
-    "tamanhoKb": 33.7,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 268,
+    "tamanhoKb": 18.03,
+    "simplificacao": 0.015
   },
   {
     "id": "TTO",
     "tipo": "pais",
     "arquivo": "models/countries/TTO.glb",
-    "triangulos": 497,
-    "tamanhoKb": 14.68,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 68,
+    "tamanhoKb": 5.63,
+    "simplificacao": 0.015
   },
   {
     "id": "URY",
     "tipo": "pais",
     "arquivo": "models/countries/URY.glb",
-    "triangulos": 1186,
-    "tamanhoKb": 30.34,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 284,
+    "tamanhoKb": 19.15,
+    "simplificacao": 0.015
   },
   {
     "id": "VEN",
     "tipo": "pais",
     "arquivo": "models/countries/VEN.glb",
-    "triangulos": 1590,
-    "tamanhoKb": 42.61,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 832,
+    "tamanhoKb": 54.18,
+    "simplificacao": 0.03
   },
   {
     "id": "antartida",
@@ -1031,577 +699,385 @@
     "id": "AFG",
     "tipo": "pais",
     "arquivo": "models/countries/AFG.glb",
-    "triangulos": 1830,
-    "tamanhoKb": 47.37,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 780,
+    "tamanhoKb": 50.27,
+    "simplificacao": 0.015
   },
   {
     "id": "SAU",
     "tipo": "pais",
     "arquivo": "models/countries/SAU.glb",
-    "triangulos": 1672,
-    "tamanhoKb": 43.09,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 744,
+    "tamanhoKb": 48.24,
+    "simplificacao": 0.015
   },
   {
     "id": "ARM",
     "tipo": "pais",
     "arquivo": "models/countries/ARM.glb",
-    "triangulos": 1050,
-    "tamanhoKb": 28.44,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 204,
+    "tamanhoKb": 14.16,
+    "simplificacao": 0.015
   },
   {
     "id": "AZE",
     "tipo": "pais",
     "arquivo": "models/countries/AZE.glb",
-    "triangulos": 1652,
-    "tamanhoKb": 43.44,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 448,
+    "tamanhoKb": 30.69,
+    "simplificacao": 0.015
   },
   {
     "id": "BHR",
     "tipo": "pais",
     "arquivo": "models/countries/BHR.glb",
-    "triangulos": 705,
-    "tamanhoKb": 18.68,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 28,
+    "tamanhoKb": 2.97,
+    "simplificacao": 0.015
   },
   {
     "id": "BGD",
     "tipo": "pais",
     "arquivo": "models/countries/BGD.glb",
-    "triangulos": 1651,
-    "tamanhoKb": 45.17,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 636,
+    "tamanhoKb": 42.63,
+    "simplificacao": 0.015
   },
   {
     "id": "BRN",
     "tipo": "pais",
     "arquivo": "models/countries/BRN.glb",
-    "triangulos": 702,
-    "tamanhoKb": 19.68,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 80,
+    "tamanhoKb": 7.03,
+    "simplificacao": 0.015
   },
   {
     "id": "BTN",
     "tipo": "pais",
     "arquivo": "models/countries/BTN.glb",
-    "triangulos": 1012,
-    "tamanhoKb": 26,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 188,
+    "tamanhoKb": 12.89,
+    "simplificacao": 0.015
   },
   {
     "id": "KHM",
     "tipo": "pais",
     "arquivo": "models/countries/KHM.glb",
-    "triangulos": 1523,
-    "tamanhoKb": 39.05,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 428,
+    "tamanhoKb": 28.2,
+    "simplificacao": 0.015
   },
   {
     "id": "QAT",
     "tipo": "pais",
     "arquivo": "models/countries/QAT.glb",
-    "triangulos": 800,
-    "tamanhoKb": 20.76,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 76,
+    "tamanhoKb": 6.11,
+    "simplificacao": 0.015
   },
   {
     "id": "KAZ",
     "tipo": "pais",
     "arquivo": "models/countries/KAZ.glb",
-    "triangulos": 1495,
-    "tamanhoKb": 39.41,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 884,
+    "tamanhoKb": 56.67,
+    "simplificacao": 0.12
   },
   {
     "id": "CHN",
     "tipo": "pais",
     "arquivo": "models/countries/CHN.glb",
-    "triangulos": 1608,
-    "tamanhoKb": 42.23,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 736,
+    "tamanhoKb": 48.33,
+    "simplificacao": 0.48
   },
   {
     "id": "CYP",
     "tipo": "pais",
     "arquivo": "models/countries/CYP.glb",
-    "triangulos": 786,
-    "tamanhoKb": 21.12,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 84,
+    "tamanhoKb": 6.44,
+    "simplificacao": 0.015
   },
   {
     "id": "PRK",
     "tipo": "pais",
     "arquivo": "models/countries/PRK.glb",
-    "triangulos": 1489,
-    "tamanhoKb": 39.23,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 444,
+    "tamanhoKb": 29.3,
+    "simplificacao": 0.015
   },
   {
     "id": "KOR",
     "tipo": "pais",
     "arquivo": "models/countries/KOR.glb",
-    "triangulos": 1436,
-    "tamanhoKb": 38.86,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 424,
+    "tamanhoKb": 30.12,
+    "simplificacao": 0.015
   },
   {
     "id": "ARE",
     "tipo": "pais",
     "arquivo": "models/countries/ARE.glb",
-    "triangulos": 1037,
-    "tamanhoKb": 28.48,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 220,
+    "tamanhoKb": 15.14,
+    "simplificacao": 0.015
   },
   {
     "id": "PHL",
     "tipo": "pais",
     "arquivo": "models/countries/PHL.glb",
-    "triangulos": 1526,
-    "tamanhoKb": 42.93,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 620,
+    "tamanhoKb": 47.73,
+    "simplificacao": 0.12
   },
   {
     "id": "GEO",
     "tipo": "pais",
     "arquivo": "models/countries/GEO.glb",
-    "triangulos": 1152,
-    "tamanhoKb": 30.32,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 292,
+    "tamanhoKb": 19.29,
+    "simplificacao": 0.015
   },
   {
     "id": "YEM",
     "tipo": "pais",
     "arquivo": "models/countries/YEM.glb",
-    "triangulos": 1213,
-    "tamanhoKb": 31.9,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 472,
+    "tamanhoKb": 31.57,
+    "simplificacao": 0.015
   },
   {
     "id": "IND",
     "tipo": "pais",
     "arquivo": "models/countries/IND.glb",
-    "triangulos": 1382,
-    "tamanhoKb": 37.22,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 660,
+    "tamanhoKb": 42.87,
+    "simplificacao": 0.24
   },
   {
     "id": "IDN",
     "tipo": "pais",
     "arquivo": "models/countries/IDN.glb",
-    "triangulos": 1343,
-    "tamanhoKb": 39.02,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 632,
+    "tamanhoKb": 46.6,
+    "simplificacao": 0.48
   },
   {
     "id": "IRN",
     "tipo": "pais",
     "arquivo": "models/countries/IRN.glb",
-    "triangulos": 1607,
-    "tamanhoKb": 42.23,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 904,
+    "tamanhoKb": 58.2,
+    "simplificacao": 0.03
   },
   {
     "id": "IRQ",
     "tipo": "pais",
     "arquivo": "models/countries/IRQ.glb",
-    "triangulos": 1309,
-    "tamanhoKb": 33.99,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 484,
+    "tamanhoKb": 31.48,
+    "simplificacao": 0.015
   },
   {
     "id": "ISR",
     "tipo": "pais",
     "arquivo": "models/countries/ISR.glb",
-    "triangulos": 895,
-    "tamanhoKb": 24.66,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 204,
+    "tamanhoKb": 14.11,
+    "simplificacao": 0.015
   },
   {
     "id": "JPN",
     "tipo": "pais",
     "arquivo": "models/countries/JPN.glb",
-    "triangulos": 1692,
-    "tamanhoKb": 48.22,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 836,
+    "tamanhoKb": 56.84,
+    "simplificacao": 0.06
   },
   {
     "id": "JOR",
     "tipo": "pais",
     "arquivo": "models/countries/JOR.glb",
-    "triangulos": 758,
-    "tamanhoKb": 20.63,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 164,
+    "tamanhoKb": 11.6,
+    "simplificacao": 0.015
   },
   {
     "id": "KWT",
     "tipo": "pais",
     "arquivo": "models/countries/KWT.glb",
-    "triangulos": 829,
-    "tamanhoKb": 22.35,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 136,
+    "tamanhoKb": 10.69,
+    "simplificacao": 0.015
   },
   {
     "id": "LAO",
     "tipo": "pais",
     "arquivo": "models/countries/LAO.glb",
-    "triangulos": 1743,
-    "tamanhoKb": 45.7,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 660,
+    "tamanhoKb": 42.49,
+    "simplificacao": 0.015
   },
   {
     "id": "LBN",
     "tipo": "pais",
     "arquivo": "models/countries/LBN.glb",
-    "triangulos": 692,
-    "tamanhoKb": 18.99,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 100,
+    "tamanhoKb": 7.47,
+    "simplificacao": 0.015
   },
   {
     "id": "MYS",
     "tipo": "pais",
     "arquivo": "models/countries/MYS.glb",
-    "triangulos": 1558,
-    "tamanhoKb": 41.73,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 688,
+    "tamanhoKb": 45.06,
+    "simplificacao": 0.03
   },
   {
     "id": "MNG",
     "tipo": "pais",
     "arquivo": "models/countries/MNG.glb",
-    "triangulos": 1596,
-    "tamanhoKb": 41.09,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 660,
+    "tamanhoKb": 42.47,
+    "simplificacao": 0.06
   },
   {
     "id": "MMR",
     "tipo": "pais",
     "arquivo": "models/countries/MMR.glb",
-    "triangulos": 1457,
-    "tamanhoKb": 39.94,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 868,
+    "tamanhoKb": 55.74,
+    "simplificacao": 0.03
   },
   {
     "id": "NPL",
     "tipo": "pais",
     "arquivo": "models/countries/NPL.glb",
-    "triangulos": 1259,
-    "tamanhoKb": 33.04,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 412,
+    "tamanhoKb": 26.86,
+    "simplificacao": 0.015
   },
   {
     "id": "OMN",
     "tipo": "pais",
     "arquivo": "models/countries/OMN.glb",
-    "triangulos": 1139,
-    "tamanhoKb": 30.43,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 428,
+    "tamanhoKb": 29.38,
+    "simplificacao": 0.015
   },
   {
     "id": "PSX",
     "tipo": "pais",
     "arquivo": "models/countries/PSX.glb",
-    "triangulos": 604,
-    "tamanhoKb": 17.08,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 112,
+    "tamanhoKb": 9.28,
+    "simplificacao": 0.015
   },
   {
     "id": "PAK",
     "tipo": "pais",
     "arquivo": "models/countries/PAK.glb",
-    "triangulos": 1733,
-    "tamanhoKb": 45.69,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 884,
+    "tamanhoKb": 56.53,
+    "simplificacao": 0.03
   },
   {
     "id": "KGZ",
     "tipo": "pais",
     "arquivo": "models/countries/KGZ.glb",
-    "triangulos": 1826,
-    "tamanhoKb": 47.48,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 640,
+    "tamanhoKb": 41.06,
+    "simplificacao": 0.015
   },
   {
     "id": "RUS",
     "tipo": "pais",
     "arquivo": "models/countries/RUS.glb",
-    "triangulos": 1719,
-    "tamanhoKb": 48.48,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 724,
+    "tamanhoKb": 49.68,
+    "simplificacao": 3.84
   },
   {
     "id": "SGP",
     "tipo": "pais",
     "arquivo": "models/countries/SGP.glb",
-    "triangulos": 630,
-    "tamanhoKb": 16.77,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 20,
+    "tamanhoKb": 2.41,
+    "simplificacao": 0.015
   },
   {
     "id": "SYR",
     "tipo": "pais",
     "arquivo": "models/countries/SYR.glb",
-    "triangulos": 1177,
-    "tamanhoKb": 30.86,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 324,
+    "tamanhoKb": 21.75,
+    "simplificacao": 0.015
   },
   {
     "id": "LKA",
     "tipo": "pais",
     "arquivo": "models/countries/LKA.glb",
-    "triangulos": 978,
-    "tamanhoKb": 25.76,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 164,
+    "tamanhoKb": 11.55,
+    "simplificacao": 0.015
   },
   {
     "id": "THA",
     "tipo": "pais",
     "arquivo": "models/countries/THA.glb",
-    "triangulos": 1538,
-    "tamanhoKb": 41.45,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 756,
+    "tamanhoKb": 48.84,
+    "simplificacao": 0.03
   },
   {
     "id": "TJK",
     "tipo": "pais",
     "arquivo": "models/countries/TJK.glb",
-    "triangulos": 1766,
-    "tamanhoKb": 46.45,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 636,
+    "tamanhoKb": 41.51,
+    "simplificacao": 0.015
   },
   {
     "id": "TLS",
     "tipo": "pais",
     "arquivo": "models/countries/TLS.glb",
-    "triangulos": 642,
-    "tamanhoKb": 18.34,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 120,
+    "tamanhoKb": 9.59,
+    "simplificacao": 0.015
   },
   {
     "id": "TKM",
     "tipo": "pais",
     "arquivo": "models/countries/TKM.glb",
-    "triangulos": 1648,
-    "tamanhoKb": 43.51,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 836,
+    "tamanhoKb": 53.39,
+    "simplificacao": 0.015
   },
   {
     "id": "TUR",
     "tipo": "pais",
     "arquivo": "models/countries/TUR.glb",
-    "triangulos": 1647,
-    "tamanhoKb": 43.02,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 912,
+    "tamanhoKb": 59.38,
+    "simplificacao": 0.03
   },
   {
     "id": "UZB",
     "tipo": "pais",
     "arquivo": "models/countries/UZB.glb",
-    "triangulos": 1737,
-    "tamanhoKb": 46.59,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 920,
+    "tamanhoKb": 59.49,
+    "simplificacao": 0.015
   },
   {
     "id": "VNM",
     "tipo": "pais",
     "arquivo": "models/countries/VNM.glb",
-    "triangulos": 1775,
-    "tamanhoKb": 47.61,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 768,
+    "tamanhoKb": 50.54,
+    "simplificacao": 0.03
   },
   {
     "id": "europa",
@@ -1615,457 +1091,305 @@
     "id": "ALB",
     "tipo": "pais",
     "arquivo": "models/countries/ALB.glb",
-    "triangulos": 1058,
-    "tamanhoKb": 27.75,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 188,
+    "tamanhoKb": 12.87,
+    "simplificacao": 0.015
   },
   {
     "id": "DEU",
     "tipo": "pais",
     "arquivo": "models/countries/DEU.glb",
-    "triangulos": 1725,
-    "tamanhoKb": 45.63,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 884,
+    "tamanhoKb": 58.12,
+    "simplificacao": 0.015
   },
   {
     "id": "AND",
     "tipo": "pais",
     "arquivo": "models/countries/AND.glb",
-    "triangulos": 706,
-    "tamanhoKb": 18.3,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 20,
+    "tamanhoKb": 2.36,
+    "simplificacao": 0.015
   },
   {
     "id": "AUT",
     "tipo": "pais",
     "arquivo": "models/countries/AUT.glb",
-    "triangulos": 1613,
-    "tamanhoKb": 41.5,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 388,
+    "tamanhoKb": 25.5,
+    "simplificacao": 0.015
   },
   {
     "id": "BEL",
     "tipo": "pais",
     "arquivo": "models/countries/BEL.glb",
-    "triangulos": 1153,
-    "tamanhoKb": 30.27,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 220,
+    "tamanhoKb": 15.16,
+    "simplificacao": 0.015
   },
   {
     "id": "BLR",
     "tipo": "pais",
     "arquivo": "models/countries/BLR.glb",
-    "triangulos": 1874,
-    "tamanhoKb": 47.61,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 532,
+    "tamanhoKb": 34.78,
+    "simplificacao": 0.015
   },
   {
     "id": "BIH",
     "tipo": "pais",
     "arquivo": "models/countries/BIH.glb",
-    "triangulos": 1125,
-    "tamanhoKb": 29.44,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 252,
+    "tamanhoKb": 16.99,
+    "simplificacao": 0.015
   },
   {
     "id": "BGR",
     "tipo": "pais",
     "arquivo": "models/countries/BGR.glb",
-    "triangulos": 1333,
-    "tamanhoKb": 34.31,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 332,
+    "tamanhoKb": 22.31,
+    "simplificacao": 0.015
   },
   {
     "id": "CZE",
     "tipo": "pais",
     "arquivo": "models/countries/CZE.glb",
-    "triangulos": 1546,
-    "tamanhoKb": 39.75,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 356,
+    "tamanhoKb": 23.51,
+    "simplificacao": 0.015
   },
   {
     "id": "HRV",
     "tipo": "pais",
     "arquivo": "models/countries/HRV.glb",
-    "triangulos": 1774,
-    "tamanhoKb": 48.45,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 584,
+    "tamanhoKb": 41.81,
+    "simplificacao": 0.015
   },
   {
     "id": "DNK",
     "tipo": "pais",
     "arquivo": "models/countries/DNK.glb",
-    "triangulos": 1647,
-    "tamanhoKb": 45.29,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 608,
+    "tamanhoKb": 44.39,
+    "simplificacao": 0.015
   },
   {
     "id": "SVK",
     "tipo": "pais",
     "arquivo": "models/countries/SVK.glb",
-    "triangulos": 1151,
-    "tamanhoKb": 29.82,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 268,
+    "tamanhoKb": 18.28,
+    "simplificacao": 0.015
   },
   {
     "id": "SVN",
     "tipo": "pais",
     "arquivo": "models/countries/SVN.glb",
-    "triangulos": 1090,
-    "tamanhoKb": 28.77,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 180,
+    "tamanhoKb": 12.68,
+    "simplificacao": 0.015
   },
   {
     "id": "ESP",
     "tipo": "pais",
     "arquivo": "models/countries/ESP.glb",
-    "triangulos": 1538,
-    "tamanhoKb": 41.09,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 652,
+    "tamanhoKb": 46.17,
+    "simplificacao": 0.03
   },
   {
     "id": "EST",
     "tipo": "pais",
     "arquivo": "models/countries/EST.glb",
-    "triangulos": 1377,
-    "tamanhoKb": 36.33,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 340,
+    "tamanhoKb": 24.21,
+    "simplificacao": 0.015
   },
   {
     "id": "FIN",
     "tipo": "pais",
     "arquivo": "models/countries/FIN.glb",
-    "triangulos": 1776,
-    "tamanhoKb": 46.74,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 848,
+    "tamanhoKb": 54.88,
+    "simplificacao": 0.015
   },
   {
     "id": "FRA",
     "tipo": "pais",
     "arquivo": "models/countries/FRA.glb",
-    "triangulos": 1544,
-    "tamanhoKb": 40.55,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 656,
+    "tamanhoKb": 44.94,
+    "simplificacao": 0.06
   },
   {
     "id": "GRC",
     "tipo": "pais",
     "arquivo": "models/countries/GRC.glb",
-    "triangulos": 1601,
-    "tamanhoKb": 45.56,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 732,
+    "tamanhoKb": 53.08,
+    "simplificacao": 0.03
   },
   {
     "id": "HUN",
     "tipo": "pais",
     "arquivo": "models/countries/HUN.glb",
-    "triangulos": 1380,
-    "tamanhoKb": 35.55,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 300,
+    "tamanhoKb": 19.9,
+    "simplificacao": 0.015
   },
   {
     "id": "ISL",
     "tipo": "pais",
     "arquivo": "models/countries/ISL.glb",
-    "triangulos": 1811,
-    "tamanhoKb": 49.43,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 692,
+    "tamanhoKb": 44.74,
+    "simplificacao": 0.015
   },
   {
     "id": "ITA",
     "tipo": "pais",
     "arquivo": "models/countries/ITA.glb",
-    "triangulos": 1542,
-    "tamanhoKb": 41.4,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 788,
+    "tamanhoKb": 52.03,
+    "simplificacao": 0.03
   },
   {
     "id": "LVA",
     "tipo": "pais",
     "arquivo": "models/countries/LVA.glb",
-    "triangulos": 1130,
-    "tamanhoKb": 29.5,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 300,
+    "tamanhoKb": 20.13,
+    "simplificacao": 0.015
   },
   {
     "id": "LTU",
     "tipo": "pais",
     "arquivo": "models/countries/LTU.glb",
-    "triangulos": 1239,
-    "tamanhoKb": 32.21,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 268,
+    "tamanhoKb": 17.84,
+    "simplificacao": 0.015
   },
   {
     "id": "LUX",
     "tipo": "pais",
     "arquivo": "models/countries/LUX.glb",
-    "triangulos": 746,
-    "tamanhoKb": 19.78,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 52,
+    "tamanhoKb": 4.52,
+    "simplificacao": 0.015
   },
   {
     "id": "MKD",
     "tipo": "pais",
     "arquivo": "models/countries/MKD.glb",
-    "triangulos": 944,
-    "tamanhoKb": 24.18,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 132,
+    "tamanhoKb": 9.54,
+    "simplificacao": 0.015
   },
   {
     "id": "MDA",
     "tipo": "pais",
     "arquivo": "models/countries/MDA.glb",
-    "triangulos": 1048,
-    "tamanhoKb": 28.13,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 220,
+    "tamanhoKb": 15.09,
+    "simplificacao": 0.015
   },
   {
     "id": "MNE",
     "tipo": "pais",
     "arquivo": "models/countries/MNE.glb",
-    "triangulos": 867,
-    "tamanhoKb": 23.43,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 132,
+    "tamanhoKb": 9.63,
+    "simplificacao": 0.015
   },
   {
     "id": "NOR",
     "tipo": "pais",
     "arquivo": "models/countries/NOR.glb",
-    "triangulos": 1415,
-    "tamanhoKb": 39.12,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 688,
+    "tamanhoKb": 47.07,
+    "simplificacao": 0.24
   },
   {
     "id": "NLD",
     "tipo": "pais",
     "arquivo": "models/countries/NLD.glb",
-    "triangulos": 906,
-    "tamanhoKb": 24.87,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 264,
+    "tamanhoKb": 18.5,
+    "simplificacao": 0.015
   },
   {
     "id": "POL",
     "tipo": "pais",
     "arquivo": "models/countries/POL.glb",
-    "triangulos": 1807,
-    "tamanhoKb": 45.94,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 540,
+    "tamanhoKb": 35.04,
+    "simplificacao": 0.015
   },
   {
     "id": "PRT",
     "tipo": "pais",
     "arquivo": "models/countries/PRT.glb",
-    "triangulos": 1077,
-    "tamanhoKb": 29.48,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 436,
+    "tamanhoKb": 31.52,
+    "simplificacao": 0.015
   },
   {
     "id": "GBR",
     "tipo": "pais",
     "arquivo": "models/countries/GBR.glb",
-    "triangulos": 1692,
-    "tamanhoKb": 47.24,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 672,
+    "tamanhoKb": 47.26,
+    "simplificacao": 0.06
   },
   {
     "id": "IRL",
     "tipo": "pais",
     "arquivo": "models/countries/IRL.glb",
-    "triangulos": 1735,
-    "tamanhoKb": 46.4,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 500,
+    "tamanhoKb": 32.88,
+    "simplificacao": 0.015
   },
   {
     "id": "ROU",
     "tipo": "pais",
     "arquivo": "models/countries/ROU.glb",
-    "triangulos": 1637,
-    "tamanhoKb": 41.73,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 412,
+    "tamanhoKb": 27.4,
+    "simplificacao": 0.015
   },
   {
     "id": "SRB",
     "tipo": "pais",
     "arquivo": "models/countries/SRB.glb",
-    "triangulos": 1541,
-    "tamanhoKb": 40.1,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 300,
+    "tamanhoKb": 20.06,
+    "simplificacao": 0.015
   },
   {
     "id": "SWE",
     "tipo": "pais",
     "arquivo": "models/countries/SWE.glb",
-    "triangulos": 1606,
-    "tamanhoKb": 42.46,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 868,
+    "tamanhoKb": 57.37,
+    "simplificacao": 0.03
   },
   {
     "id": "CHE",
     "tipo": "pais",
     "arquivo": "models/countries/CHE.glb",
-    "triangulos": 1333,
-    "tamanhoKb": 34.88,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 300,
+    "tamanhoKb": 20.02,
+    "simplificacao": 0.015
   },
   {
     "id": "UKR",
     "tipo": "pais",
     "arquivo": "models/countries/UKR.glb",
-    "triangulos": 1586,
-    "tamanhoKb": 41.36,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 788,
+    "tamanhoKb": 50.55,
+    "simplificacao": 0.03
   },
   {
     "id": "oceania",
@@ -2079,107 +1403,74 @@
     "id": "AUS",
     "tipo": "pais",
     "arquivo": "models/countries/AUS.glb",
-    "triangulos": 1288,
-    "tamanhoKb": 34.39,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 740,
+    "tamanhoKb": 49.01,
+    "simplificacao": 0.24
   },
   {
     "id": "FJI",
     "tipo": "pais",
     "arquivo": "models/countries/FJI.glb",
-    "triangulos": 950,
-    "tamanhoKb": 27.03,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 196,
+    "tamanhoKb": 15.07,
+    "simplificacao": 0.015
   },
   {
     "id": "SLB",
     "tipo": "pais",
     "arquivo": "models/countries/SLB.glb",
-    "triangulos": 1463,
-    "tamanhoKb": 40.77,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 500,
+    "tamanhoKb": 40.1,
+    "simplificacao": 0.015
   },
   {
     "id": "NZL",
     "tipo": "pais",
     "arquivo": "models/countries/NZL.glb",
-    "triangulos": 1562,
-    "tamanhoKb": 43.46,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 724,
+    "tamanhoKb": 49.73,
+    "simplificacao": 0.03
   },
   {
     "id": "PLW",
     "tipo": "pais",
     "arquivo": "models/countries/PLW.glb",
-    "triangulos": 60,
-    "tamanhoKb": 3.47,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 20,
+    "tamanhoKb": 2.39,
+    "simplificacao": 0.015
   },
   {
     "id": "PNG",
     "tipo": "pais",
     "arquivo": "models/countries/PNG.glb",
-    "triangulos": 1755,
-    "tamanhoKb": 48.32,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 828,
+    "tamanhoKb": 56.8,
+    "simplificacao": 0.03
   },
   {
     "id": "WSM",
     "tipo": "pais",
     "arquivo": "models/countries/WSM.glb",
-    "triangulos": 458,
-    "tamanhoKb": 13.54,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 56,
+    "tamanhoKb": 5.28,
+    "simplificacao": 0.015
   },
   {
     "id": "VUT",
     "tipo": "pais",
     "arquivo": "models/countries/VUT.glb",
-    "triangulos": 866,
-    "tamanhoKb": 25.19,
-    "fontes": [
-      "natural-earth",
-      "mapzen-terrain"
-    ],
-    "relevo": true
+    "triangulos": 252,
+    "tamanhoKb": 22.21,
+    "simplificacao": 0.015
   },
   {
     "id": "africa-terrain",
     "tipo": "relevo",
     "arquivo": "models/africa-terrain.glb",
-    "triangulos": 16530,
-    "tamanhoKb": 373.76,
+    "triangulos": 9731,
+    "tamanhoKb": 284.8,
     "fontes": [
-      "copernicus-glo30",
-      "3d-elevation-map",
+      "noaa-etopo5",
       "natural-earth"
     ]
   },

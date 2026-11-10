@@ -45,34 +45,6 @@
   ],
   "paises": [
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-914",
-          "nome": "iSimangaliso Wetland Park – Maputo National Park",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -27.8388888889,
-            "lng": 32.55
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/914/"
-        },
-        {
-          "id": "unesco-915",
-          "nome": "Fossil Hominid Sites of South Africa",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -24.1586111111,
-            "lng": 29.1769444444
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/915/"
-        }
-      ],
       "id": "ZAF",
       "nome": "África do Sul",
       "nomeFonte": "natural-earth",
@@ -101,21 +73,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-1511",
-          "nome": "Mbanza Kongo, Vestiges of the Capital of the former Kingdom of Kongo",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -6.2688888889,
-            "lng": 14.2497222222
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1511/"
-        }
-      ],
       "id": "AGO",
       "nome": "Angola",
       "nomeFonte": "natural-earth",
@@ -144,34 +101,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-102",
-          "nome": "Al Qal'a of Beni Hammad",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 35.81844,
-            "lng": 4.78684
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/102/"
-        },
-        {
-          "id": "unesco-179",
-          "nome": "Tassili n'Ajjer",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 25.5,
-            "lng": 9
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/179/"
-        }
-      ],
       "id": "DZA",
       "nome": "Argélia",
       "nomeFonte": "natural-earth",
@@ -200,34 +129,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-323",
-          "nome": "Royal Palaces of Abomey",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 7.1875,
-            "lng": 1.9922222222
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/323/"
-        },
-        {
-          "id": "unesco-749",
-          "nome": "W-Arly-Pendjari Complex",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 11.8841666667,
-            "lng": 2.6544444444
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/749/"
-        }
-      ],
       "id": "BEN",
       "nome": "Benim",
       "nomeFonte": "natural-earth",
@@ -256,34 +157,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-1021",
-          "nome": "Tsodilo",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -18.75,
-            "lng": 21.73333333
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1021/"
-        },
-        {
-          "id": "unesco-1432",
-          "nome": "Okavango Delta",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -19.2833333333,
-            "lng": 22.9
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1432/"
-        }
-      ],
       "id": "BWA",
       "nome": "Botsuana",
       "nomeFonte": "natural-earth",
@@ -312,34 +185,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-749",
-          "nome": "W-Arly-Pendjari Complex",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 11.9,
-            "lng": 2.1616666667
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/749/"
-        },
-        {
-          "id": "unesco-1225",
-          "nome": "Ruins of Loropéni",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 10.2500229431,
-            "lng": -3.5833384934
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1225/"
-        }
-      ],
       "id": "BFA",
       "nome": "Burkina Faso",
       "nomeFonte": "natural-earth",
@@ -368,21 +213,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "wikidata-q3084675",
-          "nome": "Parque Nacional do Rusizi",
-          "descricaoCurta": "Este lugar fica em Burundi.",
-          "coordenadas": {
-            "lat": -3.247723,
-            "lng": 29.230671
-          },
-          "fontes": [
-            "wikidata-country-sites"
-          ],
-          "saibaMaisUrl": "https://www.wikidata.org/wiki/Q3084675"
-        }
-      ],
       "id": "BDI",
       "nome": "Burundi",
       "nomeFonte": "natural-earth",
@@ -411,21 +241,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-1310",
-          "nome": "Cidade Velha, Historic Centre of Ribeira Grande",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 14.9151388889,
-            "lng": -23.6051944444
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1310/"
-        }
-      ],
       "id": "CPV",
       "nome": "Cabo Verde",
       "nomeFonte": "natural-earth",
@@ -454,34 +269,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-407",
-          "nome": "Dja Faunal Reserve",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 3.125,
-            "lng": 12.995
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/407/"
-        },
-        {
-          "id": "unesco-1380",
-          "nome": "Sangha Trinational",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 2.3672222223,
-            "lng": 15.8141666667
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1380/"
-        }
-      ],
       "id": "CMR",
       "nome": "Camarões",
       "nomeFonte": "natural-earth",
@@ -510,34 +297,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-1400",
-          "nome": "Lakes of Ounianga",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 19.055,
-            "lng": 20.5055555556
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1400/"
-        },
-        {
-          "id": "unesco-1475",
-          "nome": "Ennedi Massif: Natural and Cultural Landscape",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 17.0416666667,
-            "lng": 21.8627777778
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1475/"
-        }
-      ],
       "id": "TCD",
       "nome": "Chade",
       "nomeFonte": "natural-earth",
@@ -566,21 +325,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-1768",
-          "nome": "The Medinas of the Historic Sultanates of the Comoros",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -11.744675,
-            "lng": 43.2325833334
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1768/"
-        }
-      ],
       "id": "COM",
       "nome": "Comores",
       "nomeFonte": "natural-earth",
@@ -609,34 +353,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-195",
-          "nome": "Taï National Park",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 5.6488888889,
-            "lng": -7.0952777778
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/195/"
-        },
-        {
-          "id": "unesco-227",
-          "nome": "Comoé National Park",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 9.077,
-            "lng": -3.758
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/227/"
-        }
-      ],
       "id": "CIV",
       "nome": "Costa do Marfim",
       "nomeFonte": "natural-earth",
@@ -665,21 +381,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "wikidata-q81239",
-          "nome": "Lago Assal",
-          "descricaoCurta": "Este lugar fica em Djibouti.",
-          "coordenadas": {
-            "lat": 11.65,
-            "lng": 42.416667
-          },
-          "fontes": [
-            "wikidata-country-sites"
-          ],
-          "saibaMaisUrl": "https://www.wikidata.org/wiki/Q81239"
-        }
-      ],
       "id": "DJI",
       "nome": "Djibouti",
       "nomeFonte": "natural-earth",
@@ -708,45 +409,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "piramides-gize",
-          "nome": "Pirâmides de Gizé",
-          "descricaoCurta": "No Egito, este conjunto reúne três grandes pirâmides construídas para faraós do Egito Antigo.",
-          "coordenadas": {
-            "lat": 29.976111,
-            "lng": 31.132778
-          },
-          "fontes": [
-            "unesco-giza",
-            "wikidata-giza"
-          ],
-          "fontesPorCampo": {
-            "nome": [
-              "wikidata-giza"
-            ],
-            "descricaoCurta": [
-              "unesco-giza"
-            ],
-            "coordenadas": [
-              "wikidata-giza"
-            ]
-          }
-        },
-        {
-          "id": "unesco-86",
-          "nome": "Memphis and its Necropolis – the Pyramid Fields from Giza to Dahshur",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 29.8555,
-            "lng": 31.2610555556
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/86/"
-        }
-      ],
       "id": "EGY",
       "nome": "Egito",
       "nomeFonte": "natural-earth",
@@ -776,21 +438,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-1550",
-          "nome": "Asmara: A Modernist African City",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 15.3352777778,
-            "lng": 38.9358333333
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1550/"
-        }
-      ],
       "id": "ERI",
       "nome": "Eritreia",
       "nomeFonte": "natural-earth",
@@ -819,21 +466,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "wikidata-q9067090",
-          "nome": "Parque Nacional Real Hlane",
-          "descricaoCurta": "Este lugar fica em Essuatíni.",
-          "coordenadas": {
-            "lat": -26.25,
-            "lng": 31.88
-          },
-          "fontes": [
-            "wikidata-country-sites"
-          ],
-          "saibaMaisUrl": "https://www.wikidata.org/wiki/Q9067090"
-        }
-      ],
       "id": "SWZ",
       "nome": "Essuatíni",
       "nomeFonte": "natural-earth",
@@ -862,34 +494,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-9",
-          "nome": "Simien National Park",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 13.1833333333,
-            "lng": 38.0666666667
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/9/"
-        },
-        {
-          "id": "unesco-10",
-          "nome": "Lower Valley of the Awash",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 11.10006,
-            "lng": 40.57939
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/10/"
-        }
-      ],
       "id": "ETH",
       "nome": "Etiópia",
       "nomeFonte": "natural-earth",
@@ -918,34 +522,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-1147",
-          "nome": "Ecosystem and Relict Cultural Landscape of Lopé-Okanda",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -0.083333,
-            "lng": 11.133333
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1147/"
-        },
-        {
-          "id": "unesco-1653",
-          "nome": "Ivindo National Park",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 0.113,
-            "lng": 12.648
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1653/"
-        }
-      ],
       "id": "GAB",
       "nome": "Gabão",
       "nomeFonte": "natural-earth",
@@ -974,34 +550,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-761",
-          "nome": "Kunta Kinteh Island and Related Sites",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 13.485261602,
-            "lng": -16.5474714259
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/761/"
-        },
-        {
-          "id": "unesco-1226",
-          "nome": "Stone Circles of Senegambia",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 13.692,
-            "lng": -14.873
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1226/"
-        }
-      ],
       "id": "GMB",
       "nome": "Gâmbia",
       "nomeFonte": "natural-earth",
@@ -1030,34 +578,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-34",
-          "nome": "Forts and Castles, Volta, Greater Accra, Central and Western Regions",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 5.39103,
-            "lng": -0.49361
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/34/"
-        },
-        {
-          "id": "unesco-35",
-          "nome": "Asante Traditional Buildings",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 6.4011111111,
-            "lng": -1.6258333333
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/35/"
-        }
-      ],
       "id": "GHA",
       "nome": "Gana",
       "nomeFonte": "natural-earth",
@@ -1086,21 +606,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-155",
-          "nome": "Mount Nimba Strict Nature Reserve",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 7.60318,
-            "lng": -8.39097
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/155/"
-        }
-      ],
       "id": "GIN",
       "nome": "Guiné",
       "nomeFonte": "natural-earth",
@@ -1129,21 +634,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "wikidata-q6904640",
-          "nome": "Parque Nacional de Monte Alén",
-          "descricaoCurta": "Este lugar fica em Guiné Equatorial.",
-          "coordenadas": {
-            "lat": 1.53,
-            "lng": 10.11
-          },
-          "fontes": [
-            "wikidata-country-sites"
-          ],
-          "saibaMaisUrl": "https://www.wikidata.org/wiki/Q6904640"
-        }
-      ],
       "id": "GNQ",
       "nome": "Guiné Equatorial",
       "nomeFonte": "natural-earth",
@@ -1172,21 +662,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-1431",
-          "nome": "Coastal and Marine Ecosystems of the Bijagós Archipelago – Omatí Minhô",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 11.12,
-            "lng": -15.9488888889
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1431/"
-        }
-      ],
       "id": "GNB",
       "nome": "Guiné-Bissau",
       "nomeFonte": "natural-earth",
@@ -1215,21 +690,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "wikidata-q7849277",
-          "nome": "Parque Nacional de Ts’ehlanyane",
-          "descricaoCurta": "Este lugar fica em Lesoto.",
-          "coordenadas": {
-            "lat": -28.924,
-            "lng": 28.458
-          },
-          "fontes": [
-            "wikidata-country-sites"
-          ],
-          "saibaMaisUrl": "https://www.wikidata.org/wiki/Q7849277"
-        }
-      ],
       "id": "LSO",
       "nome": "Lesoto",
       "nomeFonte": "natural-earth",
@@ -1258,21 +718,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "wikidata-q1969043",
-          "nome": "Parque Nacional de Sapo",
-          "descricaoCurta": "Este lugar fica em Libéria.",
-          "coordenadas": {
-            "lat": 5.47638889,
-            "lng": -8.55083333
-          },
-          "fontes": [
-            "wikidata-country-sites"
-          ],
-          "saibaMaisUrl": "https://www.wikidata.org/wiki/Q1969043"
-        }
-      ],
       "id": "LBR",
       "nome": "Libéria",
       "nomeFonte": "natural-earth",
@@ -1301,34 +746,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-183",
-          "nome": "Archaeological Site of Leptis Magna",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 32.63833,
-            "lng": 14.29306
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/183/"
-        },
-        {
-          "id": "unesco-184",
-          "nome": "Archaeological Site of Sabratha",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 32.80528,
-            "lng": 12.485
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/184/"
-        }
-      ],
       "id": "LBY",
       "nome": "Líbia",
       "nomeFonte": "natural-earth",
@@ -1357,34 +774,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-494",
-          "nome": "Andrefana Dry Forests",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -22.239325,
-            "lng": 43.4460491666
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/494/"
-        },
-        {
-          "id": "unesco-950",
-          "nome": "Royal Hill of Ambohimanga",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -18.75917,
-            "lng": 47.56278
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/950/"
-        }
-      ],
       "id": "MDG",
       "nome": "Madagáscar",
       "nomeFonte": "natural-earth",
@@ -1413,34 +802,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-289",
-          "nome": "Lake Malawi National Park",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -14.03333,
-            "lng": 34.88333
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/289/"
-        },
-        {
-          "id": "unesco-476",
-          "nome": "Chongoni Rock-Art Area",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -14.2185207713,
-            "lng": 34.2070738323
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/476/"
-        }
-      ],
       "id": "MWI",
       "nome": "Malawi",
       "nomeFonte": "natural-earth",
@@ -1469,34 +830,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-116",
-          "nome": "Old Towns of Djenné",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 13.9124695918,
-            "lng": -4.5692107589
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/116/"
-        },
-        {
-          "id": "unesco-119",
-          "nome": "Timbuktu",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 16.77333333,
-            "lng": -2.999444444
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/119/"
-        }
-      ],
       "id": "MLI",
       "nome": "Mali",
       "nomeFonte": "natural-earth",
@@ -1525,34 +858,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-170",
-          "nome": "Medina of Fez",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 34.0551111111,
-            "lng": -4.9903611111
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/170/"
-        },
-        {
-          "id": "unesco-331",
-          "nome": "Medina of Marrakesh",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 31.6138888889,
-            "lng": -8.0222222222
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/331/"
-        }
-      ],
       "id": "MAR",
       "nome": "Marrocos",
       "nomeFonte": "natural-earth",
@@ -1581,34 +886,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-1227",
-          "nome": "Aapravasi Ghat",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -20.1586388889,
-            "lng": 57.5031666666
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1227/"
-        },
-        {
-          "id": "unesco-1259",
-          "nome": "Le Morne Cultural Landscape",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -20.4519444444,
-            "lng": 57.3283333333
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1259/"
-        }
-      ],
       "id": "MUS",
       "nome": "Maurícia",
       "nomeFonte": "natural-earth",
@@ -1637,34 +914,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-506",
-          "nome": "Banc d'Arguin National Park",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 20.23472,
-            "lng": -16.10889
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/506/"
-        },
-        {
-          "id": "unesco-750",
-          "nome": "Ancient Ksour of Ouadane, Chinguetti, Tichitt and Oualata",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 20.9288888889,
-            "lng": -11.6236111111
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/750/"
-        }
-      ],
       "id": "MRT",
       "nome": "Mauritânia",
       "nomeFonte": "natural-earth",
@@ -1693,34 +942,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-599",
-          "nome": "Island of Mozambique",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -15.0503611111,
-            "lng": 40.7263888889
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/599/"
-        },
-        {
-          "id": "unesco-914",
-          "nome": "iSimangaliso Wetland Park – Maputo National Park",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -26.4363888889,
-            "lng": 32.8705555556
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/914/"
-        }
-      ],
       "id": "MOZ",
       "nome": "Moçambique",
       "nomeFonte": "natural-earth",
@@ -1749,34 +970,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-1255",
-          "nome": "Twyfelfontein or /Ui-//aes",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -20.5947689881,
-            "lng": 14.3750965572
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1255/"
-        },
-        {
-          "id": "unesco-1430",
-          "nome": "Namib Sand Sea",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -24.8852777778,
-            "lng": 15.4077777778
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1430/"
-        }
-      ],
       "id": "NAM",
       "nome": "Namíbia",
       "nomeFonte": "natural-earth",
@@ -1805,34 +998,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-573",
-          "nome": "Air and Ténéré Natural Reserves",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 19.0761926358,
-            "lng": 9.6619999976
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/573/"
-        },
-        {
-          "id": "unesco-749",
-          "nome": "W-Arly-Pendjari Complex",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 12.317,
-            "lng": 2.272
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/749/"
-        }
-      ],
       "id": "NER",
       "nome": "Níger",
       "nomeFonte": "natural-earth",
@@ -1861,34 +1026,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-938",
-          "nome": "Sukur Cultural Landscape",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 10.74056,
-            "lng": 13.57194
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/938/"
-        },
-        {
-          "id": "unesco-1118",
-          "nome": "Osun-Osogbo Sacred Grove",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 7.75556,
-            "lng": 4.55222
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1118/"
-        }
-      ],
       "id": "NGA",
       "nome": "Nigéria",
       "nomeFonte": "natural-earth",
@@ -1917,34 +1054,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-800",
-          "nome": "Mount Kenya National Park/Natural Forest",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -0.155,
-            "lng": 37.3155555556
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/800/"
-        },
-        {
-          "id": "unesco-801",
-          "nome": "Lake Turkana National Parks",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 2.6325,
-            "lng": 36.5947222222
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/801/"
-        }
-      ],
       "id": "KEN",
       "nome": "Quénia",
       "nomeFonte": "natural-earth",
@@ -1973,34 +1082,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-475",
-          "nome": "Manovo-Gounda St Floris National Park",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 9,
-            "lng": 21.5
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/475/"
-        },
-        {
-          "id": "unesco-1380",
-          "nome": "Sangha Trinational",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 2.9166666667,
-            "lng": 16.4241666667
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1380/"
-        }
-      ],
       "id": "CAF",
       "nome": "República Centro-Africana",
       "nomeFonte": "natural-earth",
@@ -2029,34 +1110,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-63",
-          "nome": "Virunga National Park",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 0.916666667,
-            "lng": 29.16666667
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/63/"
-        },
-        {
-          "id": "unesco-136",
-          "nome": "Garamba National Park",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 4.1666666667,
-            "lng": 29.4997222222
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/136/"
-        }
-      ],
       "id": "COD",
       "nome": "República Democrática do Congo",
       "nomeFonte": "natural-earth",
@@ -2085,34 +1138,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-692",
-          "nome": "Forest Massif of Odzala-Kokoua",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 1.3355555556,
-            "lng": 14.8602777778
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/692/"
-        },
-        {
-          "id": "unesco-1380",
-          "nome": "Sangha Trinational",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 2.6094444444,
-            "lng": 16.5541666667
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1380/"
-        }
-      ],
       "id": "COG",
       "nome": "República do Congo",
       "nomeFonte": "natural-earth",
@@ -2141,34 +1166,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-1586",
-          "nome": "Memorial sites of the Genocide: Nyamata, Murambi, Gisozi and Bisesero",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -2.1489444444,
-            "lng": 30.0936666666
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1586/"
-        },
-        {
-          "id": "unesco-1697",
-          "nome": "Nyungwe National Park",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -2.5553,
-            "lng": 29.2473333333
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1697/"
-        }
-      ],
       "id": "RWA",
       "nome": "Ruanda",
       "nomeFonte": "natural-earth",
@@ -2197,21 +1194,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-1750",
-          "nome": "The Roças of Sao Tome and Principe: Colonial Agricultural System and Forced Migration",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 0.1402222222,
-            "lng": 6.6462222222
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1750/"
-        }
-      ],
       "id": "STP",
       "nome": "São Tomé e Príncipe",
       "nomeFonte": "natural-earth",
@@ -2240,34 +1222,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-25",
-          "nome": "Djoudj National Bird Sanctuary",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 16.414602,
-            "lng": -16.237906
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/25/"
-        },
-        {
-          "id": "unesco-26",
-          "nome": "Island of Gorée",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 14.66722,
-            "lng": -17.40083
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/26/"
-        }
-      ],
       "id": "SEN",
       "nome": "Senegal",
       "nomeFonte": "natural-earth",
@@ -2296,21 +1250,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-1746",
-          "nome": "Gola-Tiwai Complex",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 7.3666666667,
-            "lng": -11.2
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1746/"
-        }
-      ],
       "id": "SLE",
       "nome": "Serra Leoa",
       "nomeFonte": "natural-earth",
@@ -2339,34 +1278,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-185",
-          "nome": "Aldabra Atoll",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -9.416666667,
-            "lng": 46.41666667
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/185/"
-        },
-        {
-          "id": "unesco-261",
-          "nome": "Vallée de Mai Nature Reserve",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -4.331,
-            "lng": 55.738
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/261/"
-        }
-      ],
       "id": "SYC",
       "nome": "Seychelles",
       "nomeFonte": "natural-earth",
@@ -2392,21 +1303,6 @@
       ]
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "wikidata-q962672",
-          "nome": "Catedral de Mogadíscio",
-          "descricaoCurta": "Este lugar fica em Somália.",
-          "coordenadas": {
-            "lat": 2.035736,
-            "lng": 45.341614
-          },
-          "fontes": [
-            "wikidata-country-sites"
-          ],
-          "saibaMaisUrl": "https://www.wikidata.org/wiki/Q962672"
-        }
-      ],
       "id": "SOM",
       "nome": "Somália",
       "nomeFonte": "natural-earth",
@@ -2435,34 +1331,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-262",
-          "nome": "Sanganeb Marine National Park and Dungonab Bay – Mukkawar Island Marine National Park",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 19.7361111111,
-            "lng": 37.4430555556
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/262/"
-        },
-        {
-          "id": "unesco-1073",
-          "nome": "Gebel Barkal and the Sites of the Napatan Region",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 18.5638888889,
-            "lng": 31.9166666667
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1073/"
-        }
-      ],
       "id": "SDN",
       "nome": "Sudão",
       "nomeFonte": "natural-earth",
@@ -2491,21 +1359,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-1808",
-          "nome": "Boma–Badingilo Migratory Landscape",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 6.9416666666,
-            "lng": 33.2775
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1808/"
-        }
-      ],
       "id": "SDS",
       "nome": "Sudão do Sul",
       "nomeFonte": "natural-earth",
@@ -2535,45 +1388,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "kilimanjaro",
-          "nome": "Kilimanjaro",
-          "descricaoCurta": "Na Tanzânia, esta montanha vulcânica abriga o ponto mais alto da África.",
-          "coordenadas": {
-            "lat": -3.0666666666667,
-            "lng": 37.359166666667
-          },
-          "fontes": [
-            "unesco-kilimanjaro",
-            "wikidata-kilimanjaro"
-          ],
-          "fontesPorCampo": {
-            "nome": [
-              "wikidata-kilimanjaro"
-            ],
-            "descricaoCurta": [
-              "unesco-kilimanjaro"
-            ],
-            "coordenadas": [
-              "wikidata-kilimanjaro"
-            ]
-          }
-        },
-        {
-          "id": "unesco-39",
-          "nome": "Ngorongoro Conservation Area",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -3.18722,
-            "lng": 35.54083
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/39/"
-        }
-      ],
       "id": "TZA",
       "nome": "Tanzânia",
       "nomeFonte": "natural-earth",
@@ -2602,21 +1416,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-1140",
-          "nome": "Koutammakou, the Land of the Batammariba",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 10.0666666667,
-            "lng": 1.1333333333
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1140/"
-        }
-      ],
       "id": "TGO",
       "nome": "Togo",
       "nomeFonte": "natural-earth",
@@ -2645,34 +1444,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-8",
-          "nome": "Ichkeul National Park",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 37.16361,
-            "lng": 9.67472
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/8/"
-        },
-        {
-          "id": "unesco-36",
-          "nome": "Medina of Tunis",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 36.81667,
-            "lng": 10.16667
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/36/"
-        }
-      ],
       "id": "TUN",
       "nome": "Tunísia",
       "nomeFonte": "natural-earth",
@@ -2701,34 +1472,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-682",
-          "nome": "Bwindi Impenetrable National Park",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -1.047,
-            "lng": 29.692
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/682/"
-        },
-        {
-          "id": "unesco-684",
-          "nome": "Rwenzori Mountains National Park",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 0.223611111,
-            "lng": 29.92416667
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/684/"
-        }
-      ],
       "id": "UGA",
       "nome": "Uganda",
       "nomeFonte": "natural-earth",
@@ -2757,21 +1500,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-509",
-          "nome": "Mosi-oa-Tunya / Victoria Falls",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -17.92453,
-            "lng": 25.85539
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/509/"
-        }
-      ],
       "id": "ZMB",
       "nome": "Zâmbia",
       "nomeFonte": "natural-earth",
@@ -2800,34 +1528,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-302",
-          "nome": "Mana Pools National Park, Sapi and Chewore Safari Areas",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -15.81944444,
-            "lng": 29.40805556
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/302/"
-        },
-        {
-          "id": "unesco-306",
-          "nome": "Matobo Hills",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": -20.5,
-            "lng": 28.5
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/306/"
-        }
-      ],
       "id": "ZWE",
       "nome": "Zimbábue",
       "nomeFonte": "natural-earth",
@@ -2858,7 +1558,6 @@
   ],
   "territorios": [
     {
-      "pontosTuristicos": [],
       "id": "SHN",
       "nome": "Santa Helena",
       "nomeFonte": "natural-earth",
@@ -2880,7 +1579,6 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
-      "pontosTuristicos": [],
       "id": "SAH",
       "nome": "Sara Ocidental",
       "nomeFonte": "natural-earth",
@@ -2902,7 +1600,6 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
-      "pontosTuristicos": [],
       "id": "SOL",
       "nome": "Somalilândia",
       "nomeFonte": "natural-earth",

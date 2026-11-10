@@ -1,9 +1,7 @@
-import { COUNTRY_TERRAIN_VERSION, arCountry, isARModelAllowed, initialARTransform, updateARGesture, applyARTransformAction } from './domain.js?v=20261105-terrain-countries';
+import { createStandaloneRepository, discoverFromMarker, initialARTransform, updateARGesture, applyARTransformAction } from './domain.js';
 const ids=['africa','america','antartida','asia','europa','oceania'];
-const params=new URLSearchParams(location.search), id=params.get('continente'), modelPath=params.get('model'),countryId=params.get('pais');
-const terrainVersion=countryId!==null?`?v=${COUNTRY_TERRAIN_VERSION}`:modelPath===`models/${id}-terrain.glb`?new URL(import.meta.url).search:'';
-const selectedCountry=countryId===null?undefined:arCountry(id,countryId);
-const embedded=window.parent!==window,origin=location.origin;
+const params=new URLSearchParams(location.search), id=params.get('continente'), modelPath=params.get('model');
+const embedded=window.parent!==window,origin=location.origin,repo=embedded?null:createStandaloneRepository(params.get('preview')==='1');
 const status=document.querySelector('#status');
 status.classList.add('sr-only');
 let scene,marker,model,stableTimer,foundAt=0,stopped=false,transformState=initialARTransform(),lastCameraError;
@@ -50,16 +48,12 @@ function selectPoint(pointId,notify=false){
  if(notify&&selected)post('ar:point-selected',{continentId:id,pointId:selected.data.id});
 }
 async function loadPoints(){
- if(!ids.includes(id))return;
- if(countryId===null&&modelPath!==`models/${id}-terrain.glb`)return;
+ if(!ids.includes(id)||modelPath!==`models/${id}-terrain.glb`)return;
  pointsAbort=new AbortController();
  try{
-  const pointsPath=countryId===null?`../content/${id}-terrain.json`:`../content/countries/${countryId}-terrain.json`;
-  const response=await fetch(pointsPath+terrainVersion,{signal:pointsAbort.signal});
+  const response=await fetch(`../content/${id}-terrain.json`,{signal:pointsAbort.signal});
   if(!response.ok)throw new Error('Dados dos lugares indisponíveis.');
-  const data=await response.json(),pointLimit=countryId===null?5:2;
-  if(stopped||data.file!==modelPath||data.continentId!==id||!Array.isArray(data.points)||data.points.length>pointLimit||(countryId!==null&&data.countryId!==countryId))return;
-  if(!embedded&&!document.querySelector('#terrain-note')){const note=document.createElement('p');note.id='terrain-note';note.textContent=data.verticalExaggeration>1?'Relevo baseado em dados reais. Alturas ampliadas para destacar o terreno.':'Relevo baseado em dados reais e simplificado.';document.querySelector('#point-detail').before(note);}
+  const data=await response.json();if(stopped||data.file!==modelPath||data.continentId!==id||!Array.isArray(data.points)||data.points.length!==3)return;
   for(const [index,point] of data.points.entries()){
    if(!point||typeof point.id!=='string'||!/^[a-z0-9-]{1,100}$/.test(point.id)||typeof point.nome!=='string'||typeof point.descricaoCurta!=='string'||!Array.isArray(point.posicao)||point.posicao.length!==3||!point.posicao.every(value=>typeof value==='number'&&Number.isFinite(value)))continue;
    const button=document.createElement('button');button.type='button';button.className='point-pin';button.textContent=String(index+1);button.setAttribute('aria-label',`${index+1}. ${point.nome}`);button.setAttribute('aria-pressed','false');button.hidden=true;
@@ -72,13 +66,6 @@ async function loadPoints(){
     choices.append(listButton);
    }
    pointEntries.push({data:point,button,listButton,local:new AFRAME.THREE.Vector3(...point.posicao),projected:new AFRAME.THREE.Vector3()});
-  }
-  if(!embedded&&Array.isArray(data.textOnlyPoints)&&data.textOnlyPoints.length+data.points.length<=pointLimit){
-   for(const point of data.textOnlyPoints){
-    if(!point||typeof point.nome!=='string'||typeof point.descricaoCurta!=='string')continue;
-    let choices=document.querySelector('#text-only-places');if(!choices){choices=document.createElement('details');choices.id='text-only-places';const summary=document.createElement('summary');summary.textContent='Outros lugares para conhecer';choices.append(summary);document.querySelector('#point-detail').before(choices);}
-    const title=document.createElement('strong'),text=document.createElement('p');title.textContent=point.nome;text.textContent=point.descricaoCurta;choices.append(title,text);
-   }
   }
   if(selectedPointId)selectPoint(selectedPointId);
  }catch(error){if(!stopped&&error?.name!=='AbortError')console.warn('Não foi possível carregar os lugares do continente.',error);}
@@ -100,12 +87,12 @@ function action(type,payload={}){
  transform();
 }
 window.addEventListener('message',e=>{const m=e.data;if(!embedded||e.origin!==origin||e.source!==window.parent||!m||m.app!=='exploradores-ar'||m.version!==1||typeof m.type!=='string')return;if(m.payload!==undefined&&(!m.payload||typeof m.payload!=='object'||Array.isArray(m.payload)))return;action(m.type,m.payload);});
-function stableFound(){
+async function stableFound(){
  if(stopped||document.hidden||!marker?.object3D?.visible)return;
  const stableMs=performance.now()-foundAt;if(stableMs<500)return;
  const payload={continentId:id,stableMs};
- post('ar:marker-found',payload);
- trackingStatus('Marcador reconhecido. O modelo acompanha a folha.');
+ if(embedded)post('ar:marker-found',payload);else await discoverFromMarker(repo,id,payload);
+ trackingStatus('Continente descoberto! O modelo acompanha a folha.');
 }
 function stop(){
  if(stopped){post('ar:stopped');return;}stopped=true;clearTimeout(stableTimer);
@@ -127,7 +114,7 @@ function stop(){
 window.addEventListener('pagehide',stop);
 document.addEventListener('visibilitychange',()=>{clearTimeout(stableTimer);if(document.hidden){showAim(false);scene?.pause();hidePoints();pointers.clear();}else if(!stopped){showAim(cameraReady&&!marker?.object3D?.visible);scene?.play();if(marker?.object3D?.visible){foundAt=performance.now();stableTimer=setTimeout(stableFound,510);}}});
 function start(){
- if(!isARModelAllowed(id,countryId,modelPath)){error('ar:model-error','invalid','Não foi possível abrir este modelo. Volte à ficha e escolha um país com modelo 3D.');return;}
+ if(!ids.includes(id)||(modelPath!==`models/${id}.glb`&&modelPath!==`models/${id}-terrain.glb`)){error('ar:model-error','invalid','Continente ou modelo inválido.');return;}
  const canvas=document.createElement('canvas');
  if(!isSecureContext||!navigator.mediaDevices?.getUserMedia||!(canvas.getContext('webgl2')||canvas.getContext('webgl'))){error('ar:camera-error','unsupported','É necessário HTTPS, câmera e WebGL para usar a RA.');return;}
  if(!window.AFRAME||!AFRAME.systems.arjs){error('ar:camera-error','unsupported','As bibliotecas de RA não carregaram.');return;}
@@ -142,14 +129,14 @@ function start(){
  // barcodes then lose their inner cells, even when the preview looks large.
  scene.setAttribute('arjs','sourceType: webcam; sourceWidth: 1280; sourceHeight: 960; canvasWidth: 640; canvasHeight: 480; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3; cameraParametersUrl: ../vendor/camera_para.dat; patternRatio: 0.5; maxDetectionRate: 30;');
  marker=document.createElement('a-marker');marker.setAttribute('type','barcode');marker.setAttribute('value',String(ids.indexOf(id)));marker.setAttribute('emitevents','true');marker.setAttribute('smooth','false');
- model=document.createElement('a-entity');model.setAttribute('gltf-model',`../${modelPath}${terrainVersion}`);model.setAttribute('scale','1 1 1');marker.append(model);scene.append(marker);
+ model=document.createElement('a-entity');model.setAttribute('gltf-model',`../${modelPath}`);model.setAttribute('scale','1 1 1');marker.append(model);scene.append(marker);
  const ambient=document.createElement('a-entity');ambient.setAttribute('light','type: ambient; intensity: 1');scene.append(ambient);
  const light=document.createElement('a-entity');light.setAttribute('light','type: directional; intensity: 1.5');light.setAttribute('position','1 3 2');scene.append(light);
  const camera=document.createElement('a-entity');camera.setAttribute('camera','');camera.setAttribute('look-controls','enabled: false');scene.append(camera);
  marker.addEventListener('markerFound',()=>{if(stopped)return;showAim(false);clearTimeout(stableTimer);foundAt=performance.now();trackingStatus('Marcador encontrado. Mantenha a folha visível…');stableTimer=setTimeout(stableFound,510);});
  marker.addEventListener('markerLost',()=>{showAim(cameraReady);clearTimeout(stableTimer);foundAt=0;hidePoints();post('ar:marker-lost',{continentId:id});trackingStatus('Reposicione a folha: mantenha o marcador inteiro na câmera.');});
- model.addEventListener('model-loaded',()=>{if(stopped){model.getObject3D('mesh')?.traverse(o=>{o.geometry?.dispose();const materials=Array.isArray(o.material)?o.material:[o.material];materials.filter(Boolean).forEach(m=>m.dispose());});return;}modelReady=true;post('ar:model-loaded');});
- model.addEventListener('model-error',()=>{if(stopped)return;modelReady=false;hidePoints();error('ar:model-error','load','Não foi possível carregar o modelo.');});
+ model.addEventListener('model-loaded',()=>{modelReady=true;post('ar:model-loaded');});
+ model.addEventListener('model-error',()=>{modelReady=false;hidePoints();error('ar:model-error','load','Não foi possível carregar o modelo.');});
  scene.addEventListener('renderstart',()=>{
   scene.renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.5));pointsObserver=new ResizeObserver(updateProjectionBounds);pointsObserver.observe(scene.renderer.domElement);updateProjectionBounds();
   // AR.js creates its session in another renderstart listener.
@@ -188,7 +175,7 @@ overlay.addEventListener('pointercancel',release);
 overlay.addEventListener('lostpointercapture',e=>{pointers.delete(e.pointerId);});
 overlay.addEventListener('contextmenu',e=>e.preventDefault());
 if(!embedded){
- document.querySelector('#standalone').style.display='block';const back=document.querySelector('#back');back.href=selectedCountry?`../?continente=${encodeURIComponent(id||'')}#/paises/${encodeURIComponent(id||'')}/${encodeURIComponent(countryId)}`:`../?continente=${encodeURIComponent(id||'')}#/continente/${encodeURIComponent(id||'')}`;back.addEventListener('click',stop);
+ document.querySelector('#standalone').style.display='block';const back=document.querySelector('#back');back.href=`../?continente=${encodeURIComponent(id||'')}#/continente/${encodeURIComponent(id||'')}`;back.addEventListener('click',stop);
  document.querySelectorAll('[data-action]').forEach(b=>b.addEventListener('click',()=>{const type=b.dataset.action;if(type==='plus')action('ar:set-scale',{delta:.25});if(type==='minus')action('ar:set-scale',{delta:-.25});if(type==='rotate')action('ar:rotate',{degrees:30});if(type==='reset')action('ar:reset');}));
- const prompt=document.createElement('div');prompt.id='start';prompt.innerHTML='<h1>Realidade aumentada</h1><p>Separe a folha do continente. O modelo acompanhará o quadrado preto.</p><button>Iniciar câmera</button>';if(selectedCountry){prompt.querySelector('h1').textContent=`${selectedCountry.nome} em RA`;prompt.querySelector('p').textContent='Use a mesma folha do continente. O modelo do país acompanhará o quadrado preto.';}prompt.querySelector('button').onclick=()=>{prompt.remove();start();};document.body.append(prompt);
+ const prompt=document.createElement('div');prompt.id='start';prompt.innerHTML='<h1>Realidade aumentada</h1><p>Separe a folha do continente. O modelo acompanhará o quadrado preto.</p><button>Iniciar câmera</button>';prompt.querySelector('button').onclick=()=>{prompt.remove();start();};document.body.append(prompt);
 }else start();

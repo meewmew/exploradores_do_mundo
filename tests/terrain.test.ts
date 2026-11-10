@@ -15,12 +15,6 @@ interface TestProjection {
 }
 const { geoAzimuthalEqualArea } = createRequire(import.meta.url)('d3-geo') as { geoAzimuthalEqualArea: () => TestProjection };
 const seaLevelPointIds = new Set(['grande-barreira-coral', 'opera-sydney']);
-// Amostras terrestres do recorte GLO-30 original nas coordenadas dos três pins.
-const africaElevations: Record<string, number> = {
-  'piramides-gize': 90.012422,
-  'cataratas-vitoria': 936.684867,
-  kilimanjaro: 4008.092607,
-};
 
 it('serve relevo e três lugares para cada continente na ficha e no modo RA', async () => {
   for (const id of CONTINENT_IDS) {
@@ -32,7 +26,7 @@ it('serve relevo e três lugares para cada continente na ficha e no modo RA', as
   }
 });
 
-it('cada GLB usa o DEM registrado e prende os pontos à posição geográfica', async () => {
+it('cada GLB usa o DEM global registrado e prende os pontos à posição geográfica', async () => {
   const source = await readFile('data-src/dem/etopo5-global-0.5deg.json');
   const grid = JSON.parse(source.toString('utf8'));
   const report = JSON.parse(await readFile('models-report.json', 'utf8'));
@@ -44,20 +38,13 @@ it('cada GLB usa o DEM registrado e prende os pontos à posição geográfica', 
     expect(publicMetadata).toEqual(metadata);
     expect(metadata.continentId).toBe(id);
     expect(metadata.file).toBe(`models/${id}-terrain.glb`);
-    const africa = id === 'africa';
-    if (africa) {
-      expect(metadata.dem.dataset).toBe('Copernicus DEM GLO-30');
-      expect(metadata.dem.sha256).toBe('345ddf2b3b3a2824d3a3ed6eef76560d66e4847bfab16ba5436dfd62c19f8faf');
-      expect(metadata.verticalExaggeration).toBe(28);
-    } else expect(createHash('sha256').update(source).digest('hex')).toBe(metadata.dem.sha256);
+    expect(createHash('sha256').update(source).digest('hex')).toBe(metadata.dem.sha256);
     expect(metadata.points).toHaveLength(3);
     expect(report).toContainEqual(expect.objectContaining({ id: `${id}-terrain`, arquivo: metadata.file, tipo: 'relevo' }));
 
     const projection = geoAzimuthalEqualArea().rotate(metadata.projection.rotate).translate([0, 0]).scale(metadata.projection.sphereRadiusMeters);
     const document = await new NodeIO().readBinary(await readFile(`public/${metadata.file}`));
-    const surface = document.getRoot().listMeshes()[0].listPrimitives()[0];
-    const top = surface.getAttribute('POSITION')!.getArray()!;
-    expect(surface.getAttribute('COLOR_0')?.getCount()).toBe(top.length / 3);
+    const top = document.getRoot().listMeshes()[0].listPrimitives()[0].getAttribute('POSITION')!.getArray()!;
     for (const point of metadata.points) {
       const [x, y, z] = point.posicao;
       const projected: [number, number] = [
@@ -71,7 +58,7 @@ it('cada GLB usa o DEM registrado e prende os pontos à posição geográfica', 
         expect(coordinate![1]).toBeCloseTo(point.coordenadas.lat, 3);
       }
       const override = seaLevelPointIds.has(point.id) ? 0 : undefined;
-      const elevation = africa ? africaElevations[point.id] : Math.max(0, interpolateElevation(grid, point.coordenadas.lng, point.coordenadas.lat));
+      const elevation = Math.max(0, interpolateElevation(grid, point.coordenadas.lng, point.coordenadas.lat));
       expect(y).toBeCloseTo(metadata.normalization.baseHeight + (override ?? elevation) * metadata.normalization.elevationScale, 6);
       let matched = false;
       for (let i = 0; i < top.length; i += 3) {
@@ -84,7 +71,6 @@ it('cada GLB usa o DEM registrado e prende os pontos à posição geográfica', 
     expect(bytes.length).toBeLessThanOrEqual(400 * 1024);
     expect(document.getRoot().listTextures()).toHaveLength(0);
     expect(document.getRoot().listMaterials().length).toBeLessThanOrEqual(2);
-    expect(document.getRoot().listMaterials().every(material => material.getAlphaMode() === 'OPAQUE')).toBe(true);
     let triangles = 0, minimumY = Infinity, maximumY = -Infinity, radius = 0;
     for (const mesh of document.getRoot().listMeshes()) for (const primitive of mesh.listPrimitives()) {
       triangles += primitive.getIndices()!.getCount() / 3;
@@ -98,7 +84,7 @@ it('cada GLB usa o DEM registrado e prende os pontos à posição geográfica', 
     expect(triangles).toBe(metadata.limits.triangles);
     expect(triangles).toBeLessThanOrEqual(20000);
     expect(minimumY).toBe(0);
-    expect(maximumY).toBeGreaterThan(metadata.normalization.baseHeight + (africa ? 0.02 : 0.03));
+    expect(maximumY).toBeGreaterThan(metadata.normalization.baseHeight + 0.03);
     expect(radius).toBeLessThanOrEqual(1);
   }
 });

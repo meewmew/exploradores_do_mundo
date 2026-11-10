@@ -9,7 +9,7 @@ for(const id of IMPLEMENTED_CONTINENTS){
  const c=JSON.parse(await readFile(`src/data/continents/${id}.json`,'utf8'));continentSchema.parse(c);
  for(const field of ['descricao','caracteristicasGeograficas','climas','faunaFlora','cultura','curiosidades'])if(!c.fontesTexto[field]?.length||c.fontesTexto[field].some(x=>!ids.includes(x)))throw new Error(`Fonte textual inválida: ${id}.${field}`);
  for(const n of [c.areaKm2,c.populacao,c.quantidadePaises,...c.paises.flatMap(p=>[p.areaKm2,p.populacao])])if(!ids.includes(n.fonte))throw new Error(`Fonte numérica inválida: ${id}`);
- for(const point of [...(c.pontosTuristicos||[]),...c.paises.flatMap(country=>country.pontosTuristicos||[])]){if(point.fontes.some(source=>!ids.includes(source)))throw new Error(`Fonte de ponto turístico inválida: ${id}.${point.id}`);if(point.imagemUrl)await access(`public/${point.imagemUrl}`);}
+ for(const point of c.pontosTuristicos||[]){if(point.fontes.some(source=>!ids.includes(source)))throw new Error(`Fonte de ponto turístico inválida: ${id}.${point.id}`);if(point.imagemUrl)await access(`public/${point.imagemUrl}`);}
  for(const file of [c.modelo.arquivo,c.fichaCurta.ilustracao,c.marcador.arquivo,...c.paises.filter(p=>p.modelo).map(p=>p.modelo.arquivo)])await access(`public/${file}`);
  if(c.id==='america'&&c.paises.some(p=>!p.regiao))throw new Error('País da América sem região.');
 }

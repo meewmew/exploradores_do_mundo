@@ -1,5 +1,4 @@
 .terrain-panel .model-viewport { height: clamp(18rem, 85vw, 25rem); }
-.country-appearance .model-viewport { border-radius: 1rem; background: linear-gradient(180deg, var(--tint-soft) 0%, var(--surface) 56%, var(--success-soft) 100%); }
 .model-viewport model-viewer { touch-action: none; --min-hotspot-opacity: .3; }
 .model-gesture-hint { width: 100%; margin: 1rem 0 .5rem; text-align: left; font-weight: 600; }
 .terrain-note { width: 100%; color: var(--ink-muted); margin: .25rem 0 1rem; font-size: 1rem; line-height: 1.5; }

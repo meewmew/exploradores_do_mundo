@@ -1,13 +1,12 @@
 {
-  "version": 2,
+  "version": 1,
   "continentId": "africa",
   "file": "models/africa-terrain.glb",
   "sourceIds": [
-    "copernicus-glo30",
-    "3d-elevation-map",
+    "noaa-etopo5",
     "natural-earth"
   ],
-  "verticalExaggeration": 28,
+  "verticalExaggeration": 160,
   "projection": {
     "name": "Azimutal equivalente de Lambert, esfera",
     "rotate": [
@@ -23,47 +22,33 @@
   },
   "normalization": {
     "projectedOriginMeters": [
-      -662993.728733799,
+      -391543.17909873486,
       68036.6162988164
     ],
-    "radiusMeters": 4536336.270880433,
-    "horizontalScale": 2.0942010099608856e-7,
-    "elevationScale": 0.000005863762827890479,
+    "radiusMeters": 4989159.387652076,
+    "horizontalScale": 1.9041283835333126e-7,
+    "elevationScale": 0.000030466054136533,
     "baseHeight": 0.025
   },
   "dem": {
-    "dataset": "Copernicus DEM GLO-30",
-    "url": "https://3delevationmap.com/processed/africa/dem.json",
-    "sha256": "345ddf2b3b3a2824d3a3ed6eef76560d66e4847bfab16ba5436dfd62c19f8faf",
-    "sourceResolutionMeters": 30,
-    "exportedCellKm": 13.7633,
-    "gridDimensions": [
-      645,
-      620
-    ],
-    "bbox": [
-      -26.035184,
-      -37.005434,
-      53.668806,
-      39.712549
-    ],
-    "gridProjection": "WGS84 longitude/latitude",
-    "encoding": "UInt16 LE",
-    "sampling": "Célula terrestre mais próxima em janela de até 9 × 9 células.",
-    "meshStepMeters": 70000,
-    "minimumSampleMeters": -92.49402059967957,
-    "maximumSampleMeters": 4008.0926070038904,
+    "dataset": "NOAA ETOPO5",
+    "sourceResolutionArcMinutes": 5,
+    "sampledSpacingDegrees": 0.5,
+    "meshStepMeters": 100000,
+    "minimumSampleMeters": -2567.991687074753,
+    "maximumSampleMeters": 2990.292674483784,
     "historicalDataset": true,
-    "displayNegativeElevations": "Preservadas nas células terrestres."
+    "displayNegativeElevations": "limitadas a zero para excluir batimetria costeira",
+    "sha256": "5dfe617fdab469a3ac13513a266c3fd5962c1435172f0388df1b6c4268250948"
   },
   "limits": {
-    "triangles": 16530,
-    "bytes": 382728,
+    "triangles": 9731,
+    "bytes": 291636,
     "materials": 2,
     "textures": 0
   },
-  "topVertexCount": 7373,
-  "topTriangleCount": 13420,
+  "topVertexCount": 4083,
+  "topTriangleCount": 7014,
   "points": [
     {
       "id": "piramides-gize",
@@ -89,9 +74,9 @@
         ]
       },
       "posicao": [
-        0.36981967,
-        0.02552781,
-        -0.66285408
+        0.28456664,
+        0.03189405,
+        -0.60269248
       ]
     },
     {
@@ -118,9 +103,9 @@
         ]
       },
       "posicao": [
-        0.27056247,
-        0.0304925,
-        0.44775149
+        0.19431816,
+        0.05550899,
+        0.40711293
       ]
     },
     {
@@ -147,28 +132,27 @@
         ]
       },
       "posicao": [
-        0.54134965,
-        0.0485025,
-        0.10291989
+        0.4405283,
+        0.07510886,
+        0.09357874
       ]
     }
   ],
   "pointPositions": {
     "piramides-gize": [
-      0.36981967,
-      0.02552781,
-      -0.66285408
+      0.28456664,
+      0.03189405,
+      -0.60269248
     ],
     "cataratas-vitoria": [
-      0.27056247,
-      0.0304925,
-      0.44775149
+      0.19431816,
+      0.05550899,
+      0.40711293
     ],
     "kilimanjaro": [
-      0.54134965,
-      0.0485025,
-      0.10291989
+      0.4405283,
+      0.07510886,
+      0.09357874
     ]
-  },
-  "textOnlyPoints": []
+  }
 }

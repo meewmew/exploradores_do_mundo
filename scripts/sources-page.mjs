@@ -1,8 +1,8 @@
 const escapeHtml = value => value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
 
 const groups = [
-  { title: 'Geografia, países e continentes', matches: id => !/^(font-|visual-reference|unesco-|wikidata-|noaa-|mapzen-|tourism-|copernicus-|3d-elevation-)/.test(id) && !['autoral', 'ar-libraries', 'viewer', 'jsqr', 'ui-libraries'].includes(id) },
-  { title: 'Lugares de interesse e relevo', matches: id => /^(unesco-|wikidata-|noaa-|mapzen-|tourism-|copernicus-|3d-elevation-)/.test(id) },
+  { title: 'Geografia, países e continentes', matches: id => !/^(font-|visual-reference|unesco-|wikidata-|noaa-)/.test(id) && !['autoral', 'ar-libraries', 'viewer', 'jsqr', 'ui-libraries'].includes(id) },
+  { title: 'Lugares de interesse e relevo', matches: id => /^(unesco-|wikidata-|noaa-)/.test(id) },
   { title: 'Letras, ilustrações e autoria', matches: id => id.startsWith('font-') || id === 'autoral' },
   { title: 'Bibliotecas e licenças de software', matches: id => ['ar-libraries', 'viewer', 'jsqr', 'ui-libraries'].includes(id) },
   { title: 'Referências visuais da interface', matches: id => id.startsWith('visual-reference') },
@@ -26,7 +26,6 @@ function reference(entry) {
     <p class="reference-meta">${escapeHtml(license ?? '')}${consulted ? ` · ${consulted}` : ''}</p>
     ${paragraphs}
     ${link}
-    ${entry.id==='mapzen-terrain'?'<a href="licenses/mapzen-terrain-attribution.md">Créditos e licenças de todos os fornecedores do terreno</a>':''}
   </article>`;
 }
 
@@ -70,7 +69,7 @@ export function renderSourcesPage(sources) {
         <div><dt>Mapas e países</dt><dd>O <a href="#natural-earth">Natural Earth</a> fornece os contornos dos mapas e dados geográficos. As listas de países e as informações sobre capitais também consultam a <a href="#un-members">ONU</a> e a <a href="#undata-south-sudan">UNdata</a>.</dd></div>
         <div><dt>Continentes e ambientes</dt><dd>Os materiais educativos da <a href="#ng-continents">National Geographic</a> ajudam a explicar o relevo, os climas, a fauna e a flora. O <a href="#antarctic-treaty">Tratado Antártico</a> é uma referência para o conteúdo sobre a Antártida.</dd></div>
         <div><dt>Lugares de interesse</dt><dd>As descrições consultam a <a href="#unesco-giza">UNESCO</a>, e as localizações usam referências da UNESCO e do <a href="#wikidata-giza">Wikidata</a>. Os textos adaptados da UNESCO recebem os créditos e a licença indicados nas referências completas.</dd></div>
-        <div><dt>Relevo em 3D</dt><dd>A África usa elevações do <a href="#copernicus-glo30">Copernicus GLO-30</a> disponibilizadas pelo <a href="#3d-elevation-map">3D Elevation Map</a>. Os demais continentes usam o <a href="#noaa-etopo5">NOAA ETOPO5</a>. Os países usam o DEM composto do <a href="#mapzen-terrain">Mapzen e seus fornecedores</a>, com <a href="licenses/mapzen-terrain-attribution.md">créditos e licenças completos</a>.</dd></div>
+        <div><dt>Relevo em 3D</dt><dd>Os dados de elevação do <a href="#noaa-etopo5">NOAA ETOPO5</a> ajudam a representar o relevo dos continentes nos modelos 3D.</dd></div>
       </dl>
       <aside class="reading-note"><h3>Um cuidado com os dados</h3><p>As populações são acompanhadas do ano de referência. Dados ainda não confirmados não são apresentados como definitivos. Os mapas são simplificados e não resolvem disputas territoriais.</p></aside>
     </section>

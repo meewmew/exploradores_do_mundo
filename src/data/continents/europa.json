@@ -45,34 +45,6 @@
   ],
   "paises": [
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-99",
-          "nome": "Natural and Cultural Heritage of the Ohrid region",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 40.9672933093,
-            "lng": 20.6761045412
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/99/"
-        },
-        {
-          "id": "unesco-569",
-          "nome": "Historic Centres of Berat and Gjirokastra",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 40.0741666667,
-            "lng": 20.1408333333
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/569/"
-        }
-      ],
       "id": "ALB",
       "nome": "Albânia",
       "nomeFonte": "natural-earth",
@@ -101,34 +73,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-3",
-          "nome": "Aachen Cathedral",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 50.7747468537,
-            "lng": 6.083919968
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/3/"
-        },
-        {
-          "id": "unesco-168",
-          "nome": "Speyer Cathedral",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 49.3172222222,
-            "lng": 8.4423888889
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/168/"
-        }
-      ],
       "id": "DEU",
       "nome": "Alemanha",
       "nomeFonte": "natural-earth",
@@ -157,21 +101,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-1160",
-          "nome": "Madriu-Perafita-Claror Valley",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 42.49472222,
-            "lng": 1.595555556
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1160/"
-        }
-      ],
       "id": "AND",
       "nome": "Andorra",
       "nomeFonte": "natural-earth",
@@ -200,34 +129,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-772",
-          "nome": "Fertö / Neusiedlersee Cultural Landscape",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 47.71927778,
-            "lng": 16.72272222
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/772/"
-        },
-        {
-          "id": "unesco-784",
-          "nome": "Historic Centre of the City of Salzburg",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 47.80055556,
-            "lng": 13.04333333
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/784/"
-        }
-      ],
       "id": "AUT",
       "nome": "Áustria",
       "nomeFonte": "natural-earth",
@@ -256,34 +157,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-855",
-          "nome": "Flemish Béguinages",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 50.9877887913,
-            "lng": 5.0614801939
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/855/"
-        },
-        {
-          "id": "unesco-856",
-          "nome": "The Four Lifts on the Canal du Centre and their Environs, La Louvière and Le Roeulx (Hainaut)",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 50.48111,
-            "lng": 4.13722
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/856/"
-        }
-      ],
       "id": "BEL",
       "nome": "Bélgica",
       "nomeFonte": "natural-earth",
@@ -312,34 +185,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-33",
-          "nome": "Białowieża Forest",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 52.7275,
-            "lng": 23.9811111111
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/33/"
-        },
-        {
-          "id": "unesco-625",
-          "nome": "Mir Castle Complex",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 53.45108333,
-            "lng": 26.47272222
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/625/"
-        }
-      ],
       "id": "BLR",
       "nome": "Bielorrússia",
       "nomeFonte": "natural-earth",
@@ -368,34 +213,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-946",
-          "nome": "Old Bridge Area of the Old City of Mostar",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 43.3373055556,
-            "lng": 17.815
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/946/"
-        },
-        {
-          "id": "unesco-1133",
-          "nome": "Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 44.146,
-            "lng": 17.282
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1133/"
-        }
-      ],
       "id": "BIH",
       "nome": "Bósnia e Herzegovina",
       "nomeFonte": "natural-earth",
@@ -424,34 +241,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-42",
-          "nome": "Boyana Church",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 42.6446707809,
-            "lng": 23.2661877076
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/42/"
-        },
-        {
-          "id": "unesco-43",
-          "nome": "Madara Rider",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 43.2774166667,
-            "lng": 27.1189444444
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/43/"
-        }
-      ],
       "id": "BGR",
       "nome": "Bulgária",
       "nomeFonte": "natural-earth",
@@ -480,34 +269,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-616",
-          "nome": "Historic Centre of Prague",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 49.9894444444,
-            "lng": 14.55
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/616/"
-        },
-        {
-          "id": "unesco-617",
-          "nome": "Historic Centre of Český Krumlov",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 48.8106944444,
-            "lng": 14.3150277778
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/617/"
-        }
-      ],
       "id": "CZE",
       "nome": "Chéquia",
       "nomeFonte": "natural-earth",
@@ -536,34 +297,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-95",
-          "nome": "Old City of Dubrovnik",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 42.6289444445,
-            "lng": 18.1180555556
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/95/"
-        },
-        {
-          "id": "unesco-97",
-          "nome": "Historical Complex of Split with the Palace of Diocletian",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 43.5088888889,
-            "lng": 16.4391666667
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/97/"
-        }
-      ],
       "id": "HRV",
       "nome": "Croácia",
       "nomeFonte": "natural-earth",
@@ -592,34 +325,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-695",
-          "nome": "Roskilde Cathedral",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 55.6426654094,
-            "lng": 12.0798998457
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/695/"
-        },
-        {
-          "id": "unesco-696",
-          "nome": "Kronborg Castle",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 56.03889,
-            "lng": 12.62083333
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/696/"
-        }
-      ],
       "id": "DNK",
       "nome": "Dinamarca",
       "nomeFonte": "natural-earth",
@@ -648,34 +353,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-618",
-          "nome": "Historic Town of Banská Štiavnica and the Technical Monuments in its Vicinity",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 48.46111,
-            "lng": 18.9
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/618/"
-        },
-        {
-          "id": "unesco-620",
-          "nome": "Levoča, Spišský Hrad and the Associated Cultural Monuments",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 49.0256083334,
-            "lng": 20.5898888889
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/620/"
-        }
-      ],
       "id": "SVK",
       "nome": "Eslováquia",
       "nomeFonte": "natural-earth",
@@ -704,34 +381,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-390",
-          "nome": "Škocjan Caves",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 45.66667,
-            "lng": 14
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/390/"
-        },
-        {
-          "id": "unesco-1133",
-          "nome": "Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 45.542,
-            "lng": 14.769
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1133/"
-        }
-      ],
       "id": "SVN",
       "nome": "Eslovénia",
       "nomeFonte": "natural-earth",
@@ -760,34 +409,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-310",
-          "nome": "Cave of Altamira and Paleolithic Cave Art of Northern Spain",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 43.2358794,
-            "lng": -2.2753798
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/310/"
-        },
-        {
-          "id": "unesco-311",
-          "nome": "Old Town of Segovia and its Aqueduct",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 40.94847222,
-            "lng": -4.11675
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/311/"
-        }
-      ],
       "id": "ESP",
       "nome": "Espanha",
       "nomeFonte": "natural-earth",
@@ -816,34 +437,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-822",
-          "nome": "Historic Centre (Old Town) of Tallinn",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 59.437,
-            "lng": 24.74
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/822/"
-        },
-        {
-          "id": "unesco-1187",
-          "nome": "Struve Geodetic Arc",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 59.0483333333,
-            "lng": 26.4141666667
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1187/"
-        }
-      ],
       "id": "EST",
       "nome": "Estónia",
       "nomeFonte": "natural-earth",
@@ -872,34 +465,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-579",
-          "nome": "Bronze Age Burial Site of Sammallahdenmäki",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 61.12056,
-            "lng": 21.7775
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/579/"
-        },
-        {
-          "id": "unesco-582",
-          "nome": "Old Rauma",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 61.12806,
-            "lng": 21.51167
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/582/"
-        }
-      ],
       "id": "FIN",
       "nome": "Finlândia",
       "nomeFonte": "natural-earth",
@@ -928,34 +493,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "torre-eiffel",
-          "nome": "Torre Eiffel",
-          "descricaoCurta": "Torre de ferro construída em Paris no século XIX e hoje um marco da cidade.",
-          "coordenadas": {
-            "lat": 48.8582972,
-            "lng": 2.2944778
-          },
-          "fontes": [
-            "unesco-paris-seine",
-            "wikidata-eiffel"
-          ]
-        },
-        {
-          "id": "unesco-80",
-          "nome": "Mont-Saint-Michel and its Bay",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 48.58525,
-            "lng": -1.5061388889
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/80/"
-        }
-      ],
       "id": "FRA",
       "nome": "França",
       "nomeFonte": "natural-earth",
@@ -984,33 +521,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "acropole-atenas",
-          "nome": "Acrópole de Atenas",
-          "descricaoCurta": "Colina rochosa com monumentos da Grécia Antiga, como o Partenon.",
-          "coordenadas": {
-            "lat": 37.97087,
-            "lng": 23.72618
-          },
-          "fontes": [
-            "unesco-acropolis"
-          ]
-        },
-        {
-          "id": "unesco-392",
-          "nome": "Temple of Apollo Epicurius at Bassae",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 37.43498,
-            "lng": 21.89694
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/392/"
-        }
-      ],
       "id": "GRC",
       "nome": "Grécia",
       "nomeFonte": "natural-earth",
@@ -1039,34 +549,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-400",
-          "nome": "Budapest, including the Banks of the Danube, the Buda Castle Quarter and Andrássy Avenue",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 47.5043073,
-            "lng": 19.0618036
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/400/"
-        },
-        {
-          "id": "unesco-401",
-          "nome": "Old Village of Hollókő and its Surroundings",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 47.99444,
-            "lng": 19.52917
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/401/"
-        }
-      ],
       "id": "HUN",
       "nome": "Hungria",
       "nomeFonte": "natural-earth",
@@ -1095,34 +577,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-1152",
-          "nome": "Þingvellir National Park",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 64.25380556,
-            "lng": -21.03725
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1152/"
-        },
-        {
-          "id": "unesco-1267",
-          "nome": "Surtsey",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 63.3030555556,
-            "lng": -20.6022222222
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1267/"
-        }
-      ],
       "id": "ISL",
       "nome": "Islândia",
       "nomeFonte": "natural-earth",
@@ -1151,34 +605,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "coliseu",
-          "nome": "Coliseu",
-          "descricaoCurta": "Anfiteatro romano do século I, parte da área histórica de Roma.",
-          "coordenadas": {
-            "lat": 41.8902778,
-            "lng": 12.4922222
-          },
-          "fontes": [
-            "unesco-rome",
-            "wikidata-colosseum"
-          ]
-        },
-        {
-          "id": "unesco-93",
-          "nome": "Church and Dominican Convent of Santa Maria delle Grazie with “The Last Supper” by Leonardo da Vinci",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 45.466,
-            "lng": 9.171
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/93/"
-        }
-      ],
       "id": "ITA",
       "nome": "Itália",
       "nomeFonte": "natural-earth",
@@ -1207,34 +633,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-852",
-          "nome": "Historic Centre of Riga",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 56.95417,
-            "lng": 24.11667
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/852/"
-        },
-        {
-          "id": "unesco-1187",
-          "nome": "Struve Geodetic Arc",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 56.84,
-            "lng": 25.6366666667
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1187/"
-        }
-      ],
       "id": "LVA",
       "nome": "Letónia",
       "nomeFonte": "natural-earth",
@@ -1263,21 +661,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "wikidata-q694782",
-          "nome": "Castelo de Vaduz",
-          "descricaoCurta": "Este lugar fica em Liechtenstein.",
-          "coordenadas": {
-            "lat": 47.139444444444,
-            "lng": 9.5244444444444
-          },
-          "fontes": [
-            "wikidata-country-sites"
-          ],
-          "saibaMaisUrl": "https://www.wikidata.org/wiki/Q694782"
-        }
-      ],
       "id": "LIE",
       "nome": "Liechtenstein",
       "nomeFonte": "natural-earth",
@@ -1303,34 +686,6 @@
       ]
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-541",
-          "nome": "Vilnius Historic Centre",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 54.68667,
-            "lng": 25.29306
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/541/"
-        },
-        {
-          "id": "unesco-1137",
-          "nome": "Kernavė Archaeological Site (Cultural Reserve of Kernavė)",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 54.879,
-            "lng": 24.853
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1137/"
-        }
-      ],
       "id": "LTU",
       "nome": "Lituânia",
       "nomeFonte": "natural-earth",
@@ -1359,21 +714,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-699",
-          "nome": "City of Luxembourg: its Old Quarters and Fortifications",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 49.61,
-            "lng": 6.13333
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/699/"
-        }
-      ],
       "id": "LUX",
       "nome": "Luxemburgo",
       "nomeFonte": "natural-earth",
@@ -1402,34 +742,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-99",
-          "nome": "Natural and Cultural Heritage of the Ohrid region",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 41.028,
-            "lng": 20.722
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/99/"
-        },
-        {
-          "id": "unesco-1133",
-          "nome": "Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 41.764,
-            "lng": 20.591
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1133/"
-        }
-      ],
       "id": "MKD",
       "nome": "Macedónia do Norte",
       "nomeFonte": "natural-earth",
@@ -1458,34 +770,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-130",
-          "nome": "Ħal Saflieni Hypogeum",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 35.8695900049,
-            "lng": 14.5068833733
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/130/"
-        },
-        {
-          "id": "unesco-131",
-          "nome": "City of Valletta",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 35.90056,
-            "lng": 14.51444
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/131/"
-        }
-      ],
       "id": "MLT",
       "nome": "Malta",
       "nomeFonte": "natural-earth",
@@ -1511,21 +795,6 @@
       ]
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-1187",
-          "nome": "Struve Geodetic Arc",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 48.3188888889,
-            "lng": 27.8766666667
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1187/"
-        }
-      ],
       "id": "MDA",
       "nome": "Moldávia",
       "nomeFonte": "natural-earth",
@@ -1554,21 +823,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "wikidata-q851527",
-          "nome": "Museu Oceanográfico do Mónaco",
-          "descricaoCurta": "Este lugar fica em Mónaco.",
-          "coordenadas": {
-            "lat": 43.730833333333,
-            "lng": 7.4252777777778
-          },
-          "fontes": [
-            "wikidata-country-sites"
-          ],
-          "saibaMaisUrl": "https://www.wikidata.org/wiki/Q851527"
-        }
-      ],
       "id": "MCO",
       "nome": "Mónaco",
       "nomeFonte": "natural-earth",
@@ -1594,34 +848,6 @@
       ]
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-100",
-          "nome": "Durmitor National Park",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 43.133,
-            "lng": 19.0166
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/100/"
-        },
-        {
-          "id": "unesco-125",
-          "nome": "Natural and Culturo-Historical Region of Kotor",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 42.48333,
-            "lng": 18.7
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/125/"
-        }
-      ],
       "id": "MNE",
       "nome": "Montenegro",
       "nomeFonte": "natural-earth",
@@ -1650,34 +876,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-55",
-          "nome": "Røros Mining Town and the Circumference",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 62.3219444444,
-            "lng": 11.8338888889
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/55/"
-        },
-        {
-          "id": "unesco-58",
-          "nome": "Urnes Stave Church",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 61.2982583333,
-            "lng": 7.3226777778
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/58/"
-        }
-      ],
       "id": "NOR",
       "nome": "Noruega",
       "nomeFonte": "natural-earth",
@@ -1706,34 +904,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-739",
-          "nome": "Schokland and Surroundings",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 52.63861111,
-            "lng": 5.771666667
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/739/"
-        },
-        {
-          "id": "unesco-759",
-          "nome": "Dutch Water Defence Lines",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 52.165,
-            "lng": 5.083
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/759/"
-        }
-      ],
       "id": "NLD",
       "nome": "Países Baixos",
       "nomeFonte": "natural-earth",
@@ -1762,34 +932,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-29",
-          "nome": "Historic Centre of Kraków",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 50.0613888889,
-            "lng": 19.9372222222
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/29/"
-        },
-        {
-          "id": "unesco-30",
-          "nome": "Historic Centre of Warsaw",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 52.25,
-            "lng": 21.013
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/30/"
-        }
-      ],
       "id": "POL",
       "nome": "Polónia",
       "nomeFonte": "natural-earth",
@@ -1818,34 +960,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-206",
-          "nome": "Central Zone of the Town of Angra do Heroismo in the Azores",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 38.655,
-            "lng": -27.22
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/206/"
-        },
-        {
-          "id": "unesco-263",
-          "nome": "Monastery of the Hieronymites and Tower of Belém in Lisbon",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 38.6915965311,
-            "lng": -9.2159801015
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/263/"
-        }
-      ],
       "id": "PRT",
       "nome": "Portugal",
       "nomeFonte": "natural-earth",
@@ -1874,34 +988,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-369",
-          "nome": "Giant's Causeway and Causeway Coast",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 55.2408333333,
-            "lng": -6.5116666667
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/369/"
-        },
-        {
-          "id": "unesco-370",
-          "nome": "Durham Castle and Cathedral",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 54.77472222,
-            "lng": -1.576111111
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/370/"
-        }
-      ],
       "id": "GBR",
       "nome": "Reino Unido",
       "nomeFonte": "natural-earth",
@@ -1930,34 +1016,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-659",
-          "nome": "Brú na Bóinne - Archaeological Ensemble of the Bend of the Boyne",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 53.6946944444,
-            "lng": -6.4755
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/659/"
-        },
-        {
-          "id": "unesco-757",
-          "nome": "Sceilg Mhichíl",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 51.77194,
-            "lng": -10.53861
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/757/"
-        }
-      ],
       "id": "IRL",
       "nome": "República da Irlanda",
       "nomeFonte": "natural-earth",
@@ -1986,34 +1044,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-588",
-          "nome": "Danube Delta",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 45.08333,
-            "lng": 29.5
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/588/"
-        },
-        {
-          "id": "unesco-596",
-          "nome": "Villages with Fortified Churches in Transylvania",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 46.0552777778,
-            "lng": 25.0902777778
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/596/"
-        }
-      ],
       "id": "ROU",
       "nome": "Roménia",
       "nomeFonte": "natural-earth",
@@ -2042,21 +1072,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-1245",
-          "nome": "San Marino Historic Centre and Mount Titano",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 43.9327777778,
-            "lng": 12.4519444444
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/1245/"
-        }
-      ],
       "id": "SMR",
       "nome": "San Marino",
       "nomeFonte": "natural-earth",
@@ -2082,34 +1097,6 @@
       ]
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-96",
-          "nome": "Stari Ras and Sopoćani",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 43.1655555556,
-            "lng": 20.5261111111
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/96/"
-        },
-        {
-          "id": "unesco-389",
-          "nome": "Studenica Monastery",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 43.4865277778,
-            "lng": 20.5316666667
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/389/"
-        }
-      ],
       "id": "SRB",
       "nome": "Sérvia",
       "nomeFonte": "natural-earth",
@@ -2138,34 +1125,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-555",
-          "nome": "Birka and Hovgården",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 59.3351388889,
-            "lng": 17.5426388889
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/555/"
-        },
-        {
-          "id": "unesco-556",
-          "nome": "Engelsberg Ironworks",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 59.97,
-            "lng": 16.01
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/556/"
-        }
-      ],
       "id": "SWE",
       "nome": "Suécia",
       "nomeFonte": "natural-earth",
@@ -2194,34 +1153,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-267",
-          "nome": "Old City of Berne",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 46.94806,
-            "lng": 7.45028
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/267/"
-        },
-        {
-          "id": "unesco-268",
-          "nome": "Abbey of St Gall",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 47.42333,
-            "lng": 9.37778
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/268/"
-        }
-      ],
       "id": "CHE",
       "nome": "Suíça",
       "nomeFonte": "natural-earth",
@@ -2250,34 +1181,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-527",
-          "nome": "Kyiv: Saint-Sophia Cathedral and Related Monastic Buildings, Kyiv-Pechersk Lavra",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 50.4339333333,
-            "lng": 30.558375
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/527/"
-        },
-        {
-          "id": "unesco-865",
-          "nome": "L'viv – the Ensemble of the Historic Centre",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 49.8416666667,
-            "lng": 24.0319444444
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/865/"
-        }
-      ],
       "id": "UKR",
       "nome": "Ucrânia",
       "nomeFonte": "natural-earth",
@@ -2306,21 +1209,6 @@
       }
     },
     {
-      "pontosTuristicos": [
-        {
-          "id": "unesco-286",
-          "nome": "Vatican City",
-          "descricaoCurta": "Este lugar faz parte do Patrimônio Mundial da UNESCO.",
-          "coordenadas": {
-            "lat": 41.90216,
-            "lng": 12.45736
-          },
-          "fontes": [
-            "unesco-country-sites"
-          ],
-          "saibaMaisUrl": "https://whc.unesco.org/en/list/286/"
-        }
-      ],
       "id": "VAT",
       "nome": "Vaticano",
       "nomeFonte": "natural-earth",
@@ -2348,7 +1236,6 @@
   ],
   "territorios": [
     {
-      "pontosTuristicos": [],
       "id": "ALD",
       "nome": "Åland",
       "nomeFonte": "natural-earth",
@@ -2370,7 +1257,6 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
-      "pontosTuristicos": [],
       "id": "GGY",
       "nome": "Guernsey",
       "nomeFonte": "natural-earth",
@@ -2392,7 +1278,6 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
-      "pontosTuristicos": [],
       "id": "IMN",
       "nome": "Ilha de Man",
       "nomeFonte": "natural-earth",
@@ -2414,7 +1299,6 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
-      "pontosTuristicos": [],
       "id": "FRO",
       "nome": "Ilhas Feroe",
       "nomeFonte": "natural-earth",
@@ -2436,7 +1320,6 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
-      "pontosTuristicos": [],
       "id": "JEY",
       "nome": "Jersey",
       "nomeFonte": "natural-earth",
@@ -2458,7 +1341,6 @@
       "nota": "Território, dependência ou área com status próprio/disputado; fora da contagem de Estados da ONU."
     },
     {
-      "pontosTuristicos": [],
       "id": "KOS",
       "nome": "Kosovo",
       "nomeFonte": "natural-earth",

@@ -9,7 +9,6 @@ import { Shape, Path, ExtrudeGeometry, ShapeUtils } from 'three';
 import earcut from 'earcut';
 import { META, IMPLEMENTED_CONTINENTS } from './config.mjs';
 import { removeCollapsedMapRings } from './map-path.mjs';
-import { buildCountryTerrains } from './build-country-terrain.mjs';
 import { buildContinentTerrains } from './build-africa-terrain.mjs';
 
 const json = async path => JSON.parse(await readFile(path, 'utf8'));
@@ -144,7 +143,5 @@ for(const id of Object.keys(META).filter(id=>!IMPLEMENTED_CONTINENTS.includes(id
 await writeFile('src/data/generated/map.json',JSON.stringify(map));
 await writeFile('public/images/world-map.svg',`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500">${map.map(c=>`<path id="${c.id}" d="${c.d}" fill="${c.cor}" stroke="#5c3a45" stroke-width="0.5"/>`).join('')}</svg>`);
 reports.push(...await buildContinentTerrains(IMPLEMENTED_CONTINENTS));
-const countryTerrains=await buildCountryTerrains();
-for(const country of countryTerrains){const i=reports.findIndex(r=>r.tipo==='pais'&&r.id===country.id);if(i<0)throw new Error('País de relevo ausente no relatório');reports[i]=country;}
 await writeFile('models-report.json',JSON.stringify(reports,null,2)+'\n');
 console.log(`${reports.length} modelos gerados; sem compressão externa ou texturas.`);

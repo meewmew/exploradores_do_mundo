@@ -9,7 +9,7 @@ const metadataSchema = z.object({
   continentId: z.enum(['africa','america','antartida','asia','europa','oceania']),
   file: z.string().regex(/^models\/[a-z]+-terrain\.glb$/), sourceIds: z.array(z.string().min(1)).min(1),
   verticalExaggeration: z.number().finite().positive(),
-  points: z.array(z.object({ posicao: position }).passthrough()).max(5),
+  points: z.array(z.object({ posicao: position }).passthrough()).length(3),
 });
 const metadataByContinent = new Map(Object.values(modules).flatMap(value => {
   const parsed = metadataSchema.safeParse(value);
@@ -18,7 +18,7 @@ const metadataByContinent = new Map(Object.values(modules).flatMap(value => {
     : [];
 }));
 
-export function getTerrainConfig(continent: Continent): { file: string; points: PositionedTouristSpot[]; note?: string; sourceId?: string } {
+export function getTerrainConfig(continent: Continent): { file: string; points: PositionedTouristSpot[]; note?: string } {
   const fallback = { file: continent.modelo.arquivo, points: [] };
   const metadata = metadataByContinent.get(continent.id);
   if (!metadata) return fallback;
@@ -29,9 +29,5 @@ export function getTerrainConfig(continent: Continent): { file: string; points: 
     if (!point.success || !continent.pontosTuristicos?.some(item => item.id === point.data.id)) return fallback;
     points.push({ ...point.data, posicao });
   }
-  return {
-    file: metadata.file, points,
-    sourceId: metadata.sourceIds[0],
-    note: 'Relevo baseado em dados reais. As alturas foram ampliadas para destacar as formas do terreno.',
-  };
+  return { file: metadata.file, points, note: 'Relevo baseado em dados reais. As alturas foram ampliadas para destacar as formas do terreno.' };
 }

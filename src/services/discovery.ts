@@ -10,10 +10,10 @@ export function validateQR(text:string,selected:ContinentId,baseUrl:string):{ok:
  }catch{return {ok:false,reason:'Não foi possível ler um endereço válido. Tente novamente.'};}
 }
 export async function discoverFromQR(repo:CollectionRepository,text:string,selected:ContinentId,baseUrl:string){const result=validateQR(text,selected,baseUrl);if(result.ok)await repo.unlock(result.id);return result;}
-export function isStableMarker(selected:ContinentId,payload:unknown){
+export async function discoverFromMarker(repo:CollectionRepository,selected:ContinentId,payload:unknown){
  if(!payload||typeof payload!=='object')return false;
  const p=payload as Record<string,unknown>;
  if(p.continentId!==selected||typeof p.stableMs!=='number'||!Number.isFinite(p.stableMs)||p.stableMs<500)return false;
- return true;
+ await repo.unlock(selected);return true;
 }
 export function continentFromURL(search:string):ContinentId|undefined{const id=new URLSearchParams(search).get('continente');return isContinentId(id)?id:undefined;}

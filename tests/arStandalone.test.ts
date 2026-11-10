@@ -1,9 +1,19 @@
-import { expect, it } from 'vitest';
-import * as standalone from '../src/services/arStandalone';
-import { readFile } from 'node:fs/promises';
+import { describe, expect, it, vi } from 'vitest';
+import { createStandaloneRepository, discoverFromMarker } from '../src/services/arStandalone';
+import type { StoragePort } from '../src/services/collectionRepository';
 
-it('a cena em página inteira oferece modelos e gestos sem acesso ao repositório de progresso', async () => {
-  expect(Object.keys(standalone).sort()).toEqual(['COUNTRY_TERRAIN_VERSION','applyARTransformAction','arCountry','initialARTransform','isARModelAllowed','updateARGesture']);
-  const scene = await readFile('public/ar/scene.js', 'utf8');
-  expect(scene).not.toMatch(/discoverFromMarker|createStandaloneRepository|localStorage|\.unlock\(/);
+describe('Progresso da RA em página inteira',()=>{
+ it('mantém descobertas do ADM em memória sem acessar o progresso dos alunos',async()=>{
+  const stored=new Map([['exploradores:v1',JSON.stringify({unlocked:['asia'],activities:[],profile:{}})]]);
+  const storage:StoragePort={getItem:vi.fn(key=>stored.get(key)??null),setItem:vi.fn((key,value)=>{stored.set(key,value);}),removeItem:vi.fn(key=>{stored.delete(key);})};
+  const preview=createStandaloneRepository(true,storage);
+  await discoverFromMarker(preview,'africa',{continentId:'africa',stableMs:500});
+  expect(await preview.getUnlocked()).toEqual(['africa']);
+  expect(storage.getItem).not.toHaveBeenCalled();expect(storage.setItem).not.toHaveBeenCalled();
+  expect(await createStandaloneRepository(true,storage).getUnlocked()).toEqual([]);
+  const regular=createStandaloneRepository(false,storage);
+  expect(await regular.getUnlocked()).toEqual(['asia']);
+  await discoverFromMarker(regular,'africa',{continentId:'africa',stableMs:500});
+  expect(await createStandaloneRepository(false,storage).getUnlocked()).toEqual(['asia','africa']);
+ });
 });

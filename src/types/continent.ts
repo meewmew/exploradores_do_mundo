@@ -7,14 +7,14 @@ export interface Country {
   id:string; nome:string; nomeFonte:string; capital?:Sourced<string>;
   populacao:Sourced<number>&{anoReferencia:number}; areaKm2:Sourced<number>;
   curiosidade:string; fontes:string[]; nota?:string; regiao?:string;
-  pontosTuristicos?:TouristSpot[]; modelo?:{arquivo:string}; audioUrl?:string; saibaMais?:{texto:string;links?:{titulo:string;url:string}[]};
+  modelo?:{arquivo:string}; audioUrl?:string; saibaMais?:{texto:string;links?:{titulo:string;url:string}[]};
 }
 export interface TouristSpot {
   id:string;nome:string;descricaoCurta:string;
   coordenadas:{lat:number;lng:number};
   fontes:string[];
   fontesPorCampo?:{nome:string[];descricaoCurta:string[];coordenadas:string[]};
-  imagemUrl?:string; saibaMaisUrl?:string;
+  imagemUrl?:string;
 }
 export interface Continent {
   id:ContinentId;nome:string;cor:string;descricaoCurta:string;descricao:string;
