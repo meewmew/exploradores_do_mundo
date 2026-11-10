@@ -90,3 +90,15 @@ Pendente de aparelho físico. Perfil visual aplicado apenas no visualizador sem 
 | Pontos | Dois pins/lista continuam selecionáveis e alinhados, sem alteração de coordenadas | [ ] Passou [ ] Falhou — Observações: |
 | Isolamento | Benim e outros países mantêm o visual anterior; sair/voltar ao Brasil reaplica somente seu perfil | [ ] Passou [ ] Falhou — Observações: |
 | Carregamento | Luz local carrega sem erro; conferir fluidez e medir FPS/memória antes de declarar desempenho aprovado | [ ] Passou [ ] Falhou — Observações: |
+
+## Piloto do relevo da África com Copernicus GLO-30 — 10/11/2026
+
+**Teste físico pendente.** Usar a versão local do piloto em uma origem HTTPS confiável no celular. Abrir a África no mapa, tocar em **Ver em RA** e apontar para o quadrado preto da folha vigente da África. Usar o leitor interno e o QR correspondente à origem da instalação para verificar a descoberta. A versão de 05/11/2026 usava outro relevo.
+
+| Caso | Esperado | Resultado |
+|---|---|---|
+| 3D sem câmera, pelo mapa e pela coleção | África e Madagascar enquadradas. Pins de Gizé, Cataratas Vitória e Kilimanjaro sobre o terreno. Seleção pela lista e aviso de alturas ampliadas. | Pendente |
+| RA embutida e em página inteira | As duas cenas exibem o mesmo relevo e os mesmos pins. Mover e inclinar a folha, afastar o marcador e reenquadrá-lo. Modelo e pins acompanham a pose, somem e reaparecem juntos. | Pendente |
+| Gestos e saída | Testar arraste, pinça e botões nos dois modos. Ao voltar para **Ver sem câmera**, confirmar que o indicador da câmera se apaga. Repetir cinco ciclos. | Pendente |
+| Descoberta e país | Reconhecer o marcador e abrir a URL do QR sem ganhar progresso. Ler o QR correto no leitor interno para registrar a descoberta. Selecionar um país africano e conferir seu modelo no mesmo marcador. | Pendente |
+| Desempenho | Registrar aparelho, sistema e navegador, tempo para carregar o GLB, FPS durante o giro e o rastreamento e memória antes/depois dos cinco ciclos, conforme recursos do aparelho. | Pendente |

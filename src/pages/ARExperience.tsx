@@ -71,7 +71,7 @@ function ARSession() {
         <button onClick={() => sendARMessage(target.current, 'ar:rotate', { degrees: 30 })}>Girar</button>
         <button onClick={() => sendARMessage(target.current, 'ar:reset')}>Restaurar</button>
     </div></details>
-    {unlocked&&<TouristPoints points={country?.pontosTuristicos||terrain.points} selected={selectedPoint} onSelect={pointId=>{setSelectedPoint(pointId);if(terrain.points.some(point=>point.id===pointId))sendARMessage(target.current,'ar:select-point',{pointId});}}/>}
+    {unlocked&&<TouristPoints points={(country??c).pontosTuristicos??terrain.points} selected={selectedPoint} onSelect={pointId=>{setSelectedPoint(pointId);if(terrain.points.some(point=>point.id===pointId))sendARMessage(target.current,'ar:select-point',{pointId});}}/>}
     {terrain.note&&<p className="micro">{terrain.note}</p>}
     <div className="ar-summary">
       <p className="micro">Boa iluminação · folha plana · sem reflexos · marcador inteiro no enquadramento</p>

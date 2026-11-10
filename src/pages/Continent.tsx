@@ -48,7 +48,7 @@ export default function Continent() {
       <Link className="button secondary" to={`/ar/${c.id}`}>Ver em RA ↗</Link>
     </div>
     <div className="explore-layout">
-      <ModelViewer3D key={c.id} file={terrain.file} name={c.nome} points={terrain.points} terrainNote={terrain.note} />
+      <ModelViewer3D key={c.id} file={terrain.file} name={c.nome} points={terrain.points} listedPoints={c.pontosTuristicos} terrainNote={terrain.note} terrainSourceId={terrain.sourceId} />
       <section className="fact-card country-sheet" ref={shortcut.sheetRef}>
         {c.id !== 'antartida' && <>
           <div className="sheet-grip" aria-hidden="true" onPointerDown={shortcut.onPointerDown} onPointerMove={shortcut.onPointerMove} onPointerUp={shortcut.onPointerUp} onPointerCancel={shortcut.onPointerCancel} onLostPointerCapture={shortcut.onLostPointerCapture}><span /></div>

@@ -182,3 +182,13 @@ Forte King George: nome, país e coordenada dos campos do mapa do órgão nacion
 
 ## [brazil-studio-light] Iluminação de estúdio do visualizador do Brasil — autoria do projeto — MIT — 2026-11-06
 Ambiente HDR técnico de 64×32 pixels gerado por `scripts/build-brazil-lighting.mjs`, com luz lateral suave e preenchimento, sem fotografias ou dados externos. Arquivo `public/lighting/brazil-soft-key.hdr`. É iluminação da cena, não textura de terreno ou dado geográfico; não altera a malha, altitudes, rios ou coordenadas dos pontos. Criado para a ficha do Brasil e agora compartilhado pelas fichas 3D dos países com modelo; a RA mantém a iluminação própria.
+
+## [copernicus-glo30] Copernicus DEM GLO-30 (ESA) — https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM — licença Copernicus DEM GLO-30, livre com atribuição — 2026-11-10
+
+Relevo da África produzido a partir do recorte de elevações disponibilizado pelo 3D Elevation Map de Marko Visic. Produto de superfície de origem com amostragem de cerca de 30 m no equador, baseado na missão TanDEM-X de 2010–2014. O recorte recebido tem 645 × 620 amostras em longitude e latitude WGS84, com espaçamento nominal de 13,7633 km. A malha usa contorno Natural Earth 1:50m simplificado e projeção azimutal equivalente de Lambert centrada em 20° E, 2° N, com células de triangulação de 70 km. Perto da costa, seleciona a amostra terrestre mais próxima dentro de uma janela de até 9 × 9 células. Geometrias sem amostra utilizável ficam fora da superfície. A paleta de altitude em cores por vértice é própria, com verdes nas áreas baixas, ocres e marrons nas áreas mais altas e tons claros nos cumes. Exagero vertical de 28×. As alturas amostradas representam o terreno generalizado e podem diferir da altitude de um cume.
+
+produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved
+
+## [3d-elevation-map] 3D Elevation Map, Marko Visic — https://3delevationmap.com/continent/africa/ — referência visual e acesso às elevações abertas com atribuição — 2026-11-10
+
+Entrada DEM da África em https://3delevationmap.com/processed/africa/dem.json . Metodologia em https://3delevationmap.com/methodology/ . Os termos em https://3delevationmap.com/terms/ distinguem a apresentação do site dos dados sob licenças abertas. O GLB exportado serviu de referência visual. O projeto gera uma malha própria a partir das altitudes Copernicus com contorno Natural Earth. A máscara terrestre do recorte deriva dos limites geoBoundaries gbOpen, CC BY 4.0, https://www.geoboundaries.org/ .

@@ -2175,10 +2175,11 @@
     "id": "africa-terrain",
     "tipo": "relevo",
     "arquivo": "models/africa-terrain.glb",
-    "triangulos": 9731,
-    "tamanhoKb": 284.8,
+    "triangulos": 16530,
+    "tamanhoKb": 373.76,
     "fontes": [
-      "noaa-etopo5",
+      "copernicus-glo30",
+      "3d-elevation-map",
       "natural-earth"
     ]
   },
