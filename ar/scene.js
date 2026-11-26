@@ -13,6 +13,7 @@ const countryDistance=5;
 const lateralLimit=2;
 let scene,marker,model,stableTimer,foundAt=0,stopped=false,transformState=initialARTransform(),lastCameraError;
 let lateralOffset,screenRight,inverseMarker,frontRotation,markerRotation,faceCameraPitch;
+let pinchProjection;
 let facingReady=false;
 let countryAnchor,countryRadius=1,countryCameraReady=false;
 const markerLossDelay=650;
@@ -159,6 +160,41 @@ function moveSideways(distance){
  lateralOffset.addScaledVector(screenRight.normalize(),distance).clampLength(0,lateralLimit);
  transform();
 }
+function zoomAtPinch(previous,current,next){
+ if(!trackedAnchor?.object3D.visible||!modelReady||!scene.camera||next.scale===transformState.scale)return false;
+ const {width,height,left,top}=scene.renderer.domElement.getBoundingClientRect();
+ if(width<=0||height<=0)return false;
+ const {raycaster,ndc,plane,normal,center,focus,target}=pinchProjection;
+ const camera=scene.camera,object=model.object3D,anchor=trackedAnchor.object3D;
+ camera.updateMatrixWorld(true);
+ // AR.js updates the projection matrix when the camera starts or resizes.
+ camera.projectionMatrixInverse.copy(camera.projectionMatrix).invert();
+ const setRay=([a,b])=>{
+  ndc.set((a.x+b.x-2*left)/width-1,1-(a.y+b.y-2*top)/height);
+  raycaster.setFromCamera(ndc,camera);
+ };
+ object.getWorldPosition(center);
+ normal.set(0,1,0).transformDirection(object.matrixWorld);
+ plane.setFromNormalAndCoplanarPoint(normal,center);
+ setRay(previous);
+ if(!raycaster.ray.intersectPlane(plane,focus)||focus.distanceToSquared(center)>16){
+  camera.getWorldDirection(normal);
+  plane.setFromNormalAndCoplanarPoint(normal,center);
+  if(!raycaster.ray.intersectPlane(plane,focus))return false;
+ }
+ object.worldToLocal(focus);
+ transformState=next;
+ transform();
+ object.localToWorld(focus);
+ camera.getWorldDirection(normal);
+ plane.setFromNormalAndCoplanarPoint(normal,focus);
+ setRay(current);
+ if(raycaster.ray.intersectPlane(plane,target)){
+  lateralOffset.add(anchor.worldToLocal(target).sub(anchor.worldToLocal(focus)));
+  transform();
+ }
+ return true;
+}
 function revealCountry(){
  if(stopped||!countryCameraReady||!modelReady)return;
  countryAnchor.object3D.visible=true;
@@ -258,6 +294,11 @@ async function start(){
  frontRotation=new AFRAME.THREE.Quaternion();
  markerRotation=new AFRAME.THREE.Quaternion();
  faceCameraPitch=new AFRAME.THREE.Quaternion().setFromAxisAngle(new AFRAME.THREE.Vector3(1,0,0),Math.PI/2);
+ if(continentControls){
+  const {Raycaster,Vector2,Vector3,Plane}=AFRAME.THREE;
+  pinchProjection={raycaster:new Raycaster(),ndc:new Vector2(),plane:new Plane(),normal:new Vector3(),
+   center:new Vector3(),focus:new Vector3(),target:new Vector3()};
+ }
  scene=document.createElement('a-scene');scene.setAttribute('embedded','');scene.setAttribute('vr-mode-ui','enabled: false');scene.setAttribute('renderer','antialias: true; alpha: true; precision: mediump; colorManagement: true;');
  scene.setAttribute('exploradores-points','');
  scene.setAttribute('gltf-model', 'meshoptDecoderPath: ../vendor/meshopt-decoder-0.22.0.js');
@@ -347,7 +388,9 @@ overlay.addEventListener('pointermove',e=>{
   return;
  }
  const current=[...pointers.values()];
- transformState=updateARGesture(transformState,previous,current);transform();
+ const next=updateARGesture(transformState,previous,current);
+ if(continentControls&&previous.length===2&&zoomAtPinch(previous,current,next))return;
+ transformState=next;transform();
 },{passive:false});
 const release=e=>{pointers.delete(e.pointerId);if(overlay.hasPointerCapture(e.pointerId))overlay.releasePointerCapture(e.pointerId);};
 overlay.addEventListener('pointerup',release);
