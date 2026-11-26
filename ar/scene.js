@@ -7,7 +7,10 @@ const continentalTerrain=sceneModel?.kind==='continent'&&modelPath===`models/${i
 const continentNames={africa:'África',america:'América',antartida:'Antártida',asia:'Ásia',europa:'Europa',oceania:'Oceania'};
 const embedded=window.parent!==window,origin=location.origin,repo=embedded?null:createStandaloneRepository(params.get('preview')==='1');
 const status=document.querySelector('#status');
+const continentControls=sceneModel?.kind==='continent';
+const lateralLimit=2;
 let scene,marker,model,stableTimer,foundAt=0,stopped=false,transformState=initialARTransform(),lastCameraError;
+let lateralOffset,screenRight,inverseMarker;
 const streams=new Set();
 const pointLayer=document.querySelector('#points'),pointEntries=[];
 const projectionBounds={left:0,top:0,width:innerWidth,height:innerHeight};
@@ -82,10 +85,33 @@ if(navigator.mediaDevices?.getUserMedia){
   catch(e){lastCameraError=e;if(!stopped)error(e.name==='NotAllowedError'?'ar:camera-denied':'ar:camera-error',e.name,e.name==='NotAllowedError'?'Câmera bloqueada. Autorize nas permissões do site.':'Não foi possível acessar a câmera.');throw e;}
  };
 }
-function transform(){if(model){const {scale,rotation,tilt}=transformState;const zoom=continentalTerrain?scale*1.1:scale, angle=continentalTerrain?tilt+30:tilt;model.setAttribute('scale',`${zoom} ${zoom} ${zoom}`);model.setAttribute('rotation',`${angle} ${rotation} 0`);}}
+function transform(){
+ if(!model)return;
+ const {scale,rotation,tilt}=transformState;
+ const zoom=continentControls?scale*1.6:scale;
+ const angle=continentalTerrain?tilt+30:tilt;
+ model.object3D.position.copy(lateralOffset);
+ model.object3D.scale.setScalar(zoom);
+ model.object3D.rotation.set(AFRAME.THREE.MathUtils.degToRad(angle),AFRAME.THREE.MathUtils.degToRad(rotation),0,'YXZ');
+}
+function moveSideways(distance){
+ if(!continentControls||!Number.isFinite(distance)||!modelReady||!marker?.object3D.visible||!scene.camera)return;
+ const anchor=marker.object3D;
+ anchor.updateWorldMatrix(true,false);
+ scene.camera.updateWorldMatrix(true,false);
+ inverseMarker.copy(anchor.matrixWorld).invert();
+ // Project camera-right onto the marker plane so left/right follow the screen.
+ screenRight.setFromMatrixColumn(scene.camera.matrixWorld,0).transformDirection(inverseMarker);
+ screenRight.y=0;
+ if(screenRight.lengthSq()<0.0001)return;
+ lateralOffset.addScaledVector(screenRight.normalize(),distance).clampLength(0,lateralLimit);
+ transform();
+}
 function action(type,payload={}){
  if(type==='ar:stop'){stop();return;}
  if(type==='ar:select-point'){if(typeof payload.pointId==='string')selectPoint(payload.pointId);return;}
+ if(type==='ar:move-sideways'){moveSideways(payload.distance);return;}
+ if(type==='ar:reset')lateralOffset?.set(0,0,0);
  transformState=applyARTransformAction(transformState,type,payload);
  transform();
 }
@@ -131,6 +157,9 @@ async function start(){
  }
  if(stopped)return;
  if(!AFRAME.components['exploradores-points'])AFRAME.registerComponent('exploradores-points',{tock:projectPoints});
+ lateralOffset=new AFRAME.THREE.Vector3();
+ screenRight=new AFRAME.THREE.Vector3();
+ inverseMarker=new AFRAME.THREE.Matrix4();
  scene=document.createElement('a-scene');scene.setAttribute('embedded','');scene.setAttribute('vr-mode-ui','enabled: false');scene.setAttribute('renderer','antialias: true; alpha: true; precision: mediump; colorManagement: true;');
  scene.setAttribute('exploradores-points','');
  scene.setAttribute('gltf-model', 'meshoptDecoderPath: ../vendor/meshopt-decoder-0.22.0.js');
@@ -145,7 +174,17 @@ async function start(){
  const camera=document.createElement('a-entity');camera.setAttribute('camera','');scene.append(camera);
  model.addEventListener('model-loaded',()=>{if(stopped){disposeObject(model.object3D);return;}modelReady=true;post('ar:model-loaded');});
  model.addEventListener('model-error',()=>{if(stopped)return;modelReady=false;hidePoints();error('ar:model-error','load','Não foi possível carregar o modelo.');});
- scene.addEventListener('renderstart',()=>{scene.renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.5));pointsObserver=new ResizeObserver(()=>{updateProjectionBounds();});pointsObserver.observe(scene.renderer.domElement);updateProjectionBounds();});
+ scene.addEventListener('renderstart',()=>{
+  scene.renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.5));
+  if(continentalTerrain){
+   // Match the continent card's neutral tone mapping and effective exposure.
+   scene.renderer.toneMapping=AFRAME.THREE.NeutralToneMapping;
+   scene.renderer.toneMappingExposure=.85*1.3;
+  }
+  pointsObserver=new ResizeObserver(updateProjectionBounds);
+  pointsObserver.observe(scene.renderer.domElement);
+  updateProjectionBounds();
+ });
  document.body.append(scene);
  window.addEventListener('resize',updateProjectionBounds);
  void loadPoints();
@@ -163,6 +202,10 @@ overlay.addEventListener('pointermove',e=>{
  if(stopped||!pointers.has(e.pointerId))return;
  e.preventDefault();
  const previous=[...pointers.values()];pointers.set(e.pointerId,{id:e.pointerId,x:e.clientX,y:e.clientY});
+ if(continentControls&&previous.length===1){
+  moveSideways((e.clientX-previous[0].x)*3/Math.max(1,overlay.clientWidth));
+  return;
+ }
  const current=[...pointers.values()];
  transformState=updateARGesture(transformState,previous,current);transform();
 },{passive:false});
@@ -172,10 +215,22 @@ overlay.addEventListener('pointercancel',release);
 overlay.addEventListener('lostpointercapture',e=>{pointers.delete(e.pointerId);});
 overlay.addEventListener('contextmenu',e=>e.preventDefault());
 }
-installGestures(document.querySelector('#gestures'));
+const gestures=document.querySelector('#gestures');
+gestures.setAttribute('aria-label',continentControls?'Arraste para os lados; use dois dedos para ampliar ou reduzir':'Arraste para girar o modelo; use dois dedos para ampliar e girar');
+installGestures(gestures);
 if(!embedded){
  document.querySelector('#standalone').style.display='block';const back=document.querySelector('#back');back.href=sceneModel?.kind==='country'?`../#/paises/${sceneModel.continentId}/${sceneModel.countryId}`:`../#/continente/${encodeURIComponent(id||'')}`;back.addEventListener('click',stop);
- document.querySelectorAll('[data-action]').forEach(b=>b.addEventListener('click',()=>{const type=b.dataset.action;if(type==='plus')action('ar:set-scale',{delta:.25});if(type==='minus')action('ar:set-scale',{delta:-.25});if(type==='rotate')action('ar:rotate',{degrees:30});if(type==='reset')action('ar:reset');}));
+ document.querySelectorAll('[data-action]').forEach(b=>{
+  const type=b.dataset.action;
+  if(!continentControls&&(type==='left'||type==='right')){b.remove();return;}
+  b.addEventListener('click',()=>{
+   if(type==='left'||type==='right')action('ar:move-sideways',{distance:type==='left'?-.25:.25});
+   if(type==='plus')action('ar:set-scale',{delta:.25});
+   if(type==='minus')action('ar:set-scale',{delta:-.25});
+   if(type==='rotate')action('ar:rotate',{degrees:30});
+   if(type==='reset')action('ar:reset');
+  });
+ });
  const prompt=document.createElement('div');prompt.id='start';prompt.innerHTML='<h1>Realidade aumentada</h1><p>Separe a folha do continente. O modelo acompanhará o quadrado preto.</p><button>Iniciar câmera</button>';if(sceneModel?.kind==='country')prompt.querySelector('p').textContent=`Para ver ${sceneModel.nome}, use a folha do continente: ${continentNames[id]}. O modelo acompanhará o quadrado preto.`;prompt.querySelector('button').onclick=()=>{prompt.remove();void start();};document.body.append(prompt);
 }else start();
 
