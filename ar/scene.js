@@ -88,7 +88,7 @@ function transform(){if(model){const {scale,rotation,tilt}=transformState;model.
 function action(type,payload={}){
  if(type==='ar:stop'){stop();return;}
  if(type==='ar:select-point'){if(typeof payload.pointId==='string')selectPoint(payload.pointId);return;}
- if(front){front.action(type,payload);return;}
+ if(front)return;
  transformState=applyARTransformAction(transformState,type,payload);
  transform();
 }
@@ -125,11 +125,11 @@ async function start(){
  if(sceneModel.kind==='country'&&!embedded&&params.get('preview')!=='1'&&!await repo.isUnlocked(id)){error('ar:model-error','locked','Descubra este continente antes de conhecer os países. Volte ao mapa e encontre a folha.');return;}
  if(stopped)return;
  const canvas=document.createElement('canvas');
- if(!isSecureContext||!navigator.mediaDevices?.getUserMedia||!(canvas.getContext('webgl2')||canvas.getContext('webgl'))){error('ar:camera-error','unsupported','É necessário HTTPS, câmera e WebGL para usar a RA.');return;}
+ if(!isSecureContext||(!frontMode&&!navigator.mediaDevices?.getUserMedia)||!(canvas.getContext('webgl2')||canvas.getContext('webgl'))){error('ar:camera-error','unsupported','É necessário HTTPS, câmera e WebGL para usar a RA.');return;}
  if(!window.AFRAME){error('ar:camera-error','unsupported','As bibliotecas de RA não carregaram.');return;}
  let placement;
  try{
-  if(frontMode)placement=await import('./front.js?v=3');
+  if(frontMode)placement=await import('./front.js?v=5');
   else if(!AFRAME.systems.arjs)await loadMarkerLibrary();
  }catch{
   if(!stopped)error('ar:camera-error','unsupported','As bibliotecas de RA não carregaram.');
@@ -156,14 +156,14 @@ async function start(){
  const camera=document.createElement('a-entity');camera.setAttribute('camera',frontMode?'fov: 45; near: .05; far: 50':'');scene.append(camera);
  if(frontMode){
   camera.setAttribute('look-controls','enabled: false');camera.setAttribute('wasd-controls','enabled: false');
-  front=placement.createFrontPlacement({scene,preview:anchor,model,ready(){post('ar:ready');status.textContent='Arraste para mover e use dois dedos para girar ou aproximar.';},failure(reason){const denied=reason.name==='NotAllowedError';error(denied?'ar:camera-denied':'ar:camera-error',reason.name,denied?'Autorize a câmera para ver o modelo.':'Não foi possível iniciar a câmera.');}});
+  front=placement.createFrontPlacement({model});
  }
  model.addEventListener('model-loaded',()=>{if(stopped){disposeObject(model.object3D);return;}if(front&&!front.prepareModel()){error('ar:model-error','bounds','Não foi possível posicionar o modelo.');return;}modelReady=true;post('ar:model-loaded');});
  model.addEventListener('model-error',()=>{if(stopped)return;modelReady=false;hidePoints();error('ar:model-error','load','Não foi possível carregar o modelo.');});
- scene.addEventListener('renderstart',()=>{scene.renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.5));pointsObserver=new ResizeObserver(()=>{updateProjectionBounds();front?.update();});pointsObserver.observe(scene.renderer.domElement);updateProjectionBounds();front?.update();});
+ scene.addEventListener('renderstart',()=>{scene.renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.5));pointsObserver=new ResizeObserver(()=>{updateProjectionBounds();});pointsObserver.observe(scene.renderer.domElement);updateProjectionBounds();});
  document.body.append(scene);
  window.addEventListener('resize',updateProjectionBounds);
- if(!frontMode||!embedded)void loadPoints();
+ if(!frontMode)void loadPoints();
 }
 window.addEventListener('camera-init',()=>{if(stopped){document.querySelectorAll('video').forEach(v=>v.srcObject?.getTracks().forEach(t=>t.stop()));return;}post('ar:ready');status.textContent='Aponte para o quadrado preto da folha.';});
 window.addEventListener('camera-error',e=>{const err=lastCameraError||e.detail?.error||e.detail;const code=err?.name||'unknown';error(code==='NotAllowedError'?'ar:camera-denied':'ar:camera-error',code,code==='NotAllowedError'?'Câmera bloqueada. Autorize nas permissões do site.':'Não foi possível acessar a câmera.');});
@@ -179,7 +179,7 @@ overlay.addEventListener('pointermove',e=>{
  e.preventDefault();
  const previous=[...pointers.values()];pointers.set(e.pointerId,{id:e.pointerId,x:e.clientX,y:e.clientY});
  const current=[...pointers.values()];
- if(front){front.gesture(previous,current,e.shiftKey);return;}
+ if(front)return;
  transformState=updateARGesture(transformState,previous,current);transform();
 },{passive:false});
 const release=e=>{pointers.delete(e.pointerId);if(overlay.hasPointerCapture(e.pointerId))overlay.releasePointerCapture(e.pointerId);};
@@ -187,20 +187,12 @@ overlay.addEventListener('pointerup',release);
 overlay.addEventListener('pointercancel',release);
 overlay.addEventListener('lostpointercapture',e=>{pointers.delete(e.pointerId);});
 overlay.addEventListener('contextmenu',e=>e.preventDefault());
-if(frontMode){
- overlay.tabIndex=0;overlay.setAttribute('aria-label','Arraste para mover o modelo. Use dois dedos ou Shift ao arrastar para girar.');
- overlay.addEventListener('keydown',event=>{
-  const offsets={ArrowLeft:[-20,0],ArrowRight:[20,0],ArrowUp:[0,-20],ArrowDown:[0,20]};
-  const offset=offsets[event.key];if(!front||!offset)return;
-  event.preventDefault();front.gesture([{id:0,x:0,y:0}],[{id:0,x:offset[0],y:offset[1]}],event.shiftKey);
- });
 }
-}
-installGestures(document.querySelector('#gestures'));
+if(!frontMode)installGestures(document.querySelector('#gestures'));
 if(!embedded){
  document.querySelector('#standalone').style.display='block';const back=document.querySelector('#back');back.href=sceneModel?.kind==='country'?`../#/paises/${sceneModel.continentId}/${sceneModel.countryId}`:`../#/continente/${encodeURIComponent(id||'')}`;back.addEventListener('click',stop);
  document.querySelectorAll('[data-action]').forEach(b=>b.addEventListener('click',()=>{const type=b.dataset.action;if(type==='plus')action('ar:set-scale',{delta:.25});if(type==='minus')action('ar:set-scale',{delta:-.25});if(type==='rotate')action('ar:rotate',{degrees:30});if(type==='reset')action('ar:reset');}));
- const prompt=document.createElement('div');prompt.id='start';prompt.innerHTML='<h1>Realidade aumentada</h1><p>Separe a folha do continente. O modelo acompanhará o quadrado preto.</p><button>Iniciar câmera</button>';if(frontMode)prompt.querySelector('p').textContent='O modelo aparece à sua frente. Arraste para mover e use dois dedos para girar ou aproximar.';else if(sceneModel?.kind==='country')prompt.querySelector('p').textContent=`Para ver ${sceneModel.nome}, use a folha do continente: ${continentNames[id]}. O modelo acompanhará o quadrado preto.`;prompt.querySelector('button').onclick=()=>{prompt.remove();void start();};document.body.append(prompt);
+ const prompt=document.createElement('div');prompt.id='start';prompt.innerHTML='<h1>Realidade aumentada</h1><p>Separe a folha do continente. O modelo acompanhará o quadrado preto.</p><button>Iniciar câmera</button>';if(frontMode){prompt.querySelector('p').textContent='Prepare o mapa para abrir em realidade aumentada.';prompt.querySelector('button').textContent='Preparar RA';}else if(sceneModel?.kind==='country')prompt.querySelector('p').textContent=`Para ver ${sceneModel.nome}, use a folha do continente: ${continentNames[id]}. O modelo acompanhará o quadrado preto.`;prompt.querySelector('button').onclick=()=>{prompt.remove();void start();};document.body.append(prompt);
 }else start();
 
 

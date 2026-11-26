@@ -26,10 +26,20 @@ export async function openSpatial({ file, THREE, object, lifetime }) {
   const controls = document.createElement('div');
   const reset = document.createElement('button');
   reset.textContent = 'Trazer à frente';
+  const place = document.createElement('button');
+  place.textContent = 'Escolher posição';
+  place.hidden = true;
   const close = document.createElement('button');
   close.textContent = 'Sair da RA';
-  controls.append(reset, close);
-  overlay.append(status, controls);
+  const adjust = document.createElement('details');
+  adjust.className = 'world-ar-adjust';
+  adjust.hidden = true;
+  const adjustLabel = document.createElement('summary');
+  adjustLabel.textContent = 'Ajustar mapa';
+  const adjustments = document.createElement('div');
+  adjust.append(adjustLabel, adjustments);
+  controls.append(reset, place, close);
+  overlay.append(status, adjust, controls);
   overlay.addEventListener('beforexrselect', event => event.preventDefault());
   document.body.append(overlay);
   let session, view;
@@ -42,13 +52,13 @@ export async function openSpatial({ file, THREE, object, lifetime }) {
   window.addEventListener('hashchange', end);
   try {
     session = await navigator.xr.requestSession('immersive-ar', {
-      requiredFeatures: ['local'], optionalFeatures: ['dom-overlay'], domOverlay: { root: overlay },
+      requiredFeatures: ['local'], optionalFeatures: ['dom-overlay', 'hit-test'], domOverlay: { root: overlay },
     });
     if (abort.signal.aborted) { await session.end(); return; }
     session.addEventListener('end', () => abort.abort(), { once: true });
-    const { createWorldView } = await import('./world-view.js');
+    const { createWorldView } = await import('./world-view.js?v=placement');
     if (abort.signal.aborted) return;
-    view = await createWorldView({ session, overlay, status, reset, THREE, object, file, signal: abort.signal });
+    view = await createWorldView({ session, overlay, status, reset, place, adjust, adjustments, THREE, object, file, signal: abort.signal });
     await finished;
   } catch (error) {
     if (!abort.signal.aborted) {

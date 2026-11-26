@@ -4,6 +4,7 @@
   background: var(--canvas);
   border-color: transparent;
   box-shadow: none;
+  container-type: inline-size;
 }
 
 @font-face {
@@ -15,10 +16,12 @@
 
 .exploration-board #world-map-title {
   font-family: Sniglet, var(--font-heading);
-  font-size: clamp(2.35rem, 7.75vw, 4rem);
+  font-size: clamp(1rem, 6.5vw, 4rem);
+  font-size: clamp(1rem, 8.3cqi, 4rem);
   font-weight: 800;
   line-height: 1.04;
   letter-spacing: -.026em;
+  white-space: nowrap;
 }
 
 .exploration-board > .adventure-progress {

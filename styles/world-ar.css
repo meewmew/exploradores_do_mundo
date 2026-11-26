@@ -8,8 +8,10 @@
   background: transparent;
   touch-action: none;
 }
-.world-ar-overlay > div { display: flex; gap: .75rem; margin-top: auto; }
-.world-ar-overlay p, .world-ar-overlay button {
+.world-ar-overlay > div { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; margin-top: auto; }
+.world-ar-adjust { margin-top: auto; max-width: 28rem; }
+.world-ar-adjust[open] > div { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; margin-top: .5rem; }
+.world-ar-overlay p, .world-ar-overlay button, .world-ar-adjust summary {
   background: #fff;
   color: #102940;
   padding: .65rem 1rem;
@@ -17,3 +19,5 @@
   font: 600 1rem/1.4 system-ui, sans-serif;
 }
 .world-ar-overlay button { min-height: 44px; border: 1px solid #102940; }
+.world-ar-adjust summary { cursor: pointer; width: fit-content; margin-inline: auto; }
+.quick-look-frame { width: 100%; min-height: 10rem; border: 0; display: block; }
