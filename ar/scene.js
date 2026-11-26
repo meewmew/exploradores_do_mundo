@@ -1,7 +1,7 @@
 import { createStandaloneRepository, discoverFromMarker, initialARTransform, updateARGesture, applyARTransformAction, resolveARSceneModel } from './domain.js';
 const ids=['africa','america','antartida','asia','europa','oceania'];
 const params=new URLSearchParams(location.search), id=params.get('continente'), modelPath=params.get('model'),countryId=params.get('pais');
-const frontMode=params.get('modo')==='frente';
+const frontMode=params.get('modo')!=='marcador';
 const markerLibrary=new URL('../vendor/ar-3.4.7.js',import.meta.url);
 const sceneModel=resolveARSceneModel(id,countryId,modelPath);
 const continentalTerrain=sceneModel?.kind==='continent'&&modelPath===`models/${id}-terrain.glb`,terrainVersion=modelPath?.endsWith('-terrain.glb')?new URL(import.meta.url).search:'';
@@ -129,7 +129,7 @@ async function start(){
  if(!window.AFRAME){error('ar:camera-error','unsupported','As bibliotecas de RA não carregaram.');return;}
  let placement;
  try{
-  if(frontMode)placement=await import('./front.js?v=2');
+  if(frontMode)placement=await import('./front.js?v=3');
   else if(!AFRAME.systems.arjs)await loadMarkerLibrary();
  }catch{
   if(!stopped)error('ar:camera-error','unsupported','As bibliotecas de RA não carregaram.');
@@ -166,7 +166,7 @@ async function start(){
  if(!frontMode||!embedded)void loadPoints();
 }
 window.addEventListener('camera-init',()=>{if(stopped){document.querySelectorAll('video').forEach(v=>v.srcObject?.getTracks().forEach(t=>t.stop()));return;}post('ar:ready');status.textContent='Aponte para o quadrado preto da folha.';});
-window.addEventListener('camera-error',e=>{const err=e.detail?.error||e.detail||lastCameraError;const code=err?.name||'unknown';error(code==='NotAllowedError'?'ar:camera-denied':'ar:camera-error',code,code==='NotAllowedError'?'Câmera bloqueada. Autorize nas permissões do site.':'Não foi possível acessar a câmera.');});
+window.addEventListener('camera-error',e=>{const err=lastCameraError||e.detail?.error||e.detail;const code=err?.name||'unknown';error(code==='NotAllowedError'?'ar:camera-denied':'ar:camera-error',code,code==='NotAllowedError'?'Câmera bloqueada. Autorize nas permissões do site.':'Não foi possível acessar a câmera.');});
 const pointers=new Map();
 function installGestures(overlay){
 overlay.addEventListener('pointerdown',e=>{
@@ -197,7 +197,6 @@ if(frontMode){
 }
 }
 installGestures(document.querySelector('#gestures'));
-if(frontMode)installGestures(document.querySelector('#spatial-gestures'));
 if(!embedded){
  document.querySelector('#standalone').style.display='block';const back=document.querySelector('#back');back.href=sceneModel?.kind==='country'?`../#/paises/${sceneModel.continentId}/${sceneModel.countryId}`:`../#/continente/${encodeURIComponent(id||'')}`;back.addEventListener('click',stop);
  document.querySelectorAll('[data-action]').forEach(b=>b.addEventListener('click',()=>{const type=b.dataset.action;if(type==='plus')action('ar:set-scale',{delta:.25});if(type==='minus')action('ar:set-scale',{delta:-.25});if(type==='rotate')action('ar:rotate',{degrees:30});if(type==='reset')action('ar:reset');}));

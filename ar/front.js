@@ -1,3 +1,4 @@
+import { openSpatial as launchSpatial } from './spatial.js';
 import { applyARTransformAction, initialARTransform, updateARGesture } from './domain.js';
 
 const depth = 2;
@@ -8,18 +9,9 @@ export function createFrontPlacement({ scene, preview, model, ready, failure }) 
   const THREE = AFRAME.THREE;
   const video = document.querySelector('#front-video');
   const openSpatial = document.querySelector('#spatial-start');
-  const spatialOverlay = document.querySelector('#spatial-overlay');
-  const closeSpatial = document.querySelector('#spatial-close');
-  const resetSpatial = document.querySelector('#spatial-reset');
-  const tracking = document.querySelector('#spatial-tracking');
-  let stream, cameraRequest = 0, radius, spatial, stopped = false;
+  let stream, cameraRequest = 0, radius, stopped = false;
   let transform = initialARTransform();
   const screen = { x: 0, y: 0 };
-  const rotation = new THREE.Quaternion();
-  const euler = new THREE.Euler();
-  const right = new THREE.Vector3();
-  const up = new THREE.Vector3();
-  const forward = new THREE.Vector3();
   const clip = Math.PI / 180;
 
   function stopCamera() {
@@ -60,10 +52,6 @@ export function createFrontPlacement({ scene, preview, model, ready, failure }) 
     object.position.set(screen.x * halfHeight * aspect, screen.y * halfHeight, -depth);
     object.scale.setScalar(fit * scale);
     object.rotation.set((initialTilt + tilt) * clip, yaw * clip, 0);
-    if (spatial?.root) {
-      spatial.root.scale.setScalar(.53 / radius * scale);
-      spatial.root.rotation.set((initialTilt + tilt) * clip, spatial.yaw + yaw * clip, 0, 'YXZ');
-    }
   }
 
   function prepareModel() {
@@ -79,8 +67,8 @@ export function createFrontPlacement({ scene, preview, model, ready, failure }) 
 
   function gesture(previous, current, rotateOnly = false) {
     if (!current.length || !previous.length) return;
-    const width = spatial ? spatialOverlay.clientWidth : innerWidth;
-    const height = spatial ? spatialOverlay.clientHeight : innerHeight;
+    const width = innerWidth;
+    const height = innerHeight;
     const delta = current.reduce((sum, point) => {
       const before = previous.find(item => item.id === point.id) ?? point;
       return { x: sum.x + point.x - before.x, y: sum.y + point.y - before.y };
@@ -89,14 +77,8 @@ export function createFrontPlacement({ scene, preview, model, ready, failure }) 
     if (!rotateOnly) {
       const x = 2 * delta.x / (Math.max(1, width) * current.length);
       const y = -2 * delta.y / (Math.max(1, height) * current.length);
-      if (spatial?.placed) {
-        right.set(1, 0, 0).applyQuaternion(spatial.orientation);
-        up.set(0, 1, 0).applyQuaternion(spatial.orientation);
-        spatial.root.position.addScaledVector(right, x * .7).addScaledVector(up, y * .7);
-      } else if (!spatial) {
-        screen.x = clamp(screen.x + x, .86);
-        screen.y = clamp(screen.y + y, .82);
-      }
+      screen.x = clamp(screen.x + x, .86);
+      screen.y = clamp(screen.y + y, .82);
     }
     update();
   }
@@ -106,87 +88,42 @@ export function createFrontPlacement({ scene, preview, model, ready, failure }) 
     if (type === 'ar:reset') {
       screen.x = 0;
       screen.y = 0;
-      if (spatial) spatial.placed = false;
     }
     update();
   }
 
-  function renderSpatial(viewer, frame) {
-    if (!frame || spatial !== viewer) return;
-    const space = viewer.renderer.xr.getReferenceSpace();
-    const pose = space && frame.getViewerPose(space);
-    viewer.root.visible = Boolean(pose && !pose.emulatedPosition);
-    tracking.hidden = viewer.root.visible;
-    if (viewer.root.visible) {
-      const orientation = pose.transform.orientation;
-      viewer.orientation.set(orientation.x, orientation.y, orientation.z, orientation.w);
-      if (!viewer.placed) {
-        rotation.copy(viewer.orientation);
-        const position = pose.transform.position;
-        forward.set(0, -.12, -depth).applyQuaternion(rotation);
-        viewer.root.position.set(position.x, position.y, position.z).add(forward);
-        viewer.yaw = euler.setFromQuaternion(rotation, 'YXZ').y;
-        viewer.placed = true;
-        update();
-      }
-    }
-    viewer.renderer.render(viewer.scene, viewer.camera);
-  }
-
-  function finishSpatial(viewer) {
-    if (!viewer || spatial !== viewer) return;
-    spatial = undefined;
-    viewer.renderer?.setAnimationLoop(null);
-    viewer.renderer?.dispose();
-    viewer.renderer?.forceContextLoss();
-    spatialOverlay.hidden = true;
-    openSpatial.disabled = false;
-    if (!stopped) void startCamera();
-  }
-
-  async function enterSpatial() {
-    if (spatial || stopped || !radius) return;
-    const viewer = { placed: false, yaw: 0, orientation: new THREE.Quaternion() };
-    spatial = viewer;
+  const lifetime = new AbortController();
+  const hint = document.querySelector('#spatial-error');
+  async function fixInEnvironment() {
+    if (!radius || stopped) return;
     openSpatial.disabled = true;
     stopCamera();
-    spatialOverlay.hidden = false;
-    tracking.hidden = false;
-    document.querySelector('#spatial-error').hidden = true;
     try {
-      // Keep requestSession in the button's user activation, as in Superfície RA.
-      viewer.session = await navigator.xr.requestSession('immersive-ar', {
-        requiredFeatures: ['dom-overlay'], domOverlay: { root: spatialOverlay },
-      });
-      viewer.session.addEventListener('end', () => queueMicrotask(() => finishSpatial(viewer)), { once: true });
-      if (stopped) { await viewer.session.end(); return; }
-      viewer.scene = new THREE.Scene();
-      viewer.camera = new THREE.PerspectiveCamera(45, 1, .05, 50);
-      viewer.root = new THREE.Group();
-      viewer.root.visible = false;
-      viewer.root.add(model.object3D.clone(true));
-      const light = new THREE.DirectionalLight(0xffffff, 1.5);
-      light.position.set(1, 3, 2);
-      viewer.scene.add(viewer.root, new THREE.AmbientLight(0xffffff, 1), light);
-      viewer.renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
-      viewer.renderer.xr.enabled = true;
-      viewer.renderer.xr.setReferenceSpaceType('local');
-      await viewer.renderer.xr.setSession(viewer.session);
-      if (!stopped && spatial === viewer) viewer.renderer.setAnimationLoop((_, frame) => renderSpatial(viewer, frame));
+      await launchSpatial({ THREE, object: model.object3D, lifetime: lifetime.signal });
     } catch {
-      if (viewer.session) await viewer.session.end().catch(() => {});
-      finishSpatial(viewer);
-      if (!stopped) document.querySelector('#spatial-error').hidden = false;
+      hint.textContent = 'Não foi possível fixar o mapa no ambiente. Ele acompanha a tela.';
+      hint.hidden = false;
+    } finally {
+      if (!stopped) { openSpatial.disabled = false; void startCamera(); }
     }
   }
-
-  openSpatial.addEventListener('click', enterSpatial);
-  closeSpatial.addEventListener('click', () => { void spatial?.session?.end().catch(() => {}); });
-  resetSpatial.addEventListener('click', () => action('ar:reset'));
-  spatialOverlay.addEventListener('beforexrselect', event => event.preventDefault());
-  navigator.xr?.isSessionSupported('immersive-ar').then(supported => {
-    if (!stopped) openSpatial.hidden = !supported;
-  }).catch(() => {});
+  async function checkTracking() {
+    let supported = false;
+    try { supported = await navigator.xr?.isSessionSupported('immersive-ar'); } catch {}
+    if (stopped) return;
+    openSpatial.hidden = !supported;
+    if (supported) {
+      openSpatial.addEventListener('click', fixInEnvironment);
+    } else {
+      hint.textContent = 'Neste navegador, o mapa acompanha a tela.';
+      hint.hidden = false;
+      if (document.createElement('a').relList.supports('ar')) {
+        const { offerQuickLook } = await import('./apple-preview.js');
+        if (!stopped) offerQuickLook(openSpatial, hint, model.object3D, lifetime.signal);
+      }
+    }
+  }
+  void checkTracking();
   window.addEventListener('resize', update);
   video.hidden = false;
   void startCamera();
@@ -195,7 +132,6 @@ export function createFrontPlacement({ scene, preview, model, ready, failure }) 
     stopped = true;
     window.removeEventListener('resize', update);
     stopCamera();
-    const viewer = spatial;
-    if (viewer?.session) void viewer.session.end().catch(() => finishSpatial(viewer));
+    lifetime.abort();
   } };
 }

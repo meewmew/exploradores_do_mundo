@@ -1,0 +1,19 @@
+.world-ar-overlay { display: none; }
+.world-ar-overlay:xr-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: max(1rem, env(safe-area-inset-top)) 1rem max(1rem, env(safe-area-inset-bottom));
+  background: transparent;
+  touch-action: none;
+}
+.world-ar-overlay > div { display: flex; gap: .75rem; margin-top: auto; }
+.world-ar-overlay p, .world-ar-overlay button {
+  background: #fff;
+  color: #102940;
+  padding: .65rem 1rem;
+  border-radius: 1rem;
+  font: 600 1rem/1.4 system-ui, sans-serif;
+}
+.world-ar-overlay button { min-height: 44px; border: 1px solid #102940; }
