@@ -10,7 +10,8 @@ const status=document.querySelector('#status');
 const continentControls=sceneModel?.kind==='continent';
 const lateralLimit=2;
 let scene,marker,model,stableTimer,foundAt=0,stopped=false,transformState=initialARTransform(),lastCameraError;
-let lateralOffset,screenRight,inverseMarker;
+let lateralOffset,screenRight,inverseMarker,frontRotation,markerRotation,faceCameraPitch;
+let facingReady=false;
 const streams=new Set();
 const pointLayer=document.querySelector('#points'),pointEntries=[];
 const projectionBounds={left:0,top:0,width:innerWidth,height:innerHeight};
@@ -29,6 +30,13 @@ function updateProjectionBounds(){const rect=scene?.renderer?.domElement?.getBou
 function hidePoints(){for(const point of pointEntries)point.button.hidden=true;}
 function projectPoints(){
  if(stopped||document.hidden||!modelReady||!marker?.object3D?.visible||!scene?.camera){hidePoints();return;}
+ if(continentControls&&!facingReady){
+  // Face the screen at first detection, then keep this orientation relative to the marker.
+  marker.object3D.getWorldQuaternion(markerRotation).invert();
+  scene.camera.getWorldQuaternion(frontRotation).premultiply(markerRotation).multiply(faceCameraPitch);
+  facingReady=true;
+  transform();
+ }
  model.object3D.updateWorldMatrix(true,false);scene.camera.updateMatrixWorld();
  for(const point of pointEntries){
   const projected=point.projected.copy(point.local).applyMatrix4(model.object3D.matrixWorld).project(scene.camera);
@@ -92,7 +100,13 @@ function transform(){
  const angle=continentalTerrain?tilt+30:tilt;
  model.object3D.position.copy(lateralOffset);
  model.object3D.scale.setScalar(zoom);
- model.object3D.rotation.set(AFRAME.THREE.MathUtils.degToRad(angle),AFRAME.THREE.MathUtils.degToRad(rotation),0,'YXZ');
+ const radians=AFRAME.THREE.MathUtils.degToRad(rotation);
+ if(continentControls&&facingReady){
+  model.object3D.quaternion.copy(frontRotation);
+  model.object3D.rotateY(radians);
+ }else{
+  model.object3D.rotation.set(AFRAME.THREE.MathUtils.degToRad(angle),radians,0,'YXZ');
+ }
 }
 function moveSideways(distance){
  if(!continentControls||!Number.isFinite(distance)||!modelReady||!marker?.object3D.visible||!scene.camera)return;
@@ -111,7 +125,10 @@ function action(type,payload={}){
  if(type==='ar:stop'){stop();return;}
  if(type==='ar:select-point'){if(typeof payload.pointId==='string')selectPoint(payload.pointId);return;}
  if(type==='ar:move-sideways'){moveSideways(payload.distance);return;}
- if(type==='ar:reset')lateralOffset?.set(0,0,0);
+ if(type==='ar:reset'){
+  lateralOffset?.set(0,0,0);
+  facingReady=false;
+ }
  transformState=applyARTransformAction(transformState,type,payload);
  transform();
 }
@@ -160,6 +177,9 @@ async function start(){
  lateralOffset=new AFRAME.THREE.Vector3();
  screenRight=new AFRAME.THREE.Vector3();
  inverseMarker=new AFRAME.THREE.Matrix4();
+ frontRotation=new AFRAME.THREE.Quaternion();
+ markerRotation=new AFRAME.THREE.Quaternion();
+ faceCameraPitch=new AFRAME.THREE.Quaternion().setFromAxisAngle(new AFRAME.THREE.Vector3(1,0,0),Math.PI/2);
  scene=document.createElement('a-scene');scene.setAttribute('embedded','');scene.setAttribute('vr-mode-ui','enabled: false');scene.setAttribute('renderer','antialias: true; alpha: true; precision: mediump; colorManagement: true;');
  scene.setAttribute('exploradores-points','');
  scene.setAttribute('gltf-model', 'meshoptDecoderPath: ../vendor/meshopt-decoder-0.22.0.js');
