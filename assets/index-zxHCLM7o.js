@@ -336,7 +336,7 @@ async function startExploration() {
   if (qrArrival) {
     await go.unlock(qrArrival);
     qrUrl.searchParams.delete("continente");
-    qrUrl.hash = "/continente/" + qrArrival;
+    qrUrl.hash = "/ar/" + qrArrival;
     window.history.replaceState(window.history.state, "", qrUrl);
   }
   Hg.createRoot(document.getElementById("root")).render(U.jsx(nS,{}));
