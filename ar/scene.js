@@ -2,6 +2,7 @@ import { createStandaloneRepository, discoverFromMarker, initialARTransform, upd
 const ids=['africa','america','antartida','asia','europa','oceania'];
 const params=new URLSearchParams(location.search), id=params.get('continente'), modelPath=params.get('model'),countryId=params.get('pais');
 const frontMode=params.get('modo')==='frente';
+const markerLibrary=new URL('../vendor/ar-3.4.7.js',import.meta.url);
 const sceneModel=resolveARSceneModel(id,countryId,modelPath);
 const continentalTerrain=sceneModel?.kind==='continent'&&modelPath===`models/${id}-terrain.glb`,terrainVersion=modelPath?.endsWith('-terrain.glb')?new URL(import.meta.url).search:'';
 const continentNames={africa:'África',america:'América',antartida:'Antártida',asia:'Ásia',europa:'Europa',oceania:'Oceania'};
@@ -14,10 +15,19 @@ const projectionBounds={left:0,top:0,width:innerWidth,height:innerHeight};
 let pointsAbort,pointsObserver,modelReady=false,selectedPointId='';
 const post=(type,payload)=>{if(embedded)window.parent.postMessage({app:'exploradores-ar',version:1,type,payload},origin);};
 function error(type,code,text){status.textContent=text;post(type,{code});}
+function loadMarkerLibrary(){
+ return new Promise((resolve,reject)=>{
+  const script=document.createElement('script');
+  script.src=markerLibrary.href;
+  script.onload=resolve;script.onerror=reject;
+  document.head.append(script);
+ });
+}
 function updateProjectionBounds(){const rect=scene?.renderer?.domElement?.getBoundingClientRect();if(rect){projectionBounds.left=rect.left;projectionBounds.top=rect.top;projectionBounds.width=rect.width;projectionBounds.height=rect.height;}}
 function hidePoints(){for(const point of pointEntries)point.button.hidden=true;}
 function projectPoints(){
- if(stopped||document.hidden||!modelReady||(!frontMode&&!marker?.object3D?.visible)||!scene?.camera){hidePoints();return;}
+ if(frontMode)return;
+ if(stopped||document.hidden||!modelReady||!marker?.object3D?.visible||!scene?.camera){hidePoints();return;}
  model.object3D.updateWorldMatrix(true,false);scene.camera.updateMatrixWorld();
  for(const point of pointEntries){
   const projected=point.projected.copy(point.local).applyMatrix4(model.object3D.matrixWorld).project(scene.camera);
@@ -116,8 +126,15 @@ async function start(){
  if(stopped)return;
  const canvas=document.createElement('canvas');
  if(!isSecureContext||!navigator.mediaDevices?.getUserMedia||!(canvas.getContext('webgl2')||canvas.getContext('webgl'))){error('ar:camera-error','unsupported','É necessário HTTPS, câmera e WebGL para usar a RA.');return;}
- if(!window.AFRAME||(!frontMode&&!AFRAME.systems.arjs)){error('ar:camera-error','unsupported','As bibliotecas de RA não carregaram.');return;}
- const placement=frontMode?await import('./front.js?v=1'):null;
+ if(!window.AFRAME){error('ar:camera-error','unsupported','As bibliotecas de RA não carregaram.');return;}
+ let placement;
+ try{
+  if(frontMode)placement=await import('./front.js?v=2');
+  else if(!AFRAME.systems.arjs)await loadMarkerLibrary();
+ }catch{
+  if(!stopped)error('ar:camera-error','unsupported','As bibliotecas de RA não carregaram.');
+  return;
+ }
  if(stopped)return;
  if(!AFRAME.components['exploradores-points'])AFRAME.registerComponent('exploradores-points',{tock:projectPoints});
  scene=document.createElement('a-scene');scene.setAttribute('embedded','');scene.setAttribute('vr-mode-ui','enabled: false');scene.setAttribute('renderer','antialias: true; alpha: true; precision: mediump; colorManagement: true;');
@@ -145,7 +162,8 @@ async function start(){
  model.addEventListener('model-error',()=>{if(stopped)return;modelReady=false;hidePoints();error('ar:model-error','load','Não foi possível carregar o modelo.');});
  scene.addEventListener('renderstart',()=>{scene.renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.5));pointsObserver=new ResizeObserver(()=>{updateProjectionBounds();front?.update();});pointsObserver.observe(scene.renderer.domElement);updateProjectionBounds();front?.update();});
  document.body.append(scene);
- window.addEventListener('resize',updateProjectionBounds);void loadPoints();
+ window.addEventListener('resize',updateProjectionBounds);
+ if(!frontMode||!embedded)void loadPoints();
 }
 window.addEventListener('camera-init',()=>{if(stopped){document.querySelectorAll('video').forEach(v=>v.srcObject?.getTracks().forEach(t=>t.stop()));return;}post('ar:ready');status.textContent='Aponte para o quadrado preto da folha.';});
 window.addEventListener('camera-error',e=>{const err=e.detail?.error||e.detail||lastCameraError;const code=err?.name||'unknown';error(code==='NotAllowedError'?'ar:camera-denied':'ar:camera-error',code,code==='NotAllowedError'?'Câmera bloqueada. Autorize nas permissões do site.':'Não foi possível acessar a câmera.');});

@@ -1,6 +1,7 @@
 import { applyARTransformAction, initialARTransform, updateARGesture } from './domain.js';
 
 const depth = 2;
+const initialTilt = 42;
 const clamp = (value, limit) => Math.max(-limit, Math.min(limit, value));
 
 export function createFrontPlacement({ scene, preview, model, ready, failure }) {
@@ -10,6 +11,7 @@ export function createFrontPlacement({ scene, preview, model, ready, failure }) 
   const spatialOverlay = document.querySelector('#spatial-overlay');
   const closeSpatial = document.querySelector('#spatial-close');
   const resetSpatial = document.querySelector('#spatial-reset');
+  const tracking = document.querySelector('#spatial-tracking');
   let stream, cameraRequest = 0, radius, spatial, stopped = false;
   let transform = initialARTransform();
   const screen = { x: 0, y: 0 };
@@ -51,16 +53,16 @@ export function createFrontPlacement({ scene, preview, model, ready, failure }) 
     if (!radius || !scene.camera) return;
     const aspect = scene.camera.aspect || innerWidth / Math.max(1, innerHeight);
     const halfHeight = depth * Math.tan(scene.camera.fov * clip / 2);
-    const fit = .64 * halfHeight * Math.min(aspect, 1) / radius;
+    const fit = .82 * halfHeight * Math.min(aspect, 1) / radius;
     const { scale, tilt, rotation: yaw } = transform;
     const object = preview.object3D;
     object.visible = true;
     object.position.set(screen.x * halfHeight * aspect, screen.y * halfHeight, -depth);
     object.scale.setScalar(fit * scale);
-    object.rotation.set((20 + tilt) * clip, yaw * clip, 0);
+    object.rotation.set((initialTilt + tilt) * clip, yaw * clip, 0);
     if (spatial?.root) {
       spatial.root.scale.setScalar(.53 / radius * scale);
-      spatial.root.rotation.set((20 + tilt) * clip, spatial.yaw + yaw * clip, 0, 'YXZ');
+      spatial.root.rotation.set((initialTilt + tilt) * clip, spatial.yaw + yaw * clip, 0, 'YXZ');
     }
   }
 
@@ -114,6 +116,7 @@ export function createFrontPlacement({ scene, preview, model, ready, failure }) 
     const space = viewer.renderer.xr.getReferenceSpace();
     const pose = space && frame.getViewerPose(space);
     viewer.root.visible = Boolean(pose && !pose.emulatedPosition);
+    tracking.hidden = viewer.root.visible;
     if (viewer.root.visible) {
       const orientation = pose.transform.orientation;
       viewer.orientation.set(orientation.x, orientation.y, orientation.z, orientation.w);
@@ -148,6 +151,7 @@ export function createFrontPlacement({ scene, preview, model, ready, failure }) 
     openSpatial.disabled = true;
     stopCamera();
     spatialOverlay.hidden = false;
+    tracking.hidden = false;
     document.querySelector('#spatial-error').hidden = true;
     try {
       // Keep requestSession in the button's user activation, as in Superfície RA.
