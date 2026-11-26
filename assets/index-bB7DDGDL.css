@@ -6,11 +6,19 @@
   box-shadow: none;
 }
 
+@font-face {
+  font-family: Sniglet;
+  src: url('../fonts/Sniglet-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-display: swap;
+}
+
 .exploration-board #world-map-title {
-  font-family: var(--font-heading);
-  font-size: clamp(2rem, 5.8vw, 3rem);
-  font-weight: 650;
-  line-height: 1.1;
+  font-family: Sniglet, var(--font-heading);
+  font-size: clamp(2.35rem, 7.75vw, 4rem);
+  font-weight: 800;
+  line-height: 1.04;
+  letter-spacing: -.026em;
 }
 
 .map-title-word { white-space: nowrap; }
