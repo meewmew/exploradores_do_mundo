@@ -22,12 +22,6 @@
 }
 
 .map-title-word { white-space: nowrap; }
-.map-title-africa { color: #775100; }
-.map-title-america { color: #a34417; }
-.map-title-antartida { color: #245f86; }
-.map-title-asia { color: #386a49; }
-.map-title-europa { color: #694591; }
-.map-title-oceania { color: #176a74; }
 
 .exploration-board .interactive-world-map {
   --water: var(--canvas);
@@ -39,13 +33,19 @@
 
 .adventure-map-page .destination-africa { --discovered-silhouette: #ffda55; }
 .adventure-map-page .destination-america { --discovered-silhouette: #ffc18f; }
-.adventure-map-page .destination-antartida { --discovered-silhouette: #c6e8fa; }
+.adventure-map-page .destination-antartida { --discovered-silhouette: #8ec9ee; }
 .adventure-map-page .destination-asia { --discovered-silhouette: #b7dfa9; }
 .adventure-map-page .destination-europa { --discovered-silhouette: #ddc4f5; }
 .adventure-map-page .destination-oceania { --discovered-silhouette: #8fd5e7; }
 
-.adventure-map-page .continent-card .destination-art {
-  background: var(--surface);
+.adventure-map-page .continent-card {
+  background: #d8eef9;
+}
+
+.adventure-map-page .continent-card .destination-art,
+.adventure-map-page .continent-card .continent-select,
+.adventure-map-page .continent-card .card-activity {
+  background: transparent;
 }
 
 .destination-silhouette {
