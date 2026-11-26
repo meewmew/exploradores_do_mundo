@@ -3,16 +3,19 @@ let active = false;
 let supported;
 navigator.xr?.isSessionSupported('immersive-ar').then(value => { supported = value; }).catch(() => {});
 
-export function openSpatialFromLink(event, file) {
-  if (!navigator.xr || supported === false || event.defaultPrevented || event.button !== 0 ||
-      event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
-  const destination = event.currentTarget.href;
-  event.preventDefault();
-  if (active) return;
-  const route = location.href;
-  openSpatial({ file: new URL('../' + file, import.meta.url) }).catch(() => {
-    if (location.href === route) location.assign(destination);
-  });
+export async function launchModelAR(file, viewer) {
+  if (viewer?.canActivateAR) {
+    await viewer.activateAR();
+    return;
+  }
+  if (navigator.xr && supported !== false) {
+    await openSpatial({ file: new URL('../' + file, import.meta.url) });
+    return;
+  }
+  if (document.createElement('a').relList.supports('ar') && !viewer?.loaded) {
+    return 'Aguarde o mapa 3D carregar e toque em Ver em RA novamente.';
+  }
+  return 'Este navegador não oferece rastreamento para colocar o mapa no espaço.';
 }
 
 export async function openSpatial({ file, THREE, object, lifetime }) {
@@ -22,10 +25,10 @@ export async function openSpatial({ file, THREE, object, lifetime }) {
   overlay.className = 'world-ar-overlay';
   const status = document.createElement('p');
   status.setAttribute('role', 'status');
-  status.textContent = 'Carregando o mapa 3D…';
+  status.textContent = 'Mova o celular devagar e aponte para o chão ou uma mesa. Você também pode apontar para uma parede.';
   const controls = document.createElement('div');
   const reset = document.createElement('button');
-  reset.textContent = 'Trazer à frente';
+  reset.textContent = 'Buscar outra superfície';
   const place = document.createElement('button');
   place.textContent = 'Escolher posição';
   place.hidden = true;
@@ -52,11 +55,11 @@ export async function openSpatial({ file, THREE, object, lifetime }) {
   window.addEventListener('hashchange', end);
   try {
     session = await navigator.xr.requestSession('immersive-ar', {
-      requiredFeatures: ['local'], optionalFeatures: ['dom-overlay', 'hit-test'], domOverlay: { root: overlay },
+      requiredFeatures: ['local', 'hit-test', 'dom-overlay'], domOverlay: { root: overlay },
     });
     if (abort.signal.aborted) { await session.end(); return; }
     session.addEventListener('end', () => abort.abort(), { once: true });
-    const { createWorldView } = await import('./world-view.js?v=placement');
+    const { createWorldView } = await import('./world-view.js?v=surface');
     if (abort.signal.aborted) return;
     view = await createWorldView({ session, overlay, status, reset, place, adjust, adjustments, THREE, object, file, signal: abort.signal });
     await finished;

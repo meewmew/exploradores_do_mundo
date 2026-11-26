@@ -20,4 +20,6 @@
 }
 .world-ar-overlay button { min-height: 44px; border: 1px solid #102940; }
 .world-ar-adjust summary { cursor: pointer; width: fit-content; margin-inline: auto; }
-.quick-look-frame { width: 100%; min-height: 10rem; border: 0; display: block; }
+.model-ar-action { min-width: 0; display: grid; justify-items: end; gap: .35rem; }
+.model-ar-action p { max-width: 24ch; margin: .5rem 0 0; }
+.map-marker-link { min-height: 44px; display: inline-flex; align-items: center; font-size: .875rem; }

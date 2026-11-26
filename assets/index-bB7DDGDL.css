@@ -46,6 +46,24 @@
 
 .exploration-board .world-map {
   background: var(--canvas);
+  --map-grid: transparent;
+  --map-locked: #cbdce5;
+  --yellow: #f1d989;
+  --warm: #f1c09c;
+  --surface: #f7f9f7;
+  --success-tint: #c0ddc0;
+  --tint-strong: #b7d8ed;
+  --action: #dbc7e9;
+}
+
+.exploration-board .map-region:not(.selected) > path:not(:focus-visible) {
+  stroke: #f3fafc;
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+}
+
+.exploration-board .world-map-viewport[data-at-fit] {
+  touch-action: pan-y;
 }
 
 .adventure-map-page .destination-africa { --discovered-silhouette: #ffda55; }

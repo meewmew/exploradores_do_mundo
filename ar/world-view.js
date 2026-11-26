@@ -47,24 +47,24 @@ export async function createWorldView({ session, overlay, status, reset, place, 
   const light = new THREE.DirectionalLight(0xffffff, 1.5);
   light.position.set(1, 3, 2);
   scene.add(anchor, ring, light, new THREE.AmbientLight(0xffffff, 1));
-  let positioned = false, placing = false, onSurface = false, hitTest;
+  let positioned = false, placing = false, hitTest;
   let radius = 0, bottom = 0, transform = initialARTransform(), owned;
-  const orientation = new THREE.Quaternion(), angles = new THREE.Euler();
-  const offset = new THREE.Vector3();
+  const up = new THREE.Vector3(0, 1, 0), toCamera = new THREE.Vector3();
+  const wallX = new THREE.Vector3(), wallZ = new THREE.Vector3(), wallBasis = new THREE.Matrix4();
   const planeNormal = new THREE.Vector3(), planeRotation = new THREE.Quaternion();
   let surfaceSeenAt = -Infinity;
-  const movement = new THREE.Vector3(), movementRotation = new THREE.Quaternion();
+  const movement = new THREE.Vector3();
   function move(x, y) {
     if (!anchor.visible) return;
-    movement.set(x, onSurface ? 0 : y, onSurface ? -y : 0);
-    anchor.position.add(movement.applyQuaternion(onSurface ? anchor.quaternion : movementRotation));
+    movement.set(x, 0, -y);
+    anchor.position.add(movement.applyQuaternion(anchor.quaternion));
   }
   function updateModel() {
     if (!radius) return;
     const scale = .53 * transform.scale / radius;
     model.scale.setScalar(scale);
-    model.position.y = onSurface ? bottom * scale + .01 : 0;
-    model.rotation.set((onSurface ? 0 : 42 + transform.tilt) * Math.PI / 180, transform.rotation * Math.PI / 180, 0, 'YXZ');
+    model.position.y = bottom * scale;
+    model.rotation.y = transform.rotation * Math.PI / 180;
   }
   function act(type, payload) {
     transform = applyARTransformAction(transform, type, payload);
@@ -84,7 +84,8 @@ export async function createWorldView({ session, overlay, status, reset, place, 
     adjustments.append(button);
   }
   reset.onclick = () => {
-    positioned = placing = onSurface = false;
+    positioned = placing = false;
+    surfaceSeenAt = -Infinity;
     place.textContent = 'Escolher posição';
     transform = initialARTransform();
     updateModel();
@@ -100,14 +101,17 @@ export async function createWorldView({ session, overlay, status, reset, place, 
       return;
     }
     if (performance.now() - surfaceSeenAt > 500) return;
+    placeOnSurface();
+  };
+  function placeOnSurface() {
     anchor.position.copy(ring.position);
     anchor.quaternion.copy(ring.quaternion);
     placing = false;
-    positioned = onSurface = true;
+    positioned = true;
     place.textContent = 'Escolher outra posição';
     transform = initialARTransform();
     updateModel();
-  };
+  }
   const pointers = new Map();
   overlay.onpointerdown = event => {
     if (!anchor.visible || event.target.closest('button, details')) return;
@@ -132,9 +136,18 @@ export async function createWorldView({ session, overlay, status, reset, place, 
       const point = hit.getPose(reference)?.transform;
       if (!point) continue;
       planeRotation.copy(point.orientation);
-      if (planeNormal.set(0, 1, 0).applyQuaternion(planeRotation).y < .91) continue;
-      const distance = offset.copy(point.position).distanceTo(pose.transform.position);
-      if (distance < .35 || distance > 4) continue;
+      planeNormal.copy(up).applyQuaternion(planeRotation);
+      const wall = Math.abs(planeNormal.y) <= .24;
+      if (!wall && planeNormal.y < .91) continue;
+      toCamera.copy(pose.transform.position).sub(point.position);
+      const distance = Math.hypot(toCamera.x, toCamera.z);
+      if (distance < .35 || distance > 2) continue;
+      if (wall) {
+        if (toCamera.dot(planeNormal) < 0) planeNormal.negate();
+        wallX.crossVectors(up, planeNormal).normalize();
+        wallZ.crossVectors(wallX, planeNormal);
+        planeRotation.setFromRotationMatrix(wallBasis.makeBasis(wallX, planeNormal, wallZ));
+      }
       ring.position.copy(point.position);
       ring.quaternion.copy(planeRotation);
       return true;
@@ -146,26 +159,22 @@ export async function createWorldView({ session, overlay, status, reset, place, 
     const reference = renderer.xr.getReferenceSpace();
     const pose = reference && frame.getViewerPose(reference);
     const tracked = pose && !pose.emulatedPosition;
-    if (tracked) movementRotation.copy(pose.transform.orientation);
-    if (tracked && radius && !positioned && !placing) {
-      orientation.copy(pose.transform.orientation);
-      offset.set(0, 0, -2).applyQuaternion(orientation);
-      anchor.position.copy(pose.transform.position).add(offset);
-      anchor.rotation.set(0, angles.setFromQuaternion(orientation, 'YXZ').y, 0);
-      positioned = true;
-    }
     if (!tracked) surfaceSeenAt = -Infinity;
-    if (tracked && placing && showSurface(frame, reference, pose)) surfaceSeenAt = performance.now();
+    if (tracked && (!positioned || placing) && showSurface(frame, reference, pose)) {
+      surfaceSeenAt = performance.now();
+      if (!placing) placeOnSurface();
+    }
     const canPlace = placing && performance.now() - surfaceSeenAt <= 500;
     ring.visible = canPlace;
     place.disabled = !radius || (placing && !canPlace);
     anchor.visible = Boolean(tracked && radius && positioned && !placing);
     adjust.hidden = !anchor.visible;
     status.hidden = anchor.visible;
-    if (!anchor.visible && radius) {
+    if (!anchor.visible) {
       const message = canPlace ? 'Toque em Colocar aqui para fixar o mapa.'
-        : tracked && placing ? 'Aponte para uma mesa ou para o chão até aparecer o círculo.'
-        : 'Mova o celular devagar para recuperar o rastreamento.';
+        : positioned && !placing && !tracked ? 'Mova o celular devagar para recuperar o rastreamento.'
+        : positioned && !placing ? 'Carregando o mapa 3D…'
+        : 'Mova o celular devagar e aponte para o chão ou uma mesa. Você também pode apontar para uma parede.';
       if (status.textContent !== message) status.textContent = message;
     }
     renderer.render(scene, camera);
@@ -188,6 +197,10 @@ export async function createWorldView({ session, overlay, status, reset, place, 
   try {
     await renderer.xr.setSession(session);
     signal.throwIfAborted();
+    if (!session.requestHitTestSource) throw new DOMException('WebXR Hit Test indisponível.', 'NotSupportedError');
+    const viewerSpace = await session.requestReferenceSpace('viewer');
+    hitTest = await session.requestHitTestSource({ space: viewerSpace, entityTypes: ['plane'] });
+    signal.throwIfAborted();
     renderer.setAnimationLoop(draw);
     if (!object) {
       const response = await fetchModel(file, { signal });
@@ -204,15 +217,7 @@ export async function createWorldView({ session, overlay, status, reset, place, 
     mesh.position.sub(center);
     model.add(mesh);
     updateModel();
-    if (session.domOverlayState && session.requestHitTestSource) {
-      void session.requestReferenceSpace('viewer')
-        .then(space => session.requestHitTestSource({ space, entityTypes: ['plane'] }))
-        .then(source => {
-          if (signal.aborted) { source.cancel(); return; }
-          hitTest = source;
-          place.hidden = false;
-        }).catch(() => {});
-    }
+    place.hidden = false;
     return { dispose };
   } catch (error) {
     dispose();
