@@ -62,10 +62,6 @@
   stroke-linejoin: round;
 }
 
-.exploration-board .world-map-viewport[data-at-fit] {
-  touch-action: pan-y;
-}
-
 .adventure-map-page .destination-africa { --discovered-silhouette: #ffda55; }
 .adventure-map-page .destination-america { --discovered-silhouette: #ffc18f; }
 .adventure-map-page .destination-antartida { --discovered-silhouette: #8ec9ee; }
