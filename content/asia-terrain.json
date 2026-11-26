@@ -1,0 +1,96 @@
+{
+  "version": 3,
+  "continentId": "asia",
+  "file": "models/asia-terrain.glb",
+  "sourceIds": [
+    "3d-elevation-map",
+    "copernicus-glo30"
+  ],
+  "verticalExaggeration": 45,
+  "limits": {
+    "triangles": 919240,
+    "bytes": 12944340,
+    "materials": 2,
+    "textures": 1
+  },
+  "points": [
+    {
+      "id": "grande-muralha",
+      "nome": "Grande Muralha da China",
+      "descricaoCurta": "Fortificações de várias épocas formam uma longa defesa histórica no norte da China.",
+      "coordenadas": {
+        "lat": 40.4313889,
+        "lng": 116.5644444
+      },
+      "fontes": [
+        "unesco-great-wall",
+        "wikidata-great-wall"
+      ],
+      "posicao": [
+        0.10511977738797332,
+        0.0016324567517985258,
+        -0.052977284773611535
+      ]
+    },
+    {
+      "id": "taj-mahal",
+      "nome": "Taj Mahal",
+      "descricaoCurta": "Mausoléu de mármore branco construído em Agra no século XVII por ordem do imperador Shah Jahan.",
+      "coordenadas": {
+        "lat": 27.17417,
+        "lng": 78.04222
+      },
+      "fontes": [
+        "unesco-taj-mahal"
+      ],
+      "posicao": [
+        -0.2553625754590428,
+        0.0008776044942352893,
+        0.10006118171921069
+      ]
+    },
+    {
+      "id": "monte-fuji",
+      "nome": "Monte Fuji",
+      "descricaoCurta": "Vulcão de forma quase cônica, considerado sagrado e conhecido por inspirar artistas japoneses.",
+      "coordenadas": {
+        "lat": 35.3605556,
+        "lng": 138.7275
+      },
+      "fontes": [
+        "unesco-fujisan",
+        "wikidata-fuji"
+      ],
+      "posicao": [
+        0.3125166905570691,
+        0.006154445464100606,
+        0.005559317656083387
+      ]
+    }
+  ],
+  "pointPositions": {
+    "grande-muralha": [
+      0.10511977738797332,
+      0.0016324567517985258,
+      -0.052977284773611535
+    ],
+    "taj-mahal": [
+      -0.2553625754590428,
+      0.0008776044942352893,
+      0.10006118171921069
+    ],
+    "monte-fuji": [
+      0.3125166905570691,
+      0.006154445464100606,
+      0.005559317656083387
+    ]
+  },
+  "preview": {
+    "sourceNames": [
+      "asia.glb"
+    ],
+    "waterBackground": true,
+    "roundOcean": true
+  },
+  "textOnlyPoints": []
+}

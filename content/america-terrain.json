@@ -1,0 +1,100 @@
+{
+  "version": 3,
+  "continentId": "america",
+  "file": "models/america-terrain.glb",
+  "sourceIds": [
+    "3d-elevation-map",
+    "copernicus-glo30",
+    "viirs-costa-groenlandia",
+    "arcticdem-groenlandia"
+  ],
+  "verticalExaggeration": 28,
+  "limits": {
+    "triangles": 1942818,
+    "bytes": 26325520,
+    "materials": 2,
+    "textures": 1
+  },
+  "points": [
+    {
+      "id": "grand-canyon",
+      "nome": "Grand Canyon",
+      "descricaoCurta": "O rio Colorado escavou este grande cânion no Arizona ao longo de milhões de anos.",
+      "coordenadas": {
+        "lat": 36.0553056,
+        "lng": -112.122
+      },
+      "fontes": [
+        "unesco-grand-canyon",
+        "wikidata-grand-canyon"
+      ],
+      "posicao": [
+        -0.11916647842021502,
+        0.0054033922473663365,
+        -0.293368651851483
+      ]
+    },
+    {
+      "id": "machu-picchu",
+      "nome": "Machu Picchu",
+      "descricaoCurta": "Cidade inca do século XV construída nos Andes peruanos, entre montanhas e floresta tropical.",
+      "coordenadas": {
+        "lat": -13.1633333,
+        "lng": -72.5455556
+      },
+      "fontes": [
+        "unesco-machu-picchu",
+        "wikidata-machu-picchu"
+      ],
+      "posicao": [
+        0.2855615638106981,
+        0.009653422355046645,
+        0.30544633661534115
+      ]
+    },
+    {
+      "id": "cataratas-iguacu",
+      "nome": "Cataratas do Iguaçu",
+      "descricaoCurta": "O rio Iguaçu forma um grande conjunto de quedas-d’água na fronteira entre Brasil e Argentina.",
+      "coordenadas": {
+        "lat": -25.6952778,
+        "lng": -54.4366667
+      },
+      "fontes": [
+        "unesco-iguazu",
+        "wikidata-iguazu"
+      ],
+      "posicao": [
+        0.46289041778792217,
+        0.000782940354615692,
+        0.45817189250090923
+      ]
+    }
+  ],
+  "pointPositions": {
+    "grand-canyon": [
+      -0.11916647842021502,
+      0.0054033922473663365,
+      -0.293368651851483
+    ],
+    "machu-picchu": [
+      0.2855615638106981,
+      0.009653422355046645,
+      0.30544633661534115
+    ],
+    "cataratas-iguacu": [
+      0.46289041778792217,
+      0.000782940354615692,
+      0.45817189250090923
+    ]
+  },
+  "preview": {
+    "sourceNames": [
+      "america-do-norte.glb",
+      "america-do-sul.glb"
+    ],
+    "waterBackground": true,
+    "roundOcean": true
+  },
+  "textOnlyPoints": []
+}

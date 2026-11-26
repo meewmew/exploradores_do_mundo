@@ -1,0 +1,95 @@
+{
+  "version": 3,
+  "continentId": "oceania",
+  "file": "models/oceania-terrain.glb",
+  "sourceIds": [
+    "3d-elevation-map",
+    "copernicus-glo30"
+  ],
+  "verticalExaggeration": 45,
+  "limits": {
+    "triangles": 737982,
+    "bytes": 9776392,
+    "materials": 2,
+    "textures": 1
+  },
+  "points": [
+    {
+      "id": "grande-barreira-coral",
+      "nome": "Grande Barreira de Corais",
+      "descricaoCurta": "Grande sistema de recifes de coral junto à costa nordeste da Austrália.",
+      "coordenadas": {
+        "lat": -18.2861111,
+        "lng": 147.7
+      },
+      "fontes": [
+        "unesco-great-barrier"
+      ],
+      "posicao": [
+        -0.19792857142857156,
+        0.0001,
+        0.028878629635712916
+      ]
+    },
+    {
+      "id": "opera-sydney",
+      "nome": "Ópera de Sydney",
+      "descricaoCurta": "Casa de espetáculos à beira do porto de Sydney, com arquitetura reconhecida.",
+      "coordenadas": {
+        "lat": -33.856667,
+        "lng": 151.215278
+      },
+      "fontes": [
+        "unesco-sydney-opera"
+      ],
+      "posicao": [
+        -0.1552430528571427,
+        0.0001858054043218537,
+        0.2255691216499745
+      ]
+    },
+    {
+      "id": "uluru-kata-tjuta",
+      "nome": "Parque Nacional Uluru-Kata Tjuta",
+      "descricaoCurta": "Grande formação rochosa em uma paisagem cultural do povo Anangu.",
+      "coordenadas": {
+        "lat": -25.3221111,
+        "lng": 130.9856944
+      },
+      "fontes": [
+        "unesco-uluru",
+        "wikidata-uluru"
+      ],
+      "posicao": [
+        -0.4008879965714286,
+        0.0027945328406709462,
+        0.11775884115162576
+      ]
+    }
+  ],
+  "pointPositions": {
+    "grande-barreira-coral": [
+      -0.19792857142857156,
+      0.0001,
+      0.028878629635712916
+    ],
+    "opera-sydney": [
+      -0.1552430528571427,
+      0.0001858054043218537,
+      0.2255691216499745
+    ],
+    "uluru-kata-tjuta": [
+      -0.4008879965714286,
+      0.0027945328406709462,
+      0.11775884115162576
+    ]
+  },
+  "preview": {
+    "sourceNames": [
+      "oceania.glb"
+    ],
+    "waterBackground": true,
+    "roundOcean": true
+  },
+  "textOnlyPoints": []
+}

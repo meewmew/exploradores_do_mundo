@@ -1,0 +1,153 @@
+{
+  "version": 4,
+  "continentId": "africa",
+  "file": "models/africa-terrain.glb",
+  "sourceIds": [
+    "3d-elevation-map",
+    "copernicus-glo30"
+  ],
+  "verticalExaggeration": 45,
+  "limits": {
+    "triangles": 706772,
+    "bytes": 10075228,
+    "materials": 2,
+    "textures": 1
+  },
+  "points": [
+    {
+      "id": "piramides-gize",
+      "nome": "Pirâmides de Gizé",
+      "descricaoCurta": "No Egito, este conjunto reúne três grandes pirâmides construídas para faraós do Egito Antigo.",
+      "coordenadas": {
+        "lat": 29.976111,
+        "lng": 31.132778
+      },
+      "fontes": [
+        "unesco-giza",
+        "wikidata-giza"
+      ],
+      "fontesPorCampo": {
+        "nome": [
+          "wikidata-giza"
+        ],
+        "descricaoCurta": [
+          "unesco-giza"
+        ],
+        "coordenadas": [
+          "wikidata-giza"
+        ]
+      },
+      "posicao": [
+        0.29913630930232565,
+        0.0007631804635071676,
+        -0.5925510313953488
+      ]
+    },
+    {
+      "id": "cataratas-vitoria",
+      "nome": "Cataratas Vitória",
+      "descricaoCurta": "O rio Zambeze forma estas quedas-d’água entre a Zâmbia e o Zimbábue.",
+      "coordenadas": {
+        "lat": -17.924777777778,
+        "lng": 25.858055555556
+      },
+      "fontes": [
+        "unesco-victoria-falls",
+        "wikidata-victoria-falls"
+      ],
+      "fontesPorCampo": {
+        "nome": [
+          "wikidata-victoria-falls"
+        ],
+        "descricaoCurta": [
+          "unesco-victoria-falls"
+        ],
+        "coordenadas": [
+          "wikidata-victoria-falls"
+        ]
+      },
+      "posicao": [
+        0.19486854005168838,
+        0.007723354587660902,
+        0.3543270025839838
+      ]
+    },
+    {
+      "id": "kilimanjaro",
+      "nome": "Kilimanjaro",
+      "descricaoCurta": "Na Tanzânia, esta montanha vulcânica abriga o ponto mais alto da África.",
+      "coordenadas": {
+        "lat": -3.0666666666667,
+        "lng": 37.359166666667
+      },
+      "fontes": [
+        "unesco-kilimanjaro",
+        "wikidata-kilimanjaro"
+      ],
+      "fontesPorCampo": {
+        "nome": [
+          "wikidata-kilimanjaro"
+        ],
+        "descricaoCurta": [
+          "unesco-kilimanjaro"
+        ],
+        "coordenadas": [
+          "wikidata-kilimanjaro"
+        ]
+      },
+      "posicao": [
+        0.42221608527132437,
+        0.025917110767465043,
+        0.06062015503876032
+      ]
+    }
+  ],
+  "pointPositions": {
+    "piramides-gize": [
+      0.29913630930232565,
+      0.0007631804635071676,
+      -0.5925510313953488
+    ],
+    "cataratas-vitoria": [
+      0.19486854005168838,
+      0.007723354587660902,
+      0.3543270025839838
+    ],
+    "kilimanjaro": [
+      0.42221608527132437,
+      0.025917110767465043,
+      0.06062015503876032
+    ]
+  },
+  "textOnlyPoints": [],
+  "preview": {
+    "sourceNames": [
+      "africa.glb"
+    ],
+    "waterBackground": true,
+    "roundOcean": true,
+    "roundWaterVerified": true,
+    "removedWaterTriangles": 130,
+    "retainedTerrainSha256": "5d928b825012185f0a8fc6fd1e4b137a46f0c8b1837bb8b2e51f3ea8cb6f24fa",
+    "previousSha256": "53dc096daf8c7b725edb8709aa0e139f7b825a8af83454103b0f25e0ce431e04"
+  },
+  "normalization": {
+    "sourceUnits": "km",
+    "scale": 0.00018282482801392318,
+    "translation": [
+      0.001257143867434606,
+      0.0023411292571256623,
+      0
+    ],
+    "previousScale": [
+      0.00012080434766363897,
+      0.00012080434766363897,
+      0.00012080434766363897
+    ],
+    "previousTranslation": [
+      0.0008306773564322245,
+      0.0013781552968699052,
+      0
+    ]
+  }
+}

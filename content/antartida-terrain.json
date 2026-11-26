@@ -1,0 +1,94 @@
+{
+  "version": 3,
+  "continentId": "antartida",
+  "file": "models/antartida-terrain.glb",
+  "sourceIds": [
+    "3d-elevation-map",
+    "copernicus-glo30"
+  ],
+  "verticalExaggeration": 45,
+  "limits": {
+    "triangles": 797596,
+    "bytes": 10161960,
+    "materials": 2,
+    "textures": 1
+  },
+  "points": [
+    {
+      "id": "estacao-mcmurdo",
+      "nome": "Estação McMurdo",
+      "descricaoCurta": "Estação de pesquisa dos Estados Unidos na Ilha de Ross, junto ao Mar de Ross.",
+      "coordenadas": {
+        "lat": -77.8482089,
+        "lng": 166.6684219
+      },
+      "fontes": [
+        "wikidata-mcmurdo"
+      ],
+      "posicao": [
+        0.07729454096888463,
+        0.0001,
+        0.4123723318185338
+      ]
+    },
+    {
+      "id": "estacao-amundsen-scott",
+      "nome": "Estação Amundsen–Scott",
+      "descricaoCurta": "Estação científica dos Estados Unidos próxima ao Polo Sul geográfico.",
+      "coordenadas": {
+        "lat": -89.9975,
+        "lng": 139.2728056
+      },
+      "fontes": [
+        "wikidata-amundsen-scott"
+      ],
+      "posicao": [
+        -0.018013180250202536,
+        0.039888035213558784,
+        0.010013357442627699
+      ]
+    },
+    {
+      "id": "estacao-vostok",
+      "nome": "Estação Vostok",
+      "descricaoCurta": "Estação científica russa no interior da Antártida Oriental.",
+      "coordenadas": {
+        "lat": -78.464167,
+        "lng": 106.86583
+      },
+      "fontes": [
+        "wikidata-vostok"
+      ],
+      "posicao": [
+        0.357514927257148,
+        0.04919585878080655,
+        0.123815457222353
+      ]
+    }
+  ],
+  "pointPositions": {
+    "estacao-mcmurdo": [
+      0.07729454096888463,
+      0.0001,
+      0.4123723318185338
+    ],
+    "estacao-amundsen-scott": [
+      -0.018013180250202536,
+      0.039888035213558784,
+      0.010013357442627699
+    ],
+    "estacao-vostok": [
+      0.357514927257148,
+      0.04919585878080655,
+      0.123815457222353
+    ]
+  },
+  "preview": {
+    "sourceNames": [
+      "antartida.glb"
+    ],
+    "waterBackground": true,
+    "roundOcean": true
+  },
+  "textOnlyPoints": []
+}

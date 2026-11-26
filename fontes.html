@@ -1,0 +1,271 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Fontes e licenças</title><link rel="stylesheet" href="styles/tokens.css"><style>body{max-width:900px;margin:2.5rem auto;padding:1.25rem;font:1rem/1.6 var(--font-body);background:var(--canvas);color:var(--ink)}h1{font-weight:650;letter-spacing:-.035em}a{display:inline-flex;align-items:center;min-height:44px;text-underline-offset:.2em}a:focus-visible{outline:3px solid var(--focus);outline-offset:4px}pre{font:inherit;white-space:pre-wrap;overflow-wrap:anywhere}</style><h1>Fontes e licenças</h1><a href="./">Voltar ao app</a><pre># Fontes e licenças
+
+## [visual-reference-expedition] Interface e paleta enviadas pelo responsável — arquivos 1.png a 6.png, consulta local — referência visual não redistribuída — 2026-11-04
+As telas e a prancha infantil orientam a interface: céu azul, papel creme, tinta marinho, ação laranja e apoio amarelo. Os arquivos recebidos não são incluídos no app. A capa usa os contornos Natural Earth já registrados e detalhes vetoriais autorais MIT. O visual anterior de atlas lilás fica registrado apenas como histórico abaixo.
+
+## [font-fredoka] Fredoka, fonte variável — https://github.com/google/fonts/tree/main/ofl/fredoka — SIL Open Font License 1.1 — 2026-11-04
+Fonte de títulos e botões. Arquivo oficial servido localmente em `public/fonts/Fredoka.ttf`; licença completa em `public/fonts/Fredoka-OFL.txt`. Sem chamada a serviço externo de fontes durante o uso.
+
+## [font-nunito] Nunito, fonte variável — https://github.com/google/fonts/tree/main/ofl/nunito — SIL Open Font License 1.1 — 2026-11-04
+Fonte dos textos e instruções. Arquivo oficial servido localmente em `public/fonts/Nunito.ttf`; licença completa em `public/fonts/Nunito-OFL.txt`.
+
+## [visual-reference-atlas] Paleta da captura enviada pelo responsável — captura local do Exploradores do Mundo — somente consulta de cor; captura não redistribuída — 2026-10-29
+Paleta amostrada: fundo `#faf7fd`, lilás `#eeeafb`, destaque `#ded8f5`, pêssego `#f9ddd3`, menta `#d7eee1`, amarelo `#ffedbc`, tinta `#39334f` e apoio `#655a73`. A correção do responsável substitui a direção sálvia. Recolorações e interface autorais MIT, conforme [autoral]. O mapa de capa usa os mesmos contornos Natural Earth já registrados, sem novos dados ou imagens externas.
+
+Consulta original: 2026-10-28; acréscimos identificados em 2026-10-29. Textos educativos são redação original em português baseada em fatos das referências; não reproduzem artigos ou fotografias. Ilustrações e modelos são gerados localmente. Dados históricos são identificados pelo ano e não apresentados como atuais.
+
+## [undata-south-sudan] UNdata, South Sudan — https://data.un.org/legacy/en/iso/ss.html — referência factual; página e tabelas não redistribuídas — 2026-10-29
+Campo “Capital city”: Juba. Correção pontual registrada em `data-src/country-facts.json` e aplicada pelo pipeline. O Natural Earth local omitia a capital porque Juba tem `adm0cap: 0` e código `SSD`, enquanto a geometria usa `SDS`. Nenhuma população ou área foi inferida dessa diferença.
+
+## [visual-reference] Referência estética fornecida pelo responsável — ./referencia-visual.png — licença de redistribuição não informada; somente consulta local — 2026-10-29
+Inspiração para cores pastel, cartões e hierarquia visual. A imagem, a marca, os textos e os desenhos originais não são distribuídos em `public/` nem no build. A ilustração `public/images/companheiros-de-viagem.svg` é autoral MIT, conforme [autoral]; representa um planeta lúdico, não um mapa geográfico.
+
+## [visual-reference-salvia] Paleta da imagem enviada pelo responsável — imagem local “Sem título.png” — somente consulta de cor; imagem não redistribuída — 2026-10-29
+Fundo `#eef3e9`, suporte `#e0e9d8`, neutro `#e0e5d9` e tinta `#344b46` amostrados do arquivo fornecido. Fonte do sistema operacional, sem redistribuição de fontes Apple. Recoloração dos SVGs autorais e novos ícones permanecem MIT, conforme [autoral]. A referência orienta cores; a composição e os desenhos são do projeto.
+
+
+## [natural-earth] Natural Earth 5.1.2 — https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2/geojson — domínio público — 2026-10-28
+`ne_50m_admin_0_countries.geojson`: geometria, nomes em português, POP_EST/POP_YEAR, regiões. `ne_50m_populated_places_simple.geojson`: capitais. Arquivos e SHA-256 em data-src/assets-manifest.json. Licença: https://www.naturalearthdata.com/about/terms-of-use/ . Limites cartográficos simplificados não resolvem disputas territoriais.
+
+## [un-members] ONU, Estados-membros — https://www.un.org/en/about-us/member-states — fatos e nomes; página não redistribuída no app — 2026-10-28
+Lista oficial consultada e snapshot de auditoria em data-src/. Contagem gerada pelo cruzamento com Natural Earth; aliases explícitos no script.
+
+## [un-observers] ONU, Estados observadores — https://www.un.org/en/about-us/non-member-states — fatos; página não redistribuída no app — 2026-10-28
+Santa Sé e Estado da Palestina, identificados no snapshot de auditoria. Não confundir territórios e áreas disputadas com Estados-membros.
+
+## [country-assignments] Lista e contagens derivadas de ONU e Natural Earth — ./data-src/country-continent.json — nomes/geometrias Natural Earth em domínio público; seleção e código autorais MIT — 2026-10-28
+Reproduzível por scripts/build-data.mjs: cruza os 193 nomes de un-members e os dois Estados de un-observers com os códigos Natural Earth, aplica a regra da maior parte do território e exceções documentadas do Cáucaso. Fonte da quantidadePaises e da atribuição didática de país a continente. Distribuição gerada: África 54, América 35, Antártida 0, Ásia 49, Europa 43, Oceania 14; total 195, sem duplicar Estados. Não é uma contagem oficial da ONU por continente.
+
+## [ng-continents] National Geographic, Continent — https://education.nationalgeographic.org/resource/Continent/ — referência factual, redação própria; artigo/imagens não redistribuídos — 2026-10-28
+Modelo de sete continentes; neste projeto adaptado ao modelo de seis, com América unificada. Geografia e história agrícola da América.
+
+## [ng-africa] National Geographic, Africa: Physical Geography — https://education.nationalgeographic.org/resource/africa-physical-geography/ — referência factual, redação própria — 2026-10-28
+Localização, Saara, ambientes, sal, fauna e flora.
+
+## [ng-asia] National Geographic, Asia: Physical Geography — https://education.nationalgeographic.org/resource/asia/ — referência factual, redação própria — 2026-10-28
+Himalaia, climas e ambientes. Fronteira Europa/Ásia é convencional.
+
+## [ng-europa] National Geographic, Europe: Physical Geography — https://education.nationalgeographic.org/resource/europe-physical-geography/ — referência factual, redação própria — 2026-10-28
+Penínsulas, relevo, rios e ambientes.
+
+## [ng-oceania] National Geographic, Australia and Oceania: Physical Geography — https://education.nationalgeographic.org/resource/oceania-physical-geography/ — referência factual, redação própria — 2026-10-28
+Ilhas e ambientes; modelo escolar trata Oceania como continente.
+
+## [ng-antarctica] National Geographic, Antarctica — https://education.nationalgeographic.org/resource/antarctica/ — referência factual, redação própria — 2026-10-28
+Gelo, clima polar, fauna e pesquisa.
+
+## [antarctic-treaty] Secretaria do Tratado Antártico — https://www.ats.aq/e/antarctictreaty.html — referência factual ao tratado; redação própria — 2026-10-28
+Uso pacífico, cooperação científica, estações e reivindicações preservadas pelo Artigo IV. Antártida não recebe lista de países.
+
+## [autoral] Exploradores do Mundo, arte e conteúdo gerados neste projeto — ./LICENSE — MIT — 2026-10-28
+SVGs ilustrados, ícones, composição das folhas e atividades. Silhuetas/mapas/modelos derivados do Natural Earth (domínio público). Não há texturas ou fotografias externas.
+
+Reformulação de 2026-10-29: `public/images/planeta-guia.svg`, redesenho de `guia-qr.svg` e dos seis SVGs de paisagens, além das cenas de `GuideScene.tsx` e ícones de `InterfaceIcon.tsx`: desenhos vetoriais autorais, MIT. Planeta e mapa dobrado das instruções são lúdicos, sem pretensão cartográfica. Paisagens são recortes ilustrativos, sem representar todos os ambientes de um continente; mantêm os temas já usados no projeto. O diagrama do QR/marcador é esquemático e não substitui as folhas imprimíveis de `public/markers/`. Os SVGs autorais são fontes versionadas independentes: `build:data` atualiza dados e preserva os desenhos. Nenhuma imagem, fonte ou biblioteca externa nova.
+
+## [ar-libraries] A-Frame 1.6.0 e AR.js 3.4.7 — https://github.com/AR-js-org/AR.js/tree/3.4.7 — MIT; ARToolKit incorporado sob LGPL-3.0 — 2026-10-28
+Distribuições locais sem alteração funcional em public/vendor/; avisos de licença preservados e cópias em public/vendor/licenses/. A-Frame: https://github.com/aframevr/aframe/tree/v1.6.0 . Parâmetros da câmera provenientes do AR.js. Referência barcode: https://ar-js-org.github.io/AR.js-Docs/marker-based/ . Marcadores binários gerados por algoritmo (sem imagem externa).
+
+Conferência de 2026-11-04: as nove células dos marcadores 0 a 5 foram comparadas aos padrões oficiais em https://github.com/artoolkit/artoolkit5/tree/master/doc/patterns/Matrix%20code%203x3%20(72dpi) . Referências de pixels registradas em `tests/markers.test.ts`; os PNGs continuam gerados pelo algoritmo do projeto. A comparação de arquivos não comprova reconhecimento por câmera física.
+
+## [viewer] Google model-viewer 4.0.0 — https://github.com/google/model-viewer/tree/v4.0.0 — Apache-2.0 — 2026-10-28
+Bundle local; Three.js incorporado sob MIT; licenças em public/vendor/licenses/.
+
+## [jsqr] jsQR 1.4.0 — https://github.com/cozmo/jsQR/tree/v1.4.0 — Apache-2.0 — 2026-10-28
+Leitura real de QR em frames de getUserMedia. Bundle e licença locais.
+
+## [ui-libraries] React 19.2.0, React DOM 19.2.0, React Router 7.9.4 e Zod 3.25.76 — ./package-lock.json — MIT — 2026-10-28
+Versões fixadas no lockfile; avisos de licença copiados dos pacotes para public/vendor/licenses/. Fontes: https://github.com/facebook/react , https://github.com/remix-run/react-router , https://github.com/colinhacks/zod .
+
+## [unesco-giza] Memphis and its Necropolis - the Pyramid Fields from Giza to Dahshur — https://whc.unesco.org/en/list/86/ — CC BY-SA 3.0 IGO (descrição) — 2026-11-04
+Descrição curta das Pirâmides de Gizé adaptada em português para o público infantil, com atribuição à UNESCO. A adaptação textual segue CC BY-SA 3.0 IGO; código e ilustrações autorais mantêm suas licenças próprias. Licença: https://creativecommons.org/licenses/by-sa/3.0/igo/ . Nenhuma fotografia copiada.
+
+## [unesco-victoria-falls] Mosi-oa-Tunya / Victoria Falls — https://whc.unesco.org/en/list/509/ — CC BY-SA 3.0 IGO (descrição) — 2026-11-04
+Texto infantil adaptado da descrição: rio Zambeze e localização compartilhada por Zâmbia e Zimbábue. Adaptação sob CC BY-SA 3.0 IGO com atribuição à UNESCO. Nenhuma fotografia copiada.
+
+## [unesco-kilimanjaro] Kilimanjaro National Park — https://whc.unesco.org/en/list/403/ — CC BY-SA 3.0 IGO (descrição) — 2026-11-04
+Texto infantil adaptado da descrição: montanha vulcânica na Tanzânia e ponto mais alto da África. Adaptação sob CC BY-SA 3.0 IGO com atribuição à UNESCO. Nenhuma fotografia copiada.
+
+## [wikidata-giza] Giza pyramid complex, Q12508 — https://www.wikidata.org/wiki/Q12508 — CC0 1.0 — 2026-11-04
+Rótulo e coordenada P625 do conjunto de Gizé; revisão e precisão declarada preservadas em `data-src/tourist-spots.json`. Dados estruturados: https://www.wikidata.org/wiki/Wikidata:Copyright . Coordenada representativa, sem pretensão de precisão topográfica.
+
+## [wikidata-victoria-falls] Victoria Falls, Q43278 — https://www.wikidata.org/wiki/Q43278 — CC0 1.0 — 2026-11-04
+Rótulo e coordenada P625 das cataratas; revisão e precisão preservadas em `data-src/tourist-spots.json`. Não representa limites do sítio ou uma rota de visitação.
+
+## [wikidata-kilimanjaro] Kilimanjaro, Q7296 — https://www.wikidata.org/wiki/Q7296 — CC0 1.0 — 2026-11-04
+Rótulo e coordenada P625 da montanha; revisão e precisão preservadas em `data-src/tourist-spots.json`. Coordenadas geográficas WGS84 mantidas separadas das posições locais do modelo 3D.
+
+## [noaa-etopo5] NOAA ETOPO5, amostragem global via ERDDAP IOOS — https://erddap.ioos.us/erddap/info/etopo5_EDDGridCopy/index.html — uso e redistribuição gratuitos conforme licença do distribuidor — 2026-11-04
+DEM histórico global de 5 minutos de arco, variável `ROSE` em metros, substituído por versões mais recentes. Catálogo e identificador: https://doi.org/10.7289/V5D798BF . O distribuidor autoriza uso e redistribuição gratuitos, com ressalva de inexatidões e sem garantia. Licença integral, URLs das consultas, eixos e hashes das respostas preservados em `data-src/dem/etopo5-global-0.5deg.json`; o recorte africano original permanece em `data-src/dem/etopo5-africa.json`.
+
+Piloto África: amostragem de aproximadamente 0,5 grau, malha projetada de 100 km e exagero vertical de 160 vezes; valores negativos limitados a zero na visualização. Cores por vértice são uma convenção gráfica. Não usar este modelo para medições nem apresentar altura de vértice como altitude exata dos cumes. Processo, transformação reversível e limitações em `docs/AFRICA-DEM.md`. Arquivo GLB adicional; os modelos de contorno anteriores permanecem disponíveis.
+
+## [unesco-grand-canyon] Grand Canyon National Park — https://whc.unesco.org/en/list/75/ — CC BY-SA 3.0 IGO (descrição) — 2026-11-04
+Descrição infantil adaptada da página do Patrimônio Mundial; coordenadas vêm do item Wikidata cadastrado separadamente. Sem mídia copiada.
+
+## [unesco-machu-picchu] Historic Sanctuary of Machu Picchu — https://whc.unesco.org/en/list/274/ — CC BY-SA 3.0 IGO (descrição) — 2026-11-04
+Descrição infantil adaptada da página do Patrimônio Mundial; coordenadas vêm do item Wikidata cadastrado separadamente. Sem mídia copiada.
+
+## [unesco-iguazu] Iguazu National Park — https://whc.unesco.org/en/list/355/ — CC BY-SA 3.0 IGO (descrição) — 2026-11-04
+Descrição infantil adaptada da página do Patrimônio Mundial; coordenadas vêm do item Wikidata cadastrado separadamente. Sem mídia copiada.
+
+## [unesco-great-wall] The Great Wall — https://whc.unesco.org/en/list/438 — CC BY-SA 3.0 IGO (descrição) — 2026-11-04
+Descrição infantil adaptada da página do Patrimônio Mundial; coordenadas vêm do item Wikidata cadastrado separadamente. Sem mídia copiada.
+
+## [unesco-taj-mahal] Taj Mahal — https://whc.unesco.org/en/list/252 — CC BY-SA 3.0 IGO — 2026-11-04
+Descrição e coordenada representativa conferidas na página do Patrimônio Mundial. Sem mídia copiada.
+
+## [unesco-fujisan] Fujisan, sacred place and source of artistic inspiration — https://whc.unesco.org/en/list/1418 — CC BY-SA 3.0 IGO (descrição) — 2026-11-04
+Descrição infantil adaptada da página do Patrimônio Mundial; coordenadas vêm do item Wikidata cadastrado separadamente. Sem mídia copiada.
+
+## [unesco-rome] Historic Centre of Rome — https://whc.unesco.org/en/list/91 — CC BY-SA 3.0 IGO (descrição) — 2026-11-04
+Confirma a inclusão do Coliseu no conjunto patrimonial do centro histórico; as coordenadas do monumento vêm do Wikidata. Sem mídia copiada.
+
+## [unesco-acropolis] Acropolis, Athens — https://whc.unesco.org/en/list/404 — CC BY-SA 3.0 IGO — 2026-11-04
+Descrição e coordenada representativa do sítio conferidas na página do Patrimônio Mundial. Sem mídia copiada.
+
+## [unesco-paris-seine] Paris, Banks of the Seine — https://whc.unesco.org/en/list/600 — CC BY-SA 3.0 IGO (descrição) — 2026-11-04
+Confirma o contexto patrimonial de Paris; o nome e as coordenadas da Torre Eiffel vêm do Wikidata. Sem mídia copiada.
+
+## [unesco-great-barrier] Great Barrier Reef — https://whc.unesco.org/en/list/154 — CC BY-SA 3.0 IGO — 2026-11-04
+Descrição e coordenada representativa do sítio conferidas na página do Patrimônio Mundial. O pin fica no recife costeiro e pode aparecer sobre a base do modelo continental.
+
+## [unesco-sydney-opera] Sydney Opera House — https://whc.unesco.org/en/list/166 — CC BY-SA 3.0 IGO — 2026-11-04
+Descrição e coordenada representativa conferidas na página do Patrimônio Mundial. Sem mídia copiada.
+
+## [unesco-uluru] Uluru-Kata Tjuta National Park — https://whc.unesco.org/en/list/447 — CC BY-SA 3.0 IGO (descrição) — 2026-11-04
+Descrição infantil adaptada da página do Patrimônio Mundial; coordenadas vêm do item Wikidata cadastrado separadamente. Sem mídia copiada.
+
+## [wikidata-grand-canyon] Grand Canyon National Park, Q220289 — https://www.wikidata.org/wiki/Q220289 — CC0 1.0 — 2026-11-04
+Rótulo e coordenada P625 consultados; ponto representativo, não é limite do parque.
+
+## [wikidata-machu-picchu] Machu Picchu, Q676203 — https://www.wikidata.org/wiki/Q676203 — CC0 1.0 — 2026-11-04
+Rótulo e coordenada P625 consultados; ponto representativo, não é limite do sítio.
+
+## [wikidata-iguazu] Iguaçu Falls, Q36332 — https://www.wikidata.org/wiki/Q36332 — CC0 1.0 — 2026-11-04
+Rótulo e coordenada P625 consultados; ponto representativo das cataratas compartilhadas por Brasil e Argentina.
+
+## [wikidata-great-wall] Great Wall of China, Q12501 — https://www.wikidata.org/wiki/Q12501 — CC0 1.0 — 2026-11-04
+Rótulo e coordenada P625 consultados; ponto representativo de um conjunto extenso de fortificações.
+
+## [wikidata-fuji] Mount Fuji, Q39231 — https://www.wikidata.org/wiki/Q39231 — CC0 1.0 — 2026-11-04
+Rótulo e coordenada P625 consultados; posição representativa da montanha.
+
+## [wikidata-colosseum] Colosseum, Q10285 — https://www.wikidata.org/wiki/Q10285 — CC0 1.0 — 2026-11-04
+Rótulo e coordenada P625 consultados; posição representativa do monumento.
+
+## [wikidata-eiffel] Eiffel Tower, Q243 — https://www.wikidata.org/wiki/Q243 — CC0 1.0 — 2026-11-04
+Rótulo e coordenada P625 consultados; posição representativa da torre.
+
+## [wikidata-uluru] Uluṟu-Kata Tjuṯa National Park, Q251999 — https://www.wikidata.org/wiki/Q251999 — CC0 1.0 — 2026-11-04
+Rótulo e coordenada P625 consultados; posição representativa do parque cultural Anangu.
+
+## [wikidata-mcmurdo] McMurdo Station, Q498627 — https://www.wikidata.org/wiki/Q498627 — CC0 1.0 — 2026-11-04
+Rótulo e coordenada P625 consultados; estação de pesquisa na Ilha de Ross.
+
+## [wikidata-amundsen-scott] Amundsen–Scott South Pole Station, Q243307 — https://www.wikidata.org/wiki/Q243307 — CC0 1.0 — 2026-11-04
+Rótulo e coordenada P625 consultados; estação científica junto ao Polo Sul geográfico.
+
+## [wikidata-vostok] Vostok Station, Q211014 — https://www.wikidata.org/wiki/Q211014 — CC0 1.0 — 2026-11-04
+Rótulo e coordenada P625 consultados; estação científica no interior da Antártida Oriental.
+
+## [copernicus-glo30] Copernicus DEM GLO-30 (ESA) — https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM — licença Copernicus DEM GLO-30, livre com atribuição — 2026-11-10
+
+A descrição técnica abaixo corresponde ao pipeline leve. A prévia local com as malhas originais dos países está documentada em `3d-elevation-countries`, no manifesto e no relatório de integração, sem atribuir a ela a resolução do produto DEM bruto.
+
+Relevo da África produzido a partir do recorte de elevações disponibilizado pelo 3D Elevation Map de Marko Visic. Produto de superfície de origem com amostragem de cerca de 30 m no equador, baseado na missão TanDEM-X de 2010–2014. O recorte recebido tem 645 × 620 amostras em longitude e latitude WGS84, com espaçamento nominal de 13,7633 km. A malha usa contorno Natural Earth 1:50m simplificado e projeção azimutal equivalente de Lambert centrada em 20° E, 2° N, com células de triangulação de 70 km. Perto da costa, seleciona a amostra terrestre mais próxima dentro de uma janela de até 9 × 9 células. Geometrias sem amostra utilizável ficam fora da superfície. A paleta de altitude em cores por vértice é própria, com verdes nas áreas baixas, ocres e marrons nas áreas mais altas e tons claros nos cumes. Exagero vertical de 28×. As alturas amostradas representam o terreno generalizado e podem diferir da altitude de um cume.
+
+produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved
+
+## [3d-elevation-map] 3D Elevation Map, Marko Visic — https://3delevationmap.com/continent/africa/ — referência visual e acesso às elevações abertas com atribuição — 2026-11-10
+
+A descrição a seguir é a do pipeline leve original. Nesta cópia de prévia, os continentes já utilizavam malhas exportadas do site; o ajuste atual da África conserva o relevo dessa malha e substitui somente a base retangular de água pela circular. A permissão de redistribuição dessas malhas ainda precisa de confirmação.
+
+Entrada DEM da África em https://3delevationmap.com/processed/africa/dem.json . Metodologia em https://3delevationmap.com/methodology/ . Os termos em https://3delevationmap.com/terms/ distinguem a apresentação do site dos dados sob licenças abertas. O GLB exportado serviu de referência visual. O projeto gera uma malha própria a partir das altitudes Copernicus com contorno Natural Earth. A máscara terrestre do recorte deriva dos limites geoBoundaries gbOpen, CC BY 4.0, https://www.geoboundaries.org/ .
+
+## [3d-elevation-countries] 3D Elevation Map, modelos fornecidos pelo responsável — https://3delevationmap.com/countries/ — referência e uso local; redistribuição da apresentação/malha exportada não confirmada — 2026-11-10
+
+Originais locais em `../Modelos 3D dos países - 3D Elevation Map/`, coletados em 10/11/2026. O `FONTES.txt` esclarece que os GLBs foram exportados da malha do visualizador, não baixados como GLBs oficiais. Termos e metodologia consultados em https://3delevationmap.com/terms/ e https://3delevationmap.com/methodology/ . Os termos reservam direitos sobre a apresentação do site e distinguem as licenças dos dados; não foi identificada autorização explícita de redistribuição das malhas exportadas. Esta integração não publica os arquivos.
+
+Créditos: 3D Elevation Map, Marko Visic; Copernicus GLO-30 (ESA/DLR/Airbus); geoBoundaries gbOpen. O manifesto `data-src/country-terrain-manifest.json` registra a página, DEM, dimensões, amostragem, hash de cada origem, exagero vertical original de 11×, normalização reversível e hash de cada saída. São 192 dos 195 países da coleção. Palestina, Vaticano e Kiribati não têm GLB fornecido; Taiwan e Kosovo não alteram a lista de soberanos da coleção.
+
+As malhas preservam todos os triângulos e normais desenhados na origem, inclusive cores por vértice; a única economia remove vértices sem uso. A base azul adicional é decoração para destacar o país, não uma representação das fronteiras terrestres ou de oceanos ao redor de países sem litoral. Esse limite aparece também na ficha. Não foram acrescentados nomes de cidades, coordenadas, estatísticas ou pontos turísticos.
+
+## [geoboundaries-open] geoBoundaries gbOpen — https://www.geoboundaries.org/ — CC BY 4.0, dados de limites administrativos creditados pelo 3D Elevation Map — 2026-11-10
+
+Referência do provedor para os limites/máscaras das grades exportadas. A metodologia do site informa o uso de gbOpen ADM0 e sua generalização. O manifesto preserva as caixas geográficas das grades originais; o GLB em quilômetros locais não é tratado como um arquivo GIS georreferenciado. A licença dos dados não confirma, por si, a licença da apresentação exportada.
+
+## [rios-natural-earth] Hidrografia dos relevos — 3D Elevation Map e Natural Earth
+Traçados de rivers.json para cada região, projetados sobre o terreno Copernicus GLO-30. https://3delevationmap.com/methodology/
+
+## Fotografias das fichas continentais
+
+Vista aérea das Cataratas do Iguaçu, na fronteira entre Brasil e Argentina. Foto: Mariordo (Mario Roberto Durán Ortiz). CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0. Recorte para a ficha. https://commons.wikimedia.org/wiki/File:Aerial_Foz_de_Igua%C3%A7u_26_Nov_2005.jpg
+
+Dunas douradas de Erg Chebbi, no Marrocos. Foto: Bjørn Christian Tørrissen. CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0. Recorte para a ficha. https://commons.wikimedia.org/wiki/File:Merzouga_Dunes_2011.jpg
+
+Monte Fuji visto de Ōwakudani, no Japão. Foto: Suicasmo. CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0. Recorte para a ficha. https://commons.wikimedia.org/wiki/File:View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg
+
+Fiorde de Geiranger entre as montanhas da Noruega. Foto: Andreas Trepte. CC BY-SA 2.5 https://creativecommons.org/licenses/by-sa/2.5. Recorte para a ficha. https://commons.wikimedia.org/wiki/File:Geirangerfjord_.jpg
+
+Uluru, grande formação rochosa no interior da Austrália. Foto: Ek2030372672. CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0. Recorte para a ficha. https://commons.wikimedia.org/wiki/File:ULURU.jpg
+
+Paisagem gelada da Baía Paraíso, na Península Antártica. Foto: Liam Quinn from Canada. CC BY-SA 2.0 https://creativecommons.org/licenses/by-sa/2.0. Recorte para a ficha. https://commons.wikimedia.org/wiki/File:Paradise_Harbour,_Antarctica_(6087257019).jpg
+
+## Relevos continentais do visualizador 3D Elevation Map
+Malhas e cores originais exportadas do visualizador, com exagero vertical de 28×. Grades originais do Copernicus GLO-30, com Terrain Tiles (Mapzen / AWS Open Data, https://registry.opendata.aws/terrain-tiles/) para complementar lacunas. Terra e lagos: Natural Earth 1:10.000.000, domínio público. https://www.naturalearthdata.com/downloads/10m-physical-vectors/ . Alturas de lagos estimadas pela mediana dos valores da grade. O oceano é representado ao nível do mar.
+
+
+## Cobertura natural e gelo continental
+NASA Visible Earth, Blue Marble: Next Generation, composição de janeiro de 2004. Na Antártida, a textura é reprojetada em EPSG:3031 e a escala vertical é 45×. https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/base-topography-bathymetry/
+
+## Superfície contínua da África, Ásia, Oceania e Antártida
+
+Em 21/11/2026, o relevo dos quatro continentes foi refeito a partir das grades e dos rios publicados pelo 3D Elevation Map. As grades em WGS84 têm 645 × 620, 862 × 464 e 770 × 519 amostras. A grade da Antártida tem 394 × 330 amostras em EPSG:3031. A codificação da altitude usa inteiros de 16 bits e os extremos da grade, em metros. Os rios do Natural Earth acompanham a superfície por meio de uma textura georreferenciada. A fonte da Antártida registra zero rios.
+
+A costa, os lagos e as plataformas de gelo são do Natural Earth 1:10.000.000. A tampa superior tem triângulos adjacentes para terra, gelo, oceano no nível do mar e lagos planos no nível estimado do espelho d’água. O Terrarium z7, mantido pelo Mapzen e hospedado no AWS Open Data, complementa as altitudes terrestres e fornece amostras para os lagos. Os níveis de lagos pequenos ou com amostras dispersas são estimativas. O Cáspio usa −28 m, conforme a metodologia do 3D Elevation Map.
+
+Na Antártida, a altitude da superfície usa o REMA v2 do Polar Geospatial Center (NSF), renderização ortométrica EGM2008, e o Bedmap3 do British Antarctic Survey e colaboradores (nível médio do mar, geoide g104c, CC BY 4.0) nas lacunas do REMA. Os quatro relevos conservam o exagero vertical de 45×. A imagem da superfície é a composição sem relevo Blue Marble Next Generation de janeiro de 2004, 21600 × 10800, de Reto Stöckli e NASA Earth Observatory, amostrada na projeção de cada modelo.
+
+No setor da geleira Mertz, a máscara do Bedmap3 atualiza o contorno do Natural Earth após o desprendimento documentado em 2010. [Imagens da NASA Earth Observatory](https://science.nasa.gov/earth/earth-observatory/collision-calves-iceberg-from-mertz-glacier-tongue-antarctica-42819/)
+
+[3D Elevation Map](https://3delevationmap.com/methodology/) · [Natural Earth](https://www.naturalearthdata.com/downloads/10m-physical-vectors/) · [Mapzen Terrain Tiles](https://registry.opendata.aws/terrain-tiles/) · [PGC REMA](https://www.pgc.umn.edu/data/rema/) · [Bedmap3](https://doi.org/10.5285/2d0e4791-8e20-46a3-80e4-f5f6716025d2) · [NASA Earth Observatory](https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/base-map/)
+
+## Recortes da África, da Ásia e das Américas
+
+As unidades cartográficas do Natural Earth 1:10.000.000 delimitam as terras de cada recorte. Foi usada a divisão geográfica generalizada pelo canal de Suez, pelos Urais e pelos estreitos turcos. O recorte das Américas inclui Norte, Centro, Sul, Caribe e Groenlândia, com as duas grades do 3D Elevation Map unidas na região de sobreposição. As elevações complementares usam os Terrain Tiles. A Groenlândia usa o ArcticDEM na revisão descrita abaixo. O exagero vertical das Américas é de 28×. A cor da neve e do gelo acompanha o mosaico de janeiro de 2004 da NASA. Ao redor de cada recorte, fica apenas a faixa oceânica próxima à costa e a água de baías, estreitos e lagos.
+
+[Unidades cartográficas Natural Earth](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-details/) · [Divisão dos continentes](https://education.nationalgeographic.org/resource/Continent/) · [Grade da América do Norte](https://3delevationmap.com/continent/north-america/) · [Grade da América do Sul](https://3delevationmap.com/continent/south-america/)
+
+## Textura de verão no norte da Ásia e das Américas
+
+A partir de 38° N, as texturas passam gradualmente para uma composição de verão. As cores vêm de sete mosaicos de oito dias do MODIS/Aqua em julho e agosto de 2026 (NASA GIBS, bandas 1, 4 e 3). Em cada ponto, a composição exige pelo menos três observações de cor compatíveis. O Blue Marble de julho de 2004 cobre os pontos em que a composição recente não atende a esse critério. O gelo mapeado pelo Natural Earth aparece em cinza-azulado, com a altitude da superfície preservada. A atenuação dos tons claros reduz o contraste da neve residual no norte.
+
+[NASA MODIS/Aqua MYD09A1](https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/MYD09A1) · [NASA GIBS](https://nasa-gibs.github.io/gibs-api-docs/access-basics/) · [NASA Blue Marble](https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/base-map/) · [Natural Earth: áreas glaciadas](https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-glaciated-areas/)
+
+## Oceano arredondado e revisão dos continentes
+
+A água periférica é uma moldura cartográfica ao nível do mar, ligada pela borda à malha de cada mapa. A moldura isola visualmente cada continente. Em áreas vizinhas fora do recorte, ela indica o espaço da apresentação. Os litorais incluídos e os lagos continuam definidos pelos vetores Natural Earth.
+
+O recorte africano mostra o Egito inteiro, inclusive a península do Sinai. Na América do Norte, a Groenlândia e o arquipélago ártico canadense usam a projeção Natural Earth I com meridiano central em 100° O para reduzir a distorção visual em altas latitudes. A superfície glacial da Groenlândia recebe uma cor cartográfica azul-acinzentada com sombreamento.
+
+A Europa foi refeita com as elevações e rios do 3D Elevation Map, extensão continental até os Urais, Terrarium nas áreas sem altitude na grade, costas e lagos do Natural Earth e texturas NASA. Ao norte de 38° N, a textura usa a mesma composição de verão descrita acima. Na Oceania, a grade ampliada inclui os arquipélagos do Pacífico, como Havaí, Tahiti e Pitcairn, e inclui as duas partes da Nova Guiné. Ilhas e recifes menores do que a resolução da grade podem aparecer simplificados.
+
+[3D Elevation Map: Europa](https://3delevationmap.com/continent/europe/) · [Divisão dos continentes](https://education.nationalgeographic.org/resource/Continent/) · [Oceania e regiões insulares](https://education.nationalgeographic.org/resource/oceania-physical-geography/) · [ONU M49](https://unstats.un.org/unsd/methodology/m49/overview/)
+
+## [viirs-costa-groenlandia] Costa norte da Groenlândia
+
+As manchas escuras reproduzidas no norte eram pixels quase pretos do Blue Marble de julho de 2004 sobre a superfície terrestre. A textura das Américas usa como referência complementar as imagens em cor natural VIIRS/NOAA‑20 do NASA GIBS de 02/08, 15/07 e 28/07 de 2026. As imagens foram amostradas em EPSG:4326 e integradas à textura georreferenciada existente. O gelo e as cores de rocha seguem as imagens e a máscara de áreas glaciadas. A correção de textura conserva as altitudes, o contorno da costa e o exagero vertical de 28×.
+
+[NASA GIBS — VIIRS/NOAA‑20](https://gibs.earthdata.nasa.gov/layer-metadata/v1.0/VIIRS_NOAA20_CorrectedReflectance_TrueColor.json) · [NASA Earth Observatory — Peary Land](https://science.nasa.gov/earth/earth-observatory/peary-land-35408/)
+
+Os trechos marcados na península de Petermann e no litoral de Ellesmere receberam amostras VIIRS/NOAA‑20 das mesmas datas. Os recortes georreferenciados cobrem apenas os pixels escuros desses trechos. [Carta topográfica da região de Petermann](https://doi.org/10.22008/FK2/FIQP9S)
+
+## [arcticdem-groenlandia] Elevação da superfície da Groenlândia
+
+O relevo da Groenlândia usa o mosaico ArcticDEM do Polar Geospatial Center, em dois recortes exportados a 500 m por pixel em EPSG:3413. A função Height Orthometric do serviço converte as altitudes para o geoide EGM2008. As alturas da superfície do gelo e das rochas são amostradas na malha regional e usadas também no sombreamento. O contorno do Natural Earth e o exagero vertical de 28× são mantidos. A malha continental tem espaçamento mais amplo que os pixels da fonte, com subdivisão adicional na Groenlândia. As coordenadas de pontos que exigem a fonte complementar Terrarium são registradas no relatório de geração.
+
+[ArcticDEM — Polar Geospatial Center](https://www.pgc.umn.edu/data/arcticdem/) · [Serviço de elevação ortométrica](https://overlord.pgc.umn.edu/arcgis/rest/services/elevation/pgc_arcticdem_mosaics_latest/ImageServer)
+
+Nos seis modelos continentais, o azul de referência dos rios é `#155B93` e o do oceano é `#68B0D2`. As cores dos lagos seguem a convenção anterior.
+
+</pre></html>

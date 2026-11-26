@@ -1,0 +1,96 @@
+{
+  "version": 3,
+  "continentId": "europa",
+  "file": "models/europa-terrain.glb",
+  "sourceIds": [
+    "3d-elevation-map",
+    "copernicus-glo30"
+  ],
+  "verticalExaggeration": 45,
+  "limits": {
+    "triangles": 1816594,
+    "bytes": 25424076,
+    "materials": 2,
+    "textures": 1
+  },
+  "points": [
+    {
+      "id": "coliseu",
+      "nome": "Coliseu",
+      "descricaoCurta": "Anfiteatro romano do século I, parte da área histórica de Roma.",
+      "coordenadas": {
+        "lat": 41.8902778,
+        "lng": 12.4922222
+      },
+      "fontes": [
+        "unesco-rome",
+        "wikidata-colosseum"
+      ],
+      "posicao": [
+        -0.10437002132075482,
+        0.000706025818512552,
+        0.48755251353078455
+      ]
+    },
+    {
+      "id": "acropole-atenas",
+      "nome": "Acrópole de Atenas",
+      "descricaoCurta": "Colina rochosa com monumentos da Grécia Antiga, como o Partenon.",
+      "coordenadas": {
+        "lat": 37.97087,
+        "lng": 23.72618
+      },
+      "fontes": [
+        "unesco-acropolis"
+      ],
+      "posicao": [
+        0.07579722641509433,
+        0.0018489712561356767,
+        0.6061713885627924
+      ]
+    },
+    {
+      "id": "torre-eiffel",
+      "nome": "Torre Eiffel",
+      "descricaoCurta": "Torre de ferro construída em Paris no século XIX e hoje um marco da cidade.",
+      "coordenadas": {
+        "lat": 48.8582972,
+        "lng": 2.2944778
+      },
+      "fontes": [
+        "unesco-paris-seine",
+        "wikidata-eiffel"
+      ],
+      "posicao": [
+        -0.2679187522641509,
+        0.000755544189085993,
+        0.27666896565673926
+      ]
+    }
+  ],
+  "pointPositions": {
+    "coliseu": [
+      -0.10437002132075482,
+      0.000706025818512552,
+      0.48755251353078455
+    ],
+    "acropole-atenas": [
+      0.07579722641509433,
+      0.0018489712561356767,
+      0.6061713885627924
+    ],
+    "torre-eiffel": [
+      -0.2679187522641509,
+      0.000755544189085993,
+      0.27666896565673926
+    ]
+  },
+  "preview": {
+    "sourceNames": [
+      "europa.glb"
+    ],
+    "waterBackground": true,
+    "roundOcean": true
+  },
+  "textOnlyPoints": []
+}
