@@ -16,7 +16,9 @@ let lateralOffset,screenRight,inverseMarker,frontRotation,markerRotation,faceCam
 let facingReady=false;
 let countryAnchor,countryRadius=1,countryCameraReady=false;
 const markerLossDelay=650;
+const markerRotationResponse=110;
 let trackedAnchor,markerLossTimer,markerConfirmed=false;
+let lastMarkerPoseAt=0;
 const streams=new Set();
 const pointLayer=document.querySelector('#points'),pointEntries=[];
 const projectionBounds={left:0,top:0,width:innerWidth,height:innerHeight};
@@ -37,8 +39,16 @@ function projectPoints(){
  if(stopped||document.hidden||!modelReady||!trackedAnchor||!scene?.camera){hidePoints();return;}
  if(marker.object3D.visible){
   const pose=marker.object3D,display=trackedAnchor.object3D;
+  const now=performance.now();
+  const elapsed=Math.min(now-lastMarkerPoseAt,34);
   display.position.copy(pose.position);
-  display.quaternion.copy(pose.quaternion);
+  if(display.visible){
+   // Smooth tracking corrections without delaying rotation applied directly to the model.
+   display.quaternion.slerp(pose.quaternion,1-Math.exp(-elapsed/markerRotationResponse));
+  }else{
+   display.quaternion.copy(pose.quaternion);
+  }
+  lastMarkerPoseAt=now;
   display.scale.copy(pose.scale);
   display.visible=true;
  }
