@@ -12,6 +12,7 @@ function g(r,o,M,Z={x:0,y:0}){const a=b(o,1,5)/r.scale;return y({scale:r.scale*a
   const plane = m.useRef(null);
   const pointers = m.useRef(new Map());
   const origin = m.useRef(null);
+  const gestureStart = m.useRef(null);
   const center = m.useRef(null);
   const size = m.useRef({ width: 0, height: 0 });
   const initialized = m.useRef(false);
@@ -66,6 +67,7 @@ function g(r,o,M,Z={x:0,y:0}){const a=b(o,1,5)/r.scale;return y({scale:r.scale*a
       center.current = { x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 };
       dragged.current = false;
       origin.current = point(event);
+      gestureStart.current = current.current;
     }
     pointers.current.set(event.pointerId, point(event));
     if (pointers.current.size > 1) {
@@ -76,18 +78,23 @@ function g(r,o,M,Z={x:0,y:0}){const a=b(o,1,5)/r.scale;return y({scale:r.scale*a
 
   function move(event) {
     if (!pointers.current.has(event.pointerId)) return;
-    const before = dragged.current ? [...pointers.current.values()] : [origin.current];
+    const before = [...pointers.current.values()];
     const next = point(event);
     pointers.current.set(event.pointerId, next);
     if (Math.hypot(next.x - origin.current.x, next.y - origin.current.y) > 4) dragged.current = true;
-    if (!dragged.current) return;
-    if (!event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.setPointerCapture(event.pointerId);
+    // Move immediately. The threshold only distinguishes a tap from a drag.
+    if (dragged.current && !event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.setPointerCapture(event.pointerId);
     current.current = I(current.current, before, [...pointers.current.values()], size.current);
     scheduleTransform();
   }
 
   function finish(event) {
-    if (!pointers.current.delete(event.pointerId) || pointers.current.size || !dragged.current) return;
+    if (!pointers.current.delete(event.pointerId) || pointers.current.size) return;
+    if (!dragged.current) {
+      current.current = gestureStart.current;
+      scheduleTransform();
+      return;
+    }
     save(current.current);
   }
 
