@@ -19,7 +19,7 @@
     {
       "id": "grand-canyon",
       "nome": "Grand Canyon",
-      "descricaoCurta": "O rio Colorado escavou este grande cânion no Arizona ao longo de milhões de anos.",
+      "descricaoCurta": "O rio Colorado passa por este cânion, que se estende por cerca de 446 quilômetros.",
       "coordenadas": {
         "lat": 36.0553056,
         "lng": -112.122
@@ -37,7 +37,7 @@
     {
       "id": "machu-picchu",
       "nome": "Machu Picchu",
-      "descricaoCurta": "Cidade inca do século XV construída nos Andes peruanos, entre montanhas e floresta tropical.",
+      "descricaoCurta": "Os incas construíram esta cidade a 2.430 metros de altitude, entre montanhas.",
       "coordenadas": {
         "lat": -13.1633333,
         "lng": -72.5455556
@@ -55,7 +55,7 @@
     {
       "id": "cataratas-iguacu",
       "nome": "Cataratas do Iguaçu",
-      "descricaoCurta": "O rio Iguaçu forma um grande conjunto de quedas-d’água na fronteira entre Brasil e Argentina.",
+      "descricaoCurta": "Na fronteira entre Brasil e Argentina, a água enfrenta um desnível de cerca de 80 metros.",
       "coordenadas": {
         "lat": -25.6952778,
         "lng": -54.4366667

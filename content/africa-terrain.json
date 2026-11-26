@@ -17,7 +17,7 @@
     {
       "id": "piramides-gize",
       "nome": "Pirâmides de Gizé",
-      "descricaoCurta": "No Egito, este conjunto reúne três grandes pirâmides construídas para faraós do Egito Antigo.",
+      "descricaoCurta": "A maior pirâmide de Gizé tinha cerca de 146 metros de altura quando foi construída.",
       "coordenadas": {
         "lat": 29.976111,
         "lng": 31.132778
@@ -46,7 +46,7 @@
     {
       "id": "cataratas-vitoria",
       "nome": "Cataratas Vitória",
-      "descricaoCurta": "O rio Zambeze forma estas quedas-d’água entre a Zâmbia e o Zimbábue.",
+      "descricaoCurta": "O rio Zambeze forma uma cortina de água com cerca de 1.700 metros de largura.",
       "coordenadas": {
         "lat": -17.924777777778,
         "lng": 25.858055555556
@@ -75,7 +75,7 @@
     {
       "id": "kilimanjaro",
       "nome": "Kilimanjaro",
-      "descricaoCurta": "Na Tanzânia, esta montanha vulcânica abriga o ponto mais alto da África.",
+      "descricaoCurta": "Com 5.895 metros de altitude, o Kilimanjaro é a montanha mais alta da África.",
       "coordenadas": {
         "lat": -3.0666666666667,
         "lng": 37.359166666667

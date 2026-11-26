@@ -17,7 +17,7 @@
     {
       "id": "estacao-mcmurdo",
       "nome": "Estação McMurdo",
-      "descricaoCurta": "Estação de pesquisa dos Estados Unidos na Ilha de Ross, junto ao Mar de Ross.",
+      "descricaoCurta": "McMurdo é a maior estação de pesquisa da Antártida. Fica na Ilha de Ross.",
       "coordenadas": {
         "lat": -77.8482089,
         "lng": 166.6684219
@@ -34,7 +34,7 @@
     {
       "id": "estacao-amundsen-scott",
       "nome": "Estação Amundsen–Scott",
-      "descricaoCurta": "Estação científica dos Estados Unidos próxima ao Polo Sul geográfico.",
+      "descricaoCurta": "A estação fica no Polo Sul e recebe cientistas durante o ano todo.",
       "coordenadas": {
         "lat": -89.9975,
         "lng": 139.2728056
@@ -51,7 +51,7 @@
     {
       "id": "estacao-vostok",
       "nome": "Estação Vostok",
-      "descricaoCurta": "Estação científica russa no interior da Antártida Oriental.",
+      "descricaoCurta": "Perto da Estação Vostok, há um lago escondido sob cerca de 4 quilômetros de gelo.",
       "coordenadas": {
         "lat": -78.464167,
         "lng": 106.86583

@@ -17,7 +17,7 @@
     {
       "id": "grande-muralha",
       "nome": "Grande Muralha da China",
-      "descricaoCurta": "Fortificações de várias épocas formam uma longa defesa histórica no norte da China.",
+      "descricaoCurta": "Somando os trechos de várias épocas, a Grande Muralha tem mais de 20 mil quilômetros.",
       "coordenadas": {
         "lat": 40.4313889,
         "lng": 116.5644444
@@ -35,7 +35,7 @@
     {
       "id": "taj-mahal",
       "nome": "Taj Mahal",
-      "descricaoCurta": "Mausoléu de mármore branco construído em Agra no século XVII por ordem do imperador Shah Jahan.",
+      "descricaoCurta": "O imperador Shah Jahan mandou construir o Taj Mahal em memória de sua esposa Mumtaz Mahal.",
       "coordenadas": {
         "lat": 27.17417,
         "lng": 78.04222
@@ -52,7 +52,7 @@
     {
       "id": "monte-fuji",
       "nome": "Monte Fuji",
-      "descricaoCurta": "Vulcão de forma quase cônica, considerado sagrado e conhecido por inspirar artistas japoneses.",
+      "descricaoCurta": "O Monte Fuji é um vulcão com 3.776 metros de altitude que inspirou muitos artistas japoneses.",
       "coordenadas": {
         "lat": 35.3605556,
         "lng": 138.7275

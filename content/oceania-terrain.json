@@ -17,7 +17,7 @@
     {
       "id": "grande-barreira-coral",
       "nome": "Grande Barreira de Corais",
-      "descricaoCurta": "Grande sistema de recifes de coral junto à costa nordeste da Austrália.",
+      "descricaoCurta": "Os recifes se estendem por cerca de 2.300 quilômetros ao longo da costa da Austrália.",
       "coordenadas": {
         "lat": -18.2861111,
         "lng": 147.7
@@ -34,7 +34,7 @@
     {
       "id": "opera-sydney",
       "nome": "Ópera de Sydney",
-      "descricaoCurta": "Casa de espetáculos à beira do porto de Sydney, com arquitetura reconhecida.",
+      "descricaoCurta": "Os telhados da Ópera de Sydney parecem conchas e têm mais de um milhão de peças de cerâmica.",
       "coordenadas": {
         "lat": -33.856667,
         "lng": 151.215278
@@ -51,7 +51,7 @@
     {
       "id": "uluru-kata-tjuta",
       "nome": "Parque Nacional Uluru-Kata Tjuta",
-      "descricaoCurta": "Grande formação rochosa em uma paisagem cultural do povo Anangu.",
+      "descricaoCurta": "A rocha de Uluru se ergue 348 metros acima da planície e é sagrada para o povo Anangu.",
       "coordenadas": {
         "lat": -25.3221111,
         "lng": 130.9856944

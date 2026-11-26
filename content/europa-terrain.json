@@ -17,7 +17,7 @@
     {
       "id": "coliseu",
       "nome": "Coliseu",
-      "descricaoCurta": "Anfiteatro romano do século I, parte da área histórica de Roma.",
+      "descricaoCurta": "No Coliseu, havia alçapões no chão da arena por onde pessoas e animais apareciam de surpresa.",
       "coordenadas": {
         "lat": 41.8902778,
         "lng": 12.4922222
@@ -35,7 +35,7 @@
     {
       "id": "acropole-atenas",
       "nome": "Acrópole de Atenas",
-      "descricaoCurta": "Colina rochosa com monumentos da Grécia Antiga, como o Partenon.",
+      "descricaoCurta": "Na Acrópole, um templo tinha seis estátuas no lugar de colunas para sustentar o teto da varanda.",
       "coordenadas": {
         "lat": 37.97087,
         "lng": 23.72618
@@ -52,7 +52,7 @@
     {
       "id": "torre-eiffel",
       "nome": "Torre Eiffel",
-      "descricaoCurta": "Torre de ferro construída em Paris no século XIX e hoje um marco da cidade.",
+      "descricaoCurta": "A Torre Eiffel chega a 330 metros de altura contando a antena no topo.",
       "coordenadas": {
         "lat": 48.8582972,
         "lng": 2.2944778
