@@ -21,7 +21,21 @@
   letter-spacing: -.026em;
 }
 
+.exploration-board > .adventure-progress {
+  margin: .875rem .875rem 1.5rem;
+}
+
+.exploration-board .adventure-progress-label {
+  margin-bottom: .75rem;
+}
+
 .map-title-word { white-space: nowrap; }
+
+.map-title-word > span {
+  -webkit-text-stroke: 1.5px var(--ink);
+  -webkit-text-stroke-color: color-mix(in srgb, var(--ink) 65%, currentColor);
+  paint-order: stroke fill;
+}
 
 .exploration-board .interactive-world-map {
   --water: var(--canvas);
@@ -39,7 +53,7 @@
 .adventure-map-page .destination-oceania { --discovered-silhouette: #8fd5e7; }
 
 .adventure-map-page .continent-card {
-  background: #d8eef9;
+  background: var(--tint);
 }
 
 .adventure-map-page .continent-card .destination-art,
